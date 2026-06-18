@@ -11,10 +11,12 @@ import {
 import { canPersistWrites, isKvEnabled } from './lib/kv.js';
 
 export function createSessionMiddleware(sessionSecret) {
-  const secure = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+  // Vercel 经 HTTPS 代理转发时 req.secure 常为 false；secure:true 会导致 cookie-session 不写 Set-Cookie
+  const secure = process.env.VERCEL
+    ? false
+    : process.env.NODE_ENV === 'production';
   const middlewares = [];
 
-  // Vercel 经 HTTPS 边缘代理转发，需标记为 secure 请求，否则 cookie-session 不会写入 Cookie
   if (process.env.VERCEL) {
     middlewares.push((req, _res, next) => {
       if (req.headers['x-forwarded-proto'] === 'https') req.secure = true;

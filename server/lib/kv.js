@@ -1,18 +1,32 @@
 let storeClient = null;
 
+function resolveRedisEnv() {
+  const pairs = [
+    ['UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'],
+    ['KV_REST_API_URL', 'KV_REST_API_TOKEN'],
+    ['STORAGE_URL', 'STORAGE_TOKEN'],
+    ['STORAGE_REST_URL', 'STORAGE_REST_TOKEN'],
+    ['STORAGE_KV_REST_API_URL', 'STORAGE_KV_REST_API_TOKEN']
+  ];
+  for (const [urlKey, tokenKey] of pairs) {
+    const url = process.env[urlKey];
+    const token = process.env[tokenKey];
+    if (url && token) return { url, token };
+  }
+  return null;
+}
+
 export function isKvEnabled() {
-  return !!(
-    (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) ||
-    (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
-  );
+  return !!resolveRedisEnv();
 }
 
 async function getStoreClient() {
   if (!isKvEnabled()) return null;
   if (storeClient) return storeClient;
-  if (process.env.UPSTASH_REDIS_REST_URL) {
+  const cfg = resolveRedisEnv();
+  if (cfg?.url?.startsWith('http')) {
     const { Redis } = await import('@upstash/redis');
-    storeClient = Redis.fromEnv();
+    storeClient = new Redis({ url: cfg.url, token: cfg.token });
     return storeClient;
   }
   const { kv } = await import('@vercel/kv');
