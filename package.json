@@ -6,6 +6,7 @@
   "scripts": {
     "extract": "node scripts/extract-data.mjs",
     "import-batch2": "node scripts/import-batch2.mjs",
+    "restore-all": "node scripts/restore-all.mjs",
     "dev": "node server/index.js",
     "start": "node server/index.js",
     "build": "node scripts/extract-data.mjs"
