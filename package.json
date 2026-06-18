@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "extract": "node scripts/extract-data.mjs",
+    "import-batch2": "node scripts/import-batch2.mjs",
     "dev": "node server/index.js",
     "start": "node server/index.js",
     "build": "node scripts/extract-data.mjs"

@@ -1450,6 +1450,7 @@ setTimeout(function(){
     </div>
     <nav>
       <ul>
+        <li><a href="/" target="_top">首页</a></li>
         <li><a href="atlas.html">疾病图谱</a></li>
         <li class="index-only"><a href="#modality">影像技术</a></li>
         <li><a href="#filmlib">胶片库</a></li>
@@ -1480,7 +1481,7 @@ setTimeout(function(){
 </header>
 <div class="atlas-embed-bar embed-only" aria-label="图谱页导航">
   <div class="atlas-embed-bar-inner">
-    <a href="index.html" target="_top">← 返回上一层</a>
+    <a href="/" target="_top">首页</a>
     <span class="title">疾病影像图谱</span>
     <span style="width:72px"></span>
   </div>
@@ -1495,6 +1496,7 @@ setTimeout(function(){
         <div class="search-dropdown" id="searchDropdownDrawer" hidden="" role="listbox" aria-label="搜索结果"></div>
       </div>
     </div>
+    <a href="/" target="_top">首页</a>
     <a href="atlas.html">疾病图谱</a>
     <a class="index-only" href="#modality">影像技术</a>
     <a href="#filmlib">胶片库</a>
@@ -3319,7 +3321,16 @@ function mountImageAttrib(container,file,item){
   if(!details)return;
   details.dataset.wikiFile=file;
   const modified=isImageModified(item,file);
-  fetchImageAttrib(file).then(meta=>fillAttribEl(details,meta,modified));
+  const custom=item&&item.attrib&&item.attrib.author?{
+    source:item.attrib.source||'Wikimedia Commons',
+    author:normalizeAttribAuthor(item.attrib.author),
+    license:item.attrib.license||'见原文页面',
+    licenseUrl:item.attrib.licenseUrl||'',
+    pageUrl:item.attrib.pageUrl||wikiFilePageUrl(file),
+    title:item.attrib.title||file
+  }:null;
+  const load=custom?Promise.resolve(custom):fetchImageAttrib(file);
+  load.then(meta=>fillAttribEl(details,meta,modified));
 }
 function updateGalleryAttrib(gal,item){
   if(!gal||!item)return;
@@ -4050,6 +4061,17 @@ function enrichDiseases(){
     if(t)Object.assign(d,t);
     d.navGroup=getNavGroup(d);
   });
+  syncDiseaseCountLabels();
+}
+function syncDiseaseCountLabels(){
+  const n=diseases.length;
+  if(!n)return;
+  const sub=`${n} 种骨科疾病 · 搜索与筛选`;
+  document.querySelectorAll('.layer-head-sub').forEach(el=>{
+    if(/种骨科疾病/.test(el.textContent||''))el.textContent=sub;
+  });
+  const heroPill=document.querySelector('.hero-pills li strong');
+  if(heroPill&&heroPill.parentElement?.textContent?.includes('疾病图谱'))heroPill.textContent=n+'+';
 }
 enrichDiseases();
 function taxLabel(kind,key){return(TAXONOMY[kind]&&TAXONOMY[kind][key])?TAXONOMY[kind][key].label:key;}
@@ -4666,7 +4688,7 @@ function flattenSearchVal(v){
 function buildSearchIndex(){
   const items=[];
   diseases.forEach(d=>{
-    const det={...detailMap[d.type],...(detailExtended[d.type]||{})};
+    const det=getDiseaseDetail(d.type);
     const abbr=extractAbbrs(d.sub,d.title);
     const hay=normSearchText([
       d.title,d.sub,d.desc,d.region,d.mod,d.type,abbr,
@@ -4924,7 +4946,7 @@ function imgKeyClass(lbl){
 }
 
 function openDetail(d){
-  const det={...detailMap[d.type],...(detailExtended[d.type]||{})};
+  const det=getDiseaseDetail(d.type);
   if(!det.overview&&!det.epi){return;}
   const sevClass=d.sev==='high'?'sev-high':'';
   const mods=(det.modalities||[]).map(m=>`<div class="m-mod-row"><span class="m-mod-tag">${m[0]}</span><span class="m-mod-txt">${m[1]}</span></div>`).join('');
@@ -5576,6 +5598,10 @@ function applySiteDataPatch(data){
   if(data.diseaseGalleries)diseaseGalleries=data.diseaseGalleries;
   if(data.galleryAnnTpl)galleryAnnTpl=data.galleryAnnTpl;
   if(data.diseases)diseases=data.diseases;
+  if(data.diseaseDetails)window.SITE_DISEASE_DETAILS=data.diseaseDetails;
+  if(data.imageAttribRegistry){
+    window.IMAGE_ATTRIB_REGISTRY={...(window.IMAGE_ATTRIB_REGISTRY||{}),...data.imageAttribRegistry};
+  }
   if(data.filmData)filmData=data.filmData;
   if(data.TAXONOMY)TAXONOMY=data.TAXONOMY;
   if(data.NAV_GROUPS)NAV_GROUPS=data.NAV_GROUPS;
@@ -5583,6 +5609,13 @@ function applySiteDataPatch(data){
   enrichDiseases();
   mergeGalleryAnnotations();
   return true;
+}
+function getDiseaseDetail(type){
+  const key=String(type||'').trim();
+  const embedded={...(detailMap[key]||{}),...(detailExtended[key]||{})};
+  const remote=window.SITE_DISEASE_DETAILS&&window.SITE_DISEASE_DETAILS[key];
+  if(!remote)return embedded;
+  return {...embedded,...remote};
 }
 async function loadRemoteSiteData(){
   const urls=['/api/content','/data/site-data.json'];

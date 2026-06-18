@@ -21,10 +21,53 @@ function readSiteDataFile() {
   }
 }
 
+function detailHasContent(detail) {
+  if (!detail || typeof detail !== 'object') return false;
+  return Object.values(detail).some(val => {
+    if (Array.isArray(val)) return val.length > 0;
+    return String(val ?? '').trim().length > 0;
+  });
+}
+
+function mergeDiseaseDetails(fileDetails, kvDetails) {
+  const out = { ...(fileDetails || {}) };
+  for (const [key, detail] of Object.entries(kvDetails || {})) {
+    if (detailHasContent(detail)) {
+      out[key] = { ...(out[key] || {}), ...detail };
+    }
+  }
+  return out;
+}
+
+function mergeImageAttribRegistry(fileReg, kvReg) {
+  const out = { ...(fileReg || {}) };
+  for (const [key, entry] of Object.entries(kvReg || {})) {
+    if (!entry || typeof entry !== 'object') continue;
+    const hasContent = [entry.author, entry.license, entry.licenseUrl, entry.pageUrl]
+      .some(v => String(v ?? '').trim());
+    if (hasContent) out[key] = { ...(out[key] || {}), ...entry };
+  }
+  return out;
+}
+
+/** KV 中疾病/图库等可编辑字段优先；详情与授权在 KV 为空时回退到仓库 site-data.json */
+function mergeSiteData(fromKv, fromFile) {
+  if (!fromFile) return fromKv;
+  if (!fromKv) return fromFile;
+  return {
+    ...fromFile,
+    ...fromKv,
+    diseaseDetails: mergeDiseaseDetails(fromFile.diseaseDetails, fromKv.diseaseDetails),
+    imageAttribRegistry: mergeImageAttribRegistry(fromFile.imageAttribRegistry, fromKv.imageAttribRegistry)
+  };
+}
+
 export async function readSiteData() {
+  const fromFile = readSiteDataFile();
   const fromKv = await kvGet(KV_KEY);
+  if (fromKv && fromFile) return mergeSiteData(fromKv, fromFile);
   if (fromKv) return fromKv;
-  return readSiteDataFile();
+  return fromFile;
 }
 
 export async function writeSiteData(data) {

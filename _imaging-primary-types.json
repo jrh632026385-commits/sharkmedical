@@ -1,0 +1,37 @@
+{
+  "bonetumor": [
+    "ostoidoma", "ostoblastoma", "fibrodysplasia", "abc", "ubc", "enchondroma", "chondroblastoma", "nof", "lchbone",
+    "chordoma", "parosteo", "telosteo", "periosteo", "lgc-osteo", "plasmacytoma", "lymphomabone", "adamantinoma",
+    "fibrosarcomabone", "hemangioendo", "cc-chondro", "dediff-chondro", "mesench-chondro", "peri-chondro",
+    "osteoma", "melorheostosis", "osteopoikilosis", "striata", "cortdesmoid", "iolipoma", "browntumor",
+    "skelet-hemang", "fd-mazabraud", "ossifying-fibroma", "paget", "polyostotic-fd", "hme", "maffucci"
+  ],
+  "fx": [
+    "galeazzi", "bennett", "boxer", "scapholunate", "triquetrum", "jefferson", "hangman", "chance", "odontoid",
+    "supracondylar", "olecranon", "radialhead", "mason", "essex", "hillsachs", "bankart", "pilon", "maisonneuve",
+    "segond", "tibialshaft", "proxfibula", "burst-lumbar"
+  ],
+  "arthritis": [
+    "hemarthrosis", "charcot", "dish", "synov-chondro", "pvns", "sapho", "erosive-oa", "shoulder-oa", "ankle-oa", "oci"
+  ],
+  "softtumor": [
+    "lipoma", "angiolipoma", "schwannoma", "neurofibroma", "hemangioma-st", "lymphangioma", "ganglion", "baker",
+    "myositis-oss", "elastofibroma", "lipoblastoma", "fibroma-sheath", "soft-chondroma", "granular-cell", "leiomyoma",
+    "myxoma", "tgct", "nodular-fasciitis", "desmoid", "alt", "wdlps", "myxoid-lps", "synovialsarcoma", "dfsp",
+    "asps", "ewing-extra", "hemangiopericytoma", "sft", "plantar-fibroma"
+  ],
+  "muscle": [
+    "quad-tear", "hamstring", "calf-tear", "adductor", "gluteus-min", "subscap", "infraspinatus", "teres-minor",
+    "deltoid", "biceps-long", "biceps-dist", "triceps", "pec-major", "extensor", "plantaris", "supraspinatus-calc",
+    "mallet", "volar-plate", "central-slip", "mortons", "os-trigonum", "stress-tib-ant", "compartment", "myositis",
+    "rhabdo-trauma", "denervation", "tendon-xanthoma"
+  ],
+  "joint": [
+    "spondylolysis", "spondylolisthesis", "schmorl", "modic", "thoracic-disc", "syringomyelia", "chiari",
+    "atlantoaxial", "odontoid-hypo", "discitis", "epidural-abscess", "meniscoid", "oss-flavum", "opll",
+    "blount", "rickets", "acetabular-dysplasia", "transient-osteoporosis", "bone-marrow-edema",
+    "subchondral-insufficiency", "osteonecrosis-knee", "osteochondritis", "meniscal-cyst", "discoid-meniscus",
+    "acl-ganglion", "slap", "ac-joint", "glenohumeral-oa", "elbow-oa", "radioulnar-synostosis", "madelung",
+    "kienbock", "preiser", "loose-body-knee", "osgood", "sinding", "patellofemoral", "hip-labral", "facet-arthropathy"
+  ]
+}

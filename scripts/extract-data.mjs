@@ -66,12 +66,32 @@ const blocks = [
   ['TAXONOMY', 'const CAT_ORDER='],
   ['NAV_GROUPS', 'const NAV_ORDER='],
   ['taxByType', 'diseases.forEach'],
-  ['filmData', 'function renderFilmMedia']
+  ['filmData', 'function renderFilmMedia'],
+  ['detailMap', 'const detailExtended='],
+  ['detailExtended', '/* ---------- mini SVG']
 ];
 
 for (const [name, next] of blocks) {
   const expr = sliceConst(html, name, next);
   evalConst(`${name}=${expr}`, sandbox);
+}
+
+function mergeDiseaseDetails(dm, de) {
+  const out = {};
+  const keys = new Set([...Object.keys(dm || {}), ...Object.keys(de || {})]);
+  for (const k of keys) {
+    out[k] = { ...(dm[k] || {}), ...(de[k] || {}) };
+  }
+  return out;
+}
+
+let imageAttribRegistry = {};
+const attribPath = path.join(root, 'image-attrib-registry.js');
+if (fs.existsSync(attribPath)) {
+  const attribSandbox = { window: { IMAGE_ATTRIB_REGISTRY: {} } };
+  vm.createContext(attribSandbox);
+  vm.runInContext(fs.readFileSync(attribPath, 'utf8'), attribSandbox, { timeout: 5000 });
+  imageAttribRegistry = attribSandbox.window.IMAGE_ATTRIB_REGISTRY || {};
 }
 
 const siteData = {
@@ -80,11 +100,34 @@ const siteData = {
   diseaseGalleries: sandbox.diseaseGalleries,
   galleryAnnTpl: sandbox.galleryAnnTpl,
   diseases: sandbox.diseases,
+  diseaseDetails: mergeDiseaseDetails(sandbox.detailMap, sandbox.detailExtended),
+  imageAttribRegistry,
   TAXONOMY: sandbox.TAXONOMY,
   NAV_GROUPS: sandbox.NAV_GROUPS,
   taxByType: sandbox.taxByType,
   filmData: sandbox.filmData
 };
+
+/** 保留 site-data.json 中后台录入的扩展疾病（如第二批），避免 build 时被 index 内嵌 50 条覆盖 */
+if (fs.existsSync(outPath)) {
+  try {
+    const prev = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+    const byType = new Map((siteData.diseases || []).map(d => [d.type, d]));
+    for (const d of prev.diseases || []) {
+      if (!d?.type) continue;
+      byType.set(d.type, { ...byType.get(d.type), ...d });
+    }
+    siteData.diseases = [...byType.values()];
+    siteData.taxByType = { ...(siteData.taxByType || {}), ...(prev.taxByType || {}) };
+    siteData.diseaseGalleries = { ...(siteData.diseaseGalleries || {}), ...(prev.diseaseGalleries || {}) };
+    siteData.diseaseDetails = { ...mergeDiseaseDetails(siteData.diseaseDetails, prev.diseaseDetails || {}) };
+    if (prev.imageAttribRegistry) {
+      siteData.imageAttribRegistry = { ...siteData.imageAttribRegistry, ...prev.imageAttribRegistry };
+    }
+  } catch {
+    /* keep html export only */
+  }
+}
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, JSON.stringify(siteData, null, 2), 'utf8');
@@ -92,4 +135,6 @@ fs.writeFileSync(outPath, JSON.stringify(siteData, null, 2), 'utf8');
 console.log('已导出 site-data.json');
 console.log(`  疾病: ${siteData.diseases.length} 条`);
 console.log(`  图库类型: ${Object.keys(siteData.diseaseGalleries).length} 组`);
+console.log(`  疾病详情: ${Object.keys(siteData.diseaseDetails).length} 条`);
+console.log(`  影像授权: ${Object.keys(siteData.imageAttribRegistry).length} 条`);
 console.log(`  胶片库: ${Object.keys(siteData.filmData).length} 个模态`);

@@ -7,7 +7,8 @@ import {
   ensureBootstrapAdmin,
   listPublicUsers,
   publicUser,
-  registerUser
+  registerUser,
+  updateUserRole
 } from './lib/userStore.js';
 import { canPersistWrites, isKvEnabled } from './lib/kv.js';
 import { clearSession, createSessionMiddleware, setSessionUser } from './lib/session.js';
@@ -137,6 +138,23 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
     }
   });
 
+  router.patch('/users/:id', requireAdmin, async (req, res) => {
+    try {
+      const id = String(req.params.id || '').trim();
+      const role = req.body?.role;
+      if (role !== 'admin' && role !== 'user') {
+        return res.status(400).json({ ok: false, error: 'role 必须是 admin 或 user' });
+      }
+      if (id === req.session.userId && role === 'user') {
+        return res.status(400).json({ ok: false, error: '无法将当前登录账号降级为普通用户' });
+      }
+      const user = await updateUserRole(id, role);
+      res.json({ ok: true, user });
+    } catch (err) {
+      res.status(err.status || 400).json({ ok: false, error: err.message || '更新用户失败' });
+    }
+  });
+
   return router;
 }
 
@@ -183,11 +201,27 @@ export function createContentRouter() {
     try {
       const data = await readSiteData();
       if (!data) return res.status(404).json({ ok: false, error: '数据不存在' });
-      const { diseaseGalleries, galleryAnnTpl } = req.body || {};
+      const { diseaseGalleries, galleryAnnTpl, imageAttribRegistry } = req.body || {};
       if (diseaseGalleries) data.diseaseGalleries = diseaseGalleries;
       if (galleryAnnTpl) data.galleryAnnTpl = galleryAnnTpl;
+      if (imageAttribRegistry) data.imageAttribRegistry = imageAttribRegistry;
       const saved = await writeSiteData(data);
       res.json({ ok: true, updatedAt: saved.updatedAt });
+    } catch (err) {
+      res.status(err.status || 500).json({ ok: false, error: err.message });
+    }
+  });
+
+  router.patch('/details', requireAdmin, async (req, res) => {
+    try {
+      const data = await readSiteData();
+      if (!data) return res.status(404).json({ ok: false, error: '数据不存在' });
+      if (!req.body || typeof req.body !== 'object') {
+        return res.status(400).json({ ok: false, error: 'diseaseDetails 必须是对象' });
+      }
+      data.diseaseDetails = req.body;
+      const saved = await writeSiteData(data);
+      res.json({ ok: true, count: Object.keys(saved.diseaseDetails || {}).length, updatedAt: saved.updatedAt });
     } catch (err) {
       res.status(err.status || 500).json({ ok: false, error: err.message });
     }

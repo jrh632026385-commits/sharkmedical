@@ -1,0 +1,226 @@
+bonetumor|ostoidoma|长骨|X线 · CT|tumor|benign|lower|骨样骨瘤|Osteoid Osteoma|low|良性·夜间痛|皮质内小巢状透亮区伴周围硬化,夜间痛阿司匹林可缓解。|皮质内巢灶|周围硬化|夜间痛
+bonetumor|ostoblastoma|脊柱/长骨|CT · MRI|tumor|benign|spine|骨母细胞瘤|Osteoblastoma|mid|良性·较大|类似骨样骨瘤但病灶更大,好发于脊柱后柱与长骨。|骨化基质|膨胀性破坏|疼痛进行性
+bonetumor|fibrodysplasia|股骨/颅面|X线 · MRI|tumor|benign|whole|纤维结构不良|Fibrous Dysplasia|low|良性·发育|正常骨被纤维组织与编织骨替代,磨玻璃样改变,可单骨或多骨。|磨玻璃密度|膨胀变形|牧羊人杖样
+bonetumor|abc|长骨|MRI · CT|tumor|benign|lower|动脉瘤样骨囊肿|Aneurysmal Bone Cyst|mid|良性·膨胀|偏心性膨胀性溶骨,可见液-液平面,可与 GCT 并存。|液-液平面|偏心性|皮质变薄
+bonetumor|ubc|肱骨/股骨|X线 · MRI|tumor|benign|upper|单纯性骨囊肿|Unicameral Bone Cyst|low|良性·儿童|干骺端中心性透亮区,与骺板相邻,可致病理骨折。|中心透亮|对称膨胀|骨嵴征
+bonetumor|enchondroma|手足/股骨|X线 · MRI|tumor|benign|upper|内生软骨瘤|Enchondroma|low|良性·常见|髓腔内软骨结节伴环弧钙化,手足短骨最常见。|环弧钙化|髓腔扩张|无骨膜反应
+bonetumor|chondroblastoma|骨骺|MRI · CT|tumor|benign|lower|软骨母细胞瘤|Chondroblastoma|mid|良性·骨骺|骨骺溶骨性病变伴软骨钙化,青少年男性多见。|骨骺溶骨|点状钙化|无硬化边
+bonetumor|nof|股骨远端|X线|tumor|benign|lower|非骨化性纤维瘤|Non-Ossifying Fibroma|low|良性·偶发|干骺端偏心性透亮区伴硬化边,儿童常见,可自愈。|偏心性|硬化边|皮质下
+bonetumor|lchbone|颅骨/骨盆|X线 · MRI|tumor|benign|whole|骨嗜酸细胞肉芽肿|Langerhans Cell Histiocytosis|mid|良性·儿童|溶骨性破坏伴骨膜反应,可单骨或多骨,颅骨凿孔样。|溶骨破坏|骨膜反应|软组织肿块
+bonetumor|chordoma|骶骨/颅底|MRI · CT|tumor|mal-primary|spine|脊索瘤|Chordoma|high|恶性·缓慢|骶骨或颅底中线溶骨性破坏伴软组织肿块,T2 高信号。|中线破坏|T2高信号|软组织肿块
+bonetumor|parosteo|股骨远端|X线 · CT|tumor|mal-primary|lower|旁骨性骨肉瘤|Parosteal Osteosarcoma|high|恶性·表面|骨表面分叶状致密骨性肿块,与母骨宽基底相连,髓腔少受累。|骨表面肿块|分叶状|低度恶性
+bonetumor|telosteo|股骨|MRI · CT|tumor|mal-primary|lower|血管扩张性骨肉瘤|Telangiectatic OS|high|恶性·囊变|溶骨性破坏伴大量囊变出血区,类似 ABC 但具侵袭性。|囊变出血|骨膜反应|软组织侵犯
+bonetumor|periosteo|胫骨|X线 · CT|tumor|mal-primary|lower|骨膜性骨肉瘤|Periosteal Osteosarcoma|high|恶性·骨膜|骨膜下骨性肿块呈日光放射,髓腔受累少。|骨膜下肿块|日光放射|骨膜增厚
+bonetumor|lgc-osteo|股骨|MRI|tumor|mal-primary|lower|低度中心性骨肉瘤|Low-grade Central OS|mid|交界·髓内|髓内低度恶性成骨性肿瘤,边界相对清,进展慢。|髓内骨化|边界较清|低度恶性
+bonetumor|plasmacytoma|椎体|MRI · CT|tumor|mal-primary|spine|孤立性浆细胞瘤|Solitary Plasmacytoma|high|恶性·局灶|单发溶骨性破坏,可进展为多发性骨髓瘤。|单发溶骨|无硬化边|脊髓压迫
+bonetumor|lymphomabone|骨盆/股骨|MRI · PET|tumor|mal-primary|pelvis|骨原发性淋巴瘤|Primary Bone Lymphoma|high|恶性·弥漫|弥漫骨髓浸润或大块溶骨,可伴骨膜反应,全身症状轻。|弥漫浸润|骨膜反应|软组织肿块
+bonetumor|adamantinoma|胫骨|MRI · CT|tumor|mal-primary|lower|牙釉质瘤|Adamantinoma|high|恶性·胫骨|胫骨前皮质多灶性溶骨,可跨越骨干,青年多见。|多灶溶骨|前皮质|进展缓慢
+bonetumor|fibrosarcomabone|股骨|MRI|tumor|mal-primary|lower|骨纤维肉瘤|Fibrosarcoma of Bone|high|恶性·溶骨|纯溶骨性破坏无矿化,边界不清,中老年多见。|纯溶骨|无矿化|软组织肿块
+bonetumor|hemangioendo|长骨|MRI|tumor|intermediate|lower|骨上皮样血管内皮瘤|Epithelioid Hemangioendothelioma|mid|交界·血管|多发小溶骨灶或长段浸润,可类似转移。|多发溶骨|皮质受累|血管性肿瘤
+bonetumor|cc-chondro|股骨/骨盆|MRI · CT|tumor|mal-primary|pelvis|透明细胞软骨肉瘤|Clear Cell Chondrosarcoma|high|恶性·软骨|骨骺区溶骨伴软骨钙化,好发于股骨头。|骨骺溶骨|环弧钙化|低度恶性外观
+bonetumor|dediff-chondro|骨盆|MRI · CT|tumor|mal-primary|pelvis|去分化软骨肉瘤|Dedifferentiated Chondrosarcoma|high|恶性·高级|低度软骨瘤背景上出现高级别软组织肿块,预后差。|双相表现|软组织肿块|快速增大
+bonetumor|mesench-chondro|肋骨/颌骨|MRI|tumor|mal-primary|whole|间叶性软骨肉瘤|Mesenchymal Chondrosarcoma|high|恶性·小圆|溶骨伴钙化,含小圆细胞成分,年轻患者。|溶骨钙化|小圆细胞|软组织块
+bonetumor|peri-chondro|股骨|X线 · MRI|tumor|mal-primary|lower|骨膜性软骨肉瘤|Periosteal Chondrosarcoma|high|恶性·骨膜|骨膜下软骨性肿块伴环弧钙化。|骨膜下|环弧钙化|髓腔少受累
+bonetumor|osteoma|颅面/胫骨|CT|tumor|benign|whole|骨瘤|Osteoma|low|良性·致密|致密骨性肿块,颅面骨或胫骨皮质旁最常见。|致密骨块|边界清|无破坏
+bonetumor|melorheostosis|下肢|X线 · CT|tumor|benign|lower|蜡油样骨病|Melorheostosis|low|良性·流淌|骨表面流淌样高密度骨增生,似蜡滴沿骨流淌。|流淌样骨化|皮质增厚|软组织挛缩
+bonetumor|osteopoikilosis|骨盆/手足|X线|tumor|benign|whole|骨斑点症|Osteopoikilosis|low|良性·偶发|多发圆形骨岛样高密度灶,对称分布,无症状。|多发骨岛|对称分布|无破坏
+bonetumor|striata|股骨|X线|tumor|benign|lower|骨条纹症|Osteopathia Striata|low|良性·条纹|髓腔纵向条纹样骨密度增高,可合并其他骨发育异常。|纵向条纹|髓腔分布|常合并畸形
+bonetumor|cortdesmoid|股骨远端|X线 · MRI|tumor|benign|lower|皮质旁纤维瘤|Cortical Desmoid|low|良性·儿童|股骨远端皮质内侧小凹伴周围硬化,儿童特征性。|皮质小凹|周围硬化|后内侧
+bonetumor|iolipoma|股骨|MRI|tumor|benign|lower|骨内脂肪瘤|Intraosseous Lipoma|low|良性·脂肪|边界清脂肪密度/信号灶,伴周围硬化边。|脂肪信号|硬化边|边界清
+bonetumor|browntumor|颌骨/肋骨|X线 · CT|tumor|benign|whole|棕色瘤|Brown Tumor|mid|代谢·甲旁亢|甲旁亢所致溶骨性病变,可多发,生化异常。|溶骨破坏|囊性变|软组织肿胀
+bonetumor|skelet-hemang|肋骨/长骨|MRI|tumor|benign|whole|骨血管瘤|Skeletal Hemangioma|low|良性·血管|骨内栅栏样或蜂窝样改变,肋骨与长骨可见。|栅栏样|T1高信号|膨胀少见
+bonetumor|fd-mazabraud|股骨|MRI|tumor|benign|lower|Mazabraud 综合征|Mazabraud Syndrome|mid|综合征|纤维结构不良合并软组织肌内黏液瘤。|磨玻璃骨|肌内肿块|同侧分布
+bonetumor|ossifying-fibroma|颌骨/胫骨|CT|tumor|benign|whole|骨化性纤维瘤|Ossifying Fibroma|low|良性·骨化|边界清骨化性肿块,颌骨与胫骨常见。|骨化肿块|边界清|髓腔膨胀
+bonetumor|paget|骨盆/颅骨|X线 · 核素|degen|bone|whole|Paget 骨病|Paget Disease of Bone|mid|代谢·重建|骨增大、皮质增厚、骨小梁粗大,可分溶骨/混合/硬化期。|骨增大|骨小梁粗|马赛克征
+bonetumor|polyostotic-fd|多骨|X线 · MRI|tumor|benign|whole|多骨性纤维结构不良|Polyostotic FD|mid|良性·多发|多骨磨玻璃样改变,可伴皮肤咖啡斑(McCune-Albright)。|多发磨玻璃|骨畸形|内分泌异常
+bonetumor|hme|长骨|X线 · MRI|tumor|benign|whole|遗传性多发外生骨疣|Hereditary Multiple Exostoses|mid|良性·多发|多发骨软骨瘤,骨干骺端,恶变风险略增。|多发骨突|髓腔连续|家族性
+bonetumor|maffucci|手足|MRI|tumor|benign|upper|Maffucci 综合征|Maffucci Syndrome|high|综合征·恶变|内生软骨瘤病合并软组织血管瘤,软骨肉瘤风险高。|多发软骨瘤|软组织血管瘤|恶变风险
+fx|galeazzi|前臂|X线|trauma|fracture|upper|Galeazzi 骨折|Galeazzi Fracture|mid|急性·脱位|桡骨远端骨折合并下尺桡关节脱位,须全长前臂片评估。|桡骨骨折|下尺桡脱位|全长片
+fx|bennett|拇指|X线 · CT|trauma|fracture|upper|Bennett 骨折|Bennett Fracture|mid|急性·关节内|第一掌骨基底关节内骨折伴脱位,拇指 CMC 不稳定。|基底骨折|CMC脱位|关节内
+fx|boxer|掌骨|X线|trauma|fracture|upper|拳击手骨折|Boxer's Fracture|low|急性·常见|第五掌骨颈骨折伴掌侧成角,拳击伤典型。|颈骨折|掌侧成角|第五掌骨
+fx|scapholunate|腕关节|X线 · MRI|trauma|ligament|upper|舟月韧带损伤|Scapholunate Dissociation|mid|急性·不稳|舟月间隙增宽、月骨背伸,腕不稳定。|SL间隙增宽|月骨背伸|DISI
+fx|triquetrum|腕骨|X线 · CT|trauma|fracture|upper|三角骨骨折|Triquetrum Fracture|low|急性·背侧|背侧撕脱或体部骨折,跌倒手撑地。|背侧撕脱|三角骨|腕痛
+fx|jefferson|C1|CT|trauma|fracture|spine|Jefferson 骨折|Jefferson Fracture|high|急性·环破|寰椎四块骨折,横韧带损伤评估稳定性。|四块骨折|侧块外移|横韧带
+fx|hangman|C2|CT · MRI|trauma|fracture|spine|Hangman 骨折|Hangman Fracture|high|急性·双侧|枢椎椎弓根/峡部骨折,可伴 C2-3 不稳。|峡部骨折|C2-3不稳|过伸损伤
+fx|chance|胸腰段|CT · MRI|trauma|fracture|spine|Chance 骨折|Chance Fracture|high|急性·三柱|经椎体水平劈裂骨折,安全带损伤机制。|水平劈裂|三柱受累|韧带断裂
+fx|odontoid|C2|CT|trauma|fracture|spine|齿状突骨折|Odontoid Fracture|high|急性·高位|Anderson-D'Alonzo 分型,Ⅱ型不愈合风险高。|齿状突|Ⅱ型风险|寰枢不稳
+fx|supracondylar|肱骨远端|X线 · CT|trauma|fracture|upper|肱骨髁上骨折|Supracondylar Humerus Fx|high|急性·儿童|儿童肘部最常见骨折,警惕血管神经损伤。|髁上骨折|肘内翻|血管神经
+fx|olecranon|肘|X线 · CT|trauma|fracture|upper|尺骨鹰嘴骨折|Olecranon Fracture|mid|急性·伸肘|伸肌装置附着处骨折,移位影响伸肘。|鹰嘴骨折|伸肌装置|关节内
+fx|radialhead|肘|X线 · CT|trauma|fracture|upper|桡骨头骨折|Radial Head Fracture|mid|急性·肘痛|Mason 分型,影响肘旋转与外翻稳定。|桡骨头|Mason分型|肘关节积血
+fx|mason|肘|X线 · CT|trauma|fracture|upper|Mason 骨折|Mason Fracture|mid|急性·关节内|桡骨头骨折分型代表,评估移位与粉碎。|关节内|粉碎|旋转受限
+fx|essex|前臂|X线 · MRI|trauma|fracture|upper|Essex-Lopresti 损伤|Essex-Lopresti Injury|high|急性·纵向|桡骨头骨折合并下尺桡联合与 IOM 撕裂。|桡骨头|下尺桡分离|前臂缩短
+fx|hillsachs|肩关节|MRI|trauma|dislocation|upper|Hill-Sachs 损伤|Hill-Sachs Lesion|mid|急性·脱位后|肱骨头后外侧压缩骨折,复发脱位危险因素。|压缩骨折|后外侧|复发脱位
+fx|bankart|肩关节|MRI|trauma|dislocation|upper|Bankart 损伤|Bankart Lesion|mid|急性·盂唇|前下盂唇撕脱伴骨性 Bankart,前方不稳。|盂唇撕脱|骨性缺损|前方不稳
+fx|pilon|胫骨远端|CT|trauma|fracture|lower|Pilon 骨折|Pilon Fracture|high|急性·关节内|胫骨远端关节内粉碎,轴向负荷机制。|关节内粉碎|距骨撞击|软组织差
+fx|maisonneuve|踝/小腿|X线 · CT|trauma|fracture|lower|Maisonneuve 骨折|Maisonneuve Fracture|high|急性·联合|腓骨近端骨折合并下胫腓联合与内侧韧带损伤。|近端腓骨|联合分离|内侧损伤
+fx|segond|膝关节|X线 · MRI|trauma|ligament|lower|Segond 骨折|Segond Fracture|mid|急性·撕脱|胫骨外侧平台撕脱,高度提示 ACL 损伤。|外侧撕脱|ACL相关|间接征象
+fx|tibialshaft|胫骨|X线 · CT|trauma|fracture|lower|胫骨骨干骨折|Tibial Shaft Fracture|mid|急性·常见|可伴筋膜室综合征,评估对线旋转。|骨干骨折|成角旋转|筋膜室
+fx|proxfibula|腓骨近端|X线|trauma|fracture|lower|腓骨近端骨折|Proximal Fibula Fracture|mid|急性·联合|须排除 Maisonneuve 及下胫腓联合损伤。|近端骨折|联合评估|外侧副韧带
+fx|burst-lumbar|腰椎|CT · MRI|trauma|fracture|spine|腰椎爆裂骨折|Lumbar Burst Fracture|high|急性·三柱|椎体爆裂伴后壁退缩,警惕椎管受累。|爆裂骨折|后壁退缩|椎管受压
+arthritis|reactive|下肢|X线 · MRI|infl|spondylo|lower|反应性关节炎|Reactive Arthritis|mid|炎症·感染后|感染后非化脓性关节炎症,可累及下肢大关节与附着点。|非对称关节炎|附着点炎|HLA-B27
+arthritis|enteropathic|骶髂/脊柱|MRI|infl|spondylo|spine|肠病性关节病|Enteropathic Arthritis|mid|炎症·IBD|炎症性肠病相关脊柱关节病,骶髂与脊柱受累。|骶髂关节炎|肠病相关|脊柱受累
+arthritis|sle-arth|手足|X线 · US|infl|rheumatoid|upper|狼疮性关节炎|SLE Arthritis|mid|炎症·自身免疫|非侵蚀性关节痛为主,可伴 Jaccoud 畸形。|非侵蚀|Jaccoud畸形|滑膜炎
+arthritis|pmr|肩髋|US · MRI|infl|rheumatoid|upper|风湿性多肌痛|Polymyalgia Rheumatica|mid|炎症·老年|肩带与骨盆带疼痛僵硬,ESR 升高,须排除巨细胞动脉炎。|肩髋痛|晨僵|ESR升高
+arthritis|still|多关节|MRI|infl|rheumatoid|whole|成人 Still 病|Adult-Onset Still Disease|high|炎症·发热|高热、皮疹、多关节炎与高铁蛋白血症。|高热皮疹|多关节炎|高铁蛋白
+arthritis|lyme|膝|MRI|infl|infect-joint|lower|莱姆关节炎|Lyme Arthritis|mid|感染·蜱传|伯氏疏螺旋体感染后大关节积液,膝最常见。|关节积液|游走性红斑|蜱叮咬史
+arthritis|hemarthrosis|膝关节|MRI · US|infl|crystal|lower|血友病性关节病|Hemophilic Arthropathy|mid|炎症·出血|反复关节出血致软骨侵蚀与关节畸形。|软骨侵蚀|关节积血|滑膜肥厚
+arthritis|charcot|足踝|X线 · MRI|degen|oa|lower|夏科关节病|Neuropathic Arthropathy|high|退变·神经|糖尿病等神经病致关节碎裂、脱位与骨碎片,无痛性破坏。|关节碎裂|骨碎片|无痛破坏
+arthritis|dish|脊柱|X线 · CT|degen|spine|spine|弥漫性特发性骨肥厚|DISH|low|退变·骨化|脊柱右侧流注样骨化,骶髂关节常保留。|流注样骨化|骶髂保留|骨桥形成
+arthritis|synov-chondro|膝关节|X线 · MRI|degen|oa|lower|滑膜软骨瘤病|Synovial Chondromatosis|mid|退变·游离体|滑膜软骨结节脱落形成关节游离体,可骨化。|游离体|软骨结节|关节肿胀
+arthritis|pvns|膝关节|MRI|degen|soft|lower|色素沉着绒毛结节性滑膜炎|PVNS|mid|退变·滑膜|滑膜弥漫增生伴含铁血黄素沉积,T2 低信号。|滑膜增生|T2低信号|含铁血黄素
+arthritis|adhesive|肩关节|MRI · US|degen|soft|upper|粘连性关节囊炎|Adhesive Capsulitis|mid|退变·冻结肩|肩关节囊增厚粘连,活动度全面下降。|囊增厚|活动受限|冻结肩
+arthritis|sapho|胸锁/骶髂|MRI · CT|infl|spondylo|whole|SAPHO 综合征|SAPHO Syndrome|mid|炎症·骨炎|滑膜炎-痤疮-脓疱-骨肥厚-骨炎综合征,前胸壁与骶髂好发。|骨炎|前胸壁|痤疮脓疱
+arthritis|erosive-oa|DIP/PIP|X线|degen|oa|upper|侵蚀性骨关节炎|Erosive Osteoarthritis|mid|退变·侵蚀|DIP/PIP 侵蚀伴中央侵蚀与骨赘,中老年女性。|中央侵蚀|DIP/PIP|骨赘并存
+arthritis|shoulder-oa|肩关节|X线 · MRI|degen|oa|upper|肩关节骨关节炎|Shoulder Osteoarthritis|mid|退变·肩|盂肱关节间隙变窄、骨赘与软骨下硬化。|间隙变窄|骨赘|硬化
+arthritis|ankle-oa|踝关节|X线 · CT|degen|oa|lower|踝关节骨关节炎|Ankle Osteoarthritis|mid|退变·踝|创伤后踝关节炎多见,间隙变窄与骨赘。|创伤后|间隙变窄|骨赘
+arthritis|oci|髂骨|X线 · MRI|degen|oa|pelvis|髂骨致密性骨炎|Osteitis Condensans Ilii|low|退变·产科|髂骨耳状面下方三角形硬化,产后女性常见。|三角形硬化|髂骨耳状面|产后
+arthritis|bicipital|肩关节|US · MRI|degen|soft|upper|肱二头肌长头腱炎|Bicipital Tendinitis|low|退变·肌腱|结节间沟处长头腱炎症,肩前方痛。|腱鞘积液|长头腱|结节间沟
+arthritis|tfcc|腕关节|MRI|trauma|ligament|upper|三角纤维软骨复合体损伤|TFCC Injury|mid|创伤·尺侧|尺侧腕痛,DRUJ 不稳,跌倒撑地或扭转伤。|TFCC撕裂|DRUJ不稳|尺侧腕痛
+softtumor|lipoma|软组织|US · MRI|tumor|benign|whole|脂肪瘤|Lipoma|low|良性·脂肪|最常见软组织肿瘤,脂肪密度/信号,有包膜。|脂肪信号|包膜|无强化
+softtumor|angiolipoma|前臂|MRI|tumor|benign|upper|血管脂肪瘤|Angiolipoma|low|良性·疼痛|脂肪瘤伴血管成分,触痛,青少年多见。|脂肪+血管|触痛|包膜
+softtumor|alt|大腿|MRI|tumor|intermediate|lower|非典型脂肪瘤|Atypical Lipomatous Tumor|mid|交界·脂肪|深部脂肪肿瘤,异型细胞,易复发。|脂肪肿块|条索影|深部
+softtumor|wdlps|腹膜后|MRI · CT|tumor|mal-primary|whole|高分化脂肪肉瘤|Well-diff. Liposarcoma|high|恶性·脂肪|脂肪密度肿块伴厚间隔与结节,腹膜后好发。|厚间隔|脂肪密度|腹膜后
+softtumor|myxoid-lps|大腿|MRI|tumor|mal-primary|lower|黏液样脂肪肉瘤|Myxoid Liposarcoma|high|恶性·黏液|T2 高信号黏液成分与脂肪混合,曲线样间隔。|黏液信号|曲线间隔|青年
+softtumor|pleo-lps|软组织|MRI|tumor|mal-primary|whole|多形性脂肪肉瘤|Pleomorphic Liposarcoma|high|恶性·高级|高级别多形性细胞脂肪肉瘤,老年。|异质性|坏死|高级别
+softtumor|leiomyoma|子宫旁/软组织|MRI|tumor|benign|whole|平滑肌瘤|Leiomyoma|low|良性·平滑肌|边界清实性肿块,子宫或软组织平滑肌来源。|实性肿块|均匀强化|边界清
+softtumor|leiomyosarcoma|大腿|MRI|tumor|mal-primary|lower|平滑肌肉瘤|Leiomyosarcoma|high|恶性·肌源|大实性肿块伴坏死出血,中老年。|实性肿块|坏死|不均匀强化
+softtumor|rhabdo|四肢|MRI|tumor|mal-primary|whole|横纹肌肉瘤|Rhabdomyosarcoma|high|恶性·儿童|儿童最常见软组织肉瘤,异质性强化。|儿童肉瘤|异质性|坏死
+softtumor|synovialsarcoma|膝旁|MRI|tumor|mal-primary|lower|滑膜肉瘤|Synovial Sarcoma|high|恶性·滑膜|钙化常见,邻近关节但起源滑膜外,青少年/青年。|钙化|关节旁|双相分化
+softtumor|ups|大腿|MRI|tumor|mal-primary|lower|未分化多形性肉瘤|UPS / MFH|high|恶性·高级|高级别多形性肉瘤,中老年深部软组织。|深部肿块|坏死|高级别
+softtumor|fibrosarcoma-st|前臂|MRI|tumor|mal-primary|upper|软组织纤维肉瘤|Soft Tissue Fibrosarcoma|high|恶性·纤维|梭形细胞肿瘤,均匀低 T2 区域。|梭形肿瘤|均匀低T2|浸润生长
+softtumor|desmoid|腹壁/肩|MRI|tumor|intermediate|whole|侵袭性纤维瘤病|Desmoid / Aggressive Fibromatosis|mid|交界·纤维|浸润性生长无转移,β-catenin 突变相关。|浸润生长|无转移|T2条索
+softtumor|nodular-fasciitis|前臂|US · MRI|tumor|benign|upper|结节性筋膜炎|Nodular Fasciitis|low|良性·自限|快速生长小结节,自限性,勿误判肉瘤。|快速生长|自限|浅表
+softtumor|myxoma|大腿|MRI|tumor|benign|lower|软组织黏液瘤|Soft Tissue Myxoma|low|良性·黏液|T2 极高信号黏液肿瘤,边界清。|极高T2|边界清|无强化
+softtumor|schwannoma|神经走行|MRI|tumor|benign|whole|神经鞘瘤|Schwannoma|low|良性·神经|沿神经分布,靶征,Antoni A/B 区。|沿神经|靶征|囊变
+softtumor|neurofibroma|神经丛|MRI|tumor|benign|whole|神经纤维瘤|Neurofibroma|low|良性·神经|神经纤维瘤病相关,可多发,靶征。|多发|靶征|NF1
+softtumor|mpnst|坐骨神经|MRI|tumor|mal-primary|whole|恶性周围神经鞘膜瘤|MPNST|high|恶性·神经|神经纤维瘤恶变或新发,快速增大伴坏死。|快速增大|坏死|神经起源
+softtumor|hemangioma-st|肌肉|MRI|tumor|benign|whole|软组织血管瘤|Soft Tissue Hemangioma|low|良性·血管|T2 高信号伴脂肪间隔与血管流空。|血管流空|脂肪间隔|强化明显
+softtumor|lymphangioma|颈部/腋|MRI|tumor|benign|whole|淋巴管瘤|Lymphangioma|low|良性·淋巴|囊性淋巴管扩张,儿童颈部常见。|囊性病变|分隔|无强化
+softtumor|angiosarcoma|软组织|MRI|tumor|mal-primary|whole|血管肉瘤|Angiosarcoma|high|恶性·血管|高级别血管源性肉瘤,可继发放射区。|出血坏死|不规则强化|放射后
+softtumor|epithelioid-sarcoma|手足|MRI|tumor|mal-primary|upper|上皮样肉瘤|Epithelioid Sarcoma|high|恶性·年轻|手足或前臂缓慢生长结节,中央坏死。|中央坏死|手足|年轻
+softtumor|asps|大腿|MRI|tumor|mal-primary|lower|腺泡状软组织肉瘤|Alveolar Soft Part Sarcoma|high|恶性·血管|T1 高信号血管丰富肿瘤,青年。|T1高信号|血管丰富|青年
+softtumor|clearcell-sarcoma|足踝|MRI|tumor|mal-primary|lower|透明细胞肉瘤|Clear Cell Sarcoma|high|恶性·黑色素|肌腱旁黑色素性肉瘤,易转移。|肌腱旁|黑色素|淋巴结转移
+softtumor|ewing-extra|软组织|MRI · PET|tumor|mal-primary|whole|骨外尤文肉瘤|Extraskeletal Ewing Sarcoma|high|恶性·小圆|软组织小圆细胞肿瘤,EWSR1 重排。|软组织块|小圆细胞|EWSR1
+softtumor|myxofibrosarcoma|大腿|MRI|tumor|mal-primary|lower|黏液纤维肉瘤|Myxofibrosarcoma|high|恶性·黏液|老年四肢黏液与纤维混合肉瘤,多分叶。|多分叶|黏液成分|老年
+softtumor|lgfm|大腿|MRI|tumor|mal-primary|lower|低度纤维黏液样肉瘤|Low-grade Fibromyxoid Sarcoma|mid|交界·纤维|低度恶性外观,长期随访可转移。|低度外观|纤维黏液|延迟转移
+softtumor|dfsp|皮肤/皮下|MRI|tumor|intermediate|whole|隆突性皮肤纤维肉瘤|DFSP|mid|交界·皮肤|皮肤皮下浸润性生长,CD34 阳性。|皮肤浸润|CD34|局部复发
+softtumor|elastofibroma|肩胛下|MRI|tumor|benign|upper|弹力纤维瘤|Elastofibroma Dorsi|low|良性·老年|肩胛下角软组织混杂信号,老年双侧。|肩胛下|双侧|混杂信号
+softtumor|tgct|腱鞘|MRI · US|tumor|intermediate|upper|腱鞘巨细胞瘤|Tenosynovial Giant Cell Tumor|mid|交界·滑膜|腱鞘结节,T2 低信号含铁血黄素,可侵蚀骨。|腱鞘结节|T2低信号|骨侵蚀
+softtumor|myositis-oss|大腿|X线 · MRI|degen|soft|lower|骨化性肌炎|Myositis Ossificans|mid|反应·骨化|外伤后肌肉内骨化,外周成熟带。|外周成熟|骨化|外伤史
+softtumor|ganglion|腕足|US · MRI|degen|soft|upper|腱鞘囊肿|Ganglion Cyst|low|良性·囊性|关节或腱鞘旁囊性肿块,T2 高信号。|囊性肿块|腱鞘旁|壁薄
+softtumor|baker|膝关节|US · MRI|degen|soft|lower|腘窝囊肿|Baker Cyst|low|良性·囊性|半膜肌-腓肠肌头间囊肿,可破裂。|腘窝囊|半膜肌|可破裂
+softtumor|plantar-fibroma|足底|MRI · US|degen|soft|lower|足底纤维瘤病|Plantar Fibromatosis|mid|良性·纤维|足底筋膜结节,可多发,与 Dupuytren 相关。|足底结节|筋膜|多发
+softtumor|fibroma-sheath|手指|MRI · US|tumor|benign|upper|腱鞘纤维瘤|Fibroma of Tendon Sheath|low|良性·腱鞘|小腱鞘实性结节,手指多见。|小结节|腱鞘|实性
+softtumor|sft|软组织|MRI|tumor|intermediate|whole|孤立性纤维瘤|Solitary Fibrous Tumor|mid|交界·纤维|血管丰富梭形肿瘤,CD34 阳性,可恶性。|血管丰富|CD34|恶性潜能
+softtumor|extraskeletal-osteo|软组织|MRI · CT|tumor|mal-primary|whole|骨外骨肉瘤|Extraskeletal Osteosarcoma|high|恶性·成骨|软组织内成骨性恶性肿瘤,老年。|软组织成骨|矿化|老年
+softtumor|soft-chondroma|手足|MRI|tumor|benign|upper|软组织软骨瘤|Soft Tissue Chondroma|low|良性·软骨|手足软组织内软骨性肿块伴钙化。|软骨肿块|钙化|手足
+softtumor|infantile-fibrosarcoma|婴儿|MRI|tumor|mal-primary|whole|婴儿型纤维肉瘤|Infantile Fibrosarcoma|high|恶性·婴儿|婴儿期快速生长梭形肿瘤,预后较成人好。|婴儿|快速生长|ETV6-NTRK
+softtumor|hemangiopericytoma|软组织|MRI|tumor|intermediate|whole|血管外皮瘤|Hemangiopericytoma|mid|交界·血管|现多归类为 SFT 谱系,血管外皮样生长。|血管外皮|强化明显|SFT谱系
+softtumor|kaposi|下肢|MRI|tumor|mal-primary|lower|卡波西肉瘤|Kaposi Sarcoma|high|恶性·血管|免疫抑制相关皮肤黏膜与软组织血管肿瘤。|皮肤紫斑|免疫抑制|HHV-8
+softtumor|lipoblastoma|儿童|MRI|tumor|benign|whole|脂肪母细胞瘤|Lipoblastoma|low|良性·儿童|儿童脂肪性肿瘤,分叶状脂肪信号。|儿童|分叶脂肪|良性
+softtumor|granular-cell|软组织|MRI|tumor|benign|whole|颗粒细胞瘤|Granular Cell Tumor|low|良性·神经|神经源性良性肿瘤,舌与软组织。|神经起源|均匀强化|良性
+muscle|quad-tear|股四头肌|MRI · US|degen|soft|lower|股四头肌撕裂|Quadriceps Tear|mid|急性·伸膝|股直肌或股四头肌腱撕裂,伸膝无力。|肌腱撕裂|伸膝无力|血肿
+muscle|hamstring|大腿后|MRI|degen|soft|lower|腘绳肌损伤|Hamstring Injury|mid|急性·运动|坐骨结节起点或肌腹撕裂,短跑损伤。|肌腹撕裂|起点损伤|瘀斑
+muscle|calf-tear|小腿|US · MRI|degen|soft|lower|腓肠肌撕裂|Gastrocnemius Tear|mid|急性·网球腿|内侧头撕裂,突发小腿痛。|网球腿|肌腹断裂|血肿
+muscle|soleus|小腿|MRI|degen|soft|lower|比目鱼肌损伤|Soleus Strain|mid|慢性·劳损|深部小腿肌劳损,与腓肠肌鉴别。|深部水肿|肌束撕裂|劳损
+muscle|adductor|大腿内|MRI|degen|soft|lower|内收肌撕裂|Adductor Tear|mid|急性·足球|大腿内收肌群撕裂,腹股沟内侧痛。|内收肌|腹股沟痛|内旋痛
+muscle|hip-flexor|髂腰肌|MRI|degen|soft|lower|髂腰肌损伤|Iliopsoas Strain|mid|急性·髋屈|髂腰肌或肌腱损伤,髋屈痛,可伴血肿。|髂腰肌|髋屈痛|血肿
+muscle|gluteus-med|髋外展|MRI|degen|soft|lower|臀中肌肌腱病|Gluteus Medius Tendinopathy|mid|慢性·髋痛|臀中肌止点肌腱病或撕裂,侧卧痛。|止点病变|Trendelenburg|外展痛
+muscle|gluteus-min|髋|MRI|degen|soft|lower|臀小肌损伤|Gluteus Minimus Tear|mid|慢性·髋|臀小肌撕裂类似臀中肌,外侧髋痛。|小肌撕裂|外髋痛|MRI冠状
+muscle|piriformis|臀部|MRI|degen|soft|lower|梨状肌综合征|Piriformis Syndrome|low|慢性·神经|梨状肌压迫坐骨神经,臀痛放射下肢。|梨状肌|坐骨神经|臀痛
+muscle|snapping-hip|髋|US · MRI|degen|soft|lower|弹响髋|Snapping Hip|low|慢性·弹响|髂腰肌或 ITB 弹响,动态超声可见。|弹响|动态超声|ITB
+muscle|itb|膝外侧|MRI|degen|soft|lower|髂胫束摩擦综合征|IT Band Syndrome|low|慢性·跑步|膝外侧疼痛,髂胫束与外侧髁摩擦。|外侧膝痛|ITB增厚|跑步者
+muscle|patellar-tend|髌腱|US · MRI|degen|soft|lower|髌腱病|Patellar Tendinopathy|mid|慢性·跳跃|跳跃膝,髌腱近端增厚与信号异常。|髌腱增厚|跳跃膝|止点病
+muscle|biceps-fem|膝|MRI|degen|soft|lower|股二头肌损伤|Biceps Femoris Strain|mid|急性·腘绳|股二头肌远端或近端撕裂。|股二头|腘绳损伤|外后侧痛
+muscle|plantaris|小腿|MRI|degen|soft|lower|跖肌撕裂|Plantaris Tear|low|急性·伴随|跖肌细腱撕裂,可伴 ACL 损伤。|细腱撕裂|小腿痛|伴随ACL
+muscle|tib-post|足踝|MRI · US|degen|soft|lower|胫后肌腱病|Posterior Tibial Tendinopathy|mid|慢性·平足|胫后肌腱退变撕裂,成人获得性平足。|胫后腱|平足|内踝痛
+muscle|peroneal|外踝|MRI · US|degen|soft|lower|腓骨肌腱病|Peroneal Tendinopathy|mid|慢性·不稳|腓骨长短肌腱撕裂或脱位,外踝后痛。|腓骨腱|腱脱位|外踝痛
+muscle|fhl|踝|MRI|degen|soft|lower|拇长屈肌腱病|FHL Tendinopathy|low|慢性·舞蹈|拇长屈肌腱腱鞘炎,舞蹈员足。|FHL腱鞘|舞蹈员足|后踝痛
+muscle|fdl|足|MRI|degen|soft|lower|趾长屈肌腱病|FDL Tendinopathy|low|慢性·足底|趾长屈肌腱退变,足底内侧痛。|FDL|足底痛|腱鞘炎
+muscle|extensor|足背|US · MRI|degen|soft|lower|伸肌腱撕裂|Extensor Tendon Tear|mid|急性·外伤|足背伸肌腱撕裂,外伤或磨损。|伸肌腱|背侧肿胀|活动受限
+muscle|biceps-long|肩|MRI · US|degen|soft|upper|肱二头肌长头腱断裂|Biceps Long Head Rupture|mid|急性·弹响|长头腱断裂 Popeye 征,急性痛后缓解。|Popeye征|长头腱|弹响
+muscle|biceps-dist|肘|MRI|degen|soft|upper|肱二头肌腱远端断裂|Distal Biceps Rupture|mid|急性·屈曲|远端腱断裂,屈曲旋后无力,钩征消失。|钩征消失|屈曲无力|旋后弱
+muscle|triceps|肘|MRI|degen|soft|upper|肱三头肌腱断裂|Triceps Tendon Rupture|mid|急性·伸肘|伸肘装置断裂,外伤或类固醇。|伸肘断裂|骨化风险|外伤
+muscle|pec-major|胸肩|MRI|degen|soft|upper|胸大肌撕裂|Pectoralis Major Tear|mid|急性·健身|胸大肌肌腱撕裂,健身卧推损伤。|胸大肌|卧推伤|瘀斑
+muscle|lat-dorsi|腋背|MRI|degen|soft|upper|背阔肌撕裂|Latissimus Dorsi Tear|low|急性·运动|背阔肌肌腹或止点撕裂,少见。|背阔肌|运动伤|腋痛
+muscle|teres-major|腋|MRI|degen|soft|upper|大圆肌损伤|Teres Major Strain|low|急性·运动|大圆肌肌腹损伤,内旋痛。|大圆肌|内旋痛|肌腹水肿
+muscle|subscap|肩胛|MRI|degen|soft|upper|肩胛下肌撕裂|Subscapularis Tear|mid|慢性·肩|肩胛下肌全层或部分撕裂,内旋无力。|肩胛下肌|内旋弱|Lift-off
+muscle|supraspinatus|肩|MRI · US|degen|soft|upper|冈上肌肌腱病|Supraspinatus Tendinopathy|mid|慢性·肩|冈上肌退变或部分撕裂,肩峰下撞击。|冈上肌|撞击|肩峰下
+muscle|infraspinatus|肩|MRI|degen|soft|upper|冈下肌撕裂|Infraspinatus Tear|mid|慢性·外旋|冈下肌撕裂致外旋无力,与冈上肌并存。|冈下肌|外旋弱|后方撕裂
+muscle|teres-minor|肩|MRI|degen|soft|upper|小圆肌损伤|Teres Minor Tear|low|慢性·外旋|小圆肌撕裂,外旋无力,四肌中少见。|小圆肌|外旋|后方
+muscle|adhesive-caps|肩|MRI|degen|soft|upper|肩关节囊炎|Frozen Shoulder|mid|慢性·粘连|肩关节囊增厚粘连,分期炎症-冻结-解冻。|囊增厚|活动受限|冻结
+muscle|supraspinatus-calc|肩|X线 · US|degen|soft|upper|钙化性肌腱炎|Calcific Tendinitis|mid|急性·钙化|冈上肌腱内钙化沉积,急性剧痛期。|腱内钙化|急性痛|沉积期
+muscle|deltoid|肩|MRI|degen|soft|upper|三角肌撕裂|Deltoid Tear|low|急性·外伤|三角肌肌腹或止点撕裂,外伤少见。|三角肌|肌腹撕裂|外伤
+muscle|forearm-flex|前臂|MRI|degen|soft|upper|前臂屈肌群劳损|Forearm Flexor Strain|low|慢性·劳损|屈肌群过度使用,网球肘对侧少见。|屈肌群|劳损|前臂痛
+muscle|forearm-ext|前臂|MRI|degen|soft|upper|前臂伸肌群劳损|Forearm Extensor Strain|low|慢性·劳损|伸肌群劳损,与网球肘相关。|伸肌群|网球肘区|劳损
+muscle|tennis-elbow|肘外侧|US · MRI|degen|soft|upper|网球肘|Lateral Epicondylitis|low|慢性·劳损|伸肌总腱起点的退变微撕裂,外侧肘痛。|伸肌总腱|外侧痛|握力弱
+muscle|golfer-elbow|肘内侧|US · MRI|degen|soft|upper|高尔夫肘|Medial Epicondylitis|low|慢性·劳损|屈肌总腱起点退变,内侧肘痛。|屈肌总腱|内侧痛|投掷痛
+muscle|ulnar-neuritis|肘|MRI · US|degen|soft|upper|尺神经炎|Cubital Tunnel Syndrome|mid|慢性·神经|肘管尺神经受压,环指小指麻木。|尺神经|肘管|麻木
+muscle|radial-tunnel|前臂|MRI|degen|soft|upper|桡管综合征|Radial Tunnel Syndrome|low|慢性·神经|桡神经深支受压,前臂伸肌痛。|桡神经|深支|伸肌痛
+muscle|dequervain|腕桡|US · MRI|degen|soft|upper|德奎尔万腱鞘炎|de Quervain Tenosynovitis|low|慢性·腱鞘|拇短伸与拇长展肌腱鞘炎,Finkelstein 阳性。|第一腱鞘|Finkelstein|桡侧腕痛
+muscle|trigger-finger|手指|US|degen|soft|upper|扳机指|Trigger Finger|low|慢性·腱鞘|屈肌腱 A1 pulley 狭窄,指屈伸卡顿。|A1 pulley|卡顿|腱鞘增厚
+muscle|volar-plate|PIP|X线 · MRI|trauma|ligament|upper|掌侧板损伤|Volar Plate Injury|mid|急性·扭伤|指关节掌侧板撕裂,侧位片可见。|掌侧板|PIP扭伤|侧位片
+muscle|central-slip|伸指|MRI|trauma|ligament|upper|中央束损伤|Central Slip Injury|mid|急性·伸指|伸指装置中央束损伤,Boutonniere 风险。|中央束|伸指装置|Boutonniere
+muscle|mallet|DIP|X线|trauma|ligament|upper|槌状指|Mallet Finger|mid|急性·伸指|伸指肌腱止点撕脱, DIP 屈曲下垂。|DIP下垂|伸腱撕脱|骨性撕脱
+muscle|bunion|第一跖趾|X线 · MRI|degen|soft|lower|拇外翻|Hallux Valgus|low|慢性·畸形|第一跖趾关节外翻畸形,籽骨移位。|拇外翻|籽骨|骨赘
+muscle|mortons|足趾|MRI · US|degen|soft|lower|Morton 神经瘤|Morton Neuroma|low|慢性·神经|跖间神经瘤,第三间隙最常见,烧灼痛。|神经瘤|第三间隙|烧灼痛
+muscle|plantar-fasc|足底|US · MRI|degen|soft|lower|跖筋膜炎|Plantar Fasciitis|low|慢性·足跟|足底筋膜起点退变,晨起第一步痛。|筋膜增厚|跟骨刺|晨起痛
+muscle|tarsal-tunnel|内踝|MRI · US|degen|soft|lower|跗管综合征|Tarsal Tunnel Syndrome|mid|慢性·神经|胫神经跗管内受压,足底麻木。|胫神经|跗管|足底麻木
+muscle|sinus-tarsi|外踝|MRI|degen|soft|lower|窦道综合征|Sinus Tarsi Syndrome|mid|慢性·踝|距骨窦脂肪被纤维组织替代,外踝前痛。|窦道脂肪|纤维替代|外踝前痛
+muscle|os-trigonum|后踝|MRI · CT|degen|soft|lower|距骨后突/os trigonum|Os Trigonum Impingement|low|慢性·撞击|后踝撞击,跖屈痛,芭蕾/足球。|后突|跖屈痛|撞击
+muscle|stress-tib-ant|小腿|MRI|trauma|stress|lower|胫前肌综合征|Shin Splints / MTSS|mid|慢性·过劳|胫骨内侧骨膜水肿,跑步常见。|骨膜水肿|胫骨内侧|跑步
+muscle|compartment|小腿|MRI|trauma|stress|lower|筋膜室综合征|Compartment Syndrome|high|急性·危重|筋膜室内压升高,剧痛被动牵拉,急症。|室压升高|被动痛|急症
+muscle|myositis|肌肉|MRI|infl|infect-bone|whole|感染性肌炎|Pyomyositis|high|急性·感染|肌肉脓肿,发热,免疫低下风险。|肌脓肿|发热|强化环
+muscle|rhabdo-trauma|肌肉|MRI|trauma|stress|whole|创伤性横纹肌溶解|Traumatic Rhabdomyolysis|high|急性·肌坏死|挤压伤后肌坏死水肿,肌红蛋白尿风险。|肌水肿|挤压伤|CK升高
+muscle|denervation|肩髋|MRI|degen|soft|whole|神经源性肌萎缩|Denervation Atrophy|mid|慢性·神经|慢性神经损伤致肌肉脂肪浸润萎缩。|脂肪浸润|肌萎缩|神经损伤
+muscle|fibromyalgia|全身|临床|degen|soft|whole|纤维肌痛|Fibromyalgia|low|慢性·广泛痛|广泛软组织痛伴压痛点多,影像多正常。|广泛压痛|睡眠障碍|影像阴性
+muscle|tendon-xanthoma|跟腱|MRI|degen|soft|lower|腱黄瘤|Tendon Xanthoma|low|代谢·高脂|家族性高胆固醇血症跟腱增厚黄瘤。|跟腱增厚|黄瘤|高脂血症
+muscle|quadriceps-contusion|大腿|MRI|trauma|stress|lower|股四头肌挫伤|Quadriceps Contusion|mid|急性·挫伤|直接撞击股四头肌血肿,骨化性肌炎风险。|肌内血肿|挫伤|骨化风险
+muscle|rectus-femoris|髋|MRI|degen|soft|lower|股直肌损伤|Rectus Femoris Injury|mid|急性·髋屈|直头或折返头撕裂,踢球损伤。|股直肌|折返头|髋屈痛
+muscle|sartorius|大腿|MRI|degen|soft|lower|缝匠肌损伤|Sartorius Strain|low|急性·运动|缝匠肌肌腹拉伤,少见。|缝匠肌|拉伤|浅表
+joint|si-dysfunction|骶髂|MRI|degen|spine|pelvis|骶髂关节功能障碍|SI Joint Dysfunction|low|慢性·腰痛|骶髂关节源性腰痛,炎症与机械性鉴别。|骶髂痛|Gaenslen|注射诊断
+joint|spondylolysis|腰椎|CT · MRI|degen|spine|spine|椎弓峡部裂|Spondylolysis|mid|慢性·青少年|椎弓峡部应力性缺损,青少年运动员腰痛。|峡部裂|pars defect|应力性
+joint|spondylolisthesis|腰椎|X线 · MRI|degen|spine|spine|腰椎滑脱|Spondylolisthesis|mid|慢性·不稳|椎体前移,Meyerding 分级,可伴神经压迫。|滑脱|Meyerding|神经压迫
+joint|facet-arthropathy|腰椎|CT · MRI|degen|spine|spine|小关节病变|Facet Arthropathy|low|慢性·小关节|小关节增生硬化,可致椎管/孔狭窄。|小关节增生|硬化|孔狭窄
+joint|schmorl|椎体|MRI|degen|disc|spine|Schmorl 结节|Schmorl Node|low|慢性·终板|髓核疝入椎体终板,上下终板凹陷。|终板凹陷|髓核疝|偶发
+joint|modic|腰椎|MRI|degen|disc|spine|Modic 终板改变|Modic Endplate Changes|low|慢性·退变|终板骨髓水肿/脂肪/硬化改变,与腰痛相关。|Modic I/II|终板水肿|腰痛
+joint|thoracic-disc|胸椎|MRI|degen|disc|spine|胸椎间盘突出|Thoracic Disc Herniation|mid|慢性·少见|胸椎间盘突出少见,可致脊髓病。|胸椎间盘|脊髓压迫|少见
+joint|syringomyelia|脊髓|MRI|degen|spine|spine|脊髓空洞症|Syringomyelia|mid|慢性·脊髓|脊髓中央管扩张,可伴 Chiari。|中央管扩张|Chiari|感觉分离
+joint|chiari|颅颈|MRI|degen|spine|spine|Chiari 畸形|Chiari Malformation|mid|先天·颅颈|小脑扁桃体下疝,可继发空洞。|扁桃体下疝|枕大池|空洞
+joint|atlantoaxial|寰枢|CT · MRI|ped|congenital|spine|寰枢不稳|Atlantoaxial Instability|high|先天·不稳|类风湿/外伤/先天致寰枢脱位,脊髓风险。|寰枢脱位|ADI增宽|脊髓受压
+joint|odontoid-hypo|C2|CT|ped|congenital|spine|齿状突发育不全|Odontoid Hypoplasia|high|先天·不稳|齿状突发育异常致寰枢不稳。|齿状突缺如|不稳|先天
+joint|discitis|椎间隙|MRI|infl|infect-spine|spine|椎间盘炎|Discitis|high|急性·感染|椎间盘与终板炎症,儿童与术后。|终板破坏|间盘强化|感染
+joint|epidural-abscess|椎管|MRI|infl|infect-spine|spine|硬膜外脓肿|Spinal Epidural Abscess|high|急性·危重|椎管内硬膜外脓肿,脊髓压迫急症。|硬膜外|脓肿|脊髓压迫
+joint|meniscoid|颈椎|MRI|degen|spine|spine|颈椎间盘疝|Cervical Disc Protrusion|mid|慢性·根病|颈椎间盘突出压迫神经根或脊髓。|颈椎突出|根性痛|脊髓型
+joint|oss-flavum|腰椎|CT · MRI|degen|spine|spine|黄韧带骨化|Ossification of Ligamentum Flavum|mid|慢性·骨化|黄韧带骨化致椎管狭窄,亚洲人群。|OLF|椎管狭窄|亚洲
+joint|opll|颈椎|CT · MRI|degen|spine|spine|后纵韧带骨化|OPLL|mid|慢性·骨化|后纵韧带连续骨化,脊髓压迫风险。|OPLL|脊髓压迫|颈椎
+joint|sacroiliitis-infl|骶髂|MRI|infl|spondylo|pelvis|炎性骶髂关节炎|Inflammatory Sacroiliitis|mid|炎症·骶髂|强直性脊柱炎等炎性骶髂关节炎,MRI 水肿。|骨髓水肿|侵蚀|双侧对称
+joint|pubic-symphysis|耻骨联合|MRI · X线|degen|oa|pelvis|耻骨联合病变|Pubic Symphysis Disorder|low|慢性·耻骨|运动员耻骨炎或产后耻骨联合分离。|耻骨炎|联合分离|运动员
+joint|hip-labral|髋关节|MRI|degen|impingement|lower|髋盂唇撕裂|Acetabular Labral Tear|mid|慢性·髋|髋盂唇撕裂,髋痛卡顿,FAI 相关。|盂唇撕裂|髋痛|FAI
+joint|hip-synovitis|髋关节|MRI · US|infl|infect-joint|lower|髋关节滑膜炎|Hip Synovitis|mid|炎症·滑膜|一过性髋关节滑膜炎(儿童)或炎性滑膜炎。|关节积液|滑膜增厚|儿童跛行
+joint|loose-body-knee|膝关节|X线 · MRI|degen|oa|lower|膝关节游离体|Knee Loose Bodies|low|慢性·机械|关节内游离体致交锁,骨软骨或滑膜来源。|游离体|交锁|关节内
+joint|plica|膝关节|MRI|degen|soft|lower|膝滑膜皱襞综合征|Plica Syndrome|low|慢性·皱襞|滑膜皱襞肥厚嵌顿,前膝痛。|皱襞肥厚|前膝痛|屈伸痛
+joint|patellofemoral|髌股|MRI · CT|degen|oa|lower|髌股关节病|Patellofemoral Syndrome|mid|慢性·髌股|髌股关节软骨退变,青少年/女性膝前痛。|髌股间隙|软骨软化|膝前痛
+joint|osgood|胫骨结节|X线 · MRI|ped|epiphysis|lower|Osgood-Schlatter 病|Osgood-Schlatter|low|儿童·附着点|胫骨结节附着点炎症,青少年运动。|结节隆起|附着点|青少年
+joint|sinding|髌骨|X线 · MRI|ped|epiphysis|lower|Sinding-Larsen 病|Sinding-Larsen-Johansson|low|儿童·附着点|髌骨下端附着点病变,类似 OSD。|髌骨下端|附着点|青少年
+joint|blount|胫骨|X线|ped|congenital|lower|Blount 病|Blount Disease|mid|儿童·内翻|胫骨近端生长板内侧受累,胫骨内翻。|胫骨内翻|生长板|肥胖儿童
+joint|rickets|下肢|X线|ped|congenital|lower|佝偻病|Rickets|mid|儿童·代谢|维生素 D 缺乏致生长板增宽、内翻畸形。|生长板增宽|内翻|杯口征
+joint|acetabular-dysplasia|髋|X线 · MRI|ped|congenital|lower|髋臼发育不良(成人)|Adult Hip Dysplasia|mid|先天·成人|成人髋臼覆盖不足继发 OA,CE 角小。|CE角小|覆盖不足|继发OA
+joint|transient-osteoporosis|髋|MRI|degen|avn|lower|一过性骨质疏松|Transient Osteoporosis|mid|急性·可逆|髋部一过性骨髓水肿,中年男性/孕妇。|弥漫水肿|可逆|无塌陷
+joint|bone-marrow-edema|髋膝|MRI|degen|avn|lower|骨髓水肿综合征|Bone Marrow Edema Syndrome|mid|急性·水肿|局灶骨髓水肿,可继发于创伤或自发。|骨髓水肿|T2高|自发可逆
+joint|subchondral-insufficiency|膝|MRI|degen|avn|lower|软骨下功能不全骨折|Subchondral Insufficiency Fx|mid|急性·老年|老年骨质疏松软骨下微骨折,膝髋好发。|软骨下骨折|老年|水肿
+joint|osteonecrosis-knee|股骨髁|MRI|degen|avn|lower|股骨髁坏死|Spontaneous Osteonecrosis of Knee|high|急性·SONK|老年突发膝痛,股骨髁软骨下坏死。|SONK|股骨髁|突发膝痛
+joint|osteochondritis|股骨髁|MRI|ped|epiphysis|lower|剥脱性骨软骨炎|Osteochondritis Dissecans|mid|儿童·关节内|青少年股骨髁或肱骨滑车骨软骨病变,可游离。|骨软骨缺损|关节内|青少年
+joint|meniscal-cyst|膝|MRI · US|degen|soft|lower|半月板囊肿|Meniscal Cyst|low|慢性·囊肿|半月板撕裂相关囊肿,外侧多见。|半月板囊肿|外侧|撕裂相关
+joint|discoid-meniscus|膝|MRI|ped|congenital|lower|盘状半月板|Discoid Meniscus|mid|先天·半月板|半月板体部异常增宽,亚洲人群多见。|体部增宽|Wrisberg|亚洲
+joint|acl-ganglion|膝|MRI|degen|ligament|lower|ACL 腱鞘囊肿|ACL Ganglion Cyst|low|慢性·囊肿|ACL 旁囊性病变,可致伸屈受限。|ACL旁囊肿|囊性|受限
+joint|shoulder-instability|肩|MRI|trauma|dislocation|upper|肩关节不稳|Shoulder Instability|mid|慢性·复发|复发性肩脱位或松弛,骨性/软组织 Bankart。|复发脱位|盂唇缺损|Hill-Sachs
+joint|slap|肩|MRI|trauma|ligament|upper|SLAP 损伤|SLAP Tear|mid|急性·盂唇|上盂唇前后撕裂,投掷运动员。|上盂唇|SLAP|投掷痛
+joint|ac-joint|肩锁|X线 · MRI|degen|oa|upper|肩锁关节病|AC Joint Arthropathy|low|慢性·肩锁|肩锁关节退变或分离,举重运动员。|肩锁间隙|骨赘|分离
+joint|glenohumeral-oa|肩|X线 · MRI|degen|oa|upper|盂肱关节骨关节炎|Glenohumeral OA|mid|慢性·肩|盂肱关节间隙变窄,肩袖撕裂后关节炎。|间隙变窄|cuff arthropathy|骨赘
+joint|elbow-oa|肘|X线|degen|oa|upper|肘关节骨关节炎|Elbow Osteoarthritis|mid|慢性·肘|肘关节间隙变窄、骨赘与游离体。|骨赘|游离体|活动受限
+joint|radioulnar-synostosis|前臂|X线 · CT|ped|congenital|upper|桡尺骨融合|Radioulnar Synostosis|mid|先天·融合|先天性桡尺骨近端融合,旋转受限。|骨融合|旋转受限|先天
+joint|madelung|腕|X线 · MRI|ped|congenital|upper|Madelung 畸形|Madelung Deformity|mid|先天·腕|桡骨远端生长异常致腕尺偏,女青少年。|尺偏|桡骨短|女青少年
+joint|kienbock|月骨|MRI · CT|degen|avn|upper|Kienböck 病|Kienböck Disease|mid|慢性·月骨|月骨缺血坏死,腕痛活动受限。|月骨塌陷|缺血坏死|腕痛
+joint|preiser|舟骨|MRI|degen|avn|upper|Preiser 病|Preiser Disease|mid|慢性·舟骨|舟骨近端缺血坏死,成人。|舟骨近端|AVN|腕痛
+joint|tfcc-degen|腕|MRI|degen|soft|upper|TFCC 退变|TFCC Degeneration|low|慢性·尺侧|三角纤维软骨退变撕裂,尺侧腕痛。|TFCC退变|尺侧痛|尺骨阳性变异

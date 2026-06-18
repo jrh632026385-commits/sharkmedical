@@ -200,6 +200,29 @@ export async function deleteUserById(id) {
   return publicUser(target);
 }
 
+export async function updateUserRole(id, role) {
+  const sid = String(id || '').trim();
+  if (!sid || sid === 'env-admin') {
+    throw new Error('该账号无法修改');
+  }
+  const userRole = role === 'admin' ? 'admin' : 'user';
+
+  const data = await readUsersData();
+  const user = data.users.find(u => u.id === sid);
+  if (!user) {
+    throw new Error('用户不存在');
+  }
+  if (user.role === 'admin' && userRole === 'user') {
+    const adminCount = data.users.filter(u => u.role === 'admin').length;
+    if (adminCount <= 1) {
+      throw new Error('至少保留一名管理员，无法降级');
+    }
+  }
+  user.role = userRole;
+  await writeUsersData(data);
+  return publicUser(user);
+}
+
 export async function authenticateUser(username, password, bootstrapUsername, bootstrapPassword) {
   const user = await findUserByUsername(username);
   if (user && verifyUserPassword(user, password)) return user;
