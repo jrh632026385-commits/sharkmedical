@@ -21,8 +21,11 @@ export function createApp() {
   const app = express();
   const sessionMiddleware = createSessionMiddleware(sessionSecret);
 
+  // Vercel / 反向代理后需信任 X-Forwarded-Proto，否则 secure Cookie 可能无法写入
+  app.set('trust proxy', 1);
+
   app.use(express.json({ limit: '12mb' }));
-  app.use('/api', sessionMiddleware);
+  for (const mw of sessionMiddleware) app.use('/api', mw);
   app.use('/api/auth', createAuthRouter({ bootstrapUsername: username, bootstrapPassword: password }));
   app.use('/api/content', createContentRouter());
 

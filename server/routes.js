@@ -11,14 +11,27 @@ import {
 import { canPersistWrites, isKvEnabled } from './lib/kv.js';
 
 export function createSessionMiddleware(sessionSecret) {
-  return cookieSession({
+  const secure = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+  const middlewares = [];
+
+  // Vercel 经 HTTPS 边缘代理转发，需标记为 secure 请求，否则 cookie-session 不会写入 Cookie
+  if (process.env.VERCEL) {
+    middlewares.push((req, _res, next) => {
+      if (req.headers['x-forwarded-proto'] === 'https') req.secure = true;
+      next();
+    });
+  }
+
+  middlewares.push(cookieSession({
     name: 'shark.sid',
     keys: [sessionSecret],
     maxAge: 14 * 24 * 60 * 60 * 1000,
     httpOnly: true,
     sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production' || !!process.env.VERCEL
-  });
+    secure
+  }));
+
+  return middlewares;
 }
 
 export function requireAuth(req, res, next) {
@@ -29,8 +42,14 @@ export function requireAuth(req, res, next) {
 }
 
 export function requireAdmin(req, res, next) {
-  if (req.session?.role === 'admin') return next();
-  res.status(403).json({ ok: false, error: '需要管理员权限' });
+  if (!req.session?.userId) {
+    return res.status(401).json({ ok: false, error: '登录已过期，请重新登录管理员账号' });
+  }
+  if (req.session.role === 'admin') return next();
+  res.status(403).json({
+    ok: false,
+    error: '需要管理员权限：当前为普通用户账号，请退出后用管理员账号登录（见 .env 中 ADMIN_USERNAME / ADMIN_PASSWORD）'
+  });
 }
 
 function setSessionUser(req, user) {

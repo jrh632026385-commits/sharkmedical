@@ -249,6 +249,10 @@ tr:last-child td{border-bottom:none}
 
     <section class="panel" id="panel-settings">
       <div class="topbar"><h2>系统</h2></div>
+      <div class="card" id="deployStatusCard">
+        <h3>部署状态</h3>
+        <div id="deployStatus" class="hint">加载中…</div>
+      </div>
       <div class="card">
         <h3>数据文件</h3>
         <p class="hint">当前后台读写 <code>data/site-data.json</code>。如需从 index.html 重新导出内置数据，在项目目录运行：</p>
@@ -309,28 +313,63 @@ async function api(url,opts){
   return data;
 }
 
+async function requireAdminSession(){
+  const me=await api('/api/auth/me');
+  if(!me.user?.isAdmin){
+    const err=new Error(me.user
+      ?'当前账号不是管理员，无法保存内容。请用管理员账号登录（.env 中的 ADMIN_USERNAME / ADMIN_PASSWORD）。'
+      :'未检测到登录状态，请重新登录管理员账号。');
+    err.code=me.user?'not-admin':'not-logged-in';
+    throw err;
+  }
+  return me.user;
+}
+
+function renderDeployStatus(s){
+  const el=$('deployStatus');
+  if(!el||!s)return;
+  const lines=[
+    ['平台',s.vercel?'Vercel':'本地/其他'],
+    ['在线保存',s.persist?'已启用（Redis/KV 已连接）':'未启用 — Vercel 需连接 Upstash Redis 才能保存'],
+    ['Redis/KV',s.kv?'已连接':'未连接']
+  ];
+  el.innerHTML=lines.map(([k,v])=>'<p><strong>'+k+'：</strong>'+v+'</p>').join('')
+    +(s.vercel&&!s.persist?'<p style="margin-top:10px;color:var(--amber)">Vercel 控制台 → Storage → 安装 Upstash Redis → Connect → Redeploy</p>':'');
+}
+
+async function loadDeployStatus(){
+  try{
+    const s=await api('/api/auth/status');
+    renderDeployStatus(s);
+  }catch(e){
+    const el=$('deployStatus');
+    if(el)el.textContent='无法读取部署状态：'+e.message;
+  }
+}
+
 async function checkAuth(){
   try{
-    const me=await api('/api/auth/me');
-    if(!me.user?.isAdmin){
-      $('loginView').style.display='flex';
-      $('appView').classList.remove('ready');
-      const hint=$('loginView').querySelector('.hint');
-      if(hint)hint.textContent='当前账号无管理员权限，请使用管理员账号登录。';
-      return;
-    }
-    showApp(me.user.username);
+    const user=await requireAdminSession();
+    showApp(user);
     await loadData();
   }catch(e){
     $('loginView').style.display='flex';
     $('appView').classList.remove('ready');
+    const hint=$('loginView').querySelector('.hint');
+    if(hint){
+      hint.textContent=e.code==='not-admin'
+        ?'当前为普通用户账号，无内容编辑权限。请使用管理员账号登录（不是注册页创建的账号）。'
+        :'请使用管理员账号登录。默认账号见 .env.example（admin / shark2024）。';
+    }
   }
 }
 
-function showApp(username){
+function showApp(user){
+  const u=typeof user==='string'?{username:user,role:'admin'}:user;
   $('loginView').style.display='none';
   $('appView').classList.add('ready');
-  $('adminUser').textContent='已登录：'+username;
+  const roleLabel=u.role==='admin'?'管理员':'普通用户';
+  $('adminUser').textContent='已登录：'+u.username+'（'+roleLabel+'）';
 }
 
 async function loadData(){
@@ -918,6 +957,7 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
     if(btn.dataset.panel==='users'){
       try{await loadUsers();}catch(err){toast(err.message);}
     }
+    if(btn.dataset.panel==='settings')loadDeployStatus();
   });
 });
 
@@ -925,14 +965,11 @@ $('loginForm').addEventListener('submit',async e=>{
   e.preventDefault();
   try{
     const fd=new FormData(e.target);
-    const data=await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:fd.get('username'),password:fd.get('password')})});
-    if(!data.user?.isAdmin){
-      toast('该账号不是管理员，无法进入后台');
-      return;
-    }
-    showApp(data.user.username);
+    await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:fd.get('username'),password:fd.get('password')})});
+    const user=await requireAdminSession();
+    showApp(user);
     await loadData();
-    toast('登录成功');
+    toast('管理员登录成功');
   }catch(err){toast(err.message);}
 });
 
