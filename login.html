@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>登录 · 鲨鱼医学</title>
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="server-notice" id="serverNotice" hidden>
+    <strong>需要先启动本地服务</strong>
+    <p>登录功能不能通过双击 HTML 文件使用。请双击运行项目文件夹里的 <code>启动后台.bat</code>，然后在浏览器打开：</p>
+    <p><a href="http://localhost:3000/login.html">http://localhost:3000/login.html</a></p>
+  </div>
+  <div class="auth-card">
+    <h1>登录鲨鱼医学</h1>
+    <p class="sub">登录后可同步学习进度；管理员可进入内容后台</p>
+    <form id="loginForm">
+      <div class="field">
+        <label for="username">用户名</label>
+        <input id="username" name="username" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="password">密码</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn" type="submit">登录</button>
+      <p class="msg" id="msg" hidden></p>
+    </form>
+    <p class="auth-links">还没有账号？<a href="register.html">立即注册</a></p>
+    <a class="back-home" href="/">← 返回首页</a>
+  </div>
+  <script src="auth.js"></script>
+  <script>
+    const msg = document.getElementById('msg');
+    const serverNotice = document.getElementById('serverNotice');
+    if (location.protocol === 'file:') {
+      serverNotice.hidden = false;
+      document.body.classList.add('has-notice');
+    }
+    authApi('/api/auth/me').then(() => {
+      const next = new URLSearchParams(location.search).get('next');
+      location.href = next && next.startsWith('/') ? next : '/';
+    }).catch(() => {});
+
+    document.getElementById('loginForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      msg.hidden = false;
+      try {
+        const fd = new FormData(e.target);
+        const data = await authApi('/api/auth/login', {
+          method: 'POST',
+          body: JSON.stringify({
+            username: fd.get('username'),
+            password: fd.get('password')
+          })
+        });
+        showMsg(msg, '登录成功，正在跳转…', true);
+        setTimeout(() => redirectAfterLogin(data.user), 400);
+      } catch (err) {
+        showMsg(msg, err.message, false);
+      }
+    });
+  </script>
+</body>
+</html>

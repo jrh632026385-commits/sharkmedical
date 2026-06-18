@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#04080f">
+<meta name="description" content="鲨鱼医学 · 50 种骨科疾病影像图谱 · 分类浏览与多模态讲解">
+<title>疾病影像图谱 · 鲨鱼医学</title>
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<style>
+html,body{margin:0;height:100%;background:#04080f;overflow:hidden}
+iframe{display:block;width:100%;height:100%;border:0;background:#04080f}
+</style>
+</head>
+<body>
+<iframe id="atlasFrame" title="疾病影像图谱" allow="fullscreen"></iframe>
+<script>
+(function(){
+  var p=new URLSearchParams(location.search);
+  p.set('embed','atlas');
+  document.getElementById('atlasFrame').src='index.html?'+p.toString();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>注册 · 鲨鱼医学</title>
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="auth-card">
+    <h1>注册账号</h1>
+    <p class="sub">创建账号以使用鲨鱼医学学习平台（注册为普通学员账号）</p>
+    <p class="sub" id="kvHint" hidden style="color:#fcd34d;margin-top:-12px"></p>
+    <form id="registerForm">
+      <div class="field">
+        <label for="username">用户名</label>
+        <input id="username" name="username" autocomplete="username" required minlength="3" maxlength="32" placeholder="3–32 位，支持中文/字母/数字">
+      </div>
+      <div class="field">
+        <label for="email">邮箱（选填）</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="用于找回与通知">
+      </div>
+      <div class="field">
+        <label for="password">密码</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" required minlength="6" placeholder="至少 6 位">
+      </div>
+      <div class="field">
+        <label for="password2">确认密码</label>
+        <input id="password2" name="password2" type="password" autocomplete="new-password" required minlength="6">
+      </div>
+      <button class="btn" type="submit">注册并登录</button>
+      <p class="msg" id="msg" hidden></p>
+    </form>
+    <p class="auth-links">已有账号？<a href="login.html">去登录</a></p>
+    <a class="back-home" href="/">← 返回首页</a>
+  </div>
+  <script src="auth.js"></script>
+  <script>
+    const msg = document.getElementById('msg');
+    fetch('/api/auth/status').then(r=>r.json()).then(s=>{
+      if(s.vercel&&!s.persist){
+        const el=document.getElementById('kvHint');
+        if(el){
+          el.hidden=false;
+          el.textContent='当前部署未连接 Vercel KV，暂无法注册新用户。管理员请用环境变量账号登录。';
+        }
+      }
+    }).catch(()=>{});
+    document.getElementById('registerForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      msg.hidden = false;
+      const fd = new FormData(e.target);
+      const pass = String(fd.get('password') || '');
+      const pass2 = String(fd.get('password2') || '');
+      if (pass !== pass2) {
+        showMsg(msg, '两次输入的密码不一致', false);
+        return;
+      }
+      try {
+        const data = await authApi('/api/auth/register', {
+          method: 'POST',
+          body: JSON.stringify({
+            username: fd.get('username'),
+            email: fd.get('email'),
+            password: pass
+          })
+        });
+        showMsg(msg, '注册成功，正在进入首页…', true);
+        setTimeout(() => redirectAfterLogin(data.user), 500);
+      } catch (err) {
+        showMsg(msg, err.message, false);
+      }
+    });
+  </script>
+</body>
+</html>

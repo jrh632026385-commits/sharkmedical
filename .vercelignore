@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.local
+*.log
+data/*.tmp
+server
+scripts
+启动后台.bat
+发布说明.txt
+netlify.toml

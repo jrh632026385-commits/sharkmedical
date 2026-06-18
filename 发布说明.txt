@@ -1,0 +1,45 @@
+鲨鱼医学 · Netlify 发布包
+
+【发布步骤】
+1. 打开 https://app.netlify.com 并登录
+2. 将本文件夹 shark medical 整个拖入 Netlify 页面
+   或 zip 压缩后上传
+3. 等待部署完成，访问 https://sharkmedical.netlify.app/
+
+【说明】
+· 影像从 Wikimedia 加载，需联网
+· 更新网站后重新部署即可
+
+【文件夹内容】
+· index.html              首页（平台介绍）
+· atlas.html              疾病影像图谱（独立页面）
+· image-attrib-registry.js 图片署名数据
+· data/site-data.json     可编辑站点数据（后台保存后生成）
+· admin/                  内容管理后台页面
+· server/                 本地 Node 后台服务
+· icons/icon.svg          站点矢量图标
+· icons/make-icons.html   浏览器导出 PNG（可选）
+· netlify.toml            Netlify 配置
+
+【内容后台 · 本地使用】
+1. 双击「启动后台.bat」（或：npm install && npm run extract && npm run dev）
+2. 前台 http://localhost:3000/ · 登录 http://localhost:3000/login.html · 注册 /register.html
+3. 后台 http://localhost:3000/admin/（仅管理员）
+4. 默认管理员：admin / shark2024（首次启动写入 data/users.json）
+5. 普通用户可在网站注册；管理员登录后导航栏显示「管理后台」
+
+【Vercel 部署】详见项目内 VERCEL.md
+
+1. GitHub 导入 Vercel，环境变量设置 ADMIN_USERNAME / ADMIN_PASSWORD / SESSION_SECRET
+2. 管理员用环境变量账号登录，可进 /admin/
+3. 若要线上注册与后台保存，需在 Vercel 连接 KV 存储
+4. 或本地改 data/site-data.json 后 git push 触发重新部署
+
+【Netlify 部署】
+· 静态页仍可直接拖文件夹部署
+· 若使用后台改过内容，请确保 data/site-data.json 一并上传，前台会优先加载
+· Netlify 上无法运行 Node 后台；内容编辑请在本地完成后上传 JSON
+
+【更新网站】
+修改桌面主 HTML 后，复制到本文件夹 index.html，再重新拖入 Netlify。
+若用后台改内容，可只更新 data/site-data.json，无需改 HTML。

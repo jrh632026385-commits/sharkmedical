@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鲨鱼医学 · 内容后台</title>
+<style>
+:root{
+  --abyss:#04080f;--deep:#0b1422;--line:rgba(127,212,232,.14);
+  --teal:#2dd4bf;--bone:#f3efe6;--muted:#8395ab;--danger:#e8455f;
+  --sans:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--abyss);color:var(--bone);min-height:100vh}
+a{color:var(--teal);text-decoration:none}
+button,input,select,textarea{font:inherit}
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.login-card{width:min(420px,100%);padding:32px 28px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(165deg,#0b1422,#070d18)}
+.login-card h1{font-size:1.35rem;margin-bottom:6px}
+.login-card p{color:var(--muted);font-size:.88rem;margin-bottom:24px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:6px}
+.field input,.field select,.field textarea{
+  width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;
+  background:#070d18;color:var(--bone);
+}
+.field textarea{min-height:88px;resize:vertical;line-height:1.55}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:10px 18px;border-radius:8px;border:1px solid transparent;cursor:pointer;
+  background:var(--teal);color:#041018;font-weight:600;
+}
+.btn:hover{filter:brightness(1.05)}
+.btn.secondary{background:transparent;border-color:var(--line);color:var(--bone)}
+.btn.danger{background:transparent;border-color:rgba(232,69,95,.45);color:#fca5a5}
+.btn.sm{padding:7px 12px;font-size:.82rem}
+.app{display:none;min-height:100vh}
+.app.ready{display:grid;grid-template-columns:220px 1fr}
+.sidebar{
+  border-right:1px solid var(--line);padding:20px 14px;background:#070d18;
+  position:sticky;top:0;height:100vh;overflow:auto;
+}
+.brand{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.brand-sub{font-size:.68rem;color:var(--teal);letter-spacing:1px;margin-bottom:22px}
+.nav-btn{
+  width:100%;text-align:left;padding:11px 12px;margin-bottom:6px;border-radius:8px;
+  border:1px solid transparent;background:transparent;color:var(--muted);cursor:pointer;
+}
+.nav-btn.active,.nav-btn:hover{color:var(--bone);border-color:var(--line);background:rgba(45,212,191,.06)}
+.sidebar-foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted)}
+.main{padding:22px 24px 40px;overflow:auto}
+.topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.topbar h2{font-size:1.25rem}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.panel{display:none}
+.panel.active{display:block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:22px}
+.stat{padding:16px;border:1px solid var(--line);border-radius:12px;background:rgba(11,20,34,.55)}
+.stat strong{display:block;font-size:1.5rem;color:var(--teal);margin-bottom:4px}
+.stat span{font-size:.78rem;color:var(--muted)}
+.table-wrap{border:1px solid var(--line);border-radius:12px;overflow:auto;background:rgba(11,20,34,.35)}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:500;background:rgba(4,8,15,.65);position:sticky;top:0}
+tr:last-child td{border-bottom:none}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.72rem;letter-spacing:.3px}
+.badge.admin{background:rgba(45,212,191,.14);color:var(--teal);border:1px solid rgba(45,212,191,.25)}
+.badge.user{background:rgba(127,212,232,.08);color:var(--muted);border:1px solid var(--line)}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.toolbar input,.toolbar select{
+  padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#070d18;color:var(--bone);
+}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{padding:16px;border:1px solid var(--line);border-radius:12px;background:rgba(11,20,34,.35);margin-bottom:12px}
+.card h3{font-size:.95rem;margin-bottom:10px}
+.gal-preview-wrap{
+  margin-bottom:14px;border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  background:#070d18;min-height:140px;display:flex;align-items:center;justify-content:center;
+}
+.gal-preview-wrap img{
+  display:block;width:100%;max-height:280px;object-fit:contain;background:radial-gradient(circle at 50% 45%,rgba(16,39,63,.85),rgba(5,10,20,.95));
+}
+.gal-preview-wrap.empty img,.gal-preview-wrap.err img{display:none}
+.gal-preview-ph{color:var(--muted);font-size:.78rem;padding:28px 16px;text-align:center;line-height:1.55}
+.gal-preview-wrap:not(.empty):not(.err) .gal-preview-ph{display:none}
+.gal-preview-wrap.err .gal-preview-ph{color:#fca5a5}
+.hint{font-size:.78rem;color:var(--muted);line-height:1.6;margin-top:10px}
+.toast{
+  position:fixed;right:18px;bottom:18px;z-index:99;padding:12px 16px;border-radius:10px;
+  background:#0e1a2c;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.45);
+  opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none;
+}
+.toast.show{opacity:1;transform:none}
+.modal{
+  position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(2,5,10,.72);backdrop-filter:blur(4px);
+}
+.modal.open{display:flex}
+.modal-box{
+  width:min(720px,100%);max-height:88vh;overflow:auto;padding:22px;border:1px solid var(--line);
+  border-radius:14px;background:linear-gradient(180deg,#0e1a2c,#070d18);
+}
+.modal-box.wide{width:min(980px,100%)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.modal-head h3{font-size:1.05rem}
+.modal-section{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.modal-section h4{font-size:.92rem;margin-bottom:8px;color:var(--teal)}
+.modal-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.disease-thumb{width:72px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#070d18;display:block}
+.disease-thumb-ph{font-size:.7rem;color:var(--muted)}
+.table-actions{display:flex;flex-wrap:wrap;gap:6px}
+.combo-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.combo-row .combo-pick{
+  flex:0 0 min(180px,100%);padding:9px 10px;border:1px solid var(--line);border-radius:8px;
+  background:#070d18;color:var(--bone);
+}
+.combo-row .combo-input{flex:1;min-width:min(100%,140px)}
+.combo-save{margin-top:6px}
+.field-combo .combo-hint{font-size:.72rem;color:var(--muted);margin-top:5px}
+@media(max-width:860px){
+  .app.ready{grid-template-columns:1fr}
+  .sidebar{position:relative;height:auto}
+  .grid-2{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="login-wrap" id="loginView">
+  <form class="login-card" id="loginForm">
+    <h1>鲨鱼医学 · 内容后台</h1>
+    <p>管理疾病图谱、影像图库与胶片库内容</p>
+    <div class="field"><label for="username">用户名</label><input id="username" name="username" autocomplete="username" required></div>
+    <div class="field"><label for="password">密码</label><input id="password" name="password" type="password" autocomplete="current-password" required></div>
+    <button class="btn" type="submit" style="width:100%;margin-top:8px">登录</button>
+    <p class="hint">需使用<strong>管理员账号</strong>登录。默认见 <code>.env.example</code>，或先在 <a href="/login.html">网站登录页</a> 注册普通账号。</p>
+  </form>
+</div>
+
+<div class="app" id="appView">
+  <aside class="sidebar">
+    <div class="brand">鲨鱼医学</div>
+    <div class="brand-sub">CONTENT ADMIN</div>
+    <button class="nav-btn active" data-panel="dashboard">概览</button>
+    <button class="nav-btn" data-panel="diseases">疾病条目</button>
+    <button class="nav-btn" data-panel="galleries">影像图库</button>
+    <button class="nav-btn" data-panel="films">胶片库</button>
+    <button class="nav-btn" data-panel="users">用户管理</button>
+    <button class="nav-btn" data-panel="settings">系统</button>
+    <div class="sidebar-foot">
+      <div id="adminUser"></div>
+      <div id="updatedAt" style="margin-top:8px"></div>
+      <button class="btn secondary sm" id="logoutBtn" style="margin-top:12px;width:100%">退出登录</button>
+    </div>
+  </aside>
+  <main class="main">
+    <section class="panel active" id="panel-dashboard">
+      <div class="topbar"><h2>概览</h2><div class="actions"><a class="btn secondary" href="/" target="_blank">打开前台</a></div></div>
+      <div class="stats" id="stats"></div>
+      <div class="card">
+        <h3>使用说明</h3>
+        <p class="hint">1. 在「疾病条目」中可一次性编辑疾病信息、影像图片与说明<br>
+        2. 修改后点击「保存全部疾病」写入 <code>data/site-data.json</code><br>
+        3. 前台会自动优先读取该 JSON 覆盖内置数据<br>
+        4. 「影像图库」可按 type 批量维护（与疾病条目数据相同）</p>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-diseases">
+      <div class="topbar">
+        <h2>疾病条目</h2>
+        <div class="actions">
+          <button class="btn secondary" id="addDiseaseBtn" type="button">新增疾病</button>
+          <button class="btn" id="saveDiseasesBtn" type="button">保存全部疾病</button>
+        </div>
+      </div>
+      <p class="hint" style="margin-bottom:14px">每条疾病包含：标题、分类、简介等文字信息，以及对应 type 键下的影像图片（file / caption / site）。点击「编辑」可在同一页面增减疾病与图片。</p>
+      <div class="toolbar">
+        <input id="diseaseSearch" placeholder="搜索标题 / 英文名 / type…" style="min-width:240px">
+        <select id="diseaseCatFilter"><option value="">全部分类</option></select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>预览</th><th>标题</th><th>type</th><th>区域</th><th>分类</th><th>图片</th><th>操作</th></tr></thead>
+          <tbody id="diseaseRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-galleries">
+      <div class="topbar">
+        <h2>影像图库</h2>
+        <div class="actions">
+          <button class="btn" id="saveGalleriesBtn" type="button">保存图库</button>
+        </div>
+      </div>
+      <p class="hint" style="margin-bottom:14px">按 type 键批量编辑图片。日常建议在「疾病条目」中编辑；此处适合对照多个 type 或批量维护。</p>
+      <div class="toolbar">
+        <select id="galleryTypeSelect"></select>
+        <button class="btn secondary sm" id="addGalleryItemBtn" type="button">添加图片</button>
+      </div>
+      <div id="galleryEditor"></div>
+    </section>
+
+    <section class="panel" id="panel-films">
+      <div class="topbar">
+        <h2>胶片库</h2>
+        <div class="actions"><button class="btn" id="saveFilmsBtn" type="button">保存胶片库</button></div>
+      </div>
+      <div class="toolbar">
+        <select id="filmModSelect">
+          <option value="xray">X 线 / DR</option>
+          <option value="ct">CT 断层</option>
+          <option value="mri">MRI 磁共振</option>
+          <option value="us">超声 US</option>
+        </select>
+        <button class="btn secondary sm" id="addFilmBtn" type="button">添加胶片</button>
+      </div>
+      <div class="field" style="max-width:420px;margin-bottom:12px">
+        <label>窗宽窗位说明</label>
+        <input id="filmMetaInput">
+      </div>
+      <div id="filmEditor"></div>
+    </section>
+
+    <section class="panel" id="panel-users">
+      <div class="topbar">
+        <h2>用户管理</h2>
+        <div class="actions">
+          <button class="btn secondary" id="reloadUsersBtn" type="button">刷新列表</button>
+        </div>
+      </div>
+      <div class="stats" id="userStats"></div>
+      <div class="toolbar">
+        <input id="userSearch" placeholder="搜索用户名 / 邮箱…" style="min-width:240px">
+        <select id="userRoleFilter">
+          <option value="">全部角色</option>
+          <option value="admin">管理员</option>
+          <option value="user">普通用户</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>用户名</th><th>邮箱</th><th>角色</th><th>注册时间</th><th>用户 ID</th></tr></thead>
+          <tbody id="userRows"></tbody>
+        </table>
+      </div>
+      <p class="hint">仅显示已注册并保存在 <code>data/users.json</code>（或 Vercel KV）中的账号，不含密码等敏感信息。用户可在前台 <a href="/register.html" target="_blank">注册页</a> 自行注册。</p>
+    </section>
+
+    <section class="panel" id="panel-settings">
+      <div class="topbar"><h2>系统</h2></div>
+      <div class="card">
+        <h3>数据文件</h3>
+        <p class="hint">当前后台读写 <code>data/site-data.json</code>。如需从 index.html 重新导出内置数据，在项目目录运行：</p>
+        <pre style="margin-top:10px;padding:12px;border-radius:8px;background:#070d18;border:1px solid var(--line);overflow:auto">npm run extract</pre>
+      </div>
+      <div class="card">
+        <h3>重新加载</h3>
+        <button class="btn secondary" id="reloadBtn" type="button">从服务器重新读取</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="diseaseModal">
+  <div class="modal-box wide">
+    <div class="modal-head"><h3 id="diseaseModalTitle">编辑疾病条目</h3><button class="btn secondary sm" id="closeDiseaseModal" type="button">关闭</button></div>
+    <form id="diseaseForm" class="grid-2"></form>
+    <div class="modal-section">
+      <h4>影像图片</h4>
+      <p class="hint">图片挂在上方 <code>type</code> 键下，与前台疾病卡片/详情图库对应。修改 type 后会切换到新键下的图片集。</p>
+      <button class="btn secondary sm" id="addDiseaseGalleryBtn" type="button" style="margin-bottom:12px">添加图片</button>
+      <div id="diseaseGalleryEditor"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="saveDiseaseEntryBtn" type="button">保存本条（疾病+图片）</button>
+      <button class="btn secondary" id="applyDiseaseBtn" type="button">仅更新列表</button>
+      <button class="btn danger" id="deleteDiseaseBtn" type="button">删除疾病</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const state={data:null,users:[],usersSummary:null,editingDiseaseIndex:-1,modalGalleryType:''};
+const $=id=>document.getElementById(id);
+
+function toast(msg){
+  const el=$('toast');
+  el.textContent=msg;
+  el.classList.add('show');
+  clearTimeout(toast._t);
+  toast._t=setTimeout(()=>el.classList.remove('show'),2400);
+}
+
+function apiConnectionHint(){
+  if(location.protocol==='file:')return'请勿直接打开 HTML。请先运行「启动后台.bat」，再访问 http://localhost:3000/admin/';
+  if(location.hostname==='localhost'||location.hostname==='127.0.0.1')return'无法连接后台服务。请确认已运行「启动后台.bat」。';
+  return'无法连接 API。Vercel 部署请检查环境变量与 Functions 日志。';
+}
+async function api(url,opts){
+  if(location.protocol==='file:')throw new Error(apiConnectionHint());
+  let res;
+  try{res=await fetch(url,{headers:{'Content-Type':'application/json'},credentials:'same-origin',...opts});}
+  catch{throw new Error(apiConnectionHint());}
+  const data=await res.json().catch(()=>({}));
+  if(!res.ok)throw new Error(data.error||res.statusText||'请求失败');
+  return data;
+}
+
+async function checkAuth(){
+  try{
+    const me=await api('/api/auth/me');
+    if(!me.user?.isAdmin){
+      $('loginView').style.display='flex';
+      $('appView').classList.remove('ready');
+      const hint=$('loginView').querySelector('.hint');
+      if(hint)hint.textContent='当前账号无管理员权限，请使用管理员账号登录。';
+      return;
+    }
+    showApp(me.user.username);
+    await loadData();
+  }catch(e){
+    $('loginView').style.display='flex';
+    $('appView').classList.remove('ready');
+  }
+}
+
+function showApp(username){
+  $('loginView').style.display='none';
+  $('appView').classList.add('ready');
+  $('adminUser').textContent='已登录：'+username;
+}
+
+async function loadData(){
+  state.data=await api('/api/content');
+  await loadUsers();
+  renderAll();
+}
+
+async function loadUsers(){
+  try{
+    const u=await api('/api/auth/users');
+    state.users=u.users||[];
+    state.usersSummary={total:u.total||0,admins:u.admins||0,members:u.members||0};
+  }catch(e){
+    state.users=[];
+    state.usersSummary=null;
+    throw e;
+  }
+  renderUserStats();
+  renderUserTable();
+}
+
+function renderAll(){
+  if(!state.data)return;
+  $('updatedAt').textContent='更新：'+(state.data.updatedAt||'—');
+  renderStats();
+  renderDiseaseFilters();
+  renderDiseaseTable();
+  renderGalleryTypeSelect();
+  renderGalleryEditor();
+  renderFilmEditor();
+}
+
+function renderStats(){
+  const d=state.data;
+  const items=[
+    ['疾病条目',d.diseases?.length||0],
+    ['图库类型',Object.keys(d.diseaseGalleries||{}).length],
+    ['胶片模态',Object.keys(d.filmData||{}).length],
+    ['注册用户',state.usersSummary?.total??'—']
+  ];
+  $('stats').innerHTML=items.map(([k,v])=>'<div class="stat"><strong>'+v+'</strong><span>'+k+'</span></div>').join('');
+}
+
+function fmtUserDate(iso){
+  if(!iso)return '—';
+  if(iso==='env')return '环境变量账号';
+  try{return new Date(iso).toLocaleString('zh-CN',{hour12:false});}catch{return iso;}
+}
+
+function roleBadge(role){
+  if(role==='admin')return '<span class="badge admin">管理员</span>';
+  return '<span class="badge user">普通用户</span>';
+}
+
+function renderUserStats(){
+  const el=$('userStats');
+  if(!el)return;
+  const s=state.usersSummary;
+  if(!s){
+    el.innerHTML='';
+    return;
+  }
+  el.innerHTML=[
+    ['总用户',s.total],
+    ['管理员',s.admins],
+    ['普通用户',s.members]
+  ].map(([k,v])=>'<div class="stat"><strong>'+v+'</strong><span>'+k+'</span></div>').join('');
+}
+
+function filteredUsers(){
+  const q=$('userSearch')?.value.trim().toLowerCase()||'';
+  const role=$('userRoleFilter')?.value||'';
+  return (state.users||[]).filter(u=>{
+    if(role&&u.role!==role)return false;
+    if(!q)return true;
+    const hay=[u.username,u.email,u.id].join(' ').toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function renderUserTable(){
+  const tbody=$('userRows');
+  if(!tbody)return;
+  const rows=filteredUsers();
+  if(!rows.length){
+    tbody.innerHTML='<tr><td colspan="5" style="color:var(--muted)">暂无用户数据</td></tr>';
+    return;
+  }
+  tbody.innerHTML=rows.map(u=>`<tr>
+    <td><strong>${esc(u.username)}</strong></td>
+    <td>${u.email?esc(u.email):'<span style="color:var(--muted)">—</span>'}</td>
+    <td>${roleBadge(u.role)}</td>
+    <td>${esc(fmtUserDate(u.createdAt))}</td>
+    <td><code style="font-size:.72rem;color:var(--muted)">${esc(u.id)}</code></td>
+  </tr>`).join('');
+}
+
+const DISEASE_FIELDS=[
+  ['title','标题'],['sub','英文名'],['type','type 键'],
+  ['region','解剖区域','combo'],['mod','影像模态','combo'],
+  ['cat','大类 cat','combo'],['sev','严重程度 sev','combo'],['sevtext','严重程度说明','combo'],
+  ['desc','简介说明']
+];
+const COMBO_FIELD_KEYS=['region','mod','cat','sev','sevtext'];
+const PRESET_STORAGE_KEY='shark-admin-field-presets';
+const DEFAULT_FIELD_PRESETS={
+  region:['膝关节','髋关节','股骨','脊柱','腕关节','肩关节','踝关节','手足','骨盆','桡骨','肱骨','锁骨','跟骨','儿童髋','中足','椎体','肘关节','股骨头','大关节','全身骨','多发骨','手部','前臂','椎间隙'],
+  mod:['MRI · X线','X线 · CT','CT · MRI','MRI · US','X线 · MRI','MRI','X线','MRI · 核素','X线 · US','X线 · 骨密度','CT · X线'],
+  sevtext:['急性·不稳定','慢性·退变','恶性·侵袭','慢性·压迫','急性·隐匿','慢性·撕裂','急性·感染','慢性·炎症','急性·常见','急性·高危','急性/慢性','急性/退变','慢性·过劳','急性·脱位','急性·扭伤','急性·关节内','急性·中足','急性·缺血','急性·坠落','急性·撞击','急性·危重','交界·局侵','儿童·急/慢','儿童·缺血','先天·儿童']
+};
+const SEV_PRESETS=[
+  {value:'high',label:'高 · 危急 (high)'},
+  {value:'mid',label:'中 · 中等 (mid)'},
+  {value:'low',label:'低 · 较轻 (low)'}
+];
+
+function loadCustomPresets(){
+  try{return JSON.parse(localStorage.getItem(PRESET_STORAGE_KEY)||'{}')||{};}catch{return {};}
+}
+function saveCustomPresets(data){
+  localStorage.setItem(PRESET_STORAGE_KEY,JSON.stringify(data));
+}
+function rememberFieldPreset(key,value){
+  const v=String(value||'').trim();
+  if(!v||!COMBO_FIELD_KEYS.includes(key))return;
+  const all=loadCustomPresets();
+  const list=[...(all[key]||[]),v];
+  all[key]=[...new Set(list)];
+  saveCustomPresets(all);
+}
+function valuesFromDiseases(key){
+  if(!state.data?.diseases)return [];
+  return [...new Set(state.data.diseases.map(d=>String(d[key]||'').trim()).filter(Boolean))];
+}
+function catPresetOptions(){
+  const tax=state.data?.TAXONOMY?.cat||{};
+  const fromTax=Object.entries(tax).map(([k,v])=>({value:k,label:(v.label||k)+' ('+k+')'}));
+  if(fromTax.length)return fromTax;
+  return [
+    {value:'trauma',label:'创伤骨科 (trauma)'},
+    {value:'degen',label:'退行性病变 (degen)'},
+    {value:'infl',label:'炎症与风湿 (infl)'},
+    {value:'tumor',label:'骨与软组织肿瘤 (tumor)'},
+    {value:'ped',label:'儿童骨科 (ped)'}
+  ];
+}
+function getFieldPresetList(key){
+  const custom=loadCustomPresets()[key]||[];
+  const defaults=DEFAULT_FIELD_PRESETS[key]||[];
+  const fromData=valuesFromDiseases(key);
+  let merged;
+  if(key==='cat'){
+    const keys=[...new Set([...catPresetOptions().map(o=>o.value),...fromData,...custom])];
+    const labelMap=Object.fromEntries(catPresetOptions().map(o=>[o.value,o.label]));
+    return keys.map(v=>({value:v,label:labelMap[v]||v}));
+  }
+  if(key==='sev'){
+    const keys=[...new Set([...SEV_PRESETS.map(o=>o.value),...fromData,...custom])];
+    const labelMap=Object.fromEntries(SEV_PRESETS.map(o=>[o.value,o.label]));
+    return keys.map(v=>({value:v,label:labelMap[v]||v}));
+  }
+  merged=[...new Set([...defaults,...fromData,...custom])];
+  return merged.map(v=>({value:v,label:v}));
+}
+function comboFieldHtml(key,label,value){
+  const presets=getFieldPresetList(key);
+  const val=String(value||'');
+  const listId='preset-'+key;
+  const opts=presets.map(p=>`<option value="${escAttr(p.value)}"${p.label&&p.label!==p.value?' label="'+escAttr(p.label)+'"':''}></option>`).join('');
+  const pickOpts=presets.map(p=>`<option value="${escAttr(p.value)}">${esc(p.label||p.value)}</option>`).join('');
+  const matched=presets.some(p=>p.value===val);
+  return `<div class="field field-combo" data-combo="${key}">
+    <label>${label}</label>
+    <div class="combo-row">
+      <select class="combo-pick" data-for="${key}" aria-label="${escAttr(label)} 快捷选择">
+        <option value="">— 常用选项 —</option>
+        ${pickOpts}
+        <option value="__custom__"${val&&!matched?' selected':''}>自定义…</option>
+      </select>
+      <input class="combo-input" name="${key}" value="${escAttr(val)}" list="${listId}" placeholder="可选择或自行输入">
+      <datalist id="${listId}">${opts}</datalist>
+    </div>
+    <button type="button" class="btn secondary sm combo-save" data-save-preset="${key}">+ 保存为常用</button>
+    <p class="combo-hint">下拉选择，或直接输入自定义值</p>
+  </div>`;
+}
+function bindComboFields(formEl){
+  if(!formEl)return;
+  formEl.querySelectorAll('.field-combo').forEach(wrap=>{
+    const key=wrap.dataset.combo;
+    const pick=wrap.querySelector('.combo-pick');
+    const input=wrap.querySelector('.combo-input');
+    if(!pick||!input)return;
+    function syncPickFromInput(){
+      const v=input.value.trim();
+      const match=[...pick.options].find(o=>o.value===v);
+      pick.value=match?match.value:(v?'__custom__':'');
+    }
+    pick.addEventListener('change',()=>{
+      if(pick.value==='__custom__'){input.focus();return;}
+      if(pick.value)input.value=pick.value;
+    });
+    input.addEventListener('input',syncPickFromInput);
+    input.addEventListener('change',syncPickFromInput);
+    syncPickFromInput();
+  });
+  formEl.querySelectorAll('[data-save-preset]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const key=btn.dataset.savePreset;
+      const input=formEl.querySelector(`[name="${key}"]`);
+      if(!input||!input.value.trim()){toast('请先输入内容');return;}
+      rememberFieldPreset(key,input.value.trim());
+      toast('已保存为常用选项');
+    });
+  });
+}
+
+function renderDiseaseForm(d={},idx=-1){
+  state.editingDiseaseIndex=idx;
+  state.modalGalleryType=String(d.type||'').trim();
+  $('diseaseModalTitle').textContent=idx>=0?'编辑疾病条目':'新增疾病条目';
+  $('diseaseForm').innerHTML=DISEASE_FIELDS.map(([k,label,kind])=>{
+    if(kind==='combo')return comboFieldHtml(k,label,d[k]);
+    const val=(d[k]||'').replace(/"/g,'&quot;');
+    const tag=k==='desc'?`<textarea name="${k}">${d[k]||''}</textarea>`:`<input name="${k}" value="${val}">`;
+    return `<div class="field"><label>${label}</label>${tag}</div>`;
+  }).join('')+`<div class="field" style="grid-column:1/-1"><label>征象 signs（逗号分隔）</label><input name="signs" value="${(d.signs||[]).join('，')}"></div>`;
+  bindComboFields($('diseaseForm'));
+  const typeInput=$('diseaseForm').querySelector('[name="type"]');
+  if(typeInput){
+    typeInput.addEventListener('change',()=>{
+      collectGalleryFromRoot($('diseaseGalleryEditor'),state.modalGalleryType);
+      state.modalGalleryType=typeInput.value.trim();
+      renderDiseaseGalleryInModal(state.modalGalleryType);
+    });
+  }
+  renderDiseaseGalleryInModal(state.modalGalleryType);
+  $('diseaseModal').classList.add('open');
+}
+
+function diseaseThumbHtml(d){
+  const items=state.data.diseaseGalleries?.[d.type]||[];
+  const first=items.find(x=>x.file);
+  if(!first?.file)return '<span class="disease-thumb-ph">无图</span>';
+  return `<img class="disease-thumb" src="${escAttr(wikiImg(first.file,160))}" alt="" loading="lazy">`;
+}
+
+function galleryCardHtml(item,i){
+  return `<div class="card" data-gi="${i}">
+    <h3>图片 ${i+1}</h3>
+    ${galleryPreviewHtml(item)}
+    <div class="grid-2">
+      <div class="field"><label>文件名 file</label><input data-k="file" value="${escAttr(item.file||'')}"></div>
+      <div class="field"><label>说明 caption</label><input data-k="caption" value="${escAttr(item.caption||'')}"></div>
+      <div class="field"><label>部位 site</label><input data-k="site" value="${escAttr(item.site||'')}"></div>
+      <div class="field"><label>已修改 modified</label><select data-k="modified"><option value="">否</option><option value="1" ${item.modified?'selected':''}>是</option></select></div>
+    </div>
+    <button class="btn danger sm" type="button" data-del-gi="${i}">删除此图</button>
+  </div>`;
+}
+
+function collectGalleryFromRoot(root,type){
+  const key=String(type||'').trim();
+  if(!key||!root)return;
+  const cards=[...root.querySelectorAll('.card')];
+  state.data.diseaseGalleries[key]=cards.map(card=>{
+    const item={ann:[]};
+    card.querySelectorAll('[data-k]').forEach(input=>{
+      const k=input.dataset.k;
+      if(k==='modified')item.modified=input.value==='1';
+      else item[k]=input.value.trim();
+    });
+    return item;
+  });
+}
+
+function renderDiseaseGalleryInModal(type){
+  const el=$('diseaseGalleryEditor');
+  if(!el)return;
+  const key=String(type||'').trim();
+  if(!key){
+    el.innerHTML='<p class="hint">请先填写上方的 type 键，再添加影像图片。</p>';
+    return;
+  }
+  if(!state.data.diseaseGalleries[key])state.data.diseaseGalleries[key]=[];
+  const items=state.data.diseaseGalleries[key];
+  el.innerHTML=items.map((item,i)=>galleryCardHtml(item,i)).join('')||'<p class="hint">暂无图片，点击「添加图片」。</p>';
+  el.querySelectorAll('[data-del-gi]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      collectGalleryFromRoot(el,state.modalGalleryType);
+      const list=state.data.diseaseGalleries[state.modalGalleryType]||[];
+      list.splice(+btn.dataset.delGi,1);
+      renderDiseaseGalleryInModal(state.modalGalleryType);
+    });
+  });
+  bindGalleryPreviews(el);
+}
+
+function collectDiseaseModalGallery(){
+  collectGalleryFromRoot($('diseaseGalleryEditor'),state.modalGalleryType);
+}
+
+function applyDiseaseToState(){
+  collectDiseaseModalGallery();
+  const item=readDiseaseForm();
+  if(!item.title||!item.type)throw new Error('标题与 type 不能为空');
+  COMBO_FIELD_KEYS.forEach(k=>{
+    if(item[k])rememberFieldPreset(k,item[k]);
+  });
+  const newType=item.type.trim();
+  if(state.editingDiseaseIndex>=0){
+    const old=state.data.diseases[state.editingDiseaseIndex];
+    if(old?.type&&old.type!==newType&&state.data.diseaseGalleries[old.type]&&!state.data.diseases.some((d,i)=>i!==state.editingDiseaseIndex&&d.type===old.type)){
+      if(!state.data.diseaseGalleries[newType]?.length)state.data.diseaseGalleries[newType]=state.data.diseaseGalleries[old.type];
+      delete state.data.diseaseGalleries[old.type];
+    }
+    state.data.diseases[state.editingDiseaseIndex]=item;
+  }else{
+    state.data.diseases.push(item);
+  }
+  if(!state.data.diseaseGalleries[newType])state.data.diseaseGalleries[newType]=[];
+  return item;
+}
+
+async function persistDiseasesAndGalleries(){
+  const r=await api('/api/content/diseases',{method:'PATCH',body:JSON.stringify(state.data.diseases)});
+  await api('/api/content/galleries',{method:'PATCH',body:JSON.stringify({
+    diseaseGalleries:state.data.diseaseGalleries,
+    galleryAnnTpl:state.data.galleryAnnTpl||{}
+  })});
+  return r;
+}
+
+function readDiseaseForm(){
+  const fd=new FormData($('diseaseForm'));
+  const item={};
+  DISEASE_FIELDS.forEach(([k])=>{item[k]=String(fd.get(k)||'').trim();});
+  item.signs=String(fd.get('signs')||'').split(/[,，]/).map(s=>s.trim()).filter(Boolean);
+  return item;
+}
+
+function renderDiseaseFilters(){
+  const sel=$('diseaseCatFilter');
+  const cats=[...new Set((state.data.diseases||[]).map(d=>d.cat).filter(Boolean))];
+  const tax=state.data?.TAXONOMY?.cat||{};
+  sel.innerHTML='<option value="">全部分类</option>'+cats.map(c=>{
+    const label=tax[c]?.label||c;
+    return '<option value="'+escAttr(c)+'">'+esc(label)+'</option>';
+  }).join('');
+}
+
+function filteredDiseases(){
+  const q=$('diseaseSearch').value.trim().toLowerCase();
+  const cat=$('diseaseCatFilter').value;
+  return (state.data.diseases||[]).map((d,i)=>({d,i})).filter(({d})=>{
+    if(cat&&d.cat!==cat)return false;
+    if(!q)return true;
+    const hay=[d.title,d.sub,d.type,d.region,d.desc].join(' ').toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function renderDiseaseTable(){
+  const rows=filteredDiseases();
+  $('diseaseRows').innerHTML=rows.map(({d,i})=>{
+    const imgs=(state.data.diseaseGalleries?.[d.type]||[]).length;
+    return `<tr>
+    <td>${diseaseThumbHtml(d)}</td>
+    <td><strong>${esc(d.title)}</strong><div style="color:var(--muted);font-size:.75rem">${esc(d.sub||'')}</div></td>
+    <td><code>${esc(d.type)}</code></td>
+    <td>${esc(d.region||'')}</td>
+    <td>${esc((state.data.TAXONOMY?.cat?.[d.cat]?.label)||d.cat||'')}</td>
+    <td>${imgs} 张</td>
+    <td><div class="table-actions">
+      <button class="btn secondary sm" type="button" data-edit="${i}">编辑</button>
+      <button class="btn danger sm" type="button" data-del="${i}">删除</button>
+    </div></td>
+  </tr>`;
+  }).join('');
+  $('diseaseRows').querySelectorAll('[data-edit]').forEach(btn=>{
+    btn.addEventListener('click',()=>renderDiseaseForm(state.data.diseases[+btn.dataset.edit],+btn.dataset.edit));
+  });
+  $('diseaseRows').querySelectorAll('[data-del]').forEach(btn=>{
+    btn.addEventListener('click',()=>deleteDiseaseAt(+btn.dataset.del));
+  });
+}
+
+function deleteDiseaseAt(index){
+  const d=state.data.diseases[index];
+  if(!d)return;
+  if(!confirm('确定删除「'+d.title+'」？\n（仅疾病条目，若 type 未被其他疾病使用可一并清理图库）'))return;
+  const type=d.type;
+  state.data.diseases.splice(index,1);
+  if(type&&!state.data.diseases.some(x=>x.type===type)){
+    delete state.data.diseaseGalleries[type];
+  }
+  renderDiseaseTable();
+  renderGalleryTypeSelect();
+  toast('已从列表删除，记得点击「保存全部疾病」');
+}
+
+function renderGalleryTypeSelect(){
+  const sel=$('galleryTypeSelect');
+  const keys=Object.keys(state.data.diseaseGalleries||{});
+  sel.innerHTML=keys.map(k=>'<option value="'+k+'">'+k+'</option>').join('');
+}
+
+function wikiImg(filename,width){
+  width=width||520;
+  const f=String(filename||'').trim();
+  if(!f)return '';
+  return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f.replace(/ /g,'_'))+'?width='+width;
+}
+
+function galleryPreviewHtml(item){
+  const file=String(item.file||'').trim();
+  const src=file?wikiImg(file):'';
+  const empty=!file;
+  return `<div class="gal-preview-wrap${empty?' empty':''}">
+    <img class="gal-preview" ${src?'src="'+escAttr(src)+'"':''} alt="${escAttr(item.caption||file||'预览')}" loading="lazy">
+    <p class="gal-preview-ph">${empty?'填写下方「文件名 file」后显示预览':'加载中…'}</p>
+  </div>`;
+}
+
+function bindGalleryPreviews(root){
+  const scope=root||$('galleryEditor');
+  if(!scope)return;
+  scope.querySelectorAll('.card').forEach(card=>{
+    const input=card.querySelector('[data-k="file"]');
+    const img=card.querySelector('.gal-preview');
+    const wrap=card.querySelector('.gal-preview-wrap');
+    const ph=card.querySelector('.gal-preview-ph');
+    if(!input||!img||!wrap)return;
+    function sync(){
+      const file=input.value.trim();
+      const url=wikiImg(file);
+      if(!url){
+        img.removeAttribute('src');
+        wrap.classList.add('empty');
+        wrap.classList.remove('err');
+        if(ph)ph.textContent='填写下方「文件名 file」后显示预览';
+        return;
+      }
+      wrap.classList.remove('empty','err');
+      if(ph)ph.textContent='加载中…';
+      img.onload=()=>{
+        wrap.classList.remove('err');
+        if(ph)ph.textContent='';
+      };
+      img.onerror=()=>{
+        wrap.classList.add('err');
+        if(ph)ph.textContent='无法加载图片，请检查文件名是否正确';
+      };
+      if(img.src!==url)img.src=url;
+    }
+    input.addEventListener('input',sync);
+    sync();
+  });
+}
+
+function filmPreviewUrl(f){
+  const img=String(f?.img||'').trim();
+  const file=String(f?.file||'').trim();
+  if(img)return img;
+  if(file)return wikiImg(file);
+  return '';
+}
+
+function filmPreviewHtml(f){
+  const url=filmPreviewUrl(f);
+  const empty=!url;
+  return `<div class="gal-preview-wrap${empty?' empty':''}">
+    <img class="gal-preview" ${url?'src="'+escAttr(url)+'"':''} alt="${escAttr(f.name||'胶片预览')}" loading="lazy">
+    <p class="gal-preview-ph">${empty?'填写「图片 URL img」或 Commons 文件名 file 后显示预览':'加载中…'}</p>
+  </div>`;
+}
+
+function bindFilmPreviews(){
+  $('filmEditor').querySelectorAll('.card').forEach(card=>{
+    const imgInput=card.querySelector('[data-k="img"]');
+    const fileInput=card.querySelector('[data-k="file"]');
+    const img=card.querySelector('.gal-preview');
+    const wrap=card.querySelector('.gal-preview-wrap');
+    const ph=card.querySelector('.gal-preview-ph');
+    if(!img||!wrap)return;
+    function resolveUrl(){
+      const imgUrl=imgInput?imgInput.value.trim():'';
+      const file=fileInput?fileInput.value.trim():'';
+      if(imgUrl)return imgUrl;
+      if(file)return wikiImg(file);
+      return '';
+    }
+    function sync(){
+      const url=resolveUrl();
+      if(!url){
+        img.removeAttribute('src');
+        wrap.classList.add('empty');
+        wrap.classList.remove('err');
+        if(ph)ph.textContent='填写「图片 URL img」或 Commons 文件名 file 后显示预览';
+        return;
+      }
+      wrap.classList.remove('empty','err');
+      if(ph)ph.textContent='加载中…';
+      img.onload=()=>{
+        wrap.classList.remove('err');
+        if(ph)ph.textContent='';
+      };
+      img.onerror=()=>{
+        wrap.classList.add('err');
+        if(ph)ph.textContent='无法加载图片，请检查 URL 或文件名';
+      };
+      if(img.src!==url)img.src=url;
+    }
+    if(imgInput)imgInput.addEventListener('input',sync);
+    if(fileInput)fileInput.addEventListener('input',sync);
+    sync();
+  });
+}
+
+function renderGalleryEditor(){
+  const type=$('galleryTypeSelect').value||Object.keys(state.data.diseaseGalleries||{})[0];
+  if(!type)return;
+  const items=state.data.diseaseGalleries[type]||[];
+  $('galleryEditor').innerHTML=items.map((item,i)=>galleryCardHtml(item,i)).join('')||'<p class="hint">该类型暂无图片，可点击「添加图片」。</p>';
+  $('galleryEditor').querySelectorAll('[data-del-gi]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      items.splice(+btn.dataset.delGi,1);
+      renderGalleryEditor();
+    });
+  });
+  bindGalleryPreviews();
+}
+
+function collectGalleryEditor(){
+  const type=$('galleryTypeSelect').value;
+  collectGalleryFromRoot($('galleryEditor'),type);
+}
+
+function renderFilmEditor(){
+  const key=$('filmModSelect').value;
+  const set=state.data.filmData[key]||{meta:'',films:[]};
+  if(!state.data.filmData[key])state.data.filmData[key]=set;
+  $('filmMetaInput').value=set.meta||'';
+  $('filmEditor').innerHTML=(set.films||[]).map((f,i)=>`<div class="card" data-fi="${i}">
+    <h3>胶片 ${i+1}</h3>
+    ${filmPreviewHtml(f)}
+    <div class="grid-2">
+      <div class="field"><label>名称 name</label><input data-k="name" value="${escAttr(f.name||'')}"></div>
+      <div class="field"><label>征象 find</label><input data-k="find" value="${escAttr(f.find||'')}"></div>
+      <div class="field" style="grid-column:1/-1"><label>顶部标签 top（可含 &lt;br&gt;）</label><input data-k="top" value="${escAttr(f.top||'')}"></div>
+      <div class="field" style="grid-column:1/-1"><label>图片 URL img</label><input data-k="img" value="${escAttr(f.img||'')}"></div>
+      <div class="field" style="grid-column:1/-1"><label>Commons 文件名 file（可选）</label><input data-k="file" value="${escAttr(f.file||'')}"></div>
+    </div>
+    <button class="btn danger sm" type="button" data-del-fi="${i}">删除</button>
+  </div>`).join('')||'<p class="hint">暂无胶片，可点击「添加胶片」。</p>';
+  $('filmEditor').querySelectorAll('[data-del-fi]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      set.films.splice(+btn.dataset.delFi,1);
+      renderFilmEditor();
+    });
+  });
+  bindFilmPreviews();
+}
+
+function collectFilmEditor(){
+  const key=$('filmModSelect').value;
+  const set=state.data.filmData[key]||{meta:'',films:[]};
+  set.meta=$('filmMetaInput').value.trim();
+  set.films=[...$('filmEditor').querySelectorAll('.card')].map(card=>{
+    const f={};
+    card.querySelectorAll('[data-k]').forEach(input=>{f[input.dataset.k]=input.value.trim();});
+    return f;
+  });
+  state.data.filmData[key]=set;
+}
+
+function esc(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function escAttr(s){return esc(s).replace(/'/g,'&#39;');}
+
+document.querySelectorAll('.nav-btn').forEach(btn=>{
+  btn.addEventListener('click',async()=>{
+    document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+btn.dataset.panel));
+    if(btn.dataset.panel==='users'){
+      try{await loadUsers();}catch(err){toast(err.message);}
+    }
+  });
+});
+
+$('loginForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  try{
+    const fd=new FormData(e.target);
+    const data=await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:fd.get('username'),password:fd.get('password')})});
+    if(!data.user?.isAdmin){
+      toast('该账号不是管理员，无法进入后台');
+      return;
+    }
+    showApp(data.user.username);
+    await loadData();
+    toast('登录成功');
+  }catch(err){toast(err.message);}
+});
+
+$('logoutBtn').addEventListener('click',async()=>{
+  await api('/api/auth/logout',{method:'POST',body:'{}'});
+  location.reload();
+});
+
+$('saveDiseasesBtn').addEventListener('click',async()=>{
+  try{
+    const r=await persistDiseasesAndGalleries();
+    toast('已保存 '+r.count+' 条疾病（含图片）');
+    await loadData();
+  }catch(err){toast(err.message);}
+});
+
+$('addDiseaseBtn').addEventListener('click',()=>renderDiseaseForm({},-1));
+$('closeDiseaseModal').addEventListener('click',()=>$('diseaseModal').classList.remove('open'));
+$('addDiseaseGalleryBtn').addEventListener('click',()=>{
+  collectDiseaseModalGallery();
+  const type=$('diseaseForm').querySelector('[name="type"]')?.value.trim();
+  if(!type){toast('请先填写 type 键');return;}
+  state.modalGalleryType=type;
+  if(!state.data.diseaseGalleries[type])state.data.diseaseGalleries[type]=[];
+  state.data.diseaseGalleries[type].push({file:'',caption:'',site:'',ann:[]});
+  renderDiseaseGalleryInModal(type);
+});
+$('saveDiseaseEntryBtn').addEventListener('click',async()=>{
+  try{
+    applyDiseaseToState();
+    const r=await persistDiseasesAndGalleries();
+    $('diseaseModal').classList.remove('open');
+    await loadData();
+    toast('已保存：'+r.count+' 条疾病（含本条图片）');
+  }catch(err){toast(err.message);}
+});
+$('applyDiseaseBtn').addEventListener('click',()=>{
+  try{
+    applyDiseaseToState();
+    $('diseaseModal').classList.remove('open');
+    renderDiseaseTable();
+    renderGalleryTypeSelect();
+    toast('已更新列表，记得点击「保存全部疾病」');
+  }catch(err){toast(err.message);}
+});
+$('deleteDiseaseBtn').addEventListener('click',()=>{
+  if(state.editingDiseaseIndex<0)return;
+  const idx=state.editingDiseaseIndex;
+  $('diseaseModal').classList.remove('open');
+  deleteDiseaseAt(idx);
+});
+
+$('diseaseSearch').addEventListener('input',renderDiseaseTable);
+$('diseaseCatFilter').addEventListener('change',renderDiseaseTable);
+
+$('galleryTypeSelect').addEventListener('change',renderGalleryEditor);
+$('addGalleryItemBtn').addEventListener('click',()=>{
+  const type=$('galleryTypeSelect').value;
+  if(!state.data.diseaseGalleries[type])state.data.diseaseGalleries[type]=[];
+  state.data.diseaseGalleries[type].push({file:'',caption:'',site:'',ann:[]});
+  renderGalleryEditor();
+});
+$('saveGalleriesBtn').addEventListener('click',async()=>{
+  collectGalleryEditor();
+  try{
+    await api('/api/content/galleries',{method:'PATCH',body:JSON.stringify({
+      diseaseGalleries:state.data.diseaseGalleries,
+      galleryAnnTpl:state.data.galleryAnnTpl||{}
+    })});
+    toast('图库已保存');
+    await loadData();
+  }catch(err){toast(err.message);}
+});
+
+$('filmModSelect').addEventListener('change',renderFilmEditor);
+$('addFilmBtn').addEventListener('click',()=>{
+  const key=$('filmModSelect').value;
+  const set=state.data.filmData[key]||{meta:'',films:[]};
+  set.films.push({name:'',find:'',top:'',img:''});
+  state.data.filmData[key]=set;
+  renderFilmEditor();
+});
+$('saveFilmsBtn').addEventListener('click',async()=>{
+  collectFilmEditor();
+  try{
+    await api('/api/content/films',{method:'PATCH',body:JSON.stringify(state.data.filmData)});
+    toast('胶片库已保存');
+    await loadData();
+  }catch(err){toast(err.message);}
+});
+
+$('reloadBtn').addEventListener('click',async()=>{
+  try{await loadData();toast('已重新加载');}catch(err){toast(err.message);}
+});
+
+$('reloadUsersBtn')?.addEventListener('click',async()=>{
+  try{await loadUsers();renderStats();toast('用户列表已刷新');}catch(err){toast(err.message);}
+});
+$('userSearch')?.addEventListener('input',renderUserTable);
+$('userRoleFilter')?.addEventListener('change',renderUserTable);
+
+checkAuth();
+</script>
+</body>
+</html>

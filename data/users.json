@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "9f6d96cb-c0fc-4577-8ea0-5de1a1faf2b4",
+      "username": "admin",
+      "email": "",
+      "salt": "876c378022350313c0d03823cbf9d97c",
+      "passwordHash": "8133dc4ae695411941e9bebbdfb6a065fad2c69484b7c9dfe2f0dca507af7c04660a987f1cb395e2d568f7a85c4853d559c3f8a197302af0ac2879696a1e67b0",
+      "role": "admin",
+      "createdAt": "2026-06-18T15:59:07.494Z"
+    }
+  ]
+}

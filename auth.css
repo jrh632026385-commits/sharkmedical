@@ -1,0 +1,43 @@
+:root{
+  --abyss:#04080f;--deep:#0b1422;--teal:#2dd4bf;--bone:#f3efe6;
+  --muted:#8395ab;--line:rgba(127,212,232,.14);
+  --sans:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;
+  --serif:Georgia,'Noto Serif SC',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;font-family:var(--sans);background:var(--abyss);color:var(--bone);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;gap:16px;
+}
+body.has-notice{justify-content:flex-start;padding-top:32px}
+.server-notice{
+  width:min(420px,100%);padding:14px 16px;border:1px solid rgba(252,165,165,.35);border-radius:10px;
+  background:rgba(127,29,29,.25);font-size:.84rem;line-height:1.55;color:#fecaca;
+}
+.server-notice strong{display:block;margin-bottom:6px;color:#fca5a5}
+.server-notice code{font-size:.8rem;background:rgba(0,0,0,.25);padding:1px 5px;border-radius:4px}
+.server-notice a{color:var(--teal);word-break:break-all}
+.auth-card{
+  width:min(420px,100%);padding:32px 28px;border:1px solid var(--line);border-radius:14px;
+  background:linear-gradient(165deg,#0b1422,#070d18);box-shadow:0 24px 60px rgba(0,0,0,.45);
+}
+.auth-card h1{font-family:var(--serif);font-size:1.35rem;margin-bottom:6px}
+.auth-card .sub{color:var(--muted);font-size:.88rem;margin-bottom:24px;line-height:1.6}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:6px}
+.field input{
+  width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;
+  background:#070d18;color:var(--bone);
+}
+.field input:focus{outline:none;border-color:rgba(45,212,191,.55);box-shadow:0 0 0 3px rgba(45,212,191,.12)}
+.btn{
+  width:100%;padding:12px 18px;border:none;border-radius:8px;cursor:pointer;
+  background:linear-gradient(135deg,var(--teal),#14b8a6);color:#041018;font-weight:600;font-size:.95rem;
+}
+.btn:hover{filter:brightness(1.05)}
+.msg{margin-top:14px;font-size:.82rem;line-height:1.5}
+.msg.err{color:#fca5a5}
+.msg.ok{color:var(--teal)}
+.auth-links{margin-top:18px;font-size:.84rem;color:var(--muted);text-align:center}
+.auth-links a{color:var(--teal)}
+.back-home{display:block;text-align:center;margin-top:14px;font-size:.82rem;color:var(--muted)}

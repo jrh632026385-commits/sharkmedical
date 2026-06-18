@@ -1,0 +1,3132 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-18T15:34:36.679Z",
+  "diseaseGalleries": {
+    "knee": [
+      {
+        "file": "Unhappy Triad des Kniegelenks 53M - MR - 001 - Annotation.jpg",
+        "caption": "【标注】O'Donoghue三联征 · ACL/MCL/半月板 · 对吻骨挫伤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "VKB-Riss MRT T1 PDW sag.jpg",
+        "caption": "MRI T1/PDW · ACL纤维中断",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "MRT VKB-Riss T1.jpg",
+        "caption": "MRI T1矢状 · ACL撕裂",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "hip": [
+      {
+        "file": "X-ray of hip osteoarthritis.jpg",
+        "caption": "X线 · 关节间隙变窄与骨赘",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Severe (Tönnis grade 3) osteoarthritis of the hip.jpg",
+        "caption": "X线 · Tönnis III级髋骨关节炎",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "0910 Oateoarthritis Hip A.png",
+        "caption": "X线 · 髋臼与股骨头退变",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "tumor": [
+      {
+        "file": "Osteosarcoma1.jpg",
+        "caption": "X线 · 日光放射状骨针与骨破坏",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Osteosarcoma of the tibia.png",
+        "caption": "X线 · 胫骨骨肉瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Osteogenic sarcoma2.jpg",
+        "caption": "X线 · 成骨性骨肉瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "spine": [
+      {
+        "file": "L4-l5-disc-herniation.png",
+        "caption": "MRI轴位 · 髓核后突压迫神经根",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "CT SCAN DISC HERNIATION.JPG",
+        "caption": "CT轴位 · 椎间盘突出",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Lumbar Spine 111353-rgbcb.png",
+        "caption": "MRI矢状 · 多节段椎管受压",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "wrist": [
+      {
+        "file": "Scaphoid fracture - barely visible on initial X-ray.jpg",
+        "caption": "X线 · 舟骨腰部骨折线",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Scaphoid non-union advanced collapse 80M - CR ap - 001.jpg",
+        "caption": "X线 · 舟骨骨折不愈合",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of scaphoid fracture.png",
+        "caption": "X线 · 舟骨骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "shoulder": [
+      {
+        "file": "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "caption": "MRI · 冈上肌腱全层撕裂",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "caption": "MRI · 冈上肌腱全层撕裂",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Subacromial Impingement with Supraspinatus Rupture.jpg",
+        "caption": "MRI · 肩峰下撞击伴冈上肌撕裂",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "ankle": [
+      {
+        "file": "Bimalleolar fracture legend.jpg",
+        "caption": "【标注】双踝骨折与踝穴破坏",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of bimalleolar fracture.jpg",
+        "caption": "X线AP · 双踝骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Trimalleolar Ankle Fracture.jpg",
+        "caption": "X线 · 三踝骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "hand": [
+      {
+        "file": "RheumatoideArthritisAP.jpg",
+        "caption": "X线AP · 对称性关节侵蚀",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Rheumatoide Arthritis der Hand 65W - CR ap - 001.jpg",
+        "caption": "X线 · 手部类风湿侵蚀",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Rheumatoide Arthritis mit ausgedehnten Osteolysen Daumen 57W - CR ap und seitlich - 001.jpg",
+        "caption": "X线 · 拇指关节骨侵蚀",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "infect": [
+      {
+        "file": "Osteomyelitis of Tibia in Child.jpg",
+        "caption": "X线 · 骨髓炎骨破坏与骨膜反应",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ostermyelitis Tibia.jpg",
+        "caption": "X线 · 胫骨骨髓炎",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "OsteomylitisMark.png",
+        "caption": "X线 · 骨髓炎骨破坏(标注)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "radius": [
+      {
+        "file": "Collesfracture.jpg",
+        "caption": "X线 · Colles骨折背侧成角",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Colles' Fracture of Radius.jpg",
+        "caption": "X线 · 桡骨远端Colles骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Colles fracture.JPG",
+        "caption": "X线 · 桡骨远端骨折移位",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "femneck": [
+      {
+        "file": "Hueftgelenk-Oberschenkelhalsbruch.jpg",
+        "caption": "X线 · 股骨颈骨折线",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Mediale Schenkelhalsfraktur links 83W - CR ap - 001 - Annotation.jpg",
+        "caption": "【标注】股骨颈内收型骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Transzervikale Femurfraktur links 56M - CR ap - 001.jpg",
+        "caption": "X线 · 经颈型股骨颈骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "vertfx": [
+      {
+        "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "caption": "X线 · 多节段椎体压缩骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "L1 2 vertebral fracture.jpg",
+        "caption": "X线 · 骨质疏松性椎体骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "L4 Compression Fracture Arrow.png",
+        "caption": "X线 · L4椎体压缩骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "meniscus": [
+      {
+        "file": "Korbhenkelriss Aussenmeniskus Hinterhorn - 14jm - MRT - T1 sagittal - 017.jpg",
+        "caption": "MRI T1矢状 · 桶柄状半月板撕裂",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Meniscal Tear MRI.jpg",
+        "caption": "MRI · 半月板撕裂",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Innenmeniskushinterhornriß T2 sag.jpg",
+        "caption": "MRI T2矢状 · 内侧半月板后角撕裂",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "cervical": [
+      {
+        "file": "X-ray of cervical spondylosis.jpg",
+        "caption": "X线 · 颈椎骨赘与间隙变窄",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Cervical Xray Lateral View.jpg",
+        "caption": "X线侧位 · 颈椎退变",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Cervical kyphosis and spondylosis.png",
+        "caption": "X线 · 颈椎后凸与骨赘",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "gout": [
+      {
+        "file": "Gicht - Roe - multiple Arrosionen Destruktionen.png",
+        "caption": "X线 · 穿凿样骨侵蚀与悬挂边缘",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Gicht-Arrosion am proximalen Interphalangealgelenk D4 92M - CR ap - 001 - Annotation.jpg",
+        "caption": "【标注】近端指间关节侵蚀",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Gichtarthritis Grosszehengrundgelenk 94W - CR pa - 001.jpg",
+        "caption": "X线 · 第一跖趾关节痛风关节炎",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "avn": [
+      {
+        "file": "X-ray of idiopathic avascular necrosis of the femoral head - Anteroposterior.jpg",
+        "caption": "X线 · 股骨头密度不均",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of idiopathic avascular necrosis of the femoral head - Lateral.jpg",
+        "caption": "X线侧位 · 股骨头坏死",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Crescent sign annotated.jpg",
+        "caption": "X线 · 新月征(标注)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "gct": [
+      {
+        "file": "Riesenzelltumor RÖ ap.jpg",
+        "caption": "X线AP · 偏心性肥皂泡样溶骨",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Riesenzelltumor T1 cor.jpg",
+        "caption": "MRI T1冠状 · 骨巨细胞瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Riesenzelltumor PDfs cor.jpg",
+        "caption": "MRI PDfs冠状 · 骨巨细胞瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "osteochondroma": [
+      {
+        "file": "Osteochondroma right scapula.jpg",
+        "caption": "X线 · 骨性突起与髓腔连续",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Multiple kartilaginaere Exostosen Knie - Roe ap 001.jpg",
+        "caption": "X线 · 多发骨软骨瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Osteochondroma X-ray.jpg",
+        "caption": "X线 · 骨软骨瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "hemangioma": [
+      {
+        "file": "Vertebral Hemangioma.jpg",
+        "caption": "MRI · 椎体血管瘤栅栏征",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Wirbelkoerperhaemangiom - MRT sagittal T1 T2 STIR.jpg",
+        "caption": "MRI T1/T2/STIR · 椎体血管瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Vertebral hemangioma 01.jpg",
+        "caption": "MRI · 椎体血管瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "as": [
+      {
+        "file": "Iliosakrale Ankylose und Bambusstab bei Morbus Bechterew.jpg",
+        "caption": "X线 · 双侧骶髂对称融合+竹节样",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Bamboo spine ankylosing spondylitis.jpg",
+        "caption": "X线 · 竹节样脊柱",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Chalk stick fracture bei Morbus Bechterew 55M - CT koronar und sagittal - 001.jpg",
+        "caption": "CT · 竹节样脊柱质脆骨折(chalk-stick)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "tb": [
+      {
+        "file": "Spondylodiscitis LWK 34 82M - MR und CT - 001.jpg",
+        "caption": "MRI+CT · 椎体破坏·椎间隙变窄·椎旁脓肿",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Diagramo types of abcesses due to vertibral tuberculosis Wellcome M0008139.jpg",
+        "caption": "示意图 · 椎旁冷脓肿走行",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "caption": "X线 · 多节段椎体压缩(晚期后凸)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "humerus": [
+      {
+        "file": "Subcapital humerus fracture.jpg",
+        "caption": "X线 · 肱骨外科颈骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Surgical neck fracture of humerus.jpg",
+        "caption": "X线 · 肱骨外科颈骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Proxhumerousfracture(surgneck,lesserandgreatertroch).png",
+        "caption": "X线 · 近端肱骨多部位骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "clavicle": [
+      {
+        "file": "Clavicle fracture.jpg",
+        "caption": "X线 · 锁骨中段骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Typische mittlere Klavikulafraktur mit verkippten Kleinfragmenten 39W - CR - 001.jpg",
+        "caption": "X线 · 典型中段锁骨骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Clavicle Fracture Left.jpg",
+        "caption": "X线 · 左侧锁骨骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "pelvis": [
+      {
+        "file": "Open-Book-Verletzung durch Turmspringen 45M - CR - 001 - Annotation.jpg",
+        "caption": "【标注】开书样骨盆环骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Open-Book-Verletzung durch Turmspringen 45M - CR - 001.jpg",
+        "caption": "X线 · 开书样骨盆环骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Diastasis symphysis pubis 1300500.JPG",
+        "caption": "X线 · 耻骨联合分离",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "calcaneus": [
+      {
+        "file": "T1 MRI of calcaneal fracture.jpg",
+        "caption": "MRI · 跟骨骨折骨髓水肿",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "CT scan of calcaneal fracture.jpg",
+        "caption": "CT轴位 · 关节面塌陷",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "CalFrac.png",
+        "caption": "X线 · 跟骨骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "pcl": [
+      {
+        "file": "Ligamento Cruzado Posterior.jpg",
+        "caption": "MRI T1矢状 · 后交叉韧带",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ligamentum wrisberg sag.png",
+        "caption": "MRI矢状 · PCL与Wrisberg韧带",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Knee MRI 113746 rgbcb.png",
+        "caption": "MRI · PCL/ACL 解剖标注(矢状)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "elbow": [
+      {
+        "file": "Ellbogenluxation ap.jpg",
+        "caption": "X线AP · 肘关节后脱位",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ellbogenluxation seitlich.jpg",
+        "caption": "X线侧位 · 肘关节后脱位",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Radiographie d’une luxation postérieur du coude gauche sans fracture.jpg",
+        "caption": "X线 · 左肘后脱位无骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "kneeoa": [
+      {
+        "file": "Osteoarthritis on X-ray.jpg",
+        "caption": "X线 · 内侧间隙变窄与骨赘",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Knee plain X-ray weight bearing.jpg",
+        "caption": "X线负重 · 力线内翻",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Knee osteoathritis stages II nad III.jpg",
+        "caption": "X线 · Kellgren-Lawrence II-III级",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "osteoporosis": [
+      {
+        "file": "L1 2 vertebral fracture.jpg",
+        "caption": "X线侧位 · L1/2骨质疏松性楔形骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "caption": "X线侧位 · 多节段椎体压缩骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ausgepraegte Osteoporose mit betonten vertikalen Spongiosatrabekeln der BWK 85W - CT - 001.jpg",
+        "caption": "CT · 重度骨质疏松伴椎体压缩骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "achilles": [
+      {
+        "file": "Achilles insertional calcific tendinosis.jpg",
+        "caption": "MRI · 跟腱止点钙化与增厚",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Achilles tendon tendonitis.jpg",
+        "caption": "超声 · 跟腱炎(低回声水肿)",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Calcaneal spur 001.jpg",
+        "caption": "X线 · 跟骨骨刺与止点退变",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "ewing": [
+      {
+        "file": "Ewing sarcoma tibia child.jpg",
+        "caption": "X线 · 葱皮样骨膜与骨破坏",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ewing sarcoma tibia child (cropped).jpg",
+        "caption": "X线 · 胫骨尤文肉瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Ewing's sarcoma MRI nci-vol-1832-300.jpg",
+        "caption": "MRI · 尤文肉瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "myeloma": [
+      {
+        "file": "Multiple myeloma skull CT arrows.PNG",
+        "caption": "【标注】CT · 颅骨穿凿样溶骨",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Left femur with myeloma.jpg",
+        "caption": "X线 · 股骨多发溶骨",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Plasmozytom multiple Osteolysen Unterarm.png",
+        "caption": "X线 · 前臂多发溶骨",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "metastasis": [
+      {
+        "file": "Radiography pelvis with bone metastasis 01.jpg",
+        "caption": "X线 · 骨盆溶骨性转移",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Osteolytische Metastase eines Nierenzellkarzinoms im proximalen Femur rechts 68W - CR und CT - 001.jpg",
+        "caption": "X线+CT · 股骨近端溶骨转移",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Femurmetastase Mammakarzinom pathologische Fraktur 68W - CR - 001.jpg",
+        "caption": "X线 · 乳腺癌股骨转移伴病理性骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "septic": [
+      {
+        "file": "SepticArth2011.jpg",
+        "caption": "MRI · 化脓性关节炎积液",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "BioFix Hueftspacer bei septischer Pfannenlockerung 65W - CR ap - 001.jpg",
+        "caption": "X线 · 化脓性髋关节感染",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "SepticArth2011 (cropped).jpg",
+        "caption": "MRI · 化脓性关节积液",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "ddh": [
+      {
+        "file": "Congenitaldislocation10.JPG",
+        "caption": "X线 · 先天性髋脱位",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Alpha and beta angles on neonatal hip ultrasonography.jpg",
+        "caption": "【标注】超声 · Graf α/β角测量",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of hip dysplasia in adult.jpg",
+        "caption": "X线 · 发育性髋发育不良",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "mcl": [
+      {
+        "file": "Knee_Cor_140234_t2me2d.png",
+        "caption": "MRI冠状 T2 · MCL走行区损伤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Stieda-Pellegrini-Schatten bei einliegen 85M - CR ap - 001 - Annotation.jpg",
+        "caption": "【标注】Stieda-Pellegrini征(陈旧MCL损伤)",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Unhappy Triad des Kniegelenks 53M - MR - 001 - Annotation.jpg",
+        "caption": "【对照】O'Donoghue三联征(含ACL/半月板,非纯MCL例)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "tibplat": [
+      {
+        "file": "Lateral Tibial Plateau fracture XRay with Depression.jpg",
+        "caption": "X线 · 胫骨平台塌陷",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Lateral Tibial Plateau fracture XRay with Depression 2.jpg",
+        "caption": "X线 · 胫骨平台骨折塌陷",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Tibial Plateau Fracture.jpg",
+        "caption": "X线 · 胫骨平台骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "patella": [
+      {
+        "file": "Patellaquerfraktur 83W - CR ap und CT sagittal und Volumen Rendering - 001.jpg",
+        "caption": "X线+CT · 髌骨横断骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Zuggurtungs-Osteosynthese bei Patella-Querfraktur.png",
+        "caption": "X线 · 髌骨骨折固定后",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Avulsionsfraktur unterer Patellapol 12M - CR und CT - 001.jpg",
+        "caption": "X线+CT · 髌骨下级撕脱",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "stressfx": [
+      {
+        "file": "X-ray of occult metaphyseal stress fracture of the tibia.jpg",
+        "caption": "X线 · 胫骨应力性骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "T1 and DP fat sat MRI of a stress fracture.jpg",
+        "caption": "MRI · 应力性骨折(骨髓水肿+低信号线)",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Proximal fractures of 5th metatarsal.jpg",
+        "caption": "X线 · 第五跖骨应力骨折",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "monteggia": [
+      {
+        "file": "Monteggia-Fraktur - Roe ap und seitlich - Annotation.jpg",
+        "caption": "【标注】尺骨骨折+桡骨头脱位",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Monteggia-Fraktur 23W - CR ap - 001.jpg",
+        "caption": "X线AP · Monteggia骨折",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of ventral dislocation of the radial head with calcification of annular ligament.jpg",
+        "caption": "X线 · 桡骨头脱位",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "lisfranc": [
+      {
+        "file": "Lisfranc-Luxationsfraktur 22M - CR und Volumen Rendering aus CT-Datensatz - 001.jpg",
+        "caption": "X线+CT · 跖楔关节脱位",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Lisfranc-Luxationsfraktur 55M - CR seitlich und CT sagittal - 001 - Annotation.jpg",
+        "caption": "【标注】Lisfranc损伤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Lisfranc Dislocation Rupture.jpg",
+        "caption": "X线 · 中足不稳定",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "talus": [
+      {
+        "file": "Talus Fraktur.jpg",
+        "caption": "X线 · 距骨颈粉碎骨折(术后固定)",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Talar Fractures.jpg",
+        "caption": "示意图 · 颈/体/后突骨折分区",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Snowboarders ankle - CT coronar.jpg",
+        "caption": "CT冠状 · 外侧突骨折(单板踝,与颈骨折鉴别)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "spinalstenosis": [
+      {
+        "file": "Ligamenta flava Hypertrophie - MRT T2 axial.jpg",
+        "caption": "MRI T2轴位 · 黄韧带肥厚致椎管狭窄",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Lumbar spinal stenosis 3 9.png",
+        "caption": "MRI矢状 · 多节段椎管狭窄",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "LumbarSpinalStenosis case1 2 7.png",
+        "caption": "MRI · 椎管三叶草样变窄",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "handoaa": [
+      {
+        "file": "Klassische Heberden-Arthrose und deformierende Rhizarthrose 77W - CR ap - 001.jpg",
+        "caption": "X线 · Heberden/Bouchard结节",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Heberden-Arthrose 81W - CR ap - 001.jpg",
+        "caption": "X线 · DIP骨赘与间隙变窄",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Metacarpophalangeal subluxation and osteoarthritis (distal radio-ulnar and trapeziometacarpal), X-ray.png",
+        "caption": "X线 · 拇指CMC半脱位伴桡腕/桡尺关节退变",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "hipimp": [
+      {
+        "file": "Alpha angle measured in 45 degrees Dunn view.jpg",
+        "caption": "X线 Dunn位 · α角增大(Cam型)",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Figure 6. Diagram of the bony pathology of both cam and pincer impingement..png",
+        "caption": "【标注】Cam/Pincer形态示意图",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of coxa profunda.jpg",
+        "caption": "X线 · Pincer型过度覆盖",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "cppd": [
+      {
+        "file": "Chondrocalcinosis - annotated.jpg",
+        "caption": "【标注】软骨/半月板钙化",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Chondrokalzinose Kniegelenk 95W - CR 2 Ebenen - 001.jpg",
+        "caption": "X线 · 膝关节软骨钙质沉着",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Crowned dens - 95jw - CT axial und coronar - 001.jpg",
+        "caption": "CT · 齿状突周围钙化(CPPD)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "psa": [
+      {
+        "file": "Psoriasisarthritis distales Interphalangealgelenk 79M - CR seitlich - 001.jpg",
+        "caption": "X线 · Pencil-in-cup笔帽样",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Artrite psoriasica Rx Mano Sn.PNG",
+        "caption": "X线AP · 指间关节侵蚀",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Sacroiliitis MRI ar1934-5.gif",
+        "caption": "MRI · 右侧骶髂强化(不对称,PsA原文献病例)",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "chondrosarcoma": [
+      {
+        "file": "Chondrosarkom proximaler Femur - 87jw - CT und Roe - 001.jpg",
+        "caption": "CT+X线 · 环弧状软骨钙化",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Chondrosarcoma femoris sin.jpg",
+        "caption": "X线 · 股骨软骨肉瘤",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Chondrosarkom (Großzeh).jpg",
+        "caption": "X线 · 软骨肉瘤",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "scfe": [
+      {
+        "file": "Trethowan's sign seen in SCFE.jpg",
+        "caption": "X线 · Trethowan征/Klein线",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "X-ray of epiphysiolysis progressing to osteonecrosis.jpg",
+        "caption": "X线 · 骨骺滑移进展",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Slipped capital femoral epiphysis.jpg",
+        "caption": "X线 · 股骨头骨骺滑移",
+        "site": "",
+        "ann": []
+      }
+    ],
+    "perthes": [
+      {
+        "file": "LeggCalvePerthes2.jpg",
+        "caption": "X线 · 股骨头变扁与碎裂",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Radiografia leg-calvé-perthes.jpg",
+        "caption": "X线 · Perthes病",
+        "site": "",
+        "ann": []
+      },
+      {
+        "file": "Morbus Perthes rechts 6W - CR ap - 001.jpg",
+        "caption": "X线 · 右侧Perthes病",
+        "site": "",
+        "ann": []
+      }
+    ]
+  },
+  "galleryAnnTpl": {
+    "knee": [
+      {
+        "site": "左膝 · MRI 冠状",
+        "ann": []
+      },
+      {
+        "site": "左膝 · MRI 矢状",
+        "ann": [
+          {
+            "x": 46,
+            "y": 40,
+            "lx": 20,
+            "ly": 35,
+            "label": "ACL中断"
+          }
+        ]
+      },
+      {
+        "site": "左膝 · MRI T1 矢状",
+        "ann": [
+          {
+            "x": 44,
+            "y": 42,
+            "lx": 18,
+            "ly": 38,
+            "label": "ACL撕裂"
+          }
+        ]
+      }
+    ],
+    "hip": [
+      {
+        "site": "髋关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "髋关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "髋关节 · X线 AP",
+        "ann": []
+      }
+    ],
+    "tumor": [
+      {
+        "site": "胫骨近端 · X线",
+        "ann": []
+      },
+      {
+        "site": "胫骨 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "长骨 · X线",
+        "ann": []
+      }
+    ],
+    "spine": [
+      {
+        "site": "L4-L5 · MRI 轴位",
+        "ann": []
+      },
+      {
+        "site": "腰椎 · CT 轴位",
+        "ann": []
+      },
+      {
+        "site": "腰椎 · MRI 矢状",
+        "ann": []
+      }
+    ],
+    "wrist": [
+      {
+        "site": "腕关节 · X线 舟骨位",
+        "ann": []
+      },
+      {
+        "site": "腕关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "舟骨 · X线",
+        "ann": []
+      }
+    ],
+    "shoulder": [
+      {
+        "site": "肩关节 · MRI",
+        "ann": []
+      },
+      {
+        "site": "肩关节 · MRI 斜冠状",
+        "ann": []
+      },
+      {
+        "site": "肩峰下 · MRI",
+        "ann": []
+      }
+    ],
+    "ankle": [
+      {
+        "site": "踝关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "双踝 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "三踝 · X线 AP",
+        "ann": []
+      }
+    ],
+    "hand": [
+      {
+        "site": "双手 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "手 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "拇指 · X线",
+        "ann": []
+      }
+    ],
+    "infect": [
+      {
+        "site": "胫骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "胫骨 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "长骨 · X线",
+        "ann": []
+      }
+    ],
+    "radius": [
+      {
+        "site": "桡骨远端 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "Colles · X线",
+        "ann": []
+      },
+      {
+        "site": "腕关节 · X线",
+        "ann": []
+      }
+    ],
+    "femneck": [
+      {
+        "site": "髋关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "股骨颈 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "经颈型 · X线 AP",
+        "ann": []
+      }
+    ],
+    "vertfx": [
+      {
+        "site": "胸腰段 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "腰椎 · X线",
+        "ann": []
+      },
+      {
+        "site": "L4 · X线 侧位",
+        "ann": []
+      }
+    ],
+    "meniscus": [
+      {
+        "site": "膝关节 · MRI T1 矢状",
+        "ann": []
+      },
+      {
+        "site": "半月板 · MRI",
+        "ann": []
+      },
+      {
+        "site": "内侧半月板 · MRI T2",
+        "ann": []
+      }
+    ],
+    "cervical": [
+      {
+        "site": "颈椎 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "颈椎 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "颈椎 · X线",
+        "ann": []
+      }
+    ],
+    "gout": [
+      {
+        "site": "足 · X线",
+        "ann": []
+      },
+      {
+        "site": "PIP · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "第一跖趾 · X线 AP",
+        "ann": []
+      }
+    ],
+    "avn": [
+      {
+        "site": "股骨头 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "股骨头 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "股骨头 · X线",
+        "ann": []
+      }
+    ],
+    "gct": [
+      {
+        "site": "膝关节周围 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "骨巨细胞瘤 · MRI T1",
+        "ann": []
+      },
+      {
+        "site": "骨巨细胞瘤 · MRI",
+        "ann": []
+      }
+    ],
+    "osteochondroma": [
+      {
+        "site": "肩胛骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "膝 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "长骨 · X线",
+        "ann": []
+      }
+    ],
+    "hemangioma": [
+      {
+        "site": "椎体 · MRI",
+        "ann": []
+      },
+      {
+        "site": "胸椎 · MRI",
+        "ann": []
+      },
+      {
+        "site": "椎体 · MRI",
+        "ann": []
+      }
+    ],
+    "as": [
+      {
+        "site": "骶髂 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "脊柱 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "胸腰段 · CT",
+        "ann": []
+      }
+    ],
+    "tb": [
+      {
+        "site": "L3-L4 · MRI+CT",
+        "ann": []
+      },
+      {
+        "site": "脓肿 · 示意图",
+        "ann": []
+      },
+      {
+        "site": "胸腰段 · X线",
+        "ann": []
+      }
+    ],
+    "humerus": [
+      {
+        "site": "肱骨近端 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "肱骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "近端肱骨 · X线",
+        "ann": []
+      }
+    ],
+    "clavicle": [
+      {
+        "site": "锁骨 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "锁骨中1/3 · X线",
+        "ann": []
+      },
+      {
+        "site": "左锁骨 · X线 AP",
+        "ann": []
+      }
+    ],
+    "pelvis": [
+      {
+        "site": "骨盆 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "开书样 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "耻骨 · X线 AP",
+        "ann": []
+      }
+    ],
+    "calcaneus": [
+      {
+        "site": "跟骨 · MRI",
+        "ann": []
+      },
+      {
+        "site": "跟骨 · CT 轴位",
+        "ann": []
+      },
+      {
+        "site": "跟骨 · X线",
+        "ann": []
+      }
+    ],
+    "pcl": [
+      {
+        "site": "膝关节 · MRI T1 矢状",
+        "ann": []
+      },
+      {
+        "site": "膝关节 · MRI 矢状",
+        "ann": []
+      },
+      {
+        "site": "膝关节 · MRI 矢状",
+        "ann": []
+      }
+    ],
+    "elbow": [
+      {
+        "site": "肘关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "肘 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "左肘 · X线 AP",
+        "ann": []
+      }
+    ],
+    "kneeoa": [
+      {
+        "site": "膝关节 · X线",
+        "ann": []
+      },
+      {
+        "site": "膝 · X线 负重",
+        "ann": []
+      },
+      {
+        "site": "膝关节 · X线 AP",
+        "ann": []
+      }
+    ],
+    "osteoporosis": [
+      {
+        "site": "胸腰段 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "胸腰段 · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "胸椎 · CT",
+        "ann": []
+      }
+    ],
+    "achilles": [
+      {
+        "site": "跟腱止点 · MRI",
+        "ann": []
+      },
+      {
+        "site": "跟腱 · 超声",
+        "ann": []
+      },
+      {
+        "site": "跟骨 · X线 侧位",
+        "ann": []
+      }
+    ],
+    "ewing": [
+      {
+        "site": "胫骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "胫骨骨干 · X线",
+        "ann": []
+      },
+      {
+        "site": "尤文肉瘤 · MRI",
+        "ann": []
+      }
+    ],
+    "myeloma": [
+      {
+        "site": "颅骨 · CT",
+        "ann": []
+      },
+      {
+        "site": "股骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "前臂 · X线 AP",
+        "ann": []
+      }
+    ],
+    "metastasis": [
+      {
+        "site": "骨盆 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "股骨近端 · X线+CT",
+        "ann": []
+      },
+      {
+        "site": "股骨 · X线 AP",
+        "ann": []
+      }
+    ],
+    "septic": [
+      {
+        "site": "髋关节 · MRI",
+        "ann": []
+      },
+      {
+        "site": "髋 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "化脓性 · MRI",
+        "ann": []
+      }
+    ],
+    "ddh": [
+      {
+        "site": "婴幼儿髋 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "新生儿髋 · 超声",
+        "ann": []
+      },
+      {
+        "site": "成人DDH · X线 AP",
+        "ann": []
+      }
+    ],
+    "mcl": [
+      {
+        "site": "左膝 · MRI 冠状 T2",
+        "ann": []
+      },
+      {
+        "site": "膝 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "左膝 · MRI 冠状",
+        "ann": []
+      }
+    ],
+    "tibplat": [
+      {
+        "site": "胫骨平台 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "平台 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "胫骨平台 · X线",
+        "ann": []
+      }
+    ],
+    "patella": [
+      {
+        "site": "髌骨 · X线+CT",
+        "ann": []
+      },
+      {
+        "site": "髌骨 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "髌骨 · X线",
+        "ann": []
+      }
+    ],
+    "stressfx": [
+      {
+        "site": "胫骨 · X线",
+        "ann": []
+      },
+      {
+        "site": "应力骨折 · MRI",
+        "ann": []
+      },
+      {
+        "site": "第五跖骨 · X线 AP",
+        "ann": []
+      }
+    ],
+    "monteggia": [
+      {
+        "site": "前臂 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "Monteggia · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "桡骨头 · X线",
+        "ann": []
+      }
+    ],
+    "lisfranc": [
+      {
+        "site": "中足 · X线+CT",
+        "ann": []
+      },
+      {
+        "site": "Lisfranc · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "中足 · X线 AP",
+        "ann": []
+      }
+    ],
+    "talus": [
+      {
+        "site": "距骨颈 · X线",
+        "ann": []
+      },
+      {
+        "site": "距骨 · 示意图",
+        "ann": []
+      },
+      {
+        "site": "距骨 · CT 冠状",
+        "ann": []
+      }
+    ],
+    "spinalstenosis": [
+      {
+        "site": "腰椎 · MRI T2 轴位",
+        "ann": []
+      },
+      {
+        "site": "腰椎 · MRI 矢状",
+        "ann": []
+      },
+      {
+        "site": "椎管 · MRI",
+        "ann": []
+      }
+    ],
+    "handoaa": [
+      {
+        "site": "手 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "DIP · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "拇指CMC · X线 AP",
+        "ann": []
+      }
+    ],
+    "hipimp": [
+      {
+        "site": "髋关节 · X线 Dunn位",
+        "ann": []
+      },
+      {
+        "site": "FAI · 示意图",
+        "ann": []
+      },
+      {
+        "site": "髋臼 · X线 AP",
+        "ann": []
+      }
+    ],
+    "cppd": [
+      {
+        "site": "膝 · X线",
+        "ann": []
+      },
+      {
+        "site": "膝关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "齿状突 · CT",
+        "ann": []
+      }
+    ],
+    "psa": [
+      {
+        "site": "DIP · X线 侧位",
+        "ann": []
+      },
+      {
+        "site": "手 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "骶髂 · MRI",
+        "ann": []
+      }
+    ],
+    "chondrosarcoma": [
+      {
+        "site": "股骨近端 · CT+X线",
+        "ann": []
+      },
+      {
+        "site": "股骨 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "趾 · X线 AP",
+        "ann": []
+      }
+    ],
+    "scfe": [
+      {
+        "site": "髋关节 · X线",
+        "ann": []
+      },
+      {
+        "site": "SCFE · X线",
+        "ann": []
+      },
+      {
+        "site": "股骨头 · X线 AP",
+        "ann": []
+      }
+    ],
+    "perthes": [
+      {
+        "site": "髋关节 · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "Perthes · X线 AP",
+        "ann": []
+      },
+      {
+        "site": "右髋 · X线 AP",
+        "ann": []
+      }
+    ]
+  },
+  "diseases": [
+    {
+      "region": "膝关节",
+      "mod": "MRI · X线",
+      "cat": "trauma",
+      "title": "前交叉韧带损伤",
+      "sub": "ACL Tear",
+      "sev": "high",
+      "sevtext": "急性·不稳定",
+      "desc": "运动损伤中最常见的膝关节内韧带损伤。MRI 显示 ACL 纤维连续性中断,常伴对吻性骨挫伤。",
+      "signs": [
+        "纤维中断",
+        "骨髓水肿",
+        "胫骨前移"
+      ],
+      "type": "knee"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · CT",
+      "cat": "degen",
+      "title": "髋关节骨关节炎",
+      "sub": "Hip Osteoarthritis",
+      "sev": "mid",
+      "sevtext": "慢性·退变",
+      "desc": "关节间隙不对称变窄、软骨下骨硬化、骨赘形成与囊性变,是负重关节退变的典型四联征。",
+      "signs": [
+        "间隙变窄",
+        "骨赘",
+        "软骨下硬化"
+      ],
+      "type": "hip"
+    },
+    {
+      "region": "股骨",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "骨肉瘤",
+      "sub": "Osteosarcoma",
+      "sev": "high",
+      "sevtext": "恶性·侵袭",
+      "desc": "好发于长骨干骺端的恶性成骨性肿瘤。可见骨破坏、瘤骨形成、Codman 三角与放射状骨针。",
+      "signs": [
+        "Codman三角",
+        "瘤骨",
+        "软组织肿块"
+      ],
+      "type": "tumor"
+    },
+    {
+      "region": "脊柱",
+      "mod": "CT · MRI",
+      "cat": "degen",
+      "title": "腰椎间盘突出",
+      "sub": "Lumbar Disc Herniation",
+      "sev": "mid",
+      "sevtext": "慢性·压迫",
+      "desc": "髓核突破纤维环向后突出,压迫神经根或硬膜囊。MRI 矢状位与轴位精准定位突出节段与方向。",
+      "signs": [
+        "髓核后突",
+        "神经根受压",
+        "椎管狭窄"
+      ],
+      "type": "spine"
+    },
+    {
+      "region": "腕关节",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "舟骨骨折",
+      "sub": "Scaphoid Fracture",
+      "sev": "mid",
+      "sevtext": "急性·隐匿",
+      "desc": "腕部最易漏诊的骨折之一。早期 X 线常阴性,腰部骨折易致缺血坏死,必要时 CT/MRI 补充。",
+      "signs": [
+        "腰部骨折线",
+        "鼻烟窝压痛",
+        "可疑缺血"
+      ],
+      "type": "wrist"
+    },
+    {
+      "region": "肩关节",
+      "mod": "MRI · US",
+      "cat": "degen",
+      "title": "肩袖撕裂",
+      "sub": "Rotator Cuff Tear",
+      "sev": "mid",
+      "sevtext": "慢性·撕裂",
+      "desc": "冈上肌腱最常受累。MRI 显示肌腱信号增高、纤维变薄或全层裂隙,伴肌肉萎缩与脂肪浸润。",
+      "signs": [
+        "肌腱高信号",
+        "全层裂隙",
+        "肌肉萎缩"
+      ],
+      "type": "shoulder"
+    },
+    {
+      "region": "踝关节",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "踝关节骨折脱位",
+      "sub": "Ankle Fracture-Dislocation",
+      "sev": "high",
+      "sevtext": "急性·不稳定",
+      "desc": "踝穴对合关系破坏伴内/外踝或后踝骨折。需评估下胫腓联合稳定性与关节面台阶。",
+      "signs": [
+        "踝穴增宽",
+        "多踝骨折",
+        "联合损伤"
+      ],
+      "type": "ankle"
+    },
+    {
+      "region": "手足",
+      "mod": "X线 · US",
+      "cat": "infl",
+      "title": "类风湿性关节炎",
+      "sub": "Rheumatoid Arthritis",
+      "sev": "mid",
+      "sevtext": "慢性·炎症",
+      "desc": "对称性小关节受累。早期关节周围骨质疏松、间隙变窄,进展期出现边缘性骨侵蚀与畸形。",
+      "signs": [
+        "边缘侵蚀",
+        "对称受累",
+        "骨质疏松"
+      ],
+      "type": "hand"
+    },
+    {
+      "region": "胫骨",
+      "mod": "MRI · 核素",
+      "cat": "infl",
+      "title": "急性骨髓炎",
+      "sub": "Acute Osteomyelitis",
+      "sev": "high",
+      "sevtext": "急性·感染",
+      "desc": "细菌侵袭骨髓引发感染。早期 X 线常无异常,MRI 敏感显示骨髓水肿、脓肿与骨膜下积液。",
+      "signs": [
+        "骨髓水肿",
+        "骨膜反应",
+        "脓肿形成"
+      ],
+      "type": "infect"
+    },
+    {
+      "region": "桡骨",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "桡骨远端骨折",
+      "sub": "Distal Radius Fracture",
+      "sev": "mid",
+      "sevtext": "急性·常见",
+      "desc": "最常见的上肢骨折。Colles 型背侧成角伴\"餐叉样\"畸形,需评估关节面累及与尺骨茎突。",
+      "signs": [
+        "背侧成角",
+        "关节面台阶",
+        "茎突骨折"
+      ],
+      "type": "radius"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "股骨颈骨折",
+      "sub": "Femoral Neck Fracture",
+      "sev": "high",
+      "sevtext": "急性·高危",
+      "desc": "老年骨质疏松常见,易致股骨头缺血坏死。Garden 分型评估移位程度,指导内固定或置换决策。",
+      "signs": [
+        "颈部骨折线",
+        "颈干角改变",
+        "Garden分型"
+      ],
+      "type": "femneck"
+    },
+    {
+      "region": "脊柱",
+      "mod": "X线 · MRI",
+      "cat": "trauma",
+      "title": "椎体压缩骨折",
+      "sub": "Vertebral Compression Fx",
+      "sev": "mid",
+      "sevtext": "急性/慢性",
+      "desc": "骨质疏松或外伤致椎体楔形变。MRI 区分新鲜(骨髓水肿)与陈旧骨折,排查病理性骨折。",
+      "signs": [
+        "楔形变",
+        "椎体高度丢失",
+        "骨髓水肿"
+      ],
+      "type": "vertfx"
+    },
+    {
+      "region": "膝关节",
+      "mod": "MRI",
+      "cat": "trauma",
+      "title": "半月板撕裂",
+      "sub": "Meniscal Tear",
+      "sev": "mid",
+      "sevtext": "急性/退变",
+      "desc": "膝关节常见运动损伤。MRI 矢状位可见半月板内线状高信号达关节面,分为水平、纵行、桶柄状等。",
+      "signs": [
+        "线状高信号",
+        "形态异常",
+        "桶柄移位"
+      ],
+      "type": "meniscus"
+    },
+    {
+      "region": "脊柱",
+      "mod": "X线 · MRI",
+      "cat": "degen",
+      "title": "颈椎病",
+      "sub": "Cervical Spondylosis",
+      "sev": "mid",
+      "sevtext": "慢性·退变",
+      "desc": "颈椎间盘退变、骨赘增生与椎管狭窄。MRI 评估脊髓受压与信号改变,定位神经根受累节段。",
+      "signs": [
+        "骨赘增生",
+        "椎间隙变窄",
+        "脊髓受压"
+      ],
+      "type": "cervical"
+    },
+    {
+      "region": "足部",
+      "mod": "X线",
+      "cat": "infl",
+      "title": "痛风性关节炎",
+      "sub": "Gouty Arthritis",
+      "sev": "mid",
+      "sevtext": "慢性·代谢",
+      "desc": "尿酸盐结晶沉积致关节破坏,第一跖趾关节最经典。典型\"穿凿样\"骨缺损伴硬化边,可见偏心性软组织痛风石。",
+      "signs": [
+        "穿凿样缺损",
+        "悬挂边缘",
+        "痛风石"
+      ],
+      "type": "gout"
+    },
+    {
+      "region": "股骨头",
+      "mod": "MRI · X线",
+      "cat": "degen",
+      "title": "股骨头缺血坏死",
+      "sub": "Avascular Necrosis",
+      "sev": "high",
+      "sevtext": "慢性·进展",
+      "desc": "血供中断致骨细胞死亡。MRI 早期敏感,典型\"双线征\";晚期出现新月征与股骨头塌陷。",
+      "signs": [
+        "双线征",
+        "新月征",
+        "头塌陷"
+      ],
+      "type": "avn"
+    },
+    {
+      "region": "膝关节",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "骨巨细胞瘤",
+      "sub": "Giant Cell Tumor",
+      "sev": "mid",
+      "sevtext": "交界·局侵",
+      "desc": "好发于长骨骨端的溶骨性肿瘤。偏心性膨胀性骨破坏,呈\"肥皂泡\"样,边界清而无硬化边。",
+      "signs": [
+        "偏心溶骨",
+        "肥皂泡样",
+        "骨端受累"
+      ],
+      "type": "gct"
+    },
+    {
+      "region": "长骨",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "骨软骨瘤",
+      "sub": "Osteochondroma",
+      "sev": "low",
+      "sevtext": "良性·常见",
+      "desc": "最常见的良性骨肿瘤。骨表面带蒂或宽基底骨性突起,与母骨皮质、髓腔相连续,顶端有软骨帽。",
+      "signs": [
+        "骨性突起",
+        "髓腔连续",
+        "软骨帽"
+      ],
+      "type": "osteochondroma"
+    },
+    {
+      "region": "椎体",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "椎体血管瘤",
+      "sub": "Vertebral Hemangioma",
+      "sev": "low",
+      "sevtext": "良性·偶发",
+      "desc": "常为偶然发现的良性病变。X线/CT 呈\"栅栏样\"或\"灯芯绒\"样粗大骨小梁,MRI T1/T2 多为高信号。",
+      "signs": [
+        "栅栏样",
+        "灯芯绒征",
+        "T1高信号"
+      ],
+      "type": "hemangioma"
+    },
+    {
+      "region": "脊柱",
+      "mod": "MRI · CT",
+      "cat": "infl",
+      "title": "强直性脊柱炎",
+      "sub": "Ankylosing Spondylitis",
+      "sev": "mid",
+      "sevtext": "慢性·炎症",
+      "desc": "累及中轴骨的血清阴性脊柱关节病。骶髂关节炎为早期标志,晚期\"竹节样\"脊柱与韧带骨化。",
+      "signs": [
+        "骶髂关节炎",
+        "竹节样脊柱",
+        "方椎"
+      ],
+      "type": "as"
+    },
+    {
+      "region": "椎间隙",
+      "mod": "MRI",
+      "cat": "infl",
+      "title": "脊柱结核",
+      "sub": "Spinal Tuberculosis",
+      "sev": "high",
+      "sevtext": "慢性·感染",
+      "desc": "结核杆菌侵犯椎体。椎体破坏、椎间隙变窄、椎旁冷脓肿形成,可致后凸畸形(Pott病)。",
+      "signs": [
+        "椎体破坏",
+        "椎旁脓肿",
+        "后凸畸形"
+      ],
+      "type": "tb"
+    },
+    {
+      "region": "肱骨",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "肱骨近端骨折",
+      "sub": "Proximal Humerus Fx",
+      "sev": "mid",
+      "sevtext": "急性·常见",
+      "desc": "老年跌倒常见骨折。Neer 分型依据外科颈、大小结节四部分移位程度,决定保守或手术方案。",
+      "signs": [
+        "外科颈骨折",
+        "结节移位",
+        "Neer分型"
+      ],
+      "type": "humerus"
+    },
+    {
+      "region": "锁骨",
+      "mod": "X线",
+      "cat": "trauma",
+      "title": "锁骨骨折",
+      "sub": "Clavicle Fracture",
+      "sev": "low",
+      "sevtext": "急性·常见",
+      "desc": "最常见于中 1/3。X 线见骨折断端因肌肉牵拉而上下移位、重叠或成角,多数可保守治疗。",
+      "signs": [
+        "中段骨折",
+        "断端重叠",
+        "向上移位"
+      ],
+      "type": "clavicle"
+    },
+    {
+      "region": "骨盆",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "骨盆环骨折",
+      "sub": "Pelvic Ring Fracture",
+      "sev": "high",
+      "sevtext": "急性·危重",
+      "desc": "高能量损伤,常累及前后环双处。CT 三维重建评估稳定性与移位,警惕大出血与脏器损伤。",
+      "signs": [
+        "前后环骨折",
+        "耻骨联合分离",
+        "骶髂受累"
+      ],
+      "type": "pelvis"
+    },
+    {
+      "region": "跟骨",
+      "mod": "CT · X线",
+      "cat": "trauma",
+      "title": "跟骨骨折",
+      "sub": "Calcaneal Fracture",
+      "sev": "mid",
+      "sevtext": "急性·坠落",
+      "desc": "坠落伤典型损伤。Böhler 角减小提示关节面塌陷,CT 评估距下关节面累及与移位程度。",
+      "signs": [
+        "Böhler角减小",
+        "关节面塌陷",
+        "跟骨增宽"
+      ],
+      "type": "calcaneus"
+    },
+    {
+      "region": "膝关节",
+      "mod": "MRI",
+      "cat": "trauma",
+      "title": "后交叉韧带损伤",
+      "sub": "PCL Tear",
+      "sev": "mid",
+      "sevtext": "急性·撞击",
+      "desc": "多由仪表盘损伤所致。MRI 见 PCL 增粗、信号增高或连续性中断,常伴胫骨后移与骨挫伤。",
+      "signs": [
+        "PCL增粗",
+        "信号增高",
+        "胫骨后移"
+      ],
+      "type": "pcl"
+    },
+    {
+      "region": "肘关节",
+      "mod": "X线",
+      "cat": "trauma",
+      "title": "肘关节脱位",
+      "sub": "Elbow Dislocation",
+      "sev": "mid",
+      "sevtext": "急性·脱位",
+      "desc": "后脱位最常见。X 线见尺桡骨相对肱骨向后移位,需排查冠突、桡骨头骨折与软组织损伤。",
+      "signs": [
+        "关节失对合",
+        "后向移位",
+        "合并骨折"
+      ],
+      "type": "elbow"
+    },
+    {
+      "region": "膝关节",
+      "mod": "X线 · CT",
+      "cat": "degen",
+      "title": "膝关节骨关节炎",
+      "sub": "Knee Osteoarthritis",
+      "sev": "mid",
+      "sevtext": "慢性·退变",
+      "desc": "最常见的负重关节退变。内侧间隙变窄、骨赘、软骨下硬化与囊变,负重位评估更准确。",
+      "signs": [
+        "间隙变窄",
+        "胫骨棘变尖",
+        "内翻畸形"
+      ],
+      "type": "kneeoa"
+    },
+    {
+      "region": "全身骨",
+      "mod": "X线 · 骨密度",
+      "cat": "degen",
+      "title": "骨质疏松症",
+      "sub": "Osteoporosis",
+      "sev": "mid",
+      "sevtext": "慢性·代谢",
+      "desc": "骨量减少与骨微结构破坏。DEXA 测 T 值确诊; X 线见骨密度减低、皮质变薄,可伴椎体脆性骨折。",
+      "signs": [
+        "密度减低",
+        "皮质变薄",
+        "椎体变形"
+      ],
+      "type": "osteoporosis"
+    },
+    {
+      "region": "足部",
+      "mod": "X线 · MRI",
+      "cat": "degen",
+      "title": "跟腱炎/跟骨骨刺",
+      "sub": "Achilles Tendinopathy",
+      "sev": "low",
+      "sevtext": "慢性·劳损",
+      "desc": "慢性劳损所致。X 线可见跟骨后方骨刺;MRI/超声显示跟腱增厚、信号增高与止点周围水肿。",
+      "signs": [
+        "跟腱增厚",
+        "止点骨刺",
+        "周围水肿"
+      ],
+      "type": "achilles"
+    },
+    {
+      "region": "骨干",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "尤文肉瘤",
+      "sub": "Ewing Sarcoma",
+      "sev": "high",
+      "sevtext": "恶性·儿童",
+      "desc": "好发于儿童青少年长骨骨干的小圆细胞恶性肿瘤。\"虫蚀样\"骨破坏伴\"葱皮样\"骨膜反应。",
+      "signs": [
+        "虫蚀样破坏",
+        "葱皮样骨膜",
+        "软组织肿块"
+      ],
+      "type": "ewing"
+    },
+    {
+      "region": "多发骨",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "多发性骨髓瘤",
+      "sub": "Multiple Myeloma",
+      "sev": "high",
+      "sevtext": "恶性·浆细胞",
+      "desc": "浆细胞恶性增殖。颅骨\"穿凿样\"多发溶骨灶,无硬化边;全身低剂量 CT 或 MRI 评估病灶范围。",
+      "signs": [
+        "穿凿样溶骨",
+        "弥漫骨质疏松",
+        "病理骨折"
+      ],
+      "type": "myeloma"
+    },
+    {
+      "region": "长骨",
+      "mod": "X线 · CT",
+      "cat": "tumor",
+      "title": "骨转移瘤",
+      "sub": "Bone Metastasis",
+      "sev": "high",
+      "sevtext": "恶性·继发",
+      "desc": "晚期肿瘤常见骨受累。可为溶骨型、成骨型或混合型,脊柱、骨盆、肋骨好发,核素更敏感。",
+      "signs": [
+        "多发病灶",
+        "溶骨/成骨",
+        "病理骨折"
+      ],
+      "type": "metastasis"
+    },
+    {
+      "region": "大关节",
+      "mod": "CT · MRI",
+      "cat": "infl",
+      "title": "化脓性关节炎",
+      "sub": "Septic Arthritis",
+      "sev": "high",
+      "sevtext": "急性·感染",
+      "desc": "关节腔细菌感染急症。关节积液增多、间隙改变、骨质破坏,MRI 早期敏感,需紧急穿刺引流。",
+      "signs": [
+        "关节积液",
+        "骨质破坏",
+        "滑膜增厚"
+      ],
+      "type": "septic"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · US",
+      "cat": "ped",
+      "title": "发育性髋关节发育不良",
+      "sub": "DDH",
+      "sev": "mid",
+      "sevtext": "先天·儿童",
+      "desc": "婴幼儿髋臼发育异常。X 线测髋臼指数、Shenton 线连续性;超声为新生儿首选筛查手段。",
+      "signs": [
+        "髋臼变浅",
+        "Shenton线中断",
+        "股骨头外移"
+      ],
+      "type": "ddh"
+    },
+    {
+      "region": "膝关节",
+      "mod": "MRI · X线",
+      "cat": "trauma",
+      "title": "内侧副韧带损伤",
+      "sub": "MCL Tear",
+      "sev": "mid",
+      "sevtext": "急性·扭伤",
+      "desc": "膝关节外翻应力致 MCL 损伤,分 I-III 级。MRI 见浅层/深层纤维中断或周围水肿,常合并 ACL 损伤。",
+      "signs": [
+        "MCL水肿",
+        "纤维中断",
+        "外翻不稳"
+      ],
+      "type": "mcl"
+    },
+    {
+      "region": "胫骨",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "胫骨平台骨折",
+      "sub": "Tibial Plateau Fracture",
+      "sev": "high",
+      "sevtext": "急性·关节内",
+      "desc": "高能量或低能量骨质疏松所致。Schatzker 分型评估劈裂/塌陷,CT 显示关节面台阶与粉碎程度。",
+      "signs": [
+        "平台塌陷",
+        "关节面台阶",
+        "Schatzker分型"
+      ],
+      "type": "tibplat"
+    },
+    {
+      "region": "髌骨",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "髌骨骨折",
+      "sub": "Patella Fracture",
+      "sev": "mid",
+      "sevtext": "急性·伸膝",
+      "desc": "直接撞击或股四头肌强力收缩所致。横断/粉碎/纵向骨折,评估伸肌装置连续性与关节面累及。",
+      "signs": [
+        "横断骨折",
+        "伸肌装置",
+        "关节面累及"
+      ],
+      "type": "patella"
+    },
+    {
+      "region": "胫骨/跖骨",
+      "mod": "X线 · MRI",
+      "cat": "trauma",
+      "title": "应力性骨折",
+      "sub": "Stress Fracture",
+      "sev": "mid",
+      "sevtext": "慢性·过劳",
+      "desc": "反复微损伤超过骨修复能力。早期 X 线阴性,MRI 显示骨髓水肿与低信号骨折线,常见于运动员。",
+      "signs": [
+        "骨髓水肿",
+        "线状低信号",
+        "骨膜反应"
+      ],
+      "type": "stressfx"
+    },
+    {
+      "region": "前臂",
+      "mod": "X线",
+      "cat": "trauma",
+      "title": "Monteggia 骨折",
+      "sub": "Monteggia Fracture",
+      "sev": "mid",
+      "sevtext": "急性·脱位",
+      "desc": "尺骨骨折合并桡骨头脱位/半脱位。Bado 分型,复位后须复查桡骨头对合,漏诊致肘功能障碍。",
+      "signs": [
+        "尺骨骨折",
+        "桡骨头脱位",
+        "Bado分型"
+      ],
+      "type": "monteggia"
+    },
+    {
+      "region": "中足",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "Lisfranc 损伤",
+      "sub": "Lisfranc Injury",
+      "sev": "high",
+      "sevtext": "急性·中足",
+      "desc": "跖楔关节复合体损伤,可表现为单纯韧带撕裂或骨折脱位。评估第二跖骨基底与中间楔骨对合关系。",
+      "signs": [
+        "跖楔分离",
+        "第二跖骨基底",
+        "中足不稳定"
+      ],
+      "type": "lisfranc"
+    },
+    {
+      "region": "距骨",
+      "mod": "X线 · CT",
+      "cat": "trauma",
+      "title": "距骨骨折",
+      "sub": "Talus Fracture",
+      "sev": "high",
+      "sevtext": "急性·缺血",
+      "desc": "距骨血供脆弱,骨折后缺血坏死风险高。Hawkins 分型(颈骨折)预测坏死,CT 评估关节面与移位。",
+      "signs": [
+        "距骨颈骨折",
+        "Hawkins分型",
+        "AVN风险"
+      ],
+      "type": "talus"
+    },
+    {
+      "region": "腰椎",
+      "mod": "MRI · CT",
+      "cat": "degen",
+      "title": "腰椎管狭窄",
+      "sub": "Lumbar Spinal Stenosis",
+      "sev": "mid",
+      "sevtext": "慢性·神经",
+      "desc": "黄韧带肥厚、小关节增生与椎间盘退变致椎管/椎间孔狭窄。MRI 轴位见\"三叶草\"样椎管,致间歇性跛行。",
+      "signs": [
+        "椎管变窄",
+        "黄韧带肥厚",
+        "神经根受压"
+      ],
+      "type": "spinalstenosis"
+    },
+    {
+      "region": "手部",
+      "mod": "X线",
+      "cat": "degen",
+      "title": "手部骨关节炎",
+      "sub": "Hand Osteoarthritis",
+      "sev": "low",
+      "sevtext": "慢性·退变",
+      "desc": "DIP/PIP 及 CMC 关节退变,以 Heberden 与 Bouchard 结节为特征。X 线见间隙变窄、骨赘与硬化。",
+      "signs": [
+        "Heberden结节",
+        "间隙变窄",
+        "骨赘形成"
+      ],
+      "type": "handoaa"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · MRI",
+      "cat": "degen",
+      "title": "髋臼撞击综合征",
+      "sub": "Femoroacetabular Impingement",
+      "sev": "mid",
+      "sevtext": "慢性·撞击",
+      "desc": "Cam(股骨头)或 Pincer(髋臼)形态异常致盂唇与软骨反复撞击,是年轻患者髋痛与早期 OA 重要原因。",
+      "signs": [
+        "Cam/Pincer",
+        "盂唇撕裂",
+        "软骨损伤"
+      ],
+      "type": "hipimp"
+    },
+    {
+      "region": "膝关节",
+      "mod": "X线 · US",
+      "cat": "infl",
+      "title": "焦磷酸钙沉积病",
+      "sub": "CPPD / Pseudogout",
+      "sev": "mid",
+      "sevtext": "慢性·结晶",
+      "desc": "焦磷酸钙结晶沉积于软骨与关节,致软骨钙质沉着与急性炎症发作。X 线见半月板/软骨线性钙化。",
+      "signs": [
+        "软骨钙化",
+        "Chondrocalcinosis",
+        "假性痛风"
+      ],
+      "type": "cppd"
+    },
+    {
+      "region": "手足",
+      "mod": "X线 · MRI",
+      "cat": "infl",
+      "title": "银屑病关节炎",
+      "sub": "Psoriatic Arthritis",
+      "sev": "mid",
+      "sevtext": "慢性·炎症",
+      "desc": "血清阴性脊柱关节病,可累及 DIP、附着点与骶髂关节。典型\"笔帽样\"指骨、不对称侵蚀与骨赘并存。",
+      "signs": [
+        "笔帽样改变",
+        "附着点炎",
+        "不对称侵蚀"
+      ],
+      "type": "psa"
+    },
+    {
+      "region": "骨盆/长骨",
+      "mod": "X线 · MRI",
+      "cat": "tumor",
+      "title": "软骨肉瘤",
+      "sub": "Chondrosarcoma",
+      "sev": "high",
+      "sevtext": "恶性·软骨",
+      "desc": "第二常见原发恶性骨肿瘤,以软骨基质矿化为特征。好发于骨盆、股骨近端,边界相对清但具局部侵袭性。",
+      "signs": [
+        "软骨基质",
+        "环弧状钙化",
+        "骨端/骨盆"
+      ],
+      "type": "chondrosarcoma"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · MRI",
+      "cat": "ped",
+      "title": "股骨头骨骺滑脱",
+      "sub": "SCFE",
+      "sev": "high",
+      "sevtext": "儿童·急/慢",
+      "desc": "青春期肥胖男童多见,股骨头相对于干骺端后下方滑移。Southwick 角评估滑移程度,延误可致头坏死。",
+      "signs": [
+        "干骺分离",
+        "Southwick角",
+        "Klein线"
+      ],
+      "type": "scfe"
+    },
+    {
+      "region": "髋关节",
+      "mod": "X线 · MRI",
+      "cat": "ped",
+      "title": "Perthes 病",
+      "sub": "Legg-Calvé-Perthes",
+      "sev": "mid",
+      "sevtext": "儿童·缺血",
+      "desc": "4-10 岁儿童股骨头缺血性坏死(特发性)。Catterall 分型评估受累范围,X 线见头变扁、碎裂与再塑。",
+      "signs": [
+        "股骨头变扁",
+        "碎裂再塑",
+        "Catterall分型"
+      ],
+      "type": "perthes"
+    }
+  ],
+  "TAXONOMY": {
+    "cat": {
+      "trauma": {
+        "label": "创伤骨科",
+        "desc": "骨折、脱位、韧带/半月板损伤及应力性损伤等急性肌肉骨骼创伤。",
+        "order": 1
+      },
+      "degen": {
+        "label": "退行性病变",
+        "desc": "骨关节炎、椎间盘退变、脊柱狭窄、肌腱退变、骨质疏松与缺血坏死等慢性病变。",
+        "order": 2
+      },
+      "infl": {
+        "label": "炎症与风湿",
+        "desc": "化脓性感染、骨髓炎、脊柱结核,以及类风湿、脊柱关节病与结晶性关节病。",
+        "order": 3
+      },
+      "tumor": {
+        "label": "骨与软组织肿瘤",
+        "desc": "原发良/恶性骨肿瘤、交界性病变与转移性骨肿瘤。",
+        "order": 4
+      },
+      "ped": {
+        "label": "儿童骨科",
+        "desc": "骨骺滑移/缺血坏死及先天性或发育性髋关节异常。",
+        "order": 5
+      }
+    },
+    "subcat": {
+      "fracture": {
+        "label": "骨折",
+        "cats": [
+          "trauma"
+        ]
+      },
+      "dislocation": {
+        "label": "关节脱位",
+        "cats": [
+          "trauma"
+        ]
+      },
+      "ligament": {
+        "label": "韧带/半月板",
+        "cats": [
+          "trauma"
+        ]
+      },
+      "stress": {
+        "label": "应力性损伤",
+        "cats": [
+          "trauma"
+        ]
+      },
+      "oa": {
+        "label": "骨关节炎",
+        "cats": [
+          "degen"
+        ]
+      },
+      "disc": {
+        "label": "椎间盘退变",
+        "cats": [
+          "degen"
+        ]
+      },
+      "spine": {
+        "label": "脊柱退变/狭窄",
+        "cats": [
+          "degen"
+        ]
+      },
+      "avn": {
+        "label": "缺血性坏死",
+        "cats": [
+          "degen"
+        ]
+      },
+      "soft": {
+        "label": "肌腱/软组织退变",
+        "cats": [
+          "degen"
+        ]
+      },
+      "impingement": {
+        "label": "撞击综合征",
+        "cats": [
+          "degen"
+        ]
+      },
+      "bone": {
+        "label": "骨质疏松",
+        "cats": [
+          "degen"
+        ]
+      },
+      "rheumatoid": {
+        "label": "类风湿关节炎",
+        "cats": [
+          "infl"
+        ]
+      },
+      "spondylo": {
+        "label": "脊柱关节病",
+        "cats": [
+          "infl"
+        ]
+      },
+      "crystal": {
+        "label": "结晶性关节病",
+        "cats": [
+          "infl"
+        ]
+      },
+      "infect-joint": {
+        "label": "化脓性关节炎",
+        "cats": [
+          "infl"
+        ]
+      },
+      "infect-bone": {
+        "label": "骨髓炎",
+        "cats": [
+          "infl"
+        ]
+      },
+      "infect-spine": {
+        "label": "脊柱感染",
+        "cats": [
+          "infl"
+        ]
+      },
+      "mal-primary": {
+        "label": "原发恶性肿瘤",
+        "cats": [
+          "tumor"
+        ]
+      },
+      "benign": {
+        "label": "良性肿瘤",
+        "cats": [
+          "tumor"
+        ]
+      },
+      "metastasis": {
+        "label": "转移性肿瘤",
+        "cats": [
+          "tumor"
+        ]
+      },
+      "intermediate": {
+        "label": "交界性肿瘤",
+        "cats": [
+          "tumor"
+        ]
+      },
+      "epiphysis": {
+        "label": "骨骺/股骨头病变",
+        "cats": [
+          "ped"
+        ]
+      },
+      "congenital": {
+        "label": "先天/发育异常",
+        "cats": [
+          "ped"
+        ]
+      }
+    },
+    "zone": {
+      "upper": {
+        "label": "上肢"
+      },
+      "lower": {
+        "label": "下肢"
+      },
+      "spine": {
+        "label": "脊柱"
+      },
+      "pelvis": {
+        "label": "骨盆"
+      },
+      "whole": {
+        "label": "全身/多部位"
+      }
+    }
+  },
+  "NAV_GROUPS": {
+    "trauma": {
+      "label": "创伤",
+      "icon": "🦴",
+      "desc": "骨折、脱位、韧带与半月板损伤"
+    },
+    "joint": {
+      "label": "关节",
+      "icon": "🦴",
+      "desc": "关节炎、退变、风湿与结晶性关节病"
+    },
+    "spine": {
+      "label": "脊柱",
+      "icon": "🦴",
+      "desc": "椎间盘、椎体病变与脊柱关节病"
+    },
+    "tumor": {
+      "label": "肿瘤",
+      "icon": "🦴",
+      "desc": "良恶性骨与软组织肿瘤"
+    },
+    "infection": {
+      "label": "感染",
+      "icon": "🦴",
+      "desc": "骨髓炎、化脓性关节炎与脊柱感染"
+    },
+    "ped": {
+      "label": "儿童骨科",
+      "icon": "🦴",
+      "desc": "骨骺病变与发育性髋关节异常"
+    }
+  },
+  "taxByType": {
+    "knee": {
+      "cat": "trauma",
+      "subcat": "ligament",
+      "zone": "lower"
+    },
+    "hip": {
+      "cat": "degen",
+      "subcat": "oa",
+      "zone": "lower"
+    },
+    "tumor": {
+      "cat": "tumor",
+      "subcat": "mal-primary",
+      "zone": "lower"
+    },
+    "spine": {
+      "cat": "degen",
+      "subcat": "disc",
+      "zone": "spine"
+    },
+    "wrist": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "upper"
+    },
+    "shoulder": {
+      "cat": "degen",
+      "subcat": "soft",
+      "zone": "upper"
+    },
+    "ankle": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "hand": {
+      "cat": "infl",
+      "subcat": "rheumatoid",
+      "zone": "upper"
+    },
+    "infect": {
+      "cat": "infl",
+      "subcat": "infect-bone",
+      "zone": "lower"
+    },
+    "radius": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "upper"
+    },
+    "femneck": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "vertfx": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "spine"
+    },
+    "meniscus": {
+      "cat": "trauma",
+      "subcat": "ligament",
+      "zone": "lower"
+    },
+    "cervical": {
+      "cat": "degen",
+      "subcat": "spine",
+      "zone": "spine"
+    },
+    "gout": {
+      "cat": "infl",
+      "subcat": "crystal",
+      "zone": "lower"
+    },
+    "avn": {
+      "cat": "degen",
+      "subcat": "avn",
+      "zone": "lower"
+    },
+    "gct": {
+      "cat": "tumor",
+      "subcat": "intermediate",
+      "zone": "lower"
+    },
+    "osteochondroma": {
+      "cat": "tumor",
+      "subcat": "benign",
+      "zone": "whole"
+    },
+    "hemangioma": {
+      "cat": "tumor",
+      "subcat": "benign",
+      "zone": "spine"
+    },
+    "as": {
+      "cat": "infl",
+      "subcat": "spondylo",
+      "zone": "spine"
+    },
+    "tb": {
+      "cat": "infl",
+      "subcat": "infect-spine",
+      "zone": "spine"
+    },
+    "humerus": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "upper"
+    },
+    "clavicle": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "upper"
+    },
+    "pelvis": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "pelvis"
+    },
+    "calcaneus": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "pcl": {
+      "cat": "trauma",
+      "subcat": "ligament",
+      "zone": "lower"
+    },
+    "elbow": {
+      "cat": "trauma",
+      "subcat": "dislocation",
+      "zone": "upper"
+    },
+    "kneeoa": {
+      "cat": "degen",
+      "subcat": "oa",
+      "zone": "lower"
+    },
+    "osteoporosis": {
+      "cat": "degen",
+      "subcat": "bone",
+      "zone": "whole"
+    },
+    "achilles": {
+      "cat": "degen",
+      "subcat": "soft",
+      "zone": "lower"
+    },
+    "ewing": {
+      "cat": "tumor",
+      "subcat": "mal-primary",
+      "zone": "whole"
+    },
+    "myeloma": {
+      "cat": "tumor",
+      "subcat": "mal-primary",
+      "zone": "whole"
+    },
+    "metastasis": {
+      "cat": "tumor",
+      "subcat": "metastasis",
+      "zone": "whole"
+    },
+    "septic": {
+      "cat": "infl",
+      "subcat": "infect-joint",
+      "zone": "whole"
+    },
+    "ddh": {
+      "cat": "ped",
+      "subcat": "congenital",
+      "zone": "lower"
+    },
+    "mcl": {
+      "cat": "trauma",
+      "subcat": "ligament",
+      "zone": "lower"
+    },
+    "tibplat": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "patella": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "stressfx": {
+      "cat": "trauma",
+      "subcat": "stress",
+      "zone": "lower"
+    },
+    "monteggia": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "upper"
+    },
+    "lisfranc": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "talus": {
+      "cat": "trauma",
+      "subcat": "fracture",
+      "zone": "lower"
+    },
+    "spinalstenosis": {
+      "cat": "degen",
+      "subcat": "spine",
+      "zone": "spine"
+    },
+    "handoaa": {
+      "cat": "degen",
+      "subcat": "oa",
+      "zone": "upper"
+    },
+    "hipimp": {
+      "cat": "degen",
+      "subcat": "impingement",
+      "zone": "lower"
+    },
+    "cppd": {
+      "cat": "infl",
+      "subcat": "crystal",
+      "zone": "whole"
+    },
+    "psa": {
+      "cat": "infl",
+      "subcat": "spondylo",
+      "zone": "whole"
+    },
+    "chondrosarcoma": {
+      "cat": "tumor",
+      "subcat": "mal-primary",
+      "zone": "pelvis"
+    },
+    "scfe": {
+      "cat": "ped",
+      "subcat": "epiphysis",
+      "zone": "lower"
+    },
+    "perthes": {
+      "cat": "ped",
+      "subcat": "epiphysis",
+      "zone": "lower"
+    }
+  },
+  "filmData": {
+    "xray": {
+      "meta": "WL 40 · WW 400 · DR",
+      "films": [
+        {
+          "name": "膝关节正位",
+          "find": "间隙变窄 · 骨赘形成",
+          "top": "KNEE AP<br>DR · STANDING",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Knee_plain_X-ray_weight_bearing.jpg?width=800"
+        },
+        {
+          "name": "腕关节侧位",
+          "find": "背侧成角 · 餐叉畸形",
+          "top": "WRIST LAT<br>DR",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Collesfracture.jpg?width=800"
+        },
+        {
+          "name": "骨盆正位",
+          "find": "股骨颈骨折线",
+          "top": "PELVIS AP<br>DR",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Hueftgelenk-Oberschenkelhalsbruch.jpg?width=800"
+        },
+        {
+          "name": "胫骨平台",
+          "find": "平台塌陷 · 关节面台阶",
+          "top": "TIB PLAT<br>AP · DEPRESSION",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Lateral_Tibial_Plateau_fracture_XRay_with_Depression.jpg?width=800"
+        },
+        {
+          "name": "SCFE 蛙式位",
+          "find": "Klein线 · Trethowan征",
+          "top": "HIP FROG<br>AP · PEDIATRIC",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Trethowan's_sign_seen_in_SCFE.jpg?width=800"
+        }
+      ]
+    },
+    "ct": {
+      "meta": "WL 300 · WW 1500 · BONE",
+      "films": [
+        {
+          "name": "跟骨轴位",
+          "find": "关节面塌陷 · Böhler角↓",
+          "top": "CALCANEUS<br>CT AXIAL",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_scan_of_calcaneal_fracture.jpg?width=800"
+        },
+        {
+          "name": "腰椎轴位",
+          "find": "髓核后突 · 椎管狭窄",
+          "top": "L4-L5<br>CT AXIAL",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_SCAN_DISC_HERNIATION.JPG?width=800"
+        },
+        {
+          "name": "踝关节冠状",
+          "find": "距骨颈/外侧突 · 骨折",
+          "top": "TALUS<br>CT CORONAL",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowboarders_ankle_-_CT_coronar.jpg?width=800"
+        },
+        {
+          "name": "Lisfranc",
+          "find": "跖楔分离 · 中足脱位",
+          "top": "MIDFOOT<br>CT+XR",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Lisfranc-Luxationsfraktur_22M_-_CR_und_Volumen_Rendering_aus_CT-Datensatz_-_001.jpg?width=800"
+        },
+        {
+          "name": "软骨肉瘤",
+          "find": "环弧钙化 · 股骨近端",
+          "top": "FEMUR<br>CT+XR",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Chondrosarkom_proximaler_Femur_-_87jw_-_CT_und_Roe_-_001.jpg?width=800"
+        }
+      ]
+    },
+    "mri": {
+      "meta": "TR 4000 · TE 90 · PD-FS",
+      "films": [
+        {
+          "name": "膝关节矢状",
+          "find": "ACL中断 · 骨挫伤T2↑",
+          "top": "KNEE SAG<br>PD-FS 3.0T",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/MRT_VKB-Riss_T1.jpg?width=800"
+        },
+        {
+          "name": "O'Donoghue三联征",
+          "find": "ACL+MCL+半月板",
+          "top": "KNEE COR<br>PD-FS",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Unhappy_Triad_des_Kniegelenks_53M_-_MR_-_001_-_Annotation.jpg?width=800"
+        },
+        {
+          "name": "腰椎管狭窄",
+          "find": "黄韧带肥厚 · 椎管三叶草",
+          "top": "L-SPINE<br>T2 AX",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Ligamenta_flava_Hypertrophie_-_MRT_T2_axial.jpg?width=800"
+        },
+        {
+          "name": "半月板桶柄",
+          "find": "桶柄移位 · 双PCL征",
+          "top": "KNEE SAG<br>T1",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Korbhenkelriss_Aussenmeniskus_Hinterhorn_-_14jm_-_MRT_-_T1_sagittal_-_017.jpg?width=800"
+        },
+        {
+          "name": "肩袖斜冠状",
+          "find": "冈上肌全层裂隙",
+          "top": "SHOULDER<br>PD-FS OBL",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/2_MRI._Complete_tear_and_rupture_of_the_supraspinatus_tendon._Wide_transmural_damage_(2.4_x_2.4_cm)..jpg?width=800"
+        }
+      ]
+    },
+    "us": {
+      "meta": "7.5 MHz · 线阵探头",
+      "films": [
+        {
+          "name": "跟腱长轴",
+          "find": "连续性中断 · 低回声",
+          "top": "ACHILLES<br>US LONG",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Achillessehnenruptur_Sono.jpg?width=800"
+        },
+        {
+          "name": "婴儿髋 Graf",
+          "find": "α/β角 · 髋臼覆盖",
+          "top": "INFANT HIP<br>US GRAF",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpha_and_beta_angles_on_neonatal_hip_ultrasonography.jpg?width=800"
+        },
+        {
+          "name": "DDH 脱位",
+          "find": "先天性髋脱位 · 骨盆",
+          "top": "PELVIS AP<br>PEDIATRIC",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Congenitaldislocation10.JPG?width=800"
+        },
+        {
+          "name": "跟腱炎",
+          "find": "腱体增厚 · 低回声",
+          "top": "ACHILLES<br>US LONG",
+          "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Achilles_tendon_tendonitis.jpg?width=800"
+        }
+      ]
+    }
+  }
+}
