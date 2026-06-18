@@ -66,8 +66,10 @@ export async function findUserByUsername(username) {
   return (await readUsersData()).users.find(u => u.username.toLowerCase() === name);
 }
 
-export function findUserById(id) {
-  return null;
+export async function findUserById(id) {
+  const sid = String(id || '').trim();
+  if (!sid) return null;
+  return (await readUsersData()).users.find(u => u.id === sid) || null;
 }
 
 export function verifyUserPassword(user, password) {
@@ -127,10 +129,15 @@ export async function ensureBootstrapAdmin(username, password) {
   return admin;
 }
 
-export async function registerUser({ username, password, email }) {
+export async function registerUser({ username, password, email, role = 'user' }) {
+  return createStoredUser({ username, password, email, role });
+}
+
+export async function createStoredUser({ username, password, email, role = 'user' }) {
   const name = String(username || '').trim();
   const pass = String(password || '');
   const mail = String(email || '').trim();
+  const userRole = role === 'admin' ? 'admin' : 'user';
 
   if (name.length < 3 || name.length > 32) {
     throw new Error('用户名需 3–32 个字符');
@@ -160,12 +167,37 @@ export async function registerUser({ username, password, email }) {
     email: mail,
     salt,
     passwordHash: hashPassword(pass, salt),
-    role: 'user',
+    role: userRole,
     createdAt: new Date().toISOString()
   };
   data.users.push(user);
   await writeUsersData(data);
   return user;
+}
+
+export async function deleteUserById(id) {
+  const sid = String(id || '').trim();
+  if (!sid || sid === 'env-admin') {
+    throw new Error('该账号无法删除');
+  }
+
+  const data = await readUsersData();
+  const index = data.users.findIndex(u => u.id === sid);
+  if (index < 0) {
+    throw new Error('用户不存在');
+  }
+
+  const target = data.users[index];
+  if (target.role === 'admin') {
+    const adminCount = data.users.filter(u => u.role === 'admin').length;
+    if (adminCount <= 1) {
+      throw new Error('至少保留一名管理员，无法删除');
+    }
+  }
+
+  data.users.splice(index, 1);
+  await writeUsersData(data);
+  return publicUser(target);
 }
 
 export async function authenticateUser(username, password, bootstrapUsername, bootstrapPassword) {

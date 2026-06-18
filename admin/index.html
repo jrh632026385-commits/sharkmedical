@@ -226,6 +226,7 @@ tr:last-child td{border-bottom:none}
       <div class="topbar">
         <h2>用户管理</h2>
         <div class="actions">
+          <button class="btn" id="addUserBtn" type="button">添加用户</button>
           <button class="btn secondary" id="reloadUsersBtn" type="button">刷新列表</button>
         </div>
       </div>
@@ -240,11 +241,11 @@ tr:last-child td{border-bottom:none}
       </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>用户名</th><th>邮箱</th><th>角色</th><th>注册时间</th><th>用户 ID</th></tr></thead>
+          <thead><tr><th>用户名</th><th>邮箱</th><th>角色</th><th>注册时间</th><th>用户 ID</th><th>操作</th></tr></thead>
           <tbody id="userRows"></tbody>
         </table>
       </div>
-      <p class="hint">仅显示已注册并保存在 <code>data/users.json</code>（或 Vercel KV）中的账号，不含密码等敏感信息。用户可在前台 <a href="/register.html" target="_blank">注册页</a> 自行注册。</p>
+      <p class="hint">管理员可在此添加或删除用户。环境变量管理员账号不在列表中，无法删除。不能删除当前登录账号或最后一名管理员。</p>
     </section>
 
     <section class="panel" id="panel-settings">
@@ -284,10 +285,30 @@ tr:last-child td{border-bottom:none}
   </div>
 </div>
 
+<div class="modal" id="userModal">
+  <div class="modal-box">
+    <div class="modal-head"><h3>添加用户</h3><button class="btn secondary sm" id="closeUserModal" type="button">关闭</button></div>
+    <form id="userForm">
+      <div class="field"><label for="newUsername">用户名</label><input id="newUsername" name="username" required minlength="3" maxlength="32" autocomplete="off"></div>
+      <div class="field"><label for="newPassword">密码</label><input id="newPassword" name="password" type="password" required minlength="6" autocomplete="new-password"></div>
+      <div class="field"><label for="newEmail">邮箱（可选）</label><input id="newEmail" name="email" type="email" autocomplete="off"></div>
+      <div class="field"><label for="newRole">角色</label>
+        <select id="newRole" name="role">
+          <option value="user">普通用户</option>
+          <option value="admin">管理员</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button class="btn" id="saveUserBtn" type="submit">创建用户</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
-const state={data:null,users:[],usersSummary:null,editingDiseaseIndex:-1,modalGalleryType:''};
+const state={data:null,users:[],usersSummary:null,currentAdminId:null,editingDiseaseIndex:-1,modalGalleryType:''};
 const $=id=>document.getElementById(id);
 
 function toast(msg){
@@ -366,6 +387,7 @@ async function checkAuth(){
 
 function showApp(user){
   const u=typeof user==='string'?{username:user,role:'admin'}:user;
+  state.currentAdminId=u.id||null;
   $('loginView').style.display='none';
   $('appView').classList.add('ready');
   const roleLabel=u.role==='admin'?'管理员':'普通用户';
@@ -456,16 +478,42 @@ function renderUserTable(){
   if(!tbody)return;
   const rows=filteredUsers();
   if(!rows.length){
-    tbody.innerHTML='<tr><td colspan="5" style="color:var(--muted)">暂无用户数据</td></tr>';
+    tbody.innerHTML='<tr><td colspan="6" style="color:var(--muted)">暂无用户数据</td></tr>';
     return;
   }
-  tbody.innerHTML=rows.map(u=>`<tr>
+  tbody.innerHTML=rows.map(u=>{
+    const isSelf=state.currentAdminId&&u.id===state.currentAdminId;
+    const delBtn=isSelf
+      ?'<span style="color:var(--muted);font-size:.75rem">当前账号</span>'
+      :`<button class="btn danger sm" type="button" data-del-user="${escAttr(u.id)}" data-del-name="${escAttr(u.username)}">删除</button>`;
+    return `<tr>
     <td><strong>${esc(u.username)}</strong></td>
     <td>${u.email?esc(u.email):'<span style="color:var(--muted)">—</span>'}</td>
     <td>${roleBadge(u.role)}</td>
     <td>${esc(fmtUserDate(u.createdAt))}</td>
     <td><code style="font-size:.72rem;color:var(--muted)">${esc(u.id)}</code></td>
-  </tr>`).join('');
+    <td>${delBtn}</td>
+  </tr>`;
+  }).join('');
+  tbody.querySelectorAll('[data-del-user]').forEach(btn=>{
+    btn.addEventListener('click',()=>deleteUser(btn.dataset.delUser,btn.dataset.delName));
+  });
+}
+
+async function deleteUser(id,username){
+  if(!id||!confirm('确定删除用户「'+username+'」？\n删除后该账号将无法登录。'))return;
+  try{
+    await api('/api/auth/users/'+encodeURIComponent(id),{method:'DELETE',body:'{}'});
+    await loadUsers();
+    renderStats();
+    toast('已删除用户：'+username);
+  }catch(err){toast(err.message);}
+}
+
+function openUserModal(){
+  $('userForm').reset();
+  $('newRole').value='user';
+  $('userModal').classList.add('open');
 }
 
 const DISEASE_FIELDS=[
@@ -1067,6 +1115,25 @@ $('reloadBtn').addEventListener('click',async()=>{
 
 $('reloadUsersBtn')?.addEventListener('click',async()=>{
   try{await loadUsers();renderStats();toast('用户列表已刷新');}catch(err){toast(err.message);}
+});
+$('addUserBtn')?.addEventListener('click',openUserModal);
+$('closeUserModal')?.addEventListener('click',()=>$('userModal').classList.remove('open'));
+$('userForm')?.addEventListener('submit',async e=>{
+  e.preventDefault();
+  try{
+    const fd=new FormData(e.target);
+    const body={
+      username:fd.get('username'),
+      password:fd.get('password'),
+      email:fd.get('email')||'',
+      role:fd.get('role')||'user'
+    };
+    const r=await api('/api/auth/users',{method:'POST',body:JSON.stringify(body)});
+    $('userModal').classList.remove('open');
+    await loadUsers();
+    renderStats();
+    toast('已创建用户：'+r.user.username);
+  }catch(err){toast(err.message);}
 });
 $('userSearch')?.addEventListener('input',renderUserTable);
 $('userRoleFilter')?.addEventListener('change',renderUserTable);

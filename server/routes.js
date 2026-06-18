@@ -2,6 +2,8 @@ import express from 'express';
 import { readSiteData, writeSiteData } from './lib/dataStore.js';
 import {
   authenticateUser,
+  createStoredUser,
+  deleteUserById,
   ensureBootstrapAdmin,
   listPublicUsers,
   publicUser,
@@ -105,6 +107,33 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
       });
     } catch (err) {
       res.status(err.status || 500).json({ ok: false, error: err.message || '读取用户失败' });
+    }
+  });
+
+  router.post('/users', requireAdmin, async (req, res) => {
+    try {
+      const user = await createStoredUser({
+        username: req.body?.username,
+        password: req.body?.password,
+        email: req.body?.email,
+        role: req.body?.role
+      });
+      res.json({ ok: true, user: publicUser(user) });
+    } catch (err) {
+      res.status(err.status || 400).json({ ok: false, error: err.message || '创建用户失败' });
+    }
+  });
+
+  router.delete('/users/:id', requireAdmin, async (req, res) => {
+    try {
+      const id = String(req.params.id || '').trim();
+      if (id === req.session.userId) {
+        return res.status(400).json({ ok: false, error: '无法删除当前登录账号' });
+      }
+      const user = await deleteUserById(id);
+      res.json({ ok: true, user });
+    } catch (err) {
+      res.status(err.status || 400).json({ ok: false, error: err.message || '删除用户失败' });
     }
   });
 
