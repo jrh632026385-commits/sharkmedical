@@ -50,6 +50,52 @@ function mergeImageAttribRegistry(fileReg, kvReg) {
   return out;
 }
 
+function diseaseTypeKey(d) {
+  return String(d?.type || d?.id || '').trim();
+}
+
+/** 仓库新增批次与 KV 线上编辑合并：按 type 去重，KV 字段覆盖同 type 的仓库条目 */
+function mergeDiseases(fileList, kvList) {
+  const file = Array.isArray(fileList) ? fileList : [];
+  const kv = Array.isArray(kvList) ? kvList : [];
+  const byType = new Map();
+  for (const d of file) {
+    const k = diseaseTypeKey(d);
+    if (k) byType.set(k, d);
+  }
+  for (const d of kv) {
+    const k = diseaseTypeKey(d);
+    if (k) byType.set(k, { ...(byType.get(k) || {}), ...d });
+  }
+  const seen = new Set();
+  const out = [];
+  for (const d of file) {
+    const k = diseaseTypeKey(d);
+    if (k && byType.has(k) && !seen.has(k)) {
+      out.push(byType.get(k));
+      seen.add(k);
+    }
+  }
+  for (const d of kv) {
+    const k = diseaseTypeKey(d);
+    if (k && !seen.has(k)) {
+      out.push(byType.get(k));
+      seen.add(k);
+    }
+  }
+  return out;
+}
+
+/** KV 中非空图库优先；否则保留仓库图库（含第二批空图库占位） */
+function mergeDiseaseGalleries(fileGal, kvGal) {
+  const out = { ...(fileGal || {}) };
+  for (const [key, gal] of Object.entries(kvGal || {})) {
+    if (Array.isArray(gal) && gal.length > 0) out[key] = gal;
+    else if (!(key in out)) out[key] = Array.isArray(gal) ? gal : [];
+  }
+  return out;
+}
+
 /** KV 中疾病/图库等可编辑字段优先；详情与授权在 KV 为空时回退到仓库 site-data.json */
 function mergeSiteData(fromKv, fromFile) {
   if (!fromFile) return fromKv;
@@ -57,6 +103,8 @@ function mergeSiteData(fromKv, fromFile) {
   return {
     ...fromFile,
     ...fromKv,
+    diseases: mergeDiseases(fromFile.diseases, fromKv.diseases),
+    diseaseGalleries: mergeDiseaseGalleries(fromFile.diseaseGalleries, fromKv.diseaseGalleries),
     diseaseDetails: mergeDiseaseDetails(fromFile.diseaseDetails, fromKv.diseaseDetails),
     imageAttribRegistry: mergeImageAttribRegistry(fromFile.imageAttribRegistry, fromKv.imageAttribRegistry)
   };

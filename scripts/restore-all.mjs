@@ -13,7 +13,7 @@ const login = await fetch(`${base}/api/auth/login`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ username: user, password: pass }),
-  signal: AbortSignal.timeout(60000)
+  signal: AbortSignal.timeout(120000)
 });
 const cookie = login.headers.get('set-cookie')?.split(';')[0];
 if (!cookie) throw new Error('login failed: ' + (await login.text()));
@@ -34,7 +34,7 @@ const put = await fetch(`${base}/api/content`, {
   method: 'PUT',
   headers: { 'Content-Type': 'application/json', Cookie: cookie },
   body: JSON.stringify(data),
-  signal: AbortSignal.timeout(120000)
+  signal: AbortSignal.timeout(300000)
 });
 const out = await put.json().catch(() => ({}));
 if (!put.ok) throw new Error(out.error || put.statusText);
