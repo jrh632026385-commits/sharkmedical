@@ -1,5 +1,4 @@
 import express from 'express';
-import cookieSession from 'cookie-session';
 import { readSiteData, writeSiteData } from './lib/dataStore.js';
 import {
   authenticateUser,
@@ -9,32 +8,9 @@ import {
   registerUser
 } from './lib/userStore.js';
 import { canPersistWrites, isKvEnabled } from './lib/kv.js';
+import { clearSession, createSessionMiddleware, setSessionUser } from './lib/session.js';
 
-export function createSessionMiddleware(sessionSecret) {
-  // Vercel 经 HTTPS 代理转发时 req.secure 常为 false；secure:true 会导致 cookie-session 不写 Set-Cookie
-  const secure = process.env.VERCEL
-    ? false
-    : process.env.NODE_ENV === 'production';
-  const middlewares = [];
-
-  if (process.env.VERCEL) {
-    middlewares.push((req, _res, next) => {
-      if (req.headers['x-forwarded-proto'] === 'https') req.secure = true;
-      next();
-    });
-  }
-
-  middlewares.push(cookieSession({
-    name: 'shark.sid',
-    keys: [sessionSecret],
-    maxAge: 14 * 24 * 60 * 60 * 1000,
-    httpOnly: true,
-    sameSite: 'lax',
-    secure
-  }));
-
-  return middlewares;
-}
+export { createSessionMiddleware };
 
 export function requireAuth(req, res, next) {
   if (!req.session?.userId) {
@@ -54,10 +30,8 @@ export function requireAdmin(req, res, next) {
   });
 }
 
-function setSessionUser(req, user) {
-  req.session.userId = user.id;
-  req.session.username = user.username;
-  req.session.role = user.role;
+function setSessionUserOnReq(req, user) {
+  setSessionUser(req, user);
 }
 
 export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
@@ -68,7 +42,8 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
       ok: true,
       persist: canPersistWrites(),
       kv: isKvEnabled(),
-      vercel: !!process.env.VERCEL
+      vercel: !!process.env.VERCEL,
+      build: 'session-v2'
     });
   });
 
@@ -80,7 +55,7 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
         password: req.body?.password,
         email: req.body?.email
       });
-      setSessionUser(req, user);
+      setSessionUserOnReq(req, user);
       res.json({ ok: true, user: publicUser(user) });
     } catch (err) {
       res.status(err.status || 400).json({ ok: false, error: err.message || '注册失败' });
@@ -94,12 +69,12 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
     if (!user) {
       return res.status(401).json({ ok: false, error: '用户名或密码错误' });
     }
-    setSessionUser(req, user);
+    setSessionUserOnReq(req, user);
     res.json({ ok: true, user: publicUser(user) });
   });
 
   router.post('/logout', (req, res) => {
-    req.session = null;
+    clearSession(req);
     res.json({ ok: true });
   });
 

@@ -25,7 +25,7 @@ export function createApp() {
   app.set('trust proxy', 1);
 
   app.use(express.json({ limit: '12mb' }));
-  for (const mw of sessionMiddleware) app.use('/api', mw);
+  app.use('/api', sessionMiddleware);
   app.use('/api/auth', createAuthRouter({ bootstrapUsername: username, bootstrapPassword: password }));
   app.use('/api/content', createContentRouter());
 

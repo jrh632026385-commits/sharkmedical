@@ -62,7 +62,20 @@ npm run extract
 npm run dev
 ```
 
-## 五、手机访问 Vercel 站点
+## 六、GitHub 推送后让 Vercel 自动部署
+
+若站点是用 **Vercel Drop** 上传的，push 到 GitHub **不会**自动更新，需要连接 Git 仓库：
+
+1. Vercel → 项目 **shark-medical** → **Settings** → **Git**
+2. 点 **Connect Git Repository** → 选 **GitHub** → 仓库 **`jrh632026385-commits/sharkmedical`**
+3. **Settings → General → Build & Development Settings** 确认：
+   - Output Directory：**`.`**
+   - Build Command：`npm run build`
+4. **Deployments** 应出现来自 GitHub commit 的新部署（不是只有 Redeploy of）
+5. 部署完成后访问 `/api/auth/status`，应含 `"build":"session-v2"`
+
+若 Git 已连接但仍不自动部署：**Deployments → Redeploy**（选最新 main 分支）。
+
 
 直接使用 Vercel 分配的域名即可，例如：
 
