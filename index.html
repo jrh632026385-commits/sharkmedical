@@ -180,50 +180,87 @@ header{
 .nav-inner{
   max-width:var(--page-max);margin:0 auto;
   display:flex;align-items:center;justify-content:space-between;
-  padding:16px var(--page-pad);
-  gap:20px;
+  padding:14px var(--page-pad);
+  gap:12px;
 }
-.brand{display:flex;align-items:center;gap:14px;cursor:pointer}
-.brand .logo{width:48px;height:48px;flex-shrink:0;color:#5eead4;filter:drop-shadow(0 0 12px rgba(45,212,191,0.38))}
-.brand-text{display:flex;flex-direction:column;line-height:1.1}
-.brand-text .cn{font-family:var(--serif);font-weight:700;font-size:1.32rem;letter-spacing:2px;color:var(--bone)}
-.brand-text .en{font-family:var(--mono);font-size:.6rem;letter-spacing:4px;color:var(--teal);text-transform:uppercase;margin-top:3px}
-nav ul{display:flex;gap:clamp(18px,2.5vw,36px);list-style:none;flex-wrap:wrap;justify-content:center}
+nav{flex:1;min-width:0;display:flex;justify-content:center}
+nav>ul{display:flex;gap:clamp(12px,1.6vw,28px);list-style:none;flex-wrap:nowrap;justify-content:center;align-items:center}
 nav a{
-  font-size:.84rem;letter-spacing:1px;color:var(--muted);
-  position:relative;padding:6px 0;transition:color .3s;font-weight:400;
+  font-size:.82rem;letter-spacing:.8px;color:var(--muted);
+  position:relative;padding:6px 0;transition:color .3s;font-weight:400;white-space:nowrap;
 }
 nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--teal);transition:width .35s ease}
 nav a:hover{color:var(--bone)}
 nav a:hover::after{width:100%}
+.nav-more{position:relative;flex-shrink:0}
+.nav-more-btn{
+  font-size:.82rem;letter-spacing:.8px;color:var(--muted);background:transparent;border:none;cursor:pointer;
+  padding:6px 0;font-family:var(--sans);font-weight:400;white-space:nowrap;transition:color .3s;
+}
+.nav-more-btn:hover,.nav-more.is-open .nav-more-btn{color:var(--bone)}
+.nav-more-menu{
+  position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);
+  min-width:148px;list-style:none;padding:6px;border:1px solid var(--line);border-radius:var(--radius-md);
+  background:linear-gradient(180deg,#0c1728,#070d18);box-shadow:0 18px 48px rgba(0,0,0,.55);
+  z-index:240;
+}
+.nav-more-menu li{list-style:none}
+.nav-more-menu[hidden]{display:none}
+.nav-more-menu a{display:block;padding:10px 12px;font-size:.82rem;color:var(--bone);border-radius:var(--radius-sm);letter-spacing:.5px}
+.nav-more-menu a:hover{background:rgba(45,212,191,.08);color:var(--ice-bright)}
+.nav-tools{display:flex;align-items:center;gap:8px;flex-shrink:0;position:relative}
 .nav-cta{
-  font-family:var(--mono);font-size:.78rem;letter-spacing:1px;
-  padding:9px 20px;border:1px solid var(--line);border-radius:2px;
-  color:var(--ice-bright);transition:all .35s;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.8px;
+  padding:8px 14px;border:1px solid var(--line);border-radius:2px;
+  color:var(--ice-bright);transition:all .35s;white-space:nowrap;
 }
 .nav-cta:hover{background:var(--teal);color:var(--abyss);border-color:var(--teal)}
-.auth-nav{display:flex;align-items:center;gap:8px;flex-shrink:0}
-.auth-nav-guest{display:flex;align-items:center;gap:8px}
-.auth-nav-user{display:none;align-items:center;gap:8px}
+.auth-nav{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.auth-nav-guest{display:flex;align-items:center;gap:6px}
+.auth-nav-user{display:none;align-items:center}
 .auth-nav-link{
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.5px;color:var(--muted);
-  padding:7px 12px;border:1px solid var(--line-soft);border-radius:20px;transition:.25s;
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.4px;color:var(--muted);
+  padding:6px 11px;border:1px solid var(--line-soft);border-radius:20px;transition:.25s;white-space:nowrap;
 }
 .auth-nav-link:hover{color:var(--bone);border-color:rgba(45,212,191,.35)}
-.auth-nav-name{
+.auth-user-menu{position:relative}
+.auth-user-trigger{
+  width:36px;height:36px;border-radius:50%;border:1px solid rgba(45,212,191,.35);
+  background:linear-gradient(165deg,rgba(10,18,32,.95),rgba(4,8,15,.88));cursor:pointer;
+  display:flex;align-items:center;justify-content:center;padding:0;transition:border-color .25s,transform .25s;
+}
+.auth-user-trigger:hover{border-color:var(--teal);transform:scale(1.04)}
+.auth-user-avatar{
+  font-family:var(--mono);font-size:.78rem;font-weight:600;color:var(--ice-bright);letter-spacing:0;line-height:1;
+}
+.auth-user-dropdown{
+  position:absolute;top:calc(100% + 10px);right:0;min-width:168px;padding:8px;
+  border:1px solid var(--line);border-radius:var(--radius-md);
+  background:linear-gradient(180deg,#0c1728,#070d18);box-shadow:0 18px 48px rgba(0,0,0,.55);z-index:240;
+}
+.auth-user-dropdown[hidden]{display:none}
+.auth-user-dropdown-head{
+  padding:8px 10px 10px;border-bottom:1px solid var(--line-soft);margin-bottom:4px;
   font-family:var(--mono);font-size:.72rem;color:var(--ice-bright);
-  max-width:96px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
 }
 .auth-nav-admin{
-  font-family:var(--mono);font-size:.7rem;color:var(--teal);
-  padding:6px 10px;border:1px solid rgba(45,212,191,.35);border-radius:20px;
+  display:block;font-family:var(--mono);font-size:.72rem;color:var(--teal);
+  padding:10px 10px;border-radius:var(--radius-sm);transition:background .2s;
 }
+.auth-nav-admin:hover{background:rgba(45,212,191,.08)}
+.auth-nav-admin[hidden]{display:none!important}
 .auth-nav-admin[hidden],.auth-nav-user[hidden],.auth-nav-guest[hidden]{display:none!important}
 .auth-logout{
-  font-family:var(--mono);font-size:.68rem;color:var(--muted);background:transparent;
-  border:none;cursor:pointer;padding:4px 6px;
+  display:block;width:100%;text-align:left;font-family:var(--mono);font-size:.7rem;color:var(--muted);
+  background:transparent;border:none;cursor:pointer;padding:10px;border-radius:var(--radius-sm);
 }
-.auth-logout:hover{color:var(--bone)}
+.auth-logout:hover{color:var(--bone);background:rgba(127,212,232,.06)}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer;flex-shrink:0;min-width:0}
+.brand .logo{width:44px;height:44px;flex-shrink:0;color:#5eead4;filter:drop-shadow(0 0 12px rgba(45,212,191,0.38))}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand-text .cn{font-family:var(--serif);font-weight:700;font-size:1.22rem;letter-spacing:1.5px;color:var(--bone);white-space:nowrap}
+.brand-text .en{font-family:var(--mono);font-size:.56rem;letter-spacing:3px;color:var(--teal);text-transform:uppercase;margin-top:2px;white-space:nowrap}
 .burger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:10px;margin:-10px 0 -10px -6px;border:none;background:transparent;-webkit-tap-highlight-color:transparent;position:relative;z-index:2}
 .burger span{display:block;width:24px;height:2px;background:var(--bone);transition:transform .3s,opacity .3s}
 .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -267,6 +304,19 @@ body.nav-open header{z-index:201}
 
 /* ---------- SITE SEARCH ---------- */
 .site-search{position:relative;flex:1;max-width:min(320px,36vw);min-width:140px}
+.site-search-collapsible{flex:0;max-width:none;min-width:0}
+.site-search-collapsible .site-search-toggle{
+  width:36px;height:36px;border-radius:50%;border:1px solid var(--line-soft);
+  background:rgba(7,13,24,.78);color:var(--muted);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;padding:0;transition:.25s;
+}
+.site-search-collapsible .site-search-toggle svg{width:16px;height:16px}
+.site-search-collapsible .site-search-toggle:hover,
+.site-search-collapsible.is-open .site-search-toggle{color:var(--teal);border-color:rgba(45,212,191,.45)}
+.site-search-collapsible .site-search-panel{
+  position:absolute;top:calc(100% + 10px);right:0;width:min(300px,72vw);z-index:240;
+}
+.site-search-collapsible:not(.is-open) .site-search-panel{display:none}
 .site-search input{
   width:100%;padding:9px 14px 9px 38px;border:1px solid var(--line);border-radius:40px;
   background:rgba(7,13,24,0.75);color:var(--bone);font-family:var(--sans);font-size:.84rem;
@@ -308,15 +358,21 @@ body.nav-open header{z-index:201}
 
 a.btn-hero-start{text-decoration:none;color:var(--abyss)}
 body.embed-atlas .hero,
-body.embed-atlas .protocol,
-body.embed-atlas #deepdive,
-body.embed-atlas #filmlib,
-body.embed-atlas #statband,
 body.embed-atlas #about,
 body.embed-atlas .cta-band{display:none!important}
 body.embed-atlas .learning-hub[hidden]{display:block!important}
 body.embed-atlas .embed-only{display:block!important}
 body.embed-atlas .index-only{display:none!important}
+.index-subpage{display:block}
+body.index-landing .index-subpage,
+body.index-landing #learningHub,
+body.index-landing footer,
+body.index-landing .back-to-top{display:none!important}
+body.index-subview .hero{display:none!important}
+body.index-subview #learningHub{display:none!important}
+body.index-subview .index-subpage{display:none!important}
+body.index-subview[data-subview="about"] #about{display:block!important}
+body.index-subview .index-subpage{padding-top:clamp(64px,7vw,84px);min-height:calc(100svh - 52px)}
 .embed-only{display:none}
 .atlas-embed-bar{
   display:none;padding:10px var(--page-pad);border-bottom:1px solid var(--line-soft);
@@ -415,31 +471,60 @@ body.embed-atlas .atlas-embed-bar{display:block;padding-top:calc(10px + env(safe
 
 /* ---------- HERO ---------- */
 .hero{
-  position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;
-  padding:calc(76px + env(safe-area-inset-top,0)) var(--page-pad) clamp(48px,6vw,72px);overflow:visible;
+  position:relative;min-height:100svh;min-height:100dvh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;
+  padding:calc(76px + env(safe-area-inset-top,0)) var(--page-pad) clamp(12px,2.5vw,20px);overflow:visible;
 }
 .hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:rgba(2,15,20,0.55);
+}
 .hero-bg-glow{
-  position:absolute;inset:0;
+  position:absolute;inset:0;z-index:2;
   background:
-    radial-gradient(ellipse 72% 58% at 50% 40%,rgba(45,212,191,0.16),transparent 72%),
-    radial-gradient(ellipse 100% 85% at 50% 100%,rgba(127,212,232,0.07),transparent 58%);
+    radial-gradient(ellipse 72% 58% at 50% 40%,rgba(45,212,191,0.10),transparent 72%),
+    radial-gradient(ellipse 100% 85% at 50% 100%,rgba(127,212,232,0.05),transparent 58%);
 }
 .hero-bg-grid{
-  position:absolute;inset:-10%;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:14px;
-  opacity:.2;filter:saturate(.85) contrast(1.05);
-  mask-image:radial-gradient(ellipse 78% 72% at 50% 44%,#000 18%,transparent 80%);
-  -webkit-mask-image:radial-gradient(ellipse 78% 72% at 50% 44%,#000 18%,transparent 80%);
+  position:absolute;inset:-12%;z-index:0;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:16px;
+  opacity:.13;filter:blur(3.5px) saturate(.42) contrast(.94) brightness(.86);
+  mask-image:radial-gradient(ellipse 88% 80% at 50% 42%,#000 18%,transparent 90%);
+  -webkit-mask-image:radial-gradient(ellipse 88% 80% at 50% 42%,#000 18%,transparent 90%);
 }
-.hero-bg-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.hero-bg-grid::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(2,15,20,0.42) 0%,rgba(2,15,20,0.22) 45%,rgba(2,15,20,0.48) 100%);
+}
+.hero-bg-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;filter:grayscale(.5) contrast(.92) brightness(.88) blur(.5px)}
+.hero-bg-grid img:nth-child(1){object-position:center 42%}
+.hero-bg-grid img:nth-child(2){object-position:center 55%}
+.hero-bg-grid img:nth-child(3){object-position:center 38%}
+.hero-bg-grid img:nth-child(4){object-position:center 50%}
 html[data-bg-photo] .hero-bg-grid{display:none}
 .hero-landing{
-  position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  max-width:720px;width:100%;margin:0 auto;padding:clamp(20px,4vw,40px) 0;
+  position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;
+  min-height:calc(100svh - 76px - env(safe-area-inset-top,0px) - clamp(12px,2.5vw,20px));
+  max-width:var(--page-max);width:100%;margin:0 auto;padding:0;
   text-align:center;
 }
+.hero-core{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:100%;padding:clamp(8px,2vw,16px) 0;
+}
+.hero-below{
+  width:100%;max-width:var(--page-max);margin-top:auto;padding-top:clamp(16px,3vh,28px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  display:flex;flex-direction:column;gap:clamp(8px,1.6vh,14px);
+  scroll-margin-top:calc(72px + env(safe-area-inset-top,0));
+}
+.hero-below .hero-pills{margin:0 auto}
+.hero-below .hero-pills li{border:none;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+.hero-below .modality-strip{width:100%;border:none!important;border-bottom:none!important;border-radius:0;background:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;overflow:visible}
+.hero-below .mod-row{gap:0;padding:0;max-width:100%;grid-template-columns:repeat(3,1fr)}
+.hero-below .mod-cell{padding:10px 12px;background:transparent;border:none!important}
+.hero-below .mod-cell:hover{background:transparent}
 .hero-brand-mark{
-  width:clamp(76px,14vw,100px);height:clamp(76px,14vw,100px);margin-bottom:clamp(18px,3vw,26px);
+  width:clamp(64px,11vw,84px);height:clamp(64px,11vw,84px);margin-bottom:clamp(6px,1.2vw,10px);
   color:#5eead4;filter:drop-shadow(0 0 28px rgba(45,212,191,0.48));
 }
 .hero-brand-mark .hero-logo{width:100%;height:100%}
@@ -449,23 +534,21 @@ html[data-bg-photo] .hero-bg-grid{display:none}
 }
 .hero-subtitle{
   font-family:var(--mono);font-size:clamp(.86rem,2.1vw,1.06rem);letter-spacing:clamp(5px,1.4vw,10px);
-  text-transform:uppercase;color:var(--teal);margin:0 0 clamp(32px,5vw,48px);font-weight:500;
+  text-transform:uppercase;color:var(--teal);margin:0 0 clamp(28px,4.5vw,40px);font-weight:500;
 }
 .hero-pills{
   list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(10px,2vw,14px);
-  margin:0 0 clamp(32px,5vw,44px);padding:0;width:100%;max-width:640px;
+  margin:0;padding:0;width:100%;max-width:640px;
 }
 .hero-pills li{
-  flex:1 1 160px;min-width:138px;padding:18px 14px 15px;border:1px solid rgba(45,212,191,0.3);border-radius:14px;
-  background:linear-gradient(165deg,rgba(10,18,32,0.9),rgba(4,8,15,0.78));backdrop-filter:blur(12px);
+  flex:1 1 160px;min-width:138px;padding:8px 10px;border:none;border-radius:0;
+  background:none;backdrop-filter:none;-webkit-backdrop-filter:none;
   font-size:clamp(.8rem,1.7vw,.9rem);color:var(--muted);letter-spacing:.35px;line-height:1.45;
-  box-shadow:0 18px 44px rgba(0,0,0,0.28);
 }
 .hero-pills li strong{
   display:block;font-family:var(--mono);font-size:clamp(1.55rem,3.8vw,1.95rem);font-weight:600;
   color:var(--ice-bright);margin-bottom:7px;letter-spacing:.5px;line-height:1.1;
 }
-.hero-pills li.hero-pill-feature strong{font-size:clamp(1.05rem,2.4vw,1.28rem);letter-spacing:2px}
 .btn-hero-start{
   font-family:var(--serif);font-size:clamp(1.12rem,2.6vw,1.32rem);font-weight:700;letter-spacing:1.2px;
   padding:16px 52px;min-height:56px;border:none;border-radius:12px;cursor:pointer;
@@ -476,23 +559,6 @@ html[data-bg-photo] .hero-bg-grid{display:none}
 }
 .btn-hero-start:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(45,212,191,0.55)}
 .btn-hero-start svg{width:20px;height:20px;flex-shrink:0}
-.hero .modality-strip{
-  flex-shrink:0;margin-top:clamp(28px,4vw,44px);position:relative;z-index:3;width:100%;max-width:var(--page-max);
-  margin-left:auto;margin-right:auto;
-  border:1px solid var(--line-soft);border-radius:14px;background:rgba(8,14,24,0.72);
-  backdrop-filter:blur(10px);overflow:hidden;border-bottom:1px solid var(--line-soft);
-  scroll-margin-top:calc(72px + env(safe-area-inset-top,0));
-}
-.hero .modality-strip .mod-row{gap:0;padding:4px 8px;max-width:100%}
-.hero .modality-strip .mod-cell{
-  padding:12px 14px;background:transparent;border-right:1px solid var(--line-soft);
-}
-.hero .modality-strip .mod-cell:last-child{border-right:none}
-.hero .modality-strip .mod-cell.mod-active,
-.hero .modality-strip .mod-cell.mod-active h4{
-  background:transparent;box-shadow:none;color:var(--ice-bright);
-}
-.hero .modality-strip .mod-cell:hover{background:rgba(45,212,191,0.04)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 .btn-primary{
   font-family:var(--mono);font-size:.88rem;letter-spacing:1px;font-weight:500;
@@ -553,7 +619,7 @@ section{position:relative}
 
 /* ---------- MODALITY STRIP (compact) ---------- */
 .modality-strip{border-top:none;border-bottom:1px solid var(--line-soft);background:rgba(7,13,24,0.45)}
-.mod-row{max-width:var(--page-max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:6px var(--page-pad)}
+.mod-row{max-width:var(--page-max);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:6px var(--page-pad)}
 .mod-cell{
   padding:8px 12px;border-right:1px solid var(--line-soft);
   transition:background .35s,border-color .35s,box-shadow .35s;
@@ -830,6 +896,7 @@ img.img-zoomable:hover,img.film-radiograph.img-zoomable:hover{filter:contrast(1.
 .dc-body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column;min-height:0}
 .dc-body h3{font-family:var(--serif);font-weight:600;font-size:1.22rem;color:var(--bone);margin-bottom:4px;letter-spacing:.3px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .dc-body .sub{font-family:var(--mono);font-size:.68rem;letter-spacing:.8px;color:var(--muted-2);text-transform:uppercase;margin-bottom:12px;line-height:1.4}
+.dc-body .sub.sub-cn{font-family:inherit;font-size:.72rem;letter-spacing:0;text-transform:none}
 .dc-body p{font-size:var(--text-sm);color:var(--muted);font-weight:300;line-height:1.78;margin-bottom:14px;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dc-signs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;min-height:2.2em}
 .sign-pill{font-family:var(--mono);font-size:.64rem;letter-spacing:.4px;padding:4px 10px;border:1px solid var(--line);border-radius:3px;color:var(--ice);background:rgba(45,212,191,0.04);line-height:1.35}
@@ -880,6 +947,18 @@ img.img-zoomable:hover,img.film-radiograph.img-zoomable:hover{filter:contrast(1.
 .atlas-nav-head h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.55rem,3.2vw,2rem);color:var(--bone);margin:0 0 10px;letter-spacing:.5px}
 .atlas-nav-head p{color:var(--muted);font-size:.92rem;margin:0;line-height:1.7}
 .atlas-nav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2vw,16px)}
+.atlas-nav-grid.atlas-sys-grid{grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.atlas-nav-grid.atlas-sys-grid{grid-template-columns:repeat(4,1fr)}}
+.atlas-empty-sys{
+  text-align:center;padding:clamp(48px,8vw,80px) 24px;
+  border:1px solid var(--line-soft);border-radius:16px;background:rgba(4,8,15,0.45);
+}
+.atlas-empty-sys .empty-ico{font-size:2.5rem;line-height:1;margin-bottom:16px;display:block}
+.atlas-empty-sys h3{font-family:var(--serif);font-size:1.35rem;color:var(--bone);margin:0 0 12px}
+.atlas-empty-sys p{color:var(--muted);margin:0 0 24px;line-height:1.7;max-width:28em;margin-left:auto;margin-right:auto}
+.atlas-nav-card[data-sys]:not([data-sys="bone"]):not([data-sys="respiratory"]):not([data-sys="digestive"]):not([data-sys="circulatory"]):not([data-sys="nervous"]):not([data-sys="urogenital"]):not([data-sys="female-repro"]):not([data-sys="endocrine"]):not([data-sys="head-neck"]):not([data-sys="breast"]):not([data-sys="hematolymph"]):not([data-sys="systemic"]) .nav-count{border-color:rgba(212,165,116,0.35);color:#e9c46a;background:rgba(212,165,116,0.08)}
+.atlas-nav-grid.atlas-resp-nav-grid{grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.atlas-nav-grid.atlas-resp-nav-grid{grid-template-columns:repeat(4,1fr)}}
 .atlas-nav-card{
   display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:18px 16px 16px;
   border:1px solid rgba(45,212,191,0.28);border-radius:14px;cursor:pointer;text-align:left;
@@ -890,6 +969,38 @@ img.img-zoomable:hover,img.film-radiograph.img-zoomable:hover{filter:contrast(1.
 .atlas-nav-card:hover{transform:translateY(-4px);border-color:rgba(45,212,191,0.55);box-shadow:0 20px 48px rgba(0,0,0,0.35)}
 .atlas-nav-card:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 .atlas-nav-card .nav-ico{font-size:1.35rem;line-height:1;margin-bottom:2px}
+.atlas-sys-grid .nav-ico-svg{width:2.75rem;height:2.75rem;border-radius:14px;margin-bottom:4px}
+.atlas-sys-grid .nav-ico-svg svg{width:1.85rem;height:1.85rem}
+.atlas-nav-card:hover .nav-ico-svg{transform:scale(1.06);transition:transform .35s cubic-bezier(.34,1.4,.64,1)}
+.nav-ico-svg{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;flex-shrink:0;border-radius:11px;background:rgba(255,255,255,0.04);box-shadow:0 0 0 1px rgba(255,255,255,0.06);transition:transform .35s cubic-bezier(.34,1.4,.64,1)}
+.nav-ico-svg svg{width:1.35rem;height:1.35rem;display:block}
+.nav-ico-lg{width:3.25rem;height:3.25rem;border-radius:16px}
+.nav-ico-lg svg{width:2.2rem;height:2.2rem}
+.atlas-nav-card[data-sys="nervous"] .nav-ico-svg{background:rgba(124,58,237,0.16);box-shadow:0 0 18px rgba(124,58,237,0.28),0 0 0 1px rgba(196,181,253,0.25)}
+.atlas-nav-card[data-sys="respiratory"] .nav-ico-svg{background:rgba(45,212,191,0.14);box-shadow:0 0 18px rgba(45,212,191,0.26),0 0 0 1px rgba(94,234,212,0.22)}
+.atlas-nav-card[data-sys="circulatory"] .nav-ico-svg{background:rgba(225,29,72,0.14);box-shadow:0 0 18px rgba(244,63,94,0.28),0 0 0 1px rgba(251,113,133,0.22)}
+.atlas-nav-card[data-sys="digestive"] .nav-ico-svg{background:rgba(234,88,12,0.14);box-shadow:0 0 18px rgba(249,115,22,0.26),0 0 0 1px rgba(253,186,116,0.22)}
+.atlas-nav-card[data-sys="urogenital"] .nav-ico-svg{background:rgba(2,132,199,0.14);box-shadow:0 0 18px rgba(56,189,248,0.26),0 0 0 1px rgba(125,211,252,0.22)}
+.atlas-nav-card[data-sys="female-repro"] .nav-ico-svg{background:rgba(219,39,119,0.14);box-shadow:0 0 18px rgba(236,72,153,0.28),0 0 0 1px rgba(249,168,212,0.22)}
+.atlas-nav-card[data-sys="endocrine"] .nav-ico-svg{background:rgba(202,138,4,0.14);box-shadow:0 0 18px rgba(234,179,8,0.26),0 0 0 1px rgba(250,204,21,0.22)}
+.atlas-nav-card[data-sys="head-neck"] .nav-ico-svg{background:rgba(99,102,241,0.14);box-shadow:0 0 18px rgba(129,140,248,0.28),0 0 0 1px rgba(165,180,252,0.22)}
+.atlas-nav-card[data-sys="breast"] .nav-ico-svg{background:rgba(219,39,119,0.14);box-shadow:0 0 18px rgba(244,114,182,0.28),0 0 0 1px rgba(251,207,232,0.22)}
+.atlas-nav-card[data-sys="hematolymph"] .nav-ico-svg{background:rgba(220,38,38,0.14);box-shadow:0 0 18px rgba(248,113,113,0.28),0 0 0 1px rgba(252,165,165,0.22)}
+.atlas-nav-card[data-sys="systemic"] .nav-ico-svg{background:rgba(5,150,105,0.14);box-shadow:0 0 18px rgba(52,211,153,0.26),0 0 0 1px rgba(110,231,183,0.22)}
+.atlas-nav-card[data-sys="bone"] .nav-ico-svg{background:rgba(148,163,184,0.12);box-shadow:0 0 18px rgba(226,232,240,0.18),0 0 0 1px rgba(148,163,184,0.28)}
+.atlas-nav-card[data-sys="nervous"]:hover{border-color:rgba(167,139,250,0.55);box-shadow:0 20px 48px rgba(124,58,237,0.22)}
+.atlas-nav-card[data-sys="respiratory"]:hover{border-color:rgba(45,212,191,0.55);box-shadow:0 20px 48px rgba(13,148,136,0.22)}
+.atlas-nav-card[data-sys="circulatory"]:hover{border-color:rgba(244,63,94,0.55);box-shadow:0 20px 48px rgba(225,29,72,0.22)}
+.atlas-nav-card[data-sys="digestive"]:hover{border-color:rgba(249,115,22,0.55);box-shadow:0 20px 48px rgba(234,88,12,0.22)}
+.atlas-nav-card[data-sys="urogenital"]:hover{border-color:rgba(56,189,248,0.55);box-shadow:0 20px 48px rgba(2,132,199,0.22)}
+.atlas-nav-card[data-sys="female-repro"]:hover{border-color:rgba(236,72,153,0.55);box-shadow:0 20px 48px rgba(219,39,119,0.22)}
+.atlas-nav-card[data-sys="endocrine"]:hover{border-color:rgba(234,179,8,0.55);box-shadow:0 20px 48px rgba(202,138,4,0.22)}
+.atlas-nav-card[data-sys="head-neck"]:hover{border-color:rgba(129,140,248,0.55);box-shadow:0 20px 48px rgba(99,102,241,0.22)}
+.atlas-nav-card[data-sys="breast"]:hover{border-color:rgba(244,114,182,0.55);box-shadow:0 20px 48px rgba(219,39,119,0.22)}
+.atlas-nav-card[data-sys="hematolymph"]:hover{border-color:rgba(248,113,113,0.55);box-shadow:0 20px 48px rgba(220,38,38,0.22)}
+.atlas-nav-card[data-sys="systemic"]:hover{border-color:rgba(52,211,153,0.55);box-shadow:0 20px 48px rgba(5,150,105,0.22)}
+.atlas-nav-card[data-sys="bone"]:hover{border-color:rgba(203,213,225,0.45);box-shadow:0 20px 48px rgba(100,116,139,0.2)}
+.atlas-empty-sys .nav-ico-svg{margin:0 auto 16px}
 .atlas-nav-card .nav-label{font-family:var(--serif);font-size:1.12rem;font-weight:700;color:var(--bone);letter-spacing:.5px}
 .atlas-nav-card .nav-desc{font-size:.76rem;color:var(--muted);line-height:1.55}
 .atlas-nav-card .nav-count{
@@ -1078,6 +1189,7 @@ footer{border-top:1px solid var(--line-soft);background:var(--deep)}
 .m-region{font-family:var(--mono);font-size:.66rem;letter-spacing:2px;text-transform:uppercase;color:var(--teal);padding:5px 12px;border:1px solid var(--line);border-radius:30px;align-self:flex-start;margin-bottom:18px;background:rgba(45,212,191,0.04)}
 .m-hero-info h2{font-family:var(--serif);font-weight:700;font-size:2rem;color:var(--bone);margin-bottom:6px;letter-spacing:.5px}
 .m-hero-info .m-sub{font-family:var(--mono);font-size:.82rem;letter-spacing:1px;color:var(--muted-2);text-transform:uppercase;margin-bottom:16px}
+.m-hero-info .m-sub.sub-cn{font-family:inherit;font-size:.85rem;letter-spacing:0;text-transform:none}
 .m-badges{display:flex;flex-wrap:wrap;gap:8px}
 .m-badge{font-family:var(--mono);font-size:.68rem;letter-spacing:.5px;padding:5px 12px;border-radius:3px;border:1px solid var(--line);color:var(--ice);background:rgba(45,212,191,0.05)}
 .m-badge.sev-high{color:var(--blood);border-color:rgba(232,69,95,0.4);background:rgba(232,69,95,0.06)}
@@ -1157,10 +1269,9 @@ html.js-ready .reveal.in{opacity:1;transform:none}
 
 /* responsive */
 @media(max-width:1180px){
-  nav ul{gap:16px}
-  nav a{font-size:.8rem}
-  .nav-cta{padding:8px 14px;font-size:.72rem}
-  .site-search{max-width:200px}
+  nav>ul{gap:14px}
+  nav a,.nav-more-btn{font-size:.78rem}
+  .nav-cta{display:none}
 }
 @media(max-width:1024px){
   .hero-pills li{flex:1 1 calc(33% - 10px);min-width:120px}
@@ -1181,12 +1292,11 @@ html.js-ready .reveal.in{opacity:1;transform:none}
   .brand .logo{width:36px;height:36px}
   .brand-text .cn{font-size:1.05rem;letter-spacing:1px}
   .brand-text .en{font-size:.5rem;letter-spacing:2.5px;margin-top:2px}
-  nav ul,.nav-cta{display:none}
+  nav{display:none}
   .auth-nav-guest .auth-nav-link:first-child{display:none}
   .burger{display:flex}
-  /* 首页仅 Hero：导航单行，搜索收进侧栏抽屉 */
   body:not(.learning-active) .nav-inner{flex-wrap:nowrap}
-  body:not(.learning-active) header .site-search{display:none}
+  body:not(.learning-active) header .site-search-collapsible{display:none}
   .site-search{order:3;flex:1 1 100%;max-width:none;margin-top:2px}
   .wrap{padding:clamp(48px,11vw,72px) var(--page-pad)}
   .sec-head{margin-bottom:32px;max-width:none}
@@ -1194,44 +1304,74 @@ html.js-ready .reveal.in{opacity:1;transform:none}
   .sec-head p{font-size:.94rem;line-height:1.82}
   .hero{
     min-height:100svh;min-height:100dvh;
-    padding:calc(52px + env(safe-area-inset-top,0px)) max(16px,var(--page-pad)) calc(16px + env(safe-area-inset-bottom,0px));
+    padding:calc(52px + env(safe-area-inset-top,0px)) max(16px,var(--page-pad)) clamp(8px,1.5vw,12px);
     gap:0;
   }
   .hero-landing{
-    flex:1;justify-content:center;min-height:0;
-    padding:clamp(10px,2.5vh,20px) 0;
+    flex:1;min-height:calc(100svh - 52px - env(safe-area-inset-top,0px) - clamp(8px,1.5vw,12px));
+    padding:0;
+  }
+  .hero-core{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    width:100%;padding:clamp(8px,2vh,14px) 0;
   }
   .hero-brand-mark{
-    width:clamp(52px,14vw,68px);height:clamp(52px,14vw,68px);
-    margin-bottom:clamp(10px,2vw,16px);
+    width:clamp(52px,13vw,64px);height:clamp(52px,13vw,64px);
+    margin-bottom:clamp(4px,1vw,8px);
   }
   .hero-title{font-size:clamp(1.95rem,9vw,2.65rem);letter-spacing:2px;margin-bottom:6px;line-height:1.08}
-  .hero-subtitle{font-size:.76rem;letter-spacing:3px;margin-bottom:clamp(18px,4vw,24px)}
+  .hero-subtitle{font-size:.76rem;letter-spacing:3px;margin-bottom:clamp(22px,4vw,28px)}
+  .hero-below{margin-top:auto;padding-top:clamp(12px,2vh,20px);gap:8px}
   .hero-pills{
     display:grid;grid-template-columns:repeat(3,1fr);gap:6px;
-    margin-bottom:clamp(18px,4vw,24px);max-width:100%;
+    max-width:100%;
   }
   .hero-pills li{
-    flex:none;min-width:0;padding:10px 6px 8px;border-radius:10px;
-    font-size:.66rem;line-height:1.32;box-shadow:0 10px 28px rgba(0,0,0,0.22);
+    flex:none;min-width:0;padding:6px 4px;border:none;border-radius:0;
+    font-size:.66rem;line-height:1.32;background:none;
   }
   .hero-pills li strong{font-size:1.12rem;margin-bottom:3px}
-  .hero-pills li.hero-pill-feature strong{font-size:.78rem;letter-spacing:1px}
   .btn-hero-start{width:100%;max-width:none;padding:14px 20px;min-height:50px;font-size:1.02rem}
-  .hero .modality-strip{
-    max-width:100%;border-radius:12px;margin-top:clamp(16px,3vw,24px);
-  }
-  .hero .modality-strip .mod-row{grid-template-columns:repeat(2,1fr);padding:3px;gap:0}
-  .hero .modality-strip .mod-cell{
-    padding:9px 10px;border-right:none;border-bottom:1px solid var(--line-soft);
+  .hero-below .modality-strip{max-width:100%;border:none!important;border-bottom:none!important;border-radius:0;background:none!important}
+  .hero-below .mod-row{grid-template-columns:repeat(2,1fr);padding:3px;gap:0}
+  .hero-below .mod-cell{
+    padding:8px 8px;border:none!important;
     align-items:flex-start;gap:7px;
   }
-  .hero .modality-strip .mod-cell:nth-child(odd){border-right:1px solid var(--line-soft)}
-  .hero .modality-strip .mod-cell:nth-last-child(-n+2){border-bottom:none}
-  .hero .modality-strip .mod-cell .ico{width:20px;height:20px;flex-shrink:0;margin-top:1px}
-  .hero .modality-strip .mod-cell h4{font-size:.7rem;letter-spacing:.2px}
-  .hero .modality-strip .mod-cell .mod-brief{font-size:.55rem;line-height:1.35}
-  .hero-bg-grid{opacity:.1;inset:-6%}
+  .hero-below .mod-cell:nth-child(odd){border:none!important}
+  .hero-below .mod-cell:nth-last-child(-n+2){border:none!important}
+  .hero-below .mod-cell .ico{width:20px;height:20px;flex-shrink:0;margin-top:1px}
+  .hero-below .mod-cell h4{font-size:.7rem;letter-spacing:.2px}
+  .hero-below .mod-cell .mod-brief{font-size:.55rem;line-height:1.35}
+  .hero-bg::after{background:rgba(2,15,20,0.62)}
+  .hero-bg-glow{
+    background:
+      radial-gradient(ellipse 92% 58% at 50% 34%,rgba(45,212,191,0.08),transparent 68%),
+      radial-gradient(ellipse 100% 88% at 50% 100%,rgba(127,212,232,0.04),transparent 60%);
+  }
+  .hero-bg-grid{
+    inset:-22% -10%;gap:8px;
+    opacity:.11;filter:blur(4px) saturate(.38) contrast(.9) brightness(.84);
+    mask-image:radial-gradient(ellipse 98% 68% at 50% 36%,#000 24%,transparent 94%);
+    -webkit-mask-image:radial-gradient(ellipse 98% 68% at 50% 36%,#000 24%,transparent 94%);
+  }
+  .hero-bg-grid::before{
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.12;
+    background-image:
+      linear-gradient(rgba(127,212,232,0.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(127,212,232,0.03) 1px,transparent 1px);
+    background-size:36px 36px;
+    mask-image:radial-gradient(ellipse 92% 66% at 50% 36%,#000 28%,transparent 88%);
+    -webkit-mask-image:radial-gradient(ellipse 92% 66% at 50% 36%,#000 28%,transparent 88%);
+  }
+  .hero-bg-grid::after{
+    background:linear-gradient(180deg,rgba(2,15,20,0.38) 0%,rgba(2,15,20,0.18) 40%,rgba(2,15,20,0.42) 100%);
+  }
+  .hero-bg-grid img{filter:grayscale(.55) contrast(.9) brightness(.86) blur(.8px);border-radius:8px}
+  .hero-bg-grid img:nth-child(1){object-position:center 36%}
+  .hero-bg-grid img:nth-child(2){object-position:center 52%}
+  .hero-bg-grid img:nth-child(3){object-position:center 30%}
+  .hero-bg-grid img:nth-child(4){object-position:center 46%}
   .mod-row{grid-template-columns:repeat(2,1fr);padding:8px var(--page-pad);gap:6px}
   .mod-cell{padding:8px 10px}
   .mod-cell .ico{width:22px;height:22px}
@@ -1325,15 +1465,18 @@ html.js-ready .reveal.in{opacity:1;transform:none}
   .atlas-fold-body{padding:0 14px 18px}
 }
 @media(max-width:380px){
+  .hero-bg::after{background:rgba(2,15,20,0.65)}
+  .hero-bg-grid{inset:-26% -14%;gap:6px;opacity:.10;filter:blur(4.5px) saturate(.36) contrast(.88) brightness(.82)}
+  .hero-bg-grid::before{background-size:32px 32px;opacity:.10}
   .hero-title{font-size:1.82rem;letter-spacing:1px}
   .hero-subtitle{font-size:.7rem;letter-spacing:2px}
   .hero-pills{gap:5px}
   .hero-pills li{padding:8px 4px 7px;font-size:.6rem}
   .hero-pills li strong{font-size:1rem}
   .hero-pills li.hero-pill-feature strong{font-size:.72rem}
-  .hero .modality-strip .mod-cell{padding:8px 8px}
-  .hero .modality-strip .mod-cell h4{font-size:.66rem}
-  .hero .modality-strip .mod-cell .mod-brief{font-size:.52rem}
+  .hero-below .mod-cell{padding:8px 8px}
+  .hero-below .mod-cell h4{font-size:.66rem}
+  .hero-below .mod-cell .mod-brief{font-size:.52rem}
 }
 </style>
 <style type="text/css">.qa-sdk-wrapper {
@@ -1375,6 +1518,38 @@ html.js-ready .reveal.in{opacity:1;transform:none}
     width: 356px;
   }
 }
+/* ---------- back to top ---------- */
+.back-to-top{
+  position:fixed;
+  right:clamp(16px,3vw,28px);
+  bottom:calc(24px + env(safe-area-inset-bottom,0px));
+  z-index:900;
+  width:46px;height:46px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--glass);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  color:var(--ice);
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;
+  transform:translateY(12px);
+  transition:opacity .28s,visibility .28s,transform .28s,background .2s,border-color .2s,color .2s;
+  box-shadow:0 8px 28px rgba(0,0,0,.35);
+}
+.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover,.back-to-top:focus-visible{
+  background:rgba(127,212,232,.14);
+  border-color:rgba(127,212,232,.38);
+  color:var(--ice-bright);
+  outline:none;
+}
+.back-to-top svg{width:20px;height:20px}
+@media(max-width:680px){
+  .back-to-top{width:42px;height:42px;right:14px;bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+}
+@media print{.back-to-top{display:none!important}}
 </style><style id="ai-assist-webType-style">
     .ai-assist-highlight {
       background: yellow;
@@ -1441,42 +1616,53 @@ setTimeout(function(){
 <!-- ============ NAV ============ -->
 <header id="hdr" style="padding: 0px;">
   <div class="nav-inner">
-    <div class="brand" onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">
+    <div class="brand" role="link" tabindex="0" onclick="goHomeLanding(event)" onkeydown="if(event.key==='Enter'||event.key===' ')goHomeLanding(event)">
       <svg class="logo"><use href="#shark-logo"></use></svg>
       <div class="brand-text">
         <span class="cn">鲨鱼医学</span>
-        <span class="en">Shark · MSK Atlas</span>
+        <span class="en">Shark · Medical Imaging Atlas</span>
       </div>
     </div>
-    <nav>
+    <nav aria-label="主导航">
       <ul>
         <li><a href="/" target="_top">首页</a></li>
         <li><a href="atlas.html">疾病图谱</a></li>
         <li class="index-only"><a href="#modality">影像技术</a></li>
-        <li><a href="#filmlib">胶片库</a></li>
-        <li><a href="#protocol">阅片流程</a></li>
-        <li><a href="#deepdive">深度解析</a></li>
-        <li><a href="#about">关于我们</a></li>
+        <li class="index-only"><a href="#about">关于我们</a></li>
       </ul>
     </nav>
-    <div class="site-search" id="hdrSearch">
-      <svg class="site-search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+    <div class="nav-tools">
+    <div class="site-search site-search-collapsible" id="hdrSearch">
+      <button type="button" class="site-search-toggle" id="searchToggleHdr" aria-label="打开搜索" aria-expanded="false" aria-controls="searchPanelHdr">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      </button>
+      <div class="site-search-panel" id="searchPanelHdr">
+      <svg class="site-search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
       <input type="search" id="searchInputHdr" placeholder="搜索疾病…" autocomplete="off" aria-label="全站搜索" aria-controls="searchDropdownHdr" aria-expanded="false" aria-autocomplete="list">
       <div class="search-dropdown" id="searchDropdownHdr" role="listbox" aria-label="搜索结果" hidden=""></div>
+      </div>
     </div>
     <div class="auth-nav" id="authNav">
       <div class="auth-nav-guest" id="authNavGuest">
         <a class="auth-nav-link" href="login.html">登录</a>
         <a class="auth-nav-link" href="register.html">注册</a>
       </div>
-      <div class="auth-nav-user" id="authNavUser">
-        <span class="auth-nav-name" id="authNavName"></span>
-        <a class="auth-nav-admin" id="authNavAdmin" href="/admin/" hidden>管理后台</a>
-        <button type="button" class="auth-logout" id="authNavLogout">退出</button>
+      <div class="auth-nav-user" id="authNavUser" hidden="">
+        <div class="auth-user-menu">
+          <button type="button" class="auth-user-trigger" id="authUserTrigger" aria-expanded="false" aria-controls="authUserDropdown" aria-label="账户菜单">
+            <span class="auth-user-avatar" id="authUserAvatar" aria-hidden="true">U</span>
+          </button>
+          <div class="auth-user-dropdown" id="authUserDropdown" hidden="">
+            <div class="auth-user-dropdown-head" id="authNavName">用户</div>
+            <a class="auth-nav-admin" id="authNavAdmin" href="/admin/" hidden>管理后台</a>
+            <button type="button" class="auth-logout" id="authNavLogout">退出登录</button>
+          </div>
+        </div>
       </div>
     </div>
     <a class="nav-cta index-only" href="atlas.html">进入图谱 →</a>
     <button type="button" class="burger" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="navDrawer"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 <div class="atlas-embed-bar embed-only" aria-label="图谱页导航">
@@ -1499,10 +1685,7 @@ setTimeout(function(){
     <a href="/" target="_top">首页</a>
     <a href="atlas.html">疾病图谱</a>
     <a class="index-only" href="#modality">影像技术</a>
-    <a href="#filmlib">胶片库</a>
-    <a href="#protocol">阅片流程</a>
-    <a href="#deepdive">深度解析</a>
-    <a href="#about">关于我们</a>
+    <a class="index-only" href="#about">关于我们</a>
     <a href="login.html" id="drawerLogin">登录</a>
     <a href="register.html" id="drawerRegister">注册</a>
     <a href="/admin/" id="drawerAdmin" hidden>管理后台</a>
@@ -1524,7 +1707,7 @@ setTimeout(function(){
   <div class="bg-theme-options" id="bgThemeOptions" hidden="">
     <span class="bg-theme-label">阅读氛围 · 不影响影像对比度</span>
     <div class="bg-theme-chips" id="bgThemeChips"></div>
-    <p class="bg-theme-hint">风景图来自 Wikimedia Commons；影像卡片、胶片库、放大预览仍为独立深色背景</p>
+    <p class="bg-theme-hint">风景图来自 Wikimedia Commons；影像卡片与放大预览仍为独立深色背景</p>
   </div>
 </div>
 
@@ -1532,61 +1715,79 @@ setTimeout(function(){
 <section class="hero" id="home">
   <div class="hero-bg" aria-hidden="true">
     <div class="hero-bg-glow"></div>
-    <div class="hero-bg-grid">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Knee_plain_X-ray_weight_bearing.jpg?width=640" alt="" loading="eager" decoding="async">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/VKB-Riss_MRT_T1_PDW_sag.jpg?width=640" alt="" loading="eager" decoding="async">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CT scan of calcaneal fracture.jpg?width=640" alt="" loading="eager" decoding="async">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Unhappy_Triad_des_Kniegelenks_53M_-_MR_-_001_-_Annotation.jpg?width=640" alt="" loading="eager" decoding="async">
+    <div class="hero-bg-grid" aria-hidden="true">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg?width=640" alt="" loading="eager" decoding="async" data-modality="xray" data-region="chest">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CT%20of%20abscess%20and%20THAD.jpg?width=640" alt="" loading="eager" decoding="async" data-modality="ct" data-region="abdomen">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brain%20injury%20with%20herniation%20MRI.jpg?width=640" alt="" loading="eager" decoding="async" data-modality="mri" data-region="brain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Osteoarthritis%20on%20X-ray.jpg?width=640" alt="" loading="eager" decoding="async" data-modality="xray" data-region="msk">
     </div>
   </div>
   <div class="hero-landing reveal">
+    <div class="hero-core">
     <div class="hero-brand-mark" aria-hidden="true">
       <svg class="hero-logo" viewBox="0 0 48 48"><use href="#shark-logo"></use></svg>
     </div>
     <h1 class="hero-title">鲨鱼医学</h1>
-    <p class="hero-subtitle">MSK 影像学习平台</p>
-    <ul class="hero-pills" aria-label="平台核心内容">
-      <li><strong>50+</strong>疾病图谱</li>
-      <li><strong>200+</strong>医学影像</li>
-      <li class="hero-pill-feature"><strong>医学</strong>学习工具</li>
-    </ul>
+    <p class="hero-subtitle">全身影像诊断图谱</p>
     <a class="btn-hero-start" href="atlas.html">
       开始学习
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
     </a>
-  </div>
-  <section class="modality-strip index-only reveal" id="modality">
-    <div class="mod-row">
-      <div class="mod-cell reveal in">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8l8 8M16 8l-8 8"></path></svg>
-        <div class="mod-cell-text">
-          <h4>X 线 / DR</h4>
-          <p class="mod-brief">骨皮质 · 对线 · 关节间隙</p>
-        </div>
-      </div>
-      <div class="mod-cell reveal in">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg>
-        <div class="mod-cell-text">
-          <h4>CT 断层</h4>
-          <p class="mod-brief">骨折细节 · 骨破坏 · 3D</p>
-        </div>
-      </div>
-      <div class="mod-cell reveal in">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"></path><path d="M12 7v10M8 9v6M16 9v6"></path></svg>
-        <div class="mod-cell-text">
-          <h4>MRI 磁共振</h4>
-          <p class="mod-brief">软骨 · 韧带 · 骨髓水肿</p>
-        </div>
-      </div>
-      <div class="mod-cell reveal in">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 14c2-6 14-6 16 0"></path><path d="M6 14c1.5-3 10.5-3 12 0"></path><path d="M9 14c.8-1.4 5.2-1.4 6 0"></path><circle cx="12" cy="14" r="1.2" fill="currentColor"></circle></svg>
-        <div class="mod-cell-text">
-          <h4>超声 US</h4>
-          <p class="mod-brief">肌腱 · 积液 · 动态评估</p>
+    </div>
+    <div class="hero-below index-only reveal" aria-label="平台概览">
+      <ul class="hero-pills">
+        <li data-hero-stat="diseases"><strong>1250+</strong>疾病条目</li>
+        <li data-hero-stat="images"><strong>200+</strong>医学影像</li>
+        <li data-hero-stat="systems"><strong>12+</strong>覆盖系统</li>
+      </ul>
+      <div class="modality-strip" id="modality">
+        <div class="mod-row">
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8l8 8M16 8l-8 8"></path></svg>
+            <div class="mod-cell-text">
+              <h4>X 线 / DR</h4>
+              <p class="mod-brief">密度 · 轮廓 · 钙化</p>
+            </div>
+          </div>
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg>
+            <div class="mod-cell-text">
+              <h4>CT 断层</h4>
+              <p class="mod-brief">实质 · 占位 · 三维重建</p>
+            </div>
+          </div>
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"></path><path d="M12 7v10M8 9v6M16 9v6"></path></svg>
+            <div class="mod-cell-text">
+              <h4>MRI</h4>
+              <p class="mod-brief">序列信号 · 软组织 · 扩散/灌注</p>
+            </div>
+          </div>
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 14c2-6 14-6 16 0"></path><path d="M6 14c1.5-3 10.5-3 12 0"></path><path d="M9 14c.8-1.4 5.2-1.4 6 0"></path><circle cx="12" cy="14" r="1.2" fill="currentColor"></circle></svg>
+            <div class="mod-cell-text">
+              <h4>超声 US</h4>
+              <p class="mod-brief">实时 · 血流 · 囊实鉴别</p>
+            </div>
+          </div>
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="5" cy="12" r="2.5"></circle><path d="M7.5 12h6M13.5 10.5c1.5 0 2.5 1 2.5 2.5v1.5M16 14.5h2.5M18.5 14.5v3M21 17.5l1.5 1.5"></path></svg>
+            <div class="mod-cell-text">
+              <h4>内镜 END</h4>
+              <p class="mod-brief">黏膜 · 腔道 · 活检定位</p>
+            </div>
+          </div>
+          <div class="mod-cell reveal in">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12h4l2-4 3 8 2-4h7"></path></svg>
+            <div class="mod-cell-text">
+              <h4>心电图 ECG</h4>
+              <p class="mod-brief">节律 · 波形 · 缺血/传导</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </section>
 
 <div id="learningHub" class="learning-hub" hidden>
@@ -2695,171 +2896,8 @@ setTimeout(function(){
 </section>
 </div><!-- /#learningHub -->
 
-<!-- ============ READING PROTOCOL ============ -->
-<section class="protocol" id="protocol">
-  <div class="wrap">
-    <div class="sec-head reveal in">
-      <div class="sec-tag">系统阅片流程</div>
-      <h2>四步法 · 不漏诊的结构化思路</h2>
-      <p>从骨骼到软组织,从对线到信号。把每一次阅片都跑成同一套可靠的检查清单,让经验变成可复制的标准动作。</p>
-    </div>
-    <div class="proto-grid">
-      <div class="proto-step reveal in">
-        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"></path></svg>
-        <div class="step-no">01</div>
-        <h4>对线与对位</h4>
-        <p>先看整体力线、关节面对合与序列。任何成角、移位、半脱位都在这一步被捕捉,建立空间框架。</p>
-      </div>
-      <div class="proto-step reveal in">
-        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"></path></svg>
-        <div class="step-no">02</div>
-        <h4>骨质与骨皮质</h4>
-        <p>沿骨皮质走行逐段追踪,寻找连续性中断、骨膜反应、密度异常与骨小梁结构的细微改变。</p>
-      </div>
-      <div class="proto-step reveal in">
-        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"></path></svg>
-        <div class="step-no">03</div>
-        <h4>关节与软骨</h4>
-        <p>评估关节间隙、软骨厚度、关节面下骨质与游离体。MRI 重点观察软骨缺损与骨髓水肿信号。</p>
-      </div>
-      <div class="proto-step reveal in">
-        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"></path></svg>
-        <div class="step-no">04</div>
-        <h4>软组织与信号</h4>
-        <p>最后回到肌腱、韧带、滑囊与周围软组织,结合 T2/PD-FS 信号判断水肿、撕裂与占位。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DEEP DIVE ============ -->
-<section id="deepdive">
-  <div class="wrap">
-    <div class="sec-head reveal in">
-      <div class="sec-tag">深度征象解析</div>
-      <h2>以"膝关节前交叉韧带损伤"为例</h2>
-      <p>从一个真实而高频的病例出发,演示鲨鱼医学如何把多模态影像征象,逐条对应到可落地的诊断结论。</p>
-    </div>
-
-    <div class="deepdive">
-      <div class="dd-visual reveal in">
-        <div class="dd-hud tl">SHARK-MSK / CASE-0427<br>MRI 3.0T · SAG T1 / PDW</div>
-        <div class="dd-hud br">ACL TEAR · GRADE III<br>WINDOW: SOFT-TISSUE</div>
-        <div id="ddGallery"></div>
-      </div>
-
-      <div class="dd-content reveal in">
-        <h3>当韧带的连续性消失,影像在告诉我们什么</h3>
-        <ul class="dd-list">
-          <li><span class="k">直接征象</span><span class="vtext"><strong>ACL 纤维束连续性中断</strong>,正常低信号韧带被高信号取代,走行迂曲或呈"空虚切迹"表现。</span></li>
-          <li><span class="k">骨挫伤</span><span class="vtext">外侧股骨髁与胫骨后外侧出现对吻性<strong>骨髓水肿</strong>,T2/PD-FS 高信号,提示典型受伤机制。</span></li>
-          <li><span class="k">间接征象</span><span class="vtext">胫骨前移、PCL 屈曲角增大、Segond 撕脱骨折等<strong>继发改变</strong>,可在 ACL 显示不佳时辅助判断。</span></li>
-          <li><span class="k">鉴别陷阱</span><span class="vtext">部分撕裂与黏液变性易混淆;需结合多平面与临床<strong>不稳定体征</strong>综合判断,避免过诊。</span></li>
-        </ul>
-        <a class="btn-ghost" href="atlas.html">
-          查看更多关节病例
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ IMAGING FILM GALLERY ============ -->
-<section id="filmlib">
-  <div class="wrap">
-    <div class="sec-head reveal in">
-      <div class="sec-tag">影像胶片库</div>
-      <h2>多模态影像 · 同屏对照阅片</h2>
-      <p>同一解剖区域,在不同成像模态下呈现的征象各有侧重。点击下方胶片切换观察,体会 X 线、CT、MRI 与超声之间的互补关系。</p>
-    </div>
-
-    <!-- viewer toolbar -->
-    <div class="viewer-bar reveal in">
-      <div class="vb-left">
-        <span class="vb-dot"></span>
-        <span class="vb-title">SHARK PACS · 阅片台</span>
-      </div>
-      <div class="vb-tabs" id="filmTabs">
-        <button class="vb-tab active" data-film="xray">X 线 / DR</button>
-        <button class="vb-tab" data-film="ct">CT</button>
-        <button class="vb-tab" data-film="mri">MRI</button>
-        <button class="vb-tab" data-film="us">超声</button>
-      </div>
-      <div class="vb-right" id="filmMeta">WL 40 · WW 400 · DR</div>
-    </div>
-
-    <!-- film grid -->
-    <div class="film-grid" id="filmGrid">
-    <div class="film">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      <img class="film-radiograph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Knee_plain_X-ray_weight_bearing.jpg" alt="膝关节正位" loading="lazy">
-      <div class="f-top">KNEE AP<br>DR · STANDING</div>
-      <div class="f-bot">
-        <div class="f-name">膝关节正位</div>
-        <div class="f-find">▸ 间隙变窄 · 骨赘形成</div>
-      </div>
-    </div>
-    <div class="film">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      <img class="film-radiograph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Collesfracture.jpg" alt="腕关节侧位" loading="lazy">
-      <div class="f-top">WRIST LAT<br>DR</div>
-      <div class="f-bot">
-        <div class="f-name">腕关节侧位</div>
-        <div class="f-find">▸ 背侧成角 · 餐叉畸形</div>
-      </div>
-    </div>
-    <div class="film">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      <img class="film-radiograph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hueftgelenk-Oberschenkelhalsbruch.jpg" alt="骨盆正位" loading="lazy">
-      <div class="f-top">PELVIS AP<br>DR</div>
-      <div class="f-bot">
-        <div class="f-name">骨盆正位</div>
-        <div class="f-find">▸ 股骨颈骨折线</div>
-      </div>
-    </div>
-    <div class="film">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      <img class="film-radiograph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lateral_Tibial_Plateau_fracture_XRay_with_Depression.jpg" alt="胫骨平台" loading="lazy">
-      <div class="f-top">TIB PLAT<br>AP · DEPRESSION</div>
-      <div class="f-bot">
-        <div class="f-name">胫骨平台</div>
-        <div class="f-find">▸ 平台塌陷 · 关节面台阶</div>
-      </div>
-    </div>
-    <div class="film">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      <img class="film-radiograph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Trethowan&#39;s sign seen in SCFE.jpg" alt="SCFE 蛙式位" loading="lazy">
-      <div class="f-top">HIP FROG<br>AP · PEDIATRIC</div>
-      <div class="f-bot">
-        <div class="f-name">SCFE 蛙式位</div>
-        <div class="f-find">▸ Klein线 · Trethowan征</div>
-      </div>
-    </div></div>
-
-    <p class="film-note reveal in">提示：胶片库影像来自 Wikimedia Commons 等开放授权医学图库，标注典型征象与窗宽窗位参数，仅供教学参考。每张图下方可展开查看<strong style="color:var(--ice-bright);font-weight:500">来源、作者/机构、许可协议、是否修改、原文链接与引用格式</strong>。</p>
-  </div>
-</section>
-
-<!-- ============ STATS BAND ============ -->
-<section class="statband" id="statband">
-  <div class="wrap">
-    <div class="sb-grid">
-      <div class="sb-item reveal in"><div class="num" data-count="160">0</div><div class="lbl">系统化疾病条目</div></div>
-      <div class="sb-item reveal in"><div class="num" data-count="800">0</div><div class="lbl">关键征象注解</div></div>
-      <div class="sb-item reveal in"><div class="num" data-count="64">0</div><div class="lbl">鉴别诊断对照表</div></div>
-      <div class="sb-item reveal in"><div class="num" data-count="18">0</div><div class="lbl">解剖区域专题</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TRUST / ABOUT ============ -->
-<section id="about">
+<!-- ============ TRUST / ABOUT (导航进入) ============ -->
+<section class="index-subpage" id="about">
   <div class="wrap">
     <div class="sec-head reveal in">
       <div class="sec-tag">关于鲨鱼医学</div>
@@ -2870,7 +2908,7 @@ setTimeout(function(){
       <div class="trust-card reveal in">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg>
         <h4>循证与权威</h4>
-        <p>每条征象描述均参考主流放射学教材与指南共识,标注模态依据与鉴别边界,拒绝模糊与想当然。</p>
+        <p>每条征象描述参考《骨肌系统影像诊断》《骨与关节影像诊断学》《骨伤科影像学》《骨关节损伤影像诊断一点通》及主流影像指南共识，标注模态依据与鉴别边界。</p>
       </div>
       <div class="trust-card reveal in">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 9h18M8 14h2M8 4v5"></path></svg>
@@ -2901,19 +2939,6 @@ setTimeout(function(){
       <input type="search" class="attrib-search" id="attribSearch" placeholder="搜索文件名、作者或许可证…" autocomplete="off">
       <div class="attrib-list" id="attribRegistryList" aria-live="polite"></div>
       <p class="attrib-count" id="attribRegistryCount"></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA ============ -->
-<section class="cta-band" id="cta">
-  <div class="cta-inner reveal in">
-    <svg style="width:64px;height:64px;margin:0 auto 28px;color:#5eead4;filter:drop-shadow(0 0 20px rgba(45,212,191,0.4))"><use href="#shark-logo"></use></svg>
-    <h2>把每一次阅片,<br>都变成<span class="accent">一次精准的捕猎</span></h2>
-    <p>开始系统地构建你的骨科影像诊断思维。从今天起,让征象不再溜走。</p>
-    <div class="hero-actions" style="justify-content:center">
-      <a class="btn-primary" href="atlas.html">立即进入图谱</a>
-      <button class="btn-ghost" onclick="document.getElementById(&#39;protocol&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">了解阅片方法</button>
     </div>
   </div>
 </section>
@@ -2998,7 +3023,7 @@ setTimeout(function(){
         <svg class="logo"><use href="#shark-logo"></use></svg>
         <div class="brand-text">
           <span class="cn">鲨鱼医学</span>
-          <span class="en">Shark · MSK Atlas</span>
+          <span class="en">Shark · Medical Imaging Atlas</span>
         </div>
       </div>
       <p>骨骼肌肉系统放射影像学图谱。以结构化、多模态的方式,陪伴每一位影像与骨科同道精进诊断。</p>
@@ -3006,20 +3031,18 @@ setTimeout(function(){
     <div class="foot-col">
       <h5>图谱分类</h5>
       <ul>
-        <li><a href="atlas.html">创伤骨科</a></li>
-        <li><a href="atlas.html?nav=joint">退行性病变</a></li>
-        <li><a href="atlas.html?nav=infection">炎症与风湿</a></li>
-        <li><a href="atlas.html?nav=tumor">骨与软组织肿瘤</a></li>
-        <li><a href="atlas.html?nav=ped">儿童骨科</a></li>
+        <li><a href="atlas.html?sys=bone&nav=trauma">创伤骨科</a></li>
+        <li><a href="atlas.html?sys=bone&nav=joint">退行性病变</a></li>
+        <li><a href="atlas.html?sys=bone&nav=infection">炎症与风湿</a></li>
+        <li><a href="atlas.html?sys=bone&nav=tumor">骨与软组织肿瘤</a></li>
+        <li><a href="atlas.html?sys=bone&nav=ped">儿童骨科</a></li>
       </ul>
     </div>
     <div class="foot-col">
-      <h5>方法</h5>
+      <h5>站点</h5>
       <ul>
-        <li><a href="#protocol">阅片流程</a></li>
         <li><a href="#modality">影像模态</a></li>
-        <li><a href="#deepdive">征象解析</a></li>
-        <li><a href="#about">鉴别诊断</a></li>
+        <li><a href="#about">关于我们</a></li>
       </ul>
     </div>
     <div class="foot-col">
@@ -3033,10 +3056,14 @@ setTimeout(function(){
     </div>
   </div>
   <div class="foot-bottom">
-    <p>© 2026 鲨鱼医学 SHARK MEDICAL · MSK Atlas</p>
+    <p>© 2026 鲨鱼医学 SHARK MEDICAL · Medical Imaging Atlas</p>
     <p class="disclaimer">本站内容仅供医学教育与学习参考,不能替代执业医师的临床判断与诊疗决策。所有影像均标注来源、作者/机构、许可协议、是否修改、原文链接与引用格式；CC BY 可商用但须署名，CC BY-NC 禁止商用。</p>
   </div>
 </footer>
+
+<button type="button" class="back-to-top" id="backToTop" aria-label="返回顶部" title="返回顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
 <div class="img-lightbox" id="imgLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="影像大图预览">
   <button type="button" class="img-lightbox-close" id="imgLightboxClose" aria-label="关闭">×</button>
@@ -3063,6 +3090,7 @@ setTimeout(function(){
   </div>
 </div>
 
+<script src="data/system-icons.js"></script>
 <script src="image-attrib-registry.js"></script>
 <script>
 /* ---------- radiology images (Wikimedia Commons, CC/open license) ---------- */
@@ -3070,6 +3098,64 @@ function wikiImg(filename,width){
   width=width||800;
   const f=String(filename||'').replace(/ /g,'_');
   return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width='+width;
+}
+function isOpeniUrl(u){
+  return/^https?:\/\/openi\.nlm\.nih\.gov\//i.test(String(u||''));
+}
+function isOpeniProxyUrl(u){
+  return/^\/api\/openi\/img(?:\?|$)/i.test(String(u||''));
+}
+function openiProxyUrl(url){
+  const u=String(url||'');
+  if(isOpeniProxyUrl(u))return u;
+  if(!isOpeniUrl(u))return u;
+  try{
+    return'/api/openi/img?path='+encodeURIComponent(new URL(u).pathname);
+  }catch(e){return u;}
+}
+function galleryItemText(item){
+  return [item&&item.file,item&&item.caption,item&&item.site,item&&item.attrib&&item.attrib.title].filter(Boolean).join(' ');
+}
+function isRadGalleryItem(item){
+  if(!item)return false;
+  const t=galleryItemText(item);
+  const f=String(item.file||'');
+  if(/clinical photograph|clinical photo|photograph shows|intraoperative finding|microphotograph|h&e|main theories|illustration of|boutonniere|hands and arm deformities|diagram|schematic|histolog|photo of the patient/i.test(t))return false;
+  if(/Diagram|Wellcome|schematic|diagram|synpic/i.test(f)&&!/(CR|MR|MRT|X-ray|xray|radiograph|fracture|legend)/i.test(t))return false;
+  if((/annotated|annotation|legend/i.test(f)||/【标注】/.test(t))&&!/photograph|intraoperative|diagram|schematic/i.test(t))return true;
+  if(/x线|ct|mri|超声|dexa|radiograph|x-ray|xray|magnetic resonance|ultrasound|sonograph|_CR_|_MR_|MRT|Rö|Roe|DXA|T1|T2|STIR/i.test(t))return true;
+  if(f.startsWith('openi__'))return false;
+  if(/fraktur|fracture|chondro|calcin|osteo|arthritis|meniscus|spondyl|myeloma|sarcoma|hemangioma/i.test(f))return true;
+  return true;
+}
+function getGalleryItems(type){
+  const arr=diseaseGalleries[type];
+  if(!arr||!arr.length)return null;
+  const kept=arr.filter(isRadGalleryItem);
+  return kept.length?kept:null;
+}
+function galleryImgSrc(item,width){
+  width=width||800;
+  if(!item)return'';
+  const obj=typeof item==='object'?item:null;
+  const file=obj?obj.file:String(item||'');
+  const direct=obj&&(obj.url||obj.src);
+  if(direct&&/^https?:\/\//i.test(direct)){
+    return isOpeniUrl(direct)?openiProxyUrl(direct):direct;
+  }
+  if(String(file).startsWith('openi__')){
+    const reg=getRegistryMeta(file);
+    if(reg&&reg.imageUrl)return openiProxyUrl(reg.imageUrl);
+  }
+  return wikiImg(file,width);
+}
+function galleryImgLarge(itemOrSrc){
+  if(itemOrSrc&&typeof itemOrSrc==='object'){
+    const u=galleryImgSrc(itemOrSrc,2400);
+    if(/^https?:\/\//i.test(u)&&!u.includes('Special:FilePath/'))return u;
+    return wikiImgLarge(u);
+  }
+  return wikiImgLarge(typeof itemOrSrc==='string'?itemOrSrc:'');
 }
 function sanitizeSavedImgUrls(root){
   (root||document).querySelectorAll('img[src*="(1)."],img[src*="%281%29"]').forEach(img=>{
@@ -3282,37 +3368,55 @@ async function fetchImageAttrib(filename){
     attribCache[filename]=local;
     return local;
   }
-  const title='File:'+String(filename).replace(/ /g,'_');
-  const api='https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=extmetadata&titles='+encodeURIComponent(title);
-  try{
-    const res=await fetch(api);
-    if(!res.ok)throw new Error('api');
-    const data=await res.json();
-    const page=data.query&&data.query.pages&&data.query.pages[Object.keys(data.query.pages)[0]];
-    if(!page||page.missing||!page.imageinfo||!page.imageinfo[0])throw new Error('missing');
-    const m=page.imageinfo[0].extmetadata||{};
+  if(String(filename).startsWith('openi__')){
     const meta={
-      source:'Wikimedia Commons',
-      author:stripHtmlMeta(m.Artist&&m.Artist.value||m.Credit&&m.Credit.value||m.Attribution&&m.Attribution.value||'见原文页面'),
-      license:stripHtmlMeta(m.LicenseShortName&&m.LicenseShortName.value||m.UsageTerms&&m.UsageTerms.value||'见原文页面'),
-      licenseUrl:stripHtmlMeta(m.LicenseUrl&&m.LicenseUrl.value||''),
-      pageUrl:wikiFilePageUrl(filename),
-      title:stripHtmlMeta(m.ObjectName&&m.ObjectName.value||filename)
-    };
-    attribCache[filename]=meta;
-    return meta;
-  }catch(e){
-    const meta={
-      source:'Wikimedia Commons',
-      author:'见原文页面（元数据暂不可用）',
-      license:'开放授权（见原文链接）',
-      licenseUrl:'',
-      pageUrl:wikiFilePageUrl(filename),
+      source:'Open-i / PubMed Central',
+      author:'见原文页面',
+      license:'PMC Open Access（见原文）',
+      licenseUrl:'https://www.ncbi.nlm.nih.gov/pmc/about/openft/',
+      pageUrl:'https://openi.nlm.nih.gov/',
       title:filename
     };
     attribCache[filename]=meta;
     return meta;
   }
+  const title='File:'+String(filename).replace(/ /g,'_');
+  const apiParams='action=query&prop=imageinfo&iiprop=extmetadata&titles='+encodeURIComponent(title);
+  const apiUrls=[
+    '/api/wikimedia/query?'+apiParams,
+    'https://commons.wikimedia.org/w/api.php?format=json&origin=*&'+apiParams
+  ];
+  for(const api of apiUrls){
+    try{
+      const res=await fetch(api);
+      if(!res.ok)throw new Error('api '+res.status);
+      const data=await res.json();
+      if(data.ok===false)throw new Error(data.error||'proxy');
+      const page=data.query&&data.query.pages&&data.query.pages[Object.keys(data.query.pages)[0]];
+      if(!page||page.missing||!page.imageinfo||!page.imageinfo[0])throw new Error('missing');
+      const m=page.imageinfo[0].extmetadata||{};
+      const meta={
+        source:'Wikimedia Commons',
+        author:stripHtmlMeta(m.Artist&&m.Artist.value||m.Credit&&m.Credit.value||m.Attribution&&m.Attribution.value||'见原文页面'),
+        license:stripHtmlMeta(m.LicenseShortName&&m.LicenseShortName.value||m.UsageTerms&&m.UsageTerms.value||'见原文页面'),
+        licenseUrl:stripHtmlMeta(m.LicenseUrl&&m.LicenseUrl.value||''),
+        pageUrl:wikiFilePageUrl(filename),
+        title:stripHtmlMeta(m.ObjectName&&m.ObjectName.value||filename)
+      };
+      attribCache[filename]=meta;
+      return meta;
+    }catch(e){/* try next endpoint */}
+  }
+  const meta={
+    source:'Wikimedia Commons',
+    author:'见原文页面（元数据暂不可用）',
+    license:'开放授权（见原文链接）',
+    licenseUrl:'',
+    pageUrl:wikiFilePageUrl(filename),
+    title:filename
+  };
+  attribCache[filename]=meta;
+  return meta;
 }
 function mountImageAttrib(container,file,item){
   if(!container||!file)return;
@@ -3346,10 +3450,6 @@ function initImageAttributions(root){
 function prefetchAllAttributions(){
   const files=new Set();
   Object.values(diseaseGalleries).forEach(arr=>arr.forEach(it=>{if(it.file)files.add(it.file);}));
-  Object.values(filmData).forEach(set=>(set.films||[]).forEach(f=>{
-    if(f.file)files.add(f.file);
-    else{const u=fileFromWikiUrl(f.img);if(u)files.add(u);}
-  }));
   [...files].forEach(f=>fetchImageAttrib(f));
 }
 function renderAttribRegistryList(filter){
@@ -3518,7 +3618,7 @@ function galleryCaption(item){
 }
 function renderGallery(type,title,opts){
   opts=opts||{};
-  const items=diseaseGalleries[type];
+  const items=getGalleryItems(type);
   if(!items||!items.length){
     if(typeof miniSVG==='function')return miniSVG(type);
     return '';
@@ -3530,7 +3630,7 @@ function renderGallery(type,title,opts){
   const uid='g'+(++galUid);
   const imgs=items.map((item,i)=>{
     const contain=/^DEXA\b/i.test(item.caption||'')||/DXA/i.test(item.file||'');
-    return `<img class="dc-radiograph gal-slide${zoomable?' img-zoomable':''}${contain?' gal-img-contain':''}${i===0?' active':''}" src="${wikiImg(item.file,w)}" alt="${alt}" loading="lazy" data-fallback-type="${type}" data-index="${i}" aria-hidden="${i?'true':'false'}">`;
+    return `<img class="dc-radiograph gal-slide${zoomable?' img-zoomable':''}${contain?' gal-img-contain':''}${i===0?' active':''}" src="${galleryImgSrc(item,w)}" alt="${alt}" loading="lazy" data-fallback-type="${type}" data-index="${i}" aria-hidden="${i?'true':'false'}">`;
   }).join('');
   const anns=items.map((item,i)=>renderAnnSvg(item,i,i===0,uid)).join('');
   const nav=items.length>1?'<button type="button" class="gal-nav gal-prev" aria-label="上一张">‹</button><button type="button" class="gal-nav gal-next" aria-label="下一张">›</button>':'';
@@ -3576,7 +3676,7 @@ function bindAtlasZoomDelegation(){
       }
     }
     if(e.target.closest('.gal-nav,.gal-dot,.img-attrib,.film-attrib,.mobile-attrib-bar'))return;
-    const scope=e.target.closest('.m-hero-visual,.dd-visual,#ddGallery,.film');
+    const scope=e.target.closest('.m-hero-visual,.img-gallery');
     if(!scope)return;
     const imgEl=e.target.closest('img.dc-radiograph,img.gal-slide,img.img-zoomable,img.film-radiograph');
     if(!imgEl||!scope.contains(imgEl))return;
@@ -3598,7 +3698,7 @@ function initGalleries(root){
     if(galleryRegistry.has(gal))return;
     galleryRegistry.add(gal);
     const type=gal.dataset.gtype;
-    const items=diseaseGalleries[type];
+    const items=getGalleryItems(type);
     if(!items||!items.length)return;
     let idx=0;
     const imgSlides=[...gal.querySelectorAll('img.gal-slide')];
@@ -3704,6 +3804,74 @@ function initMobileNav(){
     if(e.key==='Escape'&&drawer.classList.contains('open'))closeNav();
   });
 }
+function initNavChrome(){
+  const moreWrap=document.querySelector('.nav-more');
+  const moreBtn=document.getElementById('navMoreBtn');
+  const moreMenu=document.getElementById('navMoreMenu');
+  function closeMenus(except){
+    if(moreWrap&&moreWrap!==except){
+      moreWrap.classList.remove('is-open');
+      if(moreBtn)moreBtn.setAttribute('aria-expanded','false');
+      if(moreMenu)moreMenu.hidden=true;
+    }
+    const authMenu=document.querySelector('.auth-user-menu');
+    if(authMenu&&authMenu!==except){
+      authMenu.classList.remove('is-open');
+      const t=document.getElementById('authUserTrigger');
+      const d=document.getElementById('authUserDropdown');
+      if(t)t.setAttribute('aria-expanded','false');
+      if(d)d.hidden=true;
+    }
+    const searchHdr=document.getElementById('hdrSearch');
+    if(searchHdr&&searchHdr!==except){
+      searchHdr.classList.remove('is-open');
+      const t=document.getElementById('searchToggleHdr');
+      if(t)t.setAttribute('aria-expanded','false');
+    }
+  }
+  if(moreBtn&&moreMenu&&moreWrap){
+    moreBtn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const open=!moreWrap.classList.contains('is-open');
+      closeMenus(open?moreWrap:null);
+      moreWrap.classList.toggle('is-open',open);
+      moreBtn.setAttribute('aria-expanded',open?'true':'false');
+      moreMenu.hidden=!open;
+    });
+    moreMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeMenus()));
+  }
+  const searchHdr=document.getElementById('hdrSearch');
+  const searchToggle=document.getElementById('searchToggleHdr');
+  if(searchHdr&&searchToggle){
+    searchToggle.addEventListener('click',e=>{
+      e.stopPropagation();
+      const open=!searchHdr.classList.contains('is-open');
+      closeMenus(open?searchHdr:null);
+      searchHdr.classList.toggle('is-open',open);
+      searchToggle.setAttribute('aria-expanded',open?'true':'false');
+      if(open)setTimeout(()=>document.getElementById('searchInputHdr')?.focus(),60);
+    });
+  }
+  const authTrigger=document.getElementById('authUserTrigger');
+  const authMenu=document.querySelector('.auth-user-menu');
+  const authDropdown=document.getElementById('authUserDropdown');
+  if(authTrigger&&authMenu&&authDropdown){
+    authTrigger.addEventListener('click',e=>{
+      e.stopPropagation();
+      const open=!authMenu.classList.contains('is-open');
+      closeMenus(open?authMenu:null);
+      authMenu.classList.toggle('is-open',open);
+      authTrigger.setAttribute('aria-expanded',open?'true':'false');
+      authDropdown.hidden=!open;
+    });
+  }
+  document.addEventListener('click',e=>{
+    if(!e.target.closest('.nav-more,.auth-user-menu,.site-search-collapsible'))closeMenus();
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape')closeMenus();
+  });
+}
 function initSiteAuth(){
   const guest=document.getElementById('authNavGuest');
   const userBox=document.getElementById('authNavUser');
@@ -3728,7 +3896,10 @@ function initSiteAuth(){
     guest.style.display='none';
     userBox.hidden=false;
     userBox.style.display='flex';
-    if(nameEl)nameEl.textContent=user.username||'用户';
+    const name=(user.username||'用户').trim();
+    if(nameEl)nameEl.textContent=name;
+    const avatar=document.getElementById('authUserAvatar');
+    if(avatar)avatar.textContent=(name.charAt(0)||'U').toUpperCase();
     if(adminLink)adminLink.hidden=!user.isAdmin;
     if(drawerLogin)drawerLogin.hidden=true;
     if(drawerRegister)drawerRegister.hidden=true;
@@ -3761,7 +3932,7 @@ function bindImgFallback(root){
           visible.forEach(s=>{s.classList.remove('active');s.setAttribute('aria-hidden','true');});
           visible[0].classList.add('active');
           visible[0].setAttribute('aria-hidden','false');
-          const items=diseaseGalleries[gal.dataset.gtype];
+          const items=getGalleryItems(gal.dataset.gtype);
           const idx=+visible[0].dataset.index;
           const capText=gal.querySelector('.gal-cap-text');
           const capCount=gal.querySelector('.gal-count');
@@ -3980,10 +4151,45 @@ let TAXONOMY={
     lower:{label:'下肢'},
     spine:{label:'脊柱'},
     pelvis:{label:'骨盆'},
-    whole:{label:'全身/多部位'}
+    whole:{label:'全身/多部位'},
+    lung:{label:'肺实质'},
+    pleura:{label:'胸膜/胸膜腔'},
+    mediastinum:{label:'纵隔'},
+    upper:{label:'上气道/头颈'}
   }
 };
 const CAT_ORDER=['trauma','degen','infl','tumor','ped'];
+let SYS_GROUPS={
+  nervous:{label:'神经系统',icon:'nervous',desc:'脑、脊髓、周围神经与神经肌肉疾病'},
+  respiratory:{label:'呼吸系统',icon:'respiratory',desc:'144 种呼吸与胸肺疾病 · 多模态与内镜'},
+  circulatory:{label:'循环系统',icon:'circulatory',desc:'99 种循环与心血管疾病 · 多模态与心电图'},
+  digestive:{label:'消化系统',icon:'digestive',desc:'188 种消化与腹部疾病 · 多模态与内镜'},
+  urogenital:{label:'泌尿生殖系统',icon:'urogenital',desc:'肾脏、尿路、男性生殖与肾上腺相关'},
+  'female-repro':{label:'女性生殖系统与产科',icon:'female-repro',desc:'妇科、妊娠与围产期相关疾病'},
+  endocrine:{label:'内分泌系统',icon:'endocrine',desc:'甲状腺、垂体、肾上腺与代谢内分泌'},
+  'head-neck':{label:'头颈部与五官',icon:'head-neck',desc:'眼、耳、鼻喉、口腔与颈部疾病'},
+  breast:{label:'乳腺',icon:'breast',desc:'乳腺疾病筛查、诊断与分期'},
+  hematolymph:{label:'血液与淋巴系统',icon:'hematolymph',desc:'白血病、淋巴瘤、淋巴与脾相关疾病'},
+  systemic:{label:'全身性与多系统',icon:'systemic',desc:'代谢、免疫、遗传与多系统受累疾病'},
+  bone:{label:'骨疾病',icon:'bone',desc:'创伤、关节、脊柱、肿瘤与感染等骨科图谱'}
+};
+let SYS_ORDER=['nervous','respiratory','circulatory','digestive','urogenital','female-repro','endocrine','head-neck','breast','hematolymph','systemic','bone'];
+const SYS_SUBNAV={
+  bone:{navHeadTitle:'骨疾病分类',navHeadDesc:'选择模块，浏览骨科常见疾病图谱',hideSubNavIcons:false},
+  respiratory:{navHeadTitle:'呼吸系统分类',navHeadDesc:'按感染、ILD、肿瘤、胸膜等 16 类模块浏览',hideSubNavIcons:true},
+  digestive:{navHeadTitle:'消化系统分类',navHeadDesc:'按食管、胃肠、肝胆胰脾等 16 类模块浏览',hideSubNavIcons:true},
+  circulatory:{navHeadTitle:'循环系统分类',navHeadDesc:'按冠脉缺血、心肌病、瓣膜、大血管等 11 类模块浏览',hideSubNavIcons:true},
+  nervous:{navHeadTitle:'神经系统分类',navHeadDesc:'按脑血管、颅内肿瘤、脱髓鞘、脊柱脊髓等 8 类模块浏览',hideSubNavIcons:true},
+  urogenital:{navHeadTitle:'泌尿生殖系统分类',navHeadDesc:'按肾脏、膀胱、男性生殖、肾上腺等 6 类模块浏览',hideSubNavIcons:true},
+  'female-repro':{navHeadTitle:'女性生殖与产科分类',navHeadDesc:'按子宫、卵巢、输卵管盆腔、产科等 4 类模块浏览',hideSubNavIcons:true},
+  endocrine:{navHeadTitle:'内分泌系统分类',navHeadDesc:'按甲状腺、甲状旁腺、垂体、肾上腺等 5 类模块浏览',hideSubNavIcons:true},
+  'head-neck':{navHeadTitle:'头颈部与五官分类',navHeadDesc:'按眼眶、颞骨、鼻窦、涎腺、颈部等 6 类模块浏览',hideSubNavIcons:true},
+  breast:{navHeadTitle:'乳腺分类',navHeadDesc:'按良性、炎症、恶性 3 类模块浏览',hideSubNavIcons:true},
+  hematolymph:{navHeadTitle:'血液与淋巴系统分类',navHeadDesc:'按淋巴瘤、髓系/浆细胞、脾与淋巴管等 5 类模块浏览',hideSubNavIcons:true},
+  systemic:{navHeadTitle:'全身性与多系统分类',navHeadDesc:'按肿瘤播散、免疫、代谢、血管炎等 6 类模块浏览',hideSubNavIcons:true}
+};
+const SUBNAV_SYSTEMS=['respiratory','digestive','circulatory','nervous','urogenital','female-repro','endocrine','head-neck','breast','hematolymph','systemic'];
+function systemHasSubNav(sys){return Boolean(SYS_SUBNAV[sys]);}
 let NAV_GROUPS={
   trauma:{label:'创伤',icon:'🦴',desc:'骨折、脱位、韧带与半月板损伤'},
   joint:{label:'关节',icon:'🦴',desc:'关节炎、退变、风湿与结晶性关节病'},
@@ -3993,6 +4199,144 @@ let NAV_GROUPS={
   ped:{label:'儿童骨科',icon:'🦴',desc:'骨骺病变与发育性髋关节异常'}
 };
 const NAV_ORDER=['trauma','joint','spine','tumor','infection','ped'];
+let RESPIRATORY_NAV_GROUPS={
+  'upper-airway':{label:'上呼吸道疾病',icon:'',desc:'鼻、鼻窦、咽喉与上气道病变'},
+  'central-airway':{label:'气管与中央气道',icon:'',desc:'气管狭窄、肿瘤、软化、异物与瘘'},
+  infection:{label:'感染性疾病',icon:'',desc:'细菌、病毒、真菌、分枝杆菌与寄生虫'},
+  'chronic-airway':{label:'慢性气道疾病',icon:'',desc:'COPD、哮喘、支气管扩张与细支气管炎'},
+  ild:{label:'间质性肺疾病',icon:'',desc:'UIP、NSIP、COP 等 ATS-ERS 谱系'},
+  'granuloma-immune':{label:'肉芽肿与免疫相关',icon:'',desc:'结节病、血管炎与 CTD 相关肺病'},
+  eosinophilic:{label:'嗜酸性粒细胞性肺病',icon:'',desc:'Löffler、AEP、CEP'},
+  occupational:{label:'职业与环境性肺病',icon:'',desc:'尘肺、石棉肺、EVALI 等'},
+  vascular:{label:'肺血管疾病',icon:'',desc:'肺栓塞、肺动脉高压与 PAVM'},
+  tumor:{label:'肿瘤性疾病',icon:'',desc:'原发肺癌、转移瘤与良性肿瘤'},
+  pleural:{label:'胸膜疾病',icon:'',desc:'气胸、胸腔积液与胸膜肿瘤'},
+  mediastinum:{label:'纵隔疾病',icon:'',desc:'胸腺瘤、淋巴瘤、囊肿与纵隔气肿'},
+  diaphragm:{label:'膈肌疾病',icon:'',desc:'膈疝、膈膨升与膈肌麻痹'},
+  congenital:{label:'先天与发育异常',icon:'',desc:'CPAM、肺隔离症与支气管闭锁'},
+  'trauma-iatrogenic':{label:'创伤与医源性',icon:'',desc:'肺挫伤、放射性肺炎与药物性肺损伤'},
+  'diffuse-critical':{label:'弥漫性与重症',icon:'',desc:'ARDS、肺水肿、LAM 与呼吸衰竭'}
+};
+const RESPIRATORY_NAV_ORDER=['upper-airway','central-airway','infection','chronic-airway','ild','granuloma-immune','eosinophilic','occupational','vascular','tumor','pleural','mediastinum','diaphragm','congenital','trauma-iatrogenic','diffuse-critical'];
+let DIGESTIVE_NAV_GROUPS={
+  'oral-salivary':{label:'口腔、涎腺与咽部',icon:'',desc:'涎腺、舌、口底及口咽相关病变'},
+  esophagus:{label:'食管疾病',icon:'',desc:'食管炎症、动力障碍、肿瘤与急症'},
+  'stomach-duodenum':{label:'胃与十二指肠',icon:'',desc:'胃炎、消化性溃疡、胃癌及上消化道梗阻'},
+  'small-bowel':{label:'小肠疾病',icon:'',desc:'克罗恩病、肠梗阻、缺血及小肠肿瘤'},
+  'colorectal-appendix':{label:'结直肠与阑尾',icon:'',desc:'炎症性肠病、结直肠癌、憩室及阑尾病变'},
+  liver:{label:'肝脏疾病',icon:'',desc:'脂肪肝、肝硬化、肝肿瘤及代谢性肝病'},
+  biliary:{label:'胆道系统',icon:'',desc:'胆石、胆囊炎、胆管炎及胆道肿瘤'},
+  pancreas:{label:'胰腺疾病',icon:'',desc:'胰腺炎、胰腺囊肿及胰腺肿瘤'},
+  spleen:{label:'脾脏疾病',icon:'',desc:'脾肿大、脾梗死、脾肿瘤及脾破裂'},
+  peritoneum:{label:'腹膜、网膜与肠系膜',icon:'',desc:'腹膜炎、腹水、腹膜肿瘤及肠系膜病变'},
+  'vascular-acute':{label:'消化道血管与急腹症',icon:'',desc:'肠缺血、疝、穿孔及血管急症'},
+  anorectal:{label:'肛门直肠',icon:'',desc:'肛瘘、脓肿、直肠脱垂及肛管直肠肿瘤'},
+  'abdominal-wall':{label:'腹壁与膈肌',icon:'',desc:'腹壁疝、膈疝及腹壁血肿'},
+  'congenital-ped':{label:'先天性与小儿',icon:'',desc:'消化道闭锁、旋转不良及新生儿急腹症'},
+  'infection-parasite':{label:'感染性与寄生虫',icon:'',desc:'腹腔结核、阿米巴、包虫及血吸虫'},
+  'trauma-iatrogenic':{label:'医源性与创伤',icon:'',desc:'实质脏器挫裂伤及术后并发症'}
+};
+const DIGESTIVE_NAV_ORDER=['oral-salivary','esophagus','stomach-duodenum','small-bowel','colorectal-appendix','liver','biliary','pancreas','spleen','peritoneum','vascular-acute','anorectal','abdominal-wall','congenital-ped','infection-parasite','trauma-iatrogenic'];
+let CIRCULATORY_NAV_GROUPS={
+  'coronary-ischemic':{label:'冠状动脉与缺血性心脏病',icon:'',desc:'粥样硬化、心绞痛、心肌梗死与心肌缺血'},
+  cardiomyopathy:{label:'心肌疾病(心肌病)',icon:'',desc:'扩张型、肥厚型、限制型心肌病及心肌炎'},
+  valve:{label:'心脏瓣膜病',icon:'',desc:'二尖瓣、主动脉瓣等狭窄/关闭不全与心内膜炎'},
+  pericardium:{label:'心包疾病',icon:'',desc:'心包炎、积液、压塞与心包肿瘤'},
+  'cardiac-tumor':{label:'心脏肿瘤',icon:'',desc:'黏液瘤、纤维瘤、肉瘤与心腔血栓'},
+  congenital:{label:'先天性心脏病',icon:'',desc:'分流、发绀型与复杂梗阻畸形'},
+  aortic:{label:'主动脉疾病',icon:'',desc:'动脉瘤、夹层、壁内血肿与主动脉炎'},
+  'pulmonary-vascular':{label:'肺循环血管疾病',icon:'',desc:'肺栓塞、CTEPH 与肺动脉高压'},
+  'peripheral-arterial':{label:'外周动脉疾病',icon:'',desc:'下肢闭塞、颈动脉狭窄与动脉栓塞'},
+  venous:{label:'静脉系统疾病',icon:'',desc:'深静脉血栓、腔静脉综合征与门静脉血栓'},
+  'heart-failure':{label:'心力衰竭与功能性改变',icon:'',desc:'充血性心衰、肺水肿与室壁瘤'}
+};
+const CIRCULATORY_NAV_ORDER=['coronary-ischemic','cardiomyopathy','valve','pericardium','cardiac-tumor','congenital','aortic','pulmonary-vascular','peripheral-arterial','venous','heart-failure'];
+let NERVOUS_NAV_GROUPS={}, UROGENITAL_NAV_GROUPS={}, FEMALE_REPRO_NAV_GROUPS={}, ENDOCRINE_NAV_GROUPS={}, HEAD_NECK_NAV_GROUPS={}, BREAST_NAV_GROUPS={}, HEMATOLYMPH_NAV_GROUPS={}, SYSTEMIC_NAV_GROUPS={};
+let NERVOUS_NAV_ORDER=[], UROGENITAL_NAV_ORDER=[], FEMALE_REPRO_NAV_ORDER=[], ENDOCRINE_NAV_ORDER=[], HEAD_NECK_NAV_ORDER=[], BREAST_NAV_ORDER=[], HEMATOLYMPH_NAV_ORDER=[], SYSTEMIC_NAV_ORDER=[];
+const RESPIRATORY_SUBCAT_LABELS={
+  sinus:'鼻窦/鼻咽',larynx:'喉/声门',pharynx:'口咽',nasopharynx:'鼻咽',trachea:'气管/支气管',
+  bacterial:'细菌感染',mycobacteria:'分枝杆菌',viral:'病毒感染',fungal:'真菌感染',atypical:'非典型病原',parasite:'寄生虫',
+  obstructive:'阻塞性气道',fibrosis:'间质性/纤维化',granuloma:'肉芽肿/免疫',eosinophil:'嗜酸性粒细胞',pneumoconiosis:'尘肺/职业暴露',toxic:'毒性/吸入',
+  embolism:'肺栓塞',hypertension:'肺动脉高压',malformation:'畸形/发育异常',hemorrhage:'肺出血',vasculitis:'血管炎',
+  malignant:'恶性肿瘤',metastasis:'转移瘤',nodule:'孤立结节',benign:'良性肿瘤',
+  air:'气胸',fluid:'胸腔积液',pleura:'胸膜病变',thymus:'胸腺','germ-cell':'生殖细胞肿瘤',lymphoma:'淋巴瘤',neurogenic:'神经源性',cyst:'囊肿',
+  hernia:'疝',weakness:'膈肌功能',trauma:'创伤',iatrogenic:'医源性',critical:'危重症',edema:'肺水肿',deposition:'沉积病',cystic:'囊性病变'
+};
+const DIGESTIVE_SUBCAT_LABELS={
+  stone:'结石',infection:'感染',benign:'良性肿瘤',malignant:'恶性肿瘤',inflammation:'炎症',immune:'免疫相关',injury:'损伤/腐蚀',metaplasia:'化生/癌前',motility:'动力障碍',hernia:'疝',diverticulum:'憩室',structural:'结构异常',emergency:'急症',bleeding:'出血',ulcer:'溃疡',gist:'GIST',net:'神经内分泌',polyp:'息肉',obstruction:'梗阻',volvulus:'扭转',ibd:'炎症性肠病',ischemia:'缺血',tumor:'肿瘤',vascular:'血管病变',fibrosis:'纤维化/硬化',metabolic:'代谢性',metastasis:'转移',cyst:'囊肿',premalignant:'癌前/异型',polyposis:'息肉病',prolapse:'脱垂',enlargement:'肿大',hematoma:'血肿',fluid:'积液/腹水',gas:'气腹/积气',parasite:'寄生虫',trauma:'创伤',iatrogenic:'医源性',fistula:'瘘',lymphoma:'淋巴瘤',congenital:'先天/发育异常'
+};
+const DIGESTIVE_ZONE_LABELS={
+  upper:'上消化道',mid:'小肠/中腹',lower:'结直肠',liver:'肝脏',hepatobiliary:'胆道',pancreas:'胰腺',spleen:'脾脏',peritoneum:'腹膜/后腹膜',general:'全腹/多部位'
+};
+const CIRCULATORY_SUBCAT_LABELS={
+  atherosclerosis:'粥样硬化',angina:'心绞痛',infarction:'心肌梗死',scar:'陈旧瘢痕',calcification:'钙化',stenosis:'狭窄',ischemia:'心肌缺血',aneurysm:'动脉瘤',anomaly:'起源/走行异常',bridge:'心肌桥','ischemic-cmp':'缺血性心肌病',
+  dcm:'扩张型心肌病',hcm:'肥厚型心肌病',rcm:'限制型心肌病',arvc:'ARVC',ncm:'致密化不全',takotsubo:'Takotsubo',myocarditis:'心肌炎',amyloid:'淀粉样变',sarcoid:'结节病',iron:'铁过载',
+  regurgitation:'关闭不全/反流',bicuspid:'二叶瓣',endocarditis:'心内膜炎',prolapse:'脱垂',
+  inflammation:'炎症',constriction:'缩窄',effusion:'积液',tamponade:'压塞',cyst:'囊肿',defect:'缺如/缺损',
+  benign:'良性肿瘤',malignant:'恶性肿瘤',metastasis:'转移',thrombus:'血栓',thrombosis:'血栓形成',
+  'shunt-lr':'左向右分流','shunt-rl':'右向左分流/发绀',obstructive:'梗阻/狭窄',complex:'复杂畸形',
+  dissection:'夹层',imh:'壁内血肿',ulcer:'穿透性溃疡',connective:'结缔组织病',rupture:'破裂',
+  embolism:'栓塞',hypertension:'肺动脉高压',malformation:'畸形',steal:'盗血',vasospasm:'血管痉挛',dysplasia:'纤维肌发育不良',
+  device:'滤器/装置',varicose:'静脉曲张',compression:'压迫',failure:'心力衰竭',dilation:'扩大'
+};
+const CIRCULATORY_ZONE_LABELS={
+  coronary:'冠状动脉',myocardium:'心肌',valve:'瓣膜',pericardium:'心包',cardiac:'心腔/肿瘤',congenital:'先天性',aorta:'主动脉',pulmonary:'肺循环',peripheral:'外周动脉',venous:'静脉',heart:'心脏/心衰'
+};
+function usesSystemSubNav(sys){return SUBNAV_SYSTEMS.includes(sys);}
+function navGroupLabel(key){
+  for(const sys of SUBNAV_SYSTEMS){
+    const g=getNavGroupsForSystem(sys).groups;
+    if(g&&g[key])return g[key].label;
+  }
+  return null;
+}
+function zoneLabel(key,sys){
+  if(sys==='digestive'&&DIGESTIVE_ZONE_LABELS[key])return DIGESTIVE_ZONE_LABELS[key];
+  if(sys==='circulatory'&&CIRCULATORY_ZONE_LABELS[key])return CIRCULATORY_ZONE_LABELS[key];
+  const sample=diseases.find(d=>d.sys===sys&&d.zone===key);
+  if(sample&&sample.region)return String(sample.region).split('/')[0];
+  return taxLabel('zone',key);
+}
+function renderZoneChips(){
+  const bar=document.getElementById('filterZone');
+  if(!bar)return;
+  const sys=activeSystem||'bone';
+  let zones;
+  if(usesSystemSubNav(sys)&&activeNavGroup){
+    zones=[...new Set(diseases.filter(d=>d.sys===sys&&d.navGroup===activeNavGroup).map(d=>d.zone).filter(Boolean))].sort();
+  }else{
+    zones=Object.keys(TAXONOMY.zone);
+  }
+  bar.innerHTML='<button type="button" class="fchip fchip-sm'+(activeZone==='all'?' active':'')+'" data-zone="all">全部</button>'+
+    zones.map(z=>`<button type="button" class="fchip fchip-sm${activeZone===z?' active':''}" data-zone="${z}">${zoneLabel(z,sys)}</button>`).join('');
+}
+function usesChineseSub(d){return SUBNAV_SYSTEMS.includes(d.sys);}
+function navIconHtml(icon,large){
+  if(!icon)return '';
+  const svg=(typeof SYS_ICON_SVGS!=='undefined'&&SYS_ICON_SVGS[icon])||(window.SYS_ICON_SVGS&&window.SYS_ICON_SVGS[icon]);
+  if(svg){
+    const cls='nav-ico nav-ico-svg'+(large?' nav-ico-lg':'');
+    return `<span class="${cls}" aria-hidden="true">${svg}</span>`;
+  }
+  const cls='nav-ico'+(large?' nav-ico-lg':'');
+  return `<span class="${cls}">${icon}</span>`;
+}
+function getNavGroupsForSystem(sys){
+  const map={
+    respiratory:()=>({groups:RESPIRATORY_NAV_GROUPS,order:RESPIRATORY_NAV_ORDER}),
+    digestive:()=>({groups:DIGESTIVE_NAV_GROUPS,order:DIGESTIVE_NAV_ORDER}),
+    circulatory:()=>({groups:CIRCULATORY_NAV_GROUPS,order:CIRCULATORY_NAV_ORDER}),
+    nervous:()=>({groups:NERVOUS_NAV_GROUPS,order:NERVOUS_NAV_ORDER}),
+    urogenital:()=>({groups:UROGENITAL_NAV_GROUPS,order:UROGENITAL_NAV_ORDER}),
+    'female-repro':()=>({groups:FEMALE_REPRO_NAV_GROUPS,order:FEMALE_REPRO_NAV_ORDER}),
+    endocrine:()=>({groups:ENDOCRINE_NAV_GROUPS,order:ENDOCRINE_NAV_ORDER}),
+    'head-neck':()=>({groups:HEAD_NECK_NAV_GROUPS,order:HEAD_NECK_NAV_ORDER}),
+    breast:()=>({groups:BREAST_NAV_GROUPS,order:BREAST_NAV_ORDER}),
+    hematolymph:()=>({groups:HEMATOLYMPH_NAV_GROUPS,order:HEMATOLYMPH_NAV_ORDER}),
+    systemic:()=>({groups:SYSTEMIC_NAV_GROUPS,order:SYSTEMIC_NAV_ORDER})
+  };
+  return (map[sys]||(()=>({groups:NAV_GROUPS,order:NAV_ORDER})))();
+}
 function getNavGroup(d){
   const s=d.subcat,z=d.zone,c=d.cat;
   if(c==='ped')return 'ped';
@@ -4057,24 +4401,46 @@ let taxByType={
 };
 function enrichDiseases(){
   diseases.forEach(d=>{
+    if(!d.sys)d.sys='bone';
     const t=taxByType[d.type];
     if(t)Object.assign(d,t);
-    d.navGroup=getNavGroup(d);
+    if(d.sys==='bone')d.navGroup=getNavGroup(d);
+    else if(!d.navGroup&&d.cat)d.navGroup=d.cat;
   });
   syncDiseaseCountLabels();
 }
 function syncDiseaseCountLabels(){
   const n=diseases.length;
   if(!n)return;
-  const sub=`${n} 种骨科疾病 · 搜索与筛选`;
+  const sub=`${n} 种疾病 · ${SYS_ORDER.length} 大系统分类浏览`;
   document.querySelectorAll('.layer-head-sub').forEach(el=>{
-    if(/种骨科疾病/.test(el.textContent||''))el.textContent=sub;
+    if(/种(?:骨(?:科)?)?疾病/.test(el.textContent||''))el.textContent=sub;
   });
-  const heroPill=document.querySelector('.hero-pills li strong');
-  if(heroPill&&heroPill.parentElement?.textContent?.includes('疾病图谱'))heroPill.textContent=n+'+';
+  const dEl=document.querySelector('[data-hero-stat="diseases"] strong');
+  const sEl=document.querySelector('[data-hero-stat="systems"] strong');
+  if(dEl)dEl.textContent=n+'+';
+  if(sEl)sEl.textContent=SYS_ORDER.length+'+';
 }
 enrichDiseases();
-function taxLabel(kind,key){return(TAXONOMY[kind]&&TAXONOMY[kind][key])?TAXONOMY[kind][key].label:key;}
+function taxLabel(kind,key){
+  if(kind==='cat'){
+    const nl=navGroupLabel(key);
+    if(nl)return nl;
+  }
+  if(kind==='subcat'){
+    if(RESPIRATORY_SUBCAT_LABELS[key])return RESPIRATORY_SUBCAT_LABELS[key];
+    if(DIGESTIVE_SUBCAT_LABELS[key])return DIGESTIVE_SUBCAT_LABELS[key];
+    if(CIRCULATORY_SUBCAT_LABELS[key])return CIRCULATORY_SUBCAT_LABELS[key];
+    const sys=activeSystem;
+    if(sys&&usesSystemSubNav(sys)){
+      const sample=diseases.find(d=>d.sys===sys&&d.subcat===key);
+      if(sample&&sample.sevtext)return sample.sevtext;
+    }
+  }
+  if(kind==='zone'&&CIRCULATORY_ZONE_LABELS[key])return CIRCULATORY_ZONE_LABELS[key];
+  return(TAXONOMY[kind]&&TAXONOMY[kind][key])?TAXONOMY[kind][key].label:key;
+}
+function diseaseSubLine(d){return usesChineseSub(d)?(d.sevtext||d.region||d.sub):d.sub;}
 function taxPills(d){
   const c=d.cat||'trauma',s=d.subcat||'',z=d.zone||'';
   return `<div class="dc-tax">
@@ -4230,8 +4596,36 @@ function miniSVG(type){
     metastasis:'<rect x="120" y="22" width="60" height="34" rx="5" fill="url(#gmetastasis)" stroke="#3f6f8f"/><rect x="120" y="66" width="60" height="34" rx="5" fill="url(#gmetastasis)" stroke="#3f6f8f"/><rect x="120" y="110" width="60" height="34" rx="5" fill="url(#gmetastasis)" stroke="#3f6f8f"/><circle cx="138" cy="40" r="6" fill="#e8455f" opacity=".5"/><circle cx="165" cy="82" r="7" fill="#7fd4e8" opacity=".55"/><circle cx="142" cy="126" r="5" fill="#e8455f" opacity=".5"/><circle cx="168" cy="36" r="4" fill="#7fd4e8" opacity=".5"/>',
     septic:'<circle cx="150" cy="95" r="46" fill="url(#gseptic)" stroke="#3f6f8f"/><circle cx="150" cy="95" r="28" fill="#7fd4e8" opacity=".22"/><path d="M118 70 Q150 58 182 70" stroke="#e8455f" stroke-width="1.6" fill="none" opacity=".6"/><path d="M150 150 Q175 168 200 172 L182 192 Q156 178 142 156Z" fill="url(#gseptic)" stroke="#3f6f8f"/><path d="M126 88 q6 6 0 14 M170 86 q6 6 0 14" stroke="#e8455f" stroke-width="1.3" fill="none" opacity=".6"/>',
     ddh:'<path d="M90 60 Q150 50 210 60 Q220 95 195 125 L160 120 Q150 118 140 122 L105 125 Q80 95 90 60Z" fill="url(#gddh)" stroke="#3f6f8f"/><path d="M185 75 L215 60" stroke="#2dd4bf" stroke-width="1.4" opacity=".6"/><circle cx="180" cy="105" r="20" fill="#0a1626" stroke="#e8455f" stroke-width="1.6"/><path d="M160 95 Q180 88 200 95" stroke="#e8455f" stroke-width="1.4" fill="none" opacity=".5"/><line x1="160" y1="120" x2="205" y2="110" stroke="#7fd4e8" stroke-width="1.2" stroke-dasharray="3 2" opacity=".6"/>',
+    lung:'<ellipse cx="115" cy="102" rx="52" ry="68" fill="url(#glung)" stroke="#3f6f8f"/><ellipse cx="245" cy="102" rx="52" ry="68" fill="url(#glung)" stroke="#3f6f8f"/><path d="M167 55 Q180 100 167 145" stroke="#3f6f8f" stroke-width="2" fill="none"/><ellipse cx="130" cy="95" rx="16" ry="20" fill="#e8455f" opacity=".28"/><ellipse cx="230" cy="108" rx="14" ry="18" fill="#7fd4e8" opacity=".22"/>',
+    gut:'<path d="M125 78 Q180 58 235 78 Q248 105 230 132 Q180 152 130 132 Q112 105 125 78Z" fill="url(#ggut)" stroke="#c9732a"/><ellipse cx="175" cy="118" rx="42" ry="28" fill="url(#ggut)" stroke="#c9732a" opacity=".85"/><path d="M148 146 Q180 158 212 146 Q228 162 218 178 Q180 188 142 178 Q132 162 148 146Z" fill="url(#ggut)" stroke="#c9732a" opacity=".75"/><path d="M168 132 Q180 140 192 132" stroke="#fdba74" stroke-width="1.8" fill="none" opacity=".7"/>',
+    heart:'<path d="M180 175 C140 145 95 125 95 88 C95 62 118 48 140 52 C158 55 172 68 180 82 C188 68 202 55 220 52 C242 48 265 62 265 88 C265 125 220 145 180 175Z" fill="url(#gheart)" stroke="#f43f5e"/><path d="M148 95 Q180 78 212 95" stroke="#fb7185" stroke-width="1.8" fill="none" opacity=".65"/><path d="M132 118 Q180 108 228 118" stroke="#fda4af" stroke-width="1.4" fill="none" opacity=".5"/>',
+    brain:'<path d="M180 42 C130 42 95 72 95 108 C95 132 112 152 132 162 C118 148 108 128 108 108 C108 82 128 62 152 58 C142 52 128 48 112 50 C128 38 152 32 180 32 C208 32 232 38 248 50 C232 48 218 52 208 58 C232 62 252 82 252 108 C252 128 242 148 228 162 C248 152 265 132 265 108 C265 72 230 42 180 42Z" fill="url(#gbrain)" stroke="#a78bfa"/><path d="M132 108 Q180 98 228 108" stroke="#c4b5fd" stroke-width="1.4" fill="none" opacity=".55"/>',
+    kidney:'<path d="M145 55 C118 55 105 82 105 108 C105 142 125 168 145 172 C128 158 118 132 118 108 C118 78 132 58 145 55Z" fill="url(#gkidney)" stroke="#38bdf8"/><path d="M215 55 C242 55 255 82 255 108 C255 142 235 168 215 172 C232 158 242 132 242 108 C242 78 228 58 215 55Z" fill="url(#gkidney)" stroke="#38bdf8"/><path d="M145 118 Q180 128 215 118" stroke="#7dd3fc" stroke-width="1.4" fill="none" opacity=".5"/>',
+    organ:'<ellipse cx="180" cy="105" rx="58" ry="42" fill="url(#gorgan)" stroke="#94a3b8" opacity=".92"/><path d="M132 105 Q180 88 228 105" stroke="#cbd5e1" stroke-width="1.6" fill="none" opacity=".55"/>',
   };
+  const SYS_MINI_GRAD={
+    nervous:['#2a1a4a','#0a0614'],urogenital:['#0c2a3a','#041018'],'female-repro':['#3a1028','#120810'],endocrine:['#3a2a08','#120a04'],'head-neck':['#1a224a','#080818'],breast:['#3a1430','#120810'],hematolymph:['#3a0c0c','#120404'],systemic:['#0a3a28','#041810']
+  };
+  const SYS_MINI_SHAPE={nervous:'brain',urogenital:'kidney'};
   const aliases={mcl:'knee',tibplat:'knee',patella:'knee',stressfx:'infect',monteggia:'elbow',lisfranc:'ankle',talus:'ankle',spinalstenosis:'spine',handoaa:'hand',hipimp:'hip',cppd:'gout',psa:'hand',chondrosarcoma:'gct',scfe:'avn',perthes:'avn'};
+  const rd=diseases.find(x=>x.type===type);
+  if(rd&&rd.sys==='respiratory')return base+bg+(shapes.lung||shapes.knee)+'</svg>';
+  if(rd&&rd.sys==='digestive'){
+    const dg=base+'<defs><radialGradient id="ggut" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#3d2814"/><stop offset="1" stop-color="#120a04"/></radialGradient></defs>';
+    return dg+(shapes.gut||shapes.knee)+'</svg>';
+  }
+  if(rd&&rd.sys==='circulatory'){
+    const cg=base+'<defs><radialGradient id="gheart" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#4a1020"/><stop offset="1" stop-color="#120810"/></radialGradient></defs>';
+    return cg+(shapes.heart||shapes.knee)+'</svg>';
+  }
+  if(rd&&SYS_MINI_GRAD[rd.sys]){
+    const g=SYS_MINI_GRAD[rd.sys];
+    const gid='gs'+rd.sys.replace(/-/g,'');
+    const sg=base+'<defs><radialGradient id="'+gid+'" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="'+g[0]+'"/><stop offset="1" stop-color="'+g[1]+'"/></radialGradient></defs>';
+    const shapeKey=SYS_MINI_SHAPE[rd.sys]||'organ';
+    const shapeHtml=(shapes[shapeKey]||shapes.organ).replace(/url\(#g(?:brain|kidney|organ|heart)\)/g,'url(#'+gid+')');
+    return sg+shapeHtml+'</svg>';
+  }
   return base+bg+(shapes[type]||shapes[aliases[type]]||shapes.knee)+'</svg>';
 }
 
@@ -4239,10 +4633,12 @@ function miniSVG(type){
 const atlasContainer=document.getElementById('atlasContainer');
 const filterSummaryEl=document.getElementById('filterSummary');
 const atlasLayerEl=document.getElementById('atlas');
-let activeCat='all',activeSub='all',activeZone='all',activeNavGroup=null;
+let activeCat='all',activeSub='all',activeZone='all',activeSystem=null,activeNavGroup=null;
 
 function filterDiseases(){
   return diseases.filter(d=>{
+    const sys=d.sys||'bone';
+    if(activeSystem&&sys!==activeSystem)return false;
     if(activeNavGroup&&d.navGroup!==activeNavGroup)return false;
     if(activeCat!=='all'&&d.cat!==activeCat)return false;
     if(activeSub!=='all'&&d.subcat!==activeSub)return false;
@@ -4250,20 +4646,66 @@ function filterDiseases(){
     return true;
   });
 }
-function navGroupCounts(){
+function navGroupCounts(sys){
+  const {order}=getNavGroupsForSystem(sys||'bone');
   const counts={};
-  NAV_ORDER.forEach(k=>counts[k]=0);
-  diseases.forEach(d=>{if(d.navGroup)counts[d.navGroup]=(counts[d.navGroup]||0)+1;});
+  order.forEach(k=>counts[k]=0);
+  diseases.forEach(d=>{
+    const ds=d.sys||'bone';
+    if(ds!==(sys||'bone'))return;
+    if(d.navGroup)counts[d.navGroup]=(counts[d.navGroup]||0)+1;
+  });
   return counts;
 }
+function sysGroupCounts(){
+  const counts={};
+  SYS_ORDER.forEach(k=>{counts[k]=0;});
+  diseases.forEach(d=>{
+    const s=d.sys||'bone';
+    if(counts[s]!=null)counts[s]++;
+  });
+  return counts;
+}
+function updateNavPickerHead(){
+  const navWrap=document.getElementById('atlasNavWrap');
+  if(!navWrap)return;
+  const h2=navWrap.querySelector('.atlas-nav-head h2');
+  const p=navWrap.querySelector('.atlas-nav-head p');
+  const curEl=navWrap.querySelector('.atlas-nav-current');
+  if(!activeSystem){
+    if(h2)h2.textContent='选择系统分类';
+    if(p)p.textContent='按人体系统浏览影像图谱';
+    if(curEl)curEl.innerHTML='<span>选择系统分类</span>';
+  }else if(activeSystem&&SYS_SUBNAV[activeSystem]){
+    const meta=SYS_GROUPS[activeSystem];
+    const cfg=SYS_SUBNAV[activeSystem];
+    if(h2)h2.textContent=cfg.navHeadTitle;
+    if(p)p.textContent=cfg.navHeadDesc;
+    if(curEl&&meta)curEl.innerHTML=navIconHtml(meta.icon)+'<span>'+meta.label+'</span>';
+  }
+}
+function updateSystemBrowseHead(key){
+  const meta=SYS_GROUPS[key];
+  if(!meta)return;
+  const titleEl=document.getElementById('atlasBrowseTitle');
+  const descEl=document.getElementById('atlasBrowseDesc');
+  const curEl=document.getElementById('atlasNavCurrent');
+  if(titleEl)titleEl.textContent=meta.label;
+  if(descEl)descEl.textContent=meta.desc;
+  if(curEl)curEl.innerHTML=navIconHtml(meta.icon)+'<span>'+meta.label+'</span>';
+}
 function updateAtlasBrowseHead(){
-  const meta=activeNavGroup?NAV_GROUPS[activeNavGroup]:null;
+  if(activeSystem&&!systemHasSubNav(activeSystem)&&!activeNavGroup){
+    updateSystemBrowseHead(activeSystem);
+    return;
+  }
+  const meta=activeNavGroup?(getNavGroupsForSystem(activeSystem||'bone').groups[activeNavGroup]):null;
   const titleEl=document.getElementById('atlasBrowseTitle');
   const descEl=document.getElementById('atlasBrowseDesc');
   const curEl=document.getElementById('atlasNavCurrent');
   if(meta&&titleEl)titleEl.textContent=meta.label;
   if(meta&&descEl)descEl.textContent=meta.desc;
-  if(meta&&curEl)curEl.innerHTML='<span class="nav-ico">'+meta.icon+'</span><span>'+meta.label+'</span>';
+  if(meta&&curEl)curEl.innerHTML=navIconHtml(SYS_SUBNAV[activeSystem]?.hideSubNavIcons?'':meta.icon)+'<span>'+meta.label+'</span>';
 }
 function atlasGoBack(){
   const overlayEl=document.getElementById('modalOverlay');
@@ -4272,7 +4714,19 @@ function atlasGoBack(){
     return;
   }
   if(activeNavGroup){
-    showAtlasNavPicker();
+    if(systemHasSubNav(activeSystem))showSystemSubNavPicker(activeSystem);
+    const navWrap=document.getElementById('atlasNavWrap');
+    if(navWrap)navWrap.scrollIntoView({behavior:'smooth',block:'nearest'});
+    return;
+  }
+  if(activeSystem){
+    if(activeSystem!=='bone'){
+      const searchWrap=document.getElementById('atlasSearchWrap');
+      const filterWrap=document.getElementById('filterWrap');
+      if(searchWrap)searchWrap.hidden=false;
+      if(filterWrap)filterWrap.hidden=false;
+    }
+    showSystemNavPicker();
     const navWrap=document.getElementById('atlasNavWrap');
     if(navWrap)navWrap.scrollIntoView({behavior:'smooth',block:'nearest'});
     return;
@@ -4280,7 +4734,8 @@ function atlasGoBack(){
   if(isEmbedAtlas())window.top.location.href='index.html';
   else window.location.href='index.html';
 }
-function showAtlasNavPicker(){
+function showSystemNavPicker(){
+  activeSystem=null;
   activeNavGroup=null;
   activeCat='all';activeSub='all';activeZone='all';
   if(atlasLayerEl){
@@ -4293,9 +4748,81 @@ function showAtlasNavPicker(){
   if(navWrap)navWrap.hidden=false;
   if(atlasContainer)atlasContainer.innerHTML='';
   if(filterSummaryEl)filterSummaryEl.innerHTML='';
+  renderAtlasNav();
+  updateNavPickerHead();
+}
+function showAtlasNavPicker(){
+  showSystemNavPicker();
+}
+function showSystemSubNavPicker(sys){
+  if(!systemHasSubNav(sys))return showSystemNavPicker();
+  activeSystem=sys;
+  activeNavGroup=null;
+  activeCat='all';activeSub='all';activeZone='all';
+  if(atlasLayerEl){
+    atlasLayerEl.classList.remove('has-nav-pick');
+    atlasLayerEl.classList.add('show-nav-picker');
+  }
+  const browse=document.getElementById('atlasBrowse');
+  if(browse)browse.hidden=true;
+  const navWrap=document.getElementById('atlasNavWrap');
+  if(navWrap)navWrap.hidden=false;
+  if(atlasContainer)atlasContainer.innerHTML='';
+  if(filterSummaryEl)filterSummaryEl.innerHTML='';
+  renderAtlasNav();
+  updateNavPickerHead();
+}
+function showBoneNavPicker(){showSystemSubNavPicker('bone');}
+function showRespiratoryNavPicker(){showSystemSubNavPicker('respiratory');}
+function showDigestiveNavPicker(){showSystemSubNavPicker('digestive');}
+function showCirculatoryNavPicker(){showSystemSubNavPicker('circulatory');}
+function showNervousNavPicker(){showSystemSubNavPicker('nervous');}
+function showUrogenitalNavPicker(){showSystemSubNavPicker('urogenital');}
+function showFemaleReproNavPicker(){showSystemSubNavPicker('female-repro');}
+function showEndocrineNavPicker(){showSystemSubNavPicker('endocrine');}
+function showHeadNeckNavPicker(){showSystemSubNavPicker('head-neck');}
+function showBreastNavPicker(){showSystemSubNavPicker('breast');}
+function showHematolymphNavPicker(){showSystemSubNavPicker('hematolymph');}
+function showSystemicNavPicker(){showSystemSubNavPicker('systemic');}
+function selectSystem(key){
+  if(!SYS_GROUPS[key])return;
+  if(systemHasSubNav(key)){
+    showSystemSubNavPicker(key);
+    return;
+  }
+  activeSystem=key;
+  activeNavGroup=null;
+  activeCat='all';activeSub='all';activeZone='all';
+  if(atlasLayerEl){
+    atlasLayerEl.classList.add('has-nav-pick');
+    atlasLayerEl.classList.remove('show-nav-picker');
+  }
+  const navWrap=document.getElementById('atlasNavWrap');
+  if(navWrap)navWrap.hidden=true;
+  const browse=document.getElementById('atlasBrowse');
+  if(browse)browse.hidden=false;
+  updateSystemBrowseHead(key);
+  const searchWrap=document.getElementById('atlasSearchWrap');
+  const filterWrap=document.getElementById('filterWrap');
+  if(searchWrap)searchWrap.hidden=true;
+  if(filterWrap)filterWrap.hidden=true;
+  if(atlasContainer){
+    const meta=SYS_GROUPS[key];
+    atlasContainer.innerHTML='<div class="atlas-empty-sys reveal in">'+navIconHtml(meta.icon,true)+'<h3>'+meta.label+'</h3><p>该系统的疾病图谱正在建设中，敬请期待。</p><button type="button" class="btn-ghost atlas-empty-back">返回系统分类</button></div>';
+    atlasContainer.querySelector('.atlas-empty-back')?.addEventListener('click',()=>{
+      if(searchWrap)searchWrap.hidden=false;
+      if(filterWrap)filterWrap.hidden=false;
+      showSystemNavPicker();
+    });
+  }
+  if(filterSummaryEl)filterSummaryEl.innerHTML='';
+  observeReveals();
 }
 function selectAtlasNavGroup(key){
-  if(!NAV_GROUPS[key])return;
+  const sys=activeSystem||'bone';
+  const {groups}=getNavGroupsForSystem(sys);
+  if(!groups[key])return;
+  activeSystem=sys;
   activeNavGroup=key;
   activeCat='all';activeSub='all';activeZone='all';
   if(atlasLayerEl){
@@ -4306,17 +4833,16 @@ function selectAtlasNavGroup(key){
   if(browse)browse.hidden=false;
   const navWrap=document.getElementById('atlasNavWrap');
   if(navWrap)navWrap.hidden=true;
+  const searchWrap=document.getElementById('atlasSearchWrap');
+  const filterWrap=document.getElementById('filterWrap');
+  if(searchWrap)searchWrap.hidden=false;
+  if(filterWrap)filterWrap.hidden=false;
   updateAtlasBrowseHead();
   renderSubChips();
   const zoneBar=document.getElementById('filterZone');
   if(zoneBar){
-    const navZones=new Set(diseases.filter(d=>d.navGroup===key).map(d=>d.zone).filter(Boolean));
-    zoneBar.querySelectorAll('[data-zone]').forEach(btn=>{
-      const z=btn.dataset.zone;
-      btn.hidden=z!=='all'&&!navZones.has(z);
-    });
     activeZone='all';
-    zoneBar.querySelectorAll('.fchip').forEach(c=>c.classList.toggle('active',c.dataset.zone==='all'));
+    renderZoneChips();
   }
   renderAtlas();
   const head=document.getElementById('atlasBrowseHead');
@@ -4325,20 +4851,45 @@ function selectAtlasNavGroup(key){
 function renderAtlasNav(){
   const grid=document.getElementById('atlasNavGrid');
   if(!grid)return;
-  const counts=navGroupCounts();
-  grid.innerHTML=NAV_ORDER.map(key=>{
-    const m=NAV_GROUPS[key];
-    const n=counts[key]||0;
-    return `<button type="button" class="atlas-nav-card reveal" role="listitem" data-nav="${key}">
-      <span class="nav-ico">${m.icon}</span>
+  updateNavPickerHead();
+  if(!activeSystem){
+    grid.classList.add('atlas-sys-grid');
+    const counts=sysGroupCounts();
+    grid.innerHTML=SYS_ORDER.map(key=>{
+      const m=SYS_GROUPS[key];
+      const n=counts[key]||0;
+      const countLabel=n?n+' 种疾病':'建设中';
+      return `<button type="button" class="atlas-nav-card reveal" role="listitem" data-sys="${key}">
+      ${navIconHtml(m.icon)}
+      <span class="nav-label">${m.label}</span>
+      <span class="nav-desc">${m.desc}</span>
+      <span class="nav-count">${countLabel}</span>
+    </button>`;
+    }).join('');
+    grid.querySelectorAll('[data-sys]').forEach(btn=>{
+      btn.addEventListener('click',()=>selectSystem(btn.dataset.sys));
+    });
+  }else{
+    grid.classList.remove('atlas-sys-grid');
+    const sys=activeSystem||'bone';
+    grid.classList.toggle('atlas-resp-nav-grid',Boolean(SYS_SUBNAV[sys]?.hideSubNavIcons));
+    const {groups,order}=getNavGroupsForSystem(sys);
+    const counts=navGroupCounts(sys);
+    grid.innerHTML=order.map(key=>{
+      const m=groups[key];
+      const n=counts[key]||0;
+      const ico=SYS_SUBNAV[sys]?.hideSubNavIcons?'':navIconHtml(m.icon);
+      return `<button type="button" class="atlas-nav-card reveal" role="listitem" data-nav="${key}">
+      ${ico}
       <span class="nav-label">${m.label}</span>
       <span class="nav-desc">${m.desc}</span>
       <span class="nav-count">${n} 种疾病</span>
     </button>`;
-  }).join('');
-  grid.querySelectorAll('[data-nav]').forEach(btn=>{
-    btn.addEventListener('click',()=>selectAtlasNavGroup(btn.dataset.nav));
-  });
+    }).join('');
+    grid.querySelectorAll('[data-nav]').forEach(btn=>{
+      btn.addEventListener('click',()=>selectAtlasNavGroup(btn.dataset.nav));
+    });
+  }
   observeReveals();
 }
 function initAtlasNav(){
@@ -4354,7 +4905,7 @@ function initAtlasNav(){
   const navWrap=document.createElement('div');
   navWrap.className='atlas-nav-wrap reveal';
   navWrap.id='atlasNavWrap';
-  navWrap.innerHTML='<div class="atlas-nav-bar reveal"><button type="button" class="atlas-nav-back" id="atlasNavHomeBack" aria-label="返回上一层"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>返回上一层</button><div class="atlas-nav-current"><span>选择疾病分类</span></div></div><div class="atlas-nav-head reveal"><h2>选择疾病分类</h2><p>先选模块，再浏览对应疾病图谱</p></div><div class="atlas-nav-grid" id="atlasNavGrid" role="list"></div>';
+  navWrap.innerHTML='<div class="atlas-nav-bar reveal"><button type="button" class="atlas-nav-back" id="atlasNavHomeBack" aria-label="返回上一层"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>返回上一层</button><div class="atlas-nav-current"><span>选择系统分类</span></div></div><div class="atlas-nav-head reveal"><h2>选择系统分类</h2><p>按人体系统浏览影像图谱</p></div><div class="atlas-nav-grid atlas-sys-grid" id="atlasNavGrid" role="list"></div>';
   layerBody.insertBefore(navWrap,layerBody.firstChild);
   const browse=document.createElement('div');
   browse.className='atlas-browse';
@@ -4412,7 +4963,7 @@ function buildCard(d,i){
     <div class="dc-body">
       ${taxPills(d)}
       <h3>${d.title}</h3>
-      <div class="sub">${d.sub}</div>
+      <div class="sub${usesChineseSub(d)?' sub-cn':''}">${diseaseSubLine(d)}</div>
       <p>${d.desc}</p>
       <div class="dc-signs">${d.signs.map(s=>`<span class="sign-pill">${s}</span>`).join('')}</div>
       <div class="dc-foot">
@@ -4463,8 +5014,12 @@ function updateFilterSummary(list){
   if(!filterSummaryEl)return;
   const parts=[`共 <strong>${list.length}</strong> 条`];
   if(activeNavGroup&&NAV_GROUPS[activeNavGroup])parts.push(NAV_GROUPS[activeNavGroup].label);
+  else if(activeNavGroup){
+    const g=getNavGroupsForSystem(activeSystem||'bone').groups[activeNavGroup];
+    if(g)parts.push(g.label);
+  }
   if(activeSub!=='all')parts.push(taxLabel('subcat',activeSub));
-  if(activeZone!=='all')parts.push(taxLabel('zone',activeZone));
+  if(activeZone!=='all')parts.push(zoneLabel(activeZone,activeSystem||'bone'));
   filterSummaryEl.innerHTML=parts.join(' · ');
 }
 function renderAtlas(){
@@ -4488,9 +5043,16 @@ function renderAtlas(){
 function renderSubChips(){
   const bar=document.getElementById('filterSub');
   if(!bar)return;
+  const sys=activeSystem||'bone';
+  if(usesSystemSubNav(sys)&&activeNavGroup){
+    const navSubs=[...new Set(diseases.filter(d=>d.sys===sys&&d.navGroup===activeNavGroup).map(d=>d.subcat).filter(Boolean))].sort();
+    bar.innerHTML='<button type="button" class="fchip fchip-sm'+(activeSub==='all'?' active':'')+'" data-sub="all">全部</button>'+
+      navSubs.map(k=>`<button type="button" class="fchip fchip-sm${activeSub===k?' active':''}" data-sub="${k}">${taxLabel('subcat',k)}</button>`).join('');
+    return;
+  }
   let subs=Object.keys(TAXONOMY.subcat);
   if(activeNavGroup){
-    const navSubs=new Set(diseases.filter(d=>d.navGroup===activeNavGroup).map(d=>d.subcat).filter(Boolean));
+    const navSubs=new Set(diseases.filter(d=>(d.sys||'bone')===sys&&d.navGroup===activeNavGroup).map(d=>d.subcat).filter(Boolean));
     subs=subs.filter(k=>navSubs.has(k));
   }else if(activeCat!=='all'){
     subs=subs.filter(k=>TAXONOMY.subcat[k].cats.includes(activeCat));
@@ -4518,8 +5080,6 @@ function initFilters(){
     });
   }
   if(zoneBar){
-    zoneBar.innerHTML='<button type="button" class="fchip fchip-sm active" data-zone="all">全部</button>'+
-      Object.keys(TAXONOMY.zone).map(z=>`<button type="button" class="fchip fchip-sm" data-zone="${z}">${TAXONOMY.zone[z].label}</button>`).join('');
     zoneBar.addEventListener('click',e=>{
       const btn=e.target.closest('[data-zone]');
       if(!btn)return;
@@ -4539,6 +5099,7 @@ function initFilters(){
     });
   }
   renderSubChips();
+  renderZoneChips();
 }
 
 /* ---------- reveal on scroll ---------- */
@@ -4576,89 +5137,39 @@ window.addEventListener('scroll',()=>{
   if(window.scrollY>40){h.style.padding='0';} else {h.style.padding='0';}
 });
 
-/* ---------- imaging film gallery ---------- */
-let filmData={
-  xray:{meta:'WL 40 · WW 400 · DR',films:[
-    {name:'膝关节正位',find:'间隙变窄 · 骨赘形成',top:'KNEE AP<br>DR · STANDING',img:wikiImg('Knee plain X-ray weight bearing.jpg')},
-    {name:'腕关节侧位',find:'背侧成角 · 餐叉畸形',top:'WRIST LAT<br>DR',img:wikiImg('Collesfracture.jpg')},
-    {name:'骨盆正位',find:'股骨颈骨折线',top:'PELVIS AP<br>DR',img:wikiImg('Hueftgelenk-Oberschenkelhalsbruch.jpg')},
-    {name:'胫骨平台',find:'平台塌陷 · 关节面台阶',top:'TIB PLAT<br>AP · DEPRESSION',img:wikiImg('Lateral Tibial Plateau fracture XRay with Depression.jpg')},
-    {name:'SCFE 蛙式位',find:'Klein线 · Trethowan征',top:'HIP FROG<br>AP · PEDIATRIC',img:wikiImg("Trethowan's sign seen in SCFE.jpg")},
-  ]},
-  ct:{meta:'WL 300 · WW 1500 · BONE',films:[
-    {name:'跟骨轴位',find:'关节面塌陷 · Böhler角↓',top:'CALCANEUS<br>CT AXIAL',img:wikiImg('CT scan of calcaneal fracture.jpg')},
-    {name:'腰椎轴位',find:'髓核后突 · 椎管狭窄',top:'L4-L5<br>CT AXIAL',img:wikiImg('CT SCAN DISC HERNIATION.JPG')},
-    {name:'踝关节冠状',find:'距骨颈/外侧突 · 骨折',top:'TALUS<br>CT CORONAL',img:wikiImg('Snowboarders ankle - CT coronar.jpg')},
-    {name:'Lisfranc',find:'跖楔分离 · 中足脱位',top:'MIDFOOT<br>CT+XR',img:wikiImg('Lisfranc-Luxationsfraktur 22M - CR und Volumen Rendering aus CT-Datensatz - 001.jpg')},
-    {name:'软骨肉瘤',find:'环弧钙化 · 股骨近端',top:'FEMUR<br>CT+XR',img:wikiImg('Chondrosarkom proximaler Femur - 87jw - CT und Roe - 001.jpg')},
-  ]},
-  mri:{meta:'TR 4000 · TE 90 · PD-FS',films:[
-    {name:'膝关节矢状',find:'ACL中断 · 骨挫伤T2↑',top:'KNEE SAG<br>PD-FS 3.0T',img:wikiImg('MRT VKB-Riss T1.jpg')},
-    {name:'O\'Donoghue三联征',find:'ACL+MCL+半月板',top:'KNEE COR<br>PD-FS',img:wikiImg('Unhappy Triad des Kniegelenks 53M - MR - 001 - Annotation.jpg')},
-    {name:'腰椎管狭窄',find:'黄韧带肥厚 · 椎管三叶草',top:'L-SPINE<br>T2 AX',img:wikiImg('Ligamenta flava Hypertrophie - MRT T2 axial.jpg')},
-    {name:'半月板桶柄',find:'桶柄移位 · 双PCL征',top:'KNEE SAG<br>T1',img:wikiImg('Korbhenkelriss Aussenmeniskus Hinterhorn - 14jm - MRT - T1 sagittal - 017.jpg')},
-    {name:'肩袖斜冠状',find:'冈上肌全层裂隙',top:'SHOULDER<br>PD-FS OBL',img:wikiImg('2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg')},
-  ]},
-  us:{meta:'7.5 MHz · 线阵探头',films:[
-    {name:'跟腱长轴',find:'连续性中断 · 低回声',top:'ACHILLES<br>US LONG',img:wikiImg('Achillessehnenruptur Sono.jpg')},
-    {name:'婴儿髋 Graf',find:'α/β角 · 髋臼覆盖',top:'INFANT HIP<br>US GRAF',img:wikiImg('Alpha and beta angles on neonatal hip ultrasonography.jpg')},
-    {name:'DDH 脱位',find:'先天性髋脱位 · 骨盆',top:'PELVIS AP<br>PEDIATRIC',img:wikiImg('Congenitaldislocation10.JPG')},
-    {name:'跟腱炎',find:'腱体增厚 · 低回声',top:'ACHILLES<br>US LONG',img:wikiImg('Achilles tendon tendonitis.jpg')},
-  ]},
-};
-function renderFilmMedia(f){
-  if(f.img)return `<img class="film-radiograph img-zoomable" src="${f.img}" alt="${f.name}" loading="lazy">`;
-  return `<svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">${f.svg||''}</svg>`;
-}
-const filmGrid=document.getElementById('filmGrid');
-const filmMeta=document.getElementById('filmMeta');
-const MOD_FILM_KEYS=['xray','ct','mri','us'];
-const MOD_FILM_LABELS={xray:'X 线 / DR',ct:'CT 断层',mri:'MRI 磁共振',us:'超声 US'};
-function selectFilmMod(key,opts){
-  opts=opts||{};
-  const set=filmData[key];
-  if(!set)return;
-  renderFilms(key);
-  document.querySelectorAll('.vb-tab').forEach(t=>t.classList.toggle('active',t.dataset.film===key));
-  if(opts.scroll){
-    const el=document.getElementById('filmlib');
-    if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+/* ---------- back to top ---------- */
+(function(){
+  const btn=document.getElementById('backToTop');
+  if(!btn)return;
+  const modal=document.getElementById('modalOverlay');
+  const modalScroll=document.getElementById('modalScroll');
+  const lightbox=document.getElementById('imgLightbox');
+  const attrib=document.getElementById('attribSheet');
+  function update(){
+    if((lightbox&&lightbox.classList.contains('open'))||(attrib&&attrib.classList.contains('open'))){
+      btn.classList.remove('visible');
+      return;
+    }
+    if(modal&&modal.classList.contains('open')&&modalScroll){
+      btn.classList.toggle('visible',modalScroll.scrollTop>320);
+      return;
+    }
+    btn.classList.toggle('visible',window.scrollY>480);
   }
-}
-function renderFilms(key){
-  const set=filmData[key];
-  if(!set||!filmGrid||!filmMeta)return;
-  filmMeta.textContent=set.meta;
-  filmGrid.innerHTML=set.films.map(f=>{
-    const file=f.file||fileFromWikiUrl(f.img);
-    return `
-    <div class="film shark-wm-host" data-wiki-file="${file}">
-      <span class="corner tl"></span><span class="corner br"></span>
-      <div class="f-scan"></div>
-      ${renderFilmMedia(f)}
-      <div class="f-top">${f.top}</div>
-      <div class="f-bot">
-        <div class="f-name">${f.name}</div>
-        <div class="f-find">▸ ${f.find}</div>
-      </div>
-      ${attribShellHtml('film-attrib')}
-    </div>`;
-  }).join('');
-  set.films.forEach((f,i)=>{
-    const el=filmGrid.children[i];
-    const file=f.file||fileFromWikiUrl(f.img);
-    if(el&&file)mountImageAttrib(el,file,{modified:/Annotation|annotated/i.test(file)});
+  btn.addEventListener('click',()=>{
+    if(modal&&modal.classList.contains('open')&&modalScroll){
+      modalScroll.scrollTo({top:0,behavior:'smooth'});
+      return;
+    }
+    window.scrollTo({top:0,behavior:'smooth'});
   });
-  ensureAttribCloseButtons(filmGrid);
-  bindZoomableImages(filmGrid);
-}
-const filmTabsEl=document.getElementById('filmTabs');
-if(filmTabsEl){
-  filmTabsEl.addEventListener('click',e=>{
-    if(!e.target.classList.contains('vb-tab'))return;
-    selectFilmMod(e.target.dataset.film);
-  });
-}
+  window.addEventListener('scroll',update,{passive:true});
+  if(modalScroll)modalScroll.addEventListener('scroll',update,{passive:true});
+  if(modal)new MutationObserver(update).observe(modal,{attributes:true,attributeFilter:['class']});
+  if(lightbox)new MutationObserver(update).observe(lightbox,{attributes:true,attributeFilter:['class']});
+  if(attrib)new MutationObserver(update).observe(attrib,{attributes:true,attributeFilter:['class']});
+  update();
+})();
 
 /* ---------- site search ---------- */
 let searchIndex=[];
@@ -4704,27 +5215,14 @@ function buildSearchIndex(){
       meta:[d.region,taxLabel('cat',d.cat)].filter(Boolean).join(' · '),
       hay,run:()=>{
         if(isEmbedAtlas())openDetail(d);
-        else window.location.href='atlas.html?d='+encodeURIComponent(d.type);
+        else window.location.href='atlas.html?sys='+encodeURIComponent(d.sys||'bone')+'&d='+encodeURIComponent(d.type);
       }
-    });
-  });
-  Object.entries(filmData).forEach(([key,set])=>{
-    (set.films||[]).forEach(f=>{
-      items.push({
-        kind:'film',tag:'胶片',title:f.name,sub:f.find||'',
-        meta:MOD_FILM_LABELS[key]+' · '+set.meta,
-        hay:normSearchText([f.name,f.find,f.top,set.meta,MOD_FILM_LABELS[key],key].join(' ')),
-        run:()=>selectFilmMod(key,{scroll:true})
-      });
     });
   });
   [
     {id:'modality',title:'影像技术',sub:'X 线 · CT · MRI · 超声',keys:'多模态 模态 断层 磁共振'},
-    {id:'filmlib',title:'多模态影像胶片库',sub:'同屏对照阅片',keys:'胶片 对照 x线 ct mri 超声'},
-    {id:'protocol',title:'系统阅片流程',sub:'四步法结构化阅片',keys:'阅片 对线 骨皮质 软骨 软组织'},
-    {id:'deepdive',title:'深度征象解析',sub:'前交叉韧带损伤案例',keys:'ACL 征象 标注 三联征'},
     {id:'atlas',title:'疾病影像图谱',sub:'50 种骨科疾病详解',keys:'图谱 疾病 筛选 分类'},
-    {id:'about',title:'关于我们',sub:'理念与内容来源',keys:'鲨鱼医学 教育 参考'}
+    {id:'about',title:'关于我们',sub:'理念与内容来源',keys:'鲨鱼医学 教育 参考 授权'}
   ].forEach(p=>{
     items.push({
       kind:'page',tag:'页面',title:p.title,sub:p.sub,meta:'站内导航',
@@ -4740,18 +5238,81 @@ function buildSearchIndex(){
       run:()=>{
         const nav=c==='trauma'?'trauma':c==='tumor'?'tumor':c==='ped'?'ped':c==='infl'?'infection':c==='degen'?'joint':'trauma';
         if(isEmbedAtlas())selectAtlasNavGroup(nav);
-        else window.location.href='atlas.html?nav='+encodeURIComponent(nav);
+        else window.location.href='atlas.html?sys=bone&nav='+encodeURIComponent(nav);
       }
     });
   });
   NAV_ORDER.forEach(key=>{
     const m=NAV_GROUPS[key];
     items.push({
-      kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:'疾病分类',
+      kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:'骨疾病分类',
+      hay:normSearchText([m.label,m.desc,key,'骨疾病'].join(' ')),
+      run:()=>{
+        if(isEmbedAtlas()){activeSystem='bone';selectAtlasNavGroup(key);}
+        else window.location.href='atlas.html?sys=bone&nav='+encodeURIComponent(key);
+      }
+    });
+  });
+  RESPIRATORY_NAV_ORDER.forEach(key=>{
+    const m=RESPIRATORY_NAV_GROUPS[key];
+    items.push({
+      kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:'呼吸系统分类',
+      hay:normSearchText([m.label,m.desc,key,'呼吸系统'].join(' ')),
+      run:()=>{
+        if(isEmbedAtlas()){activeSystem='respiratory';selectAtlasNavGroup(key);}
+        else window.location.href='atlas.html?sys=respiratory&nav='+encodeURIComponent(key);
+      }
+    });
+  });
+  DIGESTIVE_NAV_ORDER.forEach(key=>{
+    const m=DIGESTIVE_NAV_GROUPS[key];
+    items.push({
+      kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:'消化系统分类',
+      hay:normSearchText([m.label,m.desc,key,'消化系统'].join(' ')),
+      run:()=>{
+        if(isEmbedAtlas()){activeSystem='digestive';selectAtlasNavGroup(key);}
+        else window.location.href='atlas.html?sys=digestive&nav='+encodeURIComponent(key);
+      }
+    });
+  });
+  CIRCULATORY_NAV_ORDER.forEach(key=>{
+    const m=CIRCULATORY_NAV_GROUPS[key];
+    items.push({
+      kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:'循环系统分类',
+      hay:normSearchText([m.label,m.desc,key,'循环系统'].join(' ')),
+      run:()=>{
+        if(isEmbedAtlas()){activeSystem='circulatory';selectAtlasNavGroup(key);}
+        else window.location.href='atlas.html?sys=circulatory&nav='+encodeURIComponent(key);
+      }
+    });
+  });
+  const SUBNAV_SEARCH_META={
+    nervous:'神经系统',urogenital:'泌尿生殖系统','female-repro':'女性生殖系统与产科',endocrine:'内分泌系统','head-neck':'头颈部与五官',breast:'乳腺',hematolymph:'血液与淋巴系统',systemic:'全身性与多系统'
+  };
+  ['nervous','urogenital','female-repro','endocrine','head-neck','breast','hematolymph','systemic'].forEach(sysKey=>{
+    const {groups,order}=getNavGroupsForSystem(sysKey);
+    const label=SUBNAV_SEARCH_META[sysKey]||sysKey;
+    order.forEach(key=>{
+      const m=groups[key];
+      if(!m)return;
+      items.push({
+        kind:'category',tag:'导航',title:m.label,sub:m.desc,meta:label+'分类',
+        hay:normSearchText([m.label,m.desc,key,label].join(' ')),
+        run:()=>{
+          if(isEmbedAtlas()){activeSystem=sysKey;selectAtlasNavGroup(key);}
+          else window.location.href='atlas.html?sys='+encodeURIComponent(sysKey)+'&nav='+encodeURIComponent(key);
+        }
+      });
+    });
+  });
+  SYS_ORDER.forEach(key=>{
+    const m=SYS_GROUPS[key];
+    items.push({
+      kind:'category',tag:'系统',title:m.label,sub:m.desc,meta:'系统分类',
       hay:normSearchText([m.label,m.desc,key].join(' ')),
       run:()=>{
-        if(isEmbedAtlas())selectAtlasNavGroup(key);
-        else window.location.href='atlas.html?nav='+encodeURIComponent(key);
+        if(isEmbedAtlas())selectSystem(key);
+        else window.location.href='atlas.html?sys='+encodeURIComponent(key);
       }
     });
   });
@@ -4764,13 +5325,13 @@ function buildSearchIndex(){
         const sample=diseases.find(d=>d.subcat===k);
         if(isEmbedAtlas()){
           if(sample&&sample.navGroup)selectAtlasNavGroup(sample.navGroup);
+          else{activeSystem='bone';showBoneNavPicker();}
           activeSub=k;activeZone='all';
           renderSubChips();
           renderAtlas();
         }else{
-          const q=new URLSearchParams();
+          const q=new URLSearchParams({sys:'bone',sub:k});
           if(sample&&sample.navGroup)q.set('nav',sample.navGroup);
-          q.set('sub',k);
           window.location.href='atlas.html?'+q.toString();
         }
       }
@@ -4805,7 +5366,7 @@ function querySearchIndex(q,limit){
   }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,limit||12);
 }
 function searchHintFor(){
-  return '可搜：中文名、英文名、缩写 · ACL、骨折、胶片库…';
+  return '可搜：中文名、英文名、缩写 · ACL、骨折、图谱…';
 }
 function initSearch(){
   searchIndex=buildSearchIndex();
@@ -4914,6 +5475,12 @@ function initSearch(){
   document.addEventListener('keydown',e=>{
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){
       e.preventDefault();
+      const hdr=document.getElementById('hdrSearch');
+      const toggle=document.getElementById('searchToggleHdr');
+      if(hdr&&toggle&&window.matchMedia('(min-width:681px)').matches){
+        hdr.classList.add('is-open');
+        toggle.setAttribute('aria-expanded','true');
+      }
       const target=groups.find(g=>g.input.id==='searchInputHdr')||groups.find(g=>g.input.id==='searchInputAtlas')||groups[0];
       target.input.focus();
       target.input.select();
@@ -4967,7 +5534,7 @@ function openDetail(d){
       <div class="m-hero-info">
         <span class="m-region">${d.region}</span>
         <h2 id="modalTitle">${d.title}</h2>
-        <div class="m-sub">${d.sub}</div>
+        <div class="m-sub${usesChineseSub(d)?' sub-cn':''}">${diseaseSubLine(d)}</div>
         <div class="m-badges">
           <span class="m-badge ${sevClass}">${d.sevtext}</span>
           <span class="m-badge cat-${d.cat}">${taxLabel('cat',d.cat)}</span>
@@ -5046,6 +5613,8 @@ document.addEventListener('keydown',e=>{
 function wikiImgLarge(src){
   if(!src)return '';
   let u=String(src);
+  if(isOpeniProxyUrl(u))return u;
+  if(isOpeniUrl(u))return openiProxyUrl(u);
   if(u.includes('Special:FilePath/')){
     if(/[?&]width=\d+/.test(u))u=u.replace(/([?&])width=\d+/,'$1width=2400');
     else u+=(u.includes('?')?'&':'?')+'width=2400';
@@ -5136,7 +5705,7 @@ function zoomPayloadFromGallerySlide(imgEl,gal){
   if(!imgEl||!gal)return null;
   const idx=+imgEl.dataset.index||0;
   const type=gal.dataset.gtype;
-  const items=diseaseGalleries[type];
+  const items=getGalleryItems(type);
   let caption='',annHtml='';
   if(items&&items[idx])caption=galleryCaption(items[idx]);
   else{
@@ -5261,132 +5830,11 @@ window.closeImgLightbox=closeImgLightbox;
 
 /* ---------- hero disease slideshow ---------- */
 function heroImgUrl(type,index,width){
-  const items=diseaseGalleries[type];
+  const items=getGalleryItems(type);
   if(!items||!items.length)return '';
   width=width||960;
-  return wikiImg(items[index!=null?index:0].file,width);
-}
-function initHeroSlideshow(){
-  const imgA=document.getElementById('heroScanA');
-  const imgB=document.getElementById('heroScanB');
-  const metaL=document.getElementById('heroMetaL');
-  const metaR=document.getElementById('heroMetaR');
-  const tag1=document.getElementById('heroTag1');
-  const tag2=document.getElementById('heroTag2');
-  const tag3=document.getElementById('heroTag3');
-  if(!imgA||!imgB)return null;
-  const slides=MOD_FILM_KEYS.map((key,i)=>{
-    const set=filmData[key];
-    const f=set&&set.films[0];
-    if(!f)return null;
-    const top=f.top.replace(/<br>/g,' · ');
-    const find=f.find.split(' · ');
-    const file=f.file||fileFromWikiUrl(f.img);
-    return{
-      key,mod:MOD_FILM_LABELS[key],meta:set.meta,
-      title:f.name,sub:find[0]||f.find,region:top,
-      signs:find,url:f.img,file,caption:f.find,imgIndex:0,imgTotal:set.films.length,slideNo:i+1
-    };
-  }).filter(Boolean);
-  if(!slides.length)return null;
-  let idx=0,front=imgA,back=imgB,timer=null,swapTimer=null,pending=false;
-  const interval=4500;
-  const loadTimeout=12000;
-  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function preload(url){if(!url)return;const i=new Image();i.decoding='async';i.src=url;}
-  function tagHtml(label,val){return label+' · <span class="v">'+val+'</span>';}
-  function applyHeroAttrib(slide){
-    const box=document.getElementById('heroAttrib');
-    if(!box||!slide||!slide.file)return;
-    fetchImageAttrib(slide.file).then(meta=>{
-      const mod=isImageModified(null,slide.file);
-      const nc=isNonCommercialLicense(meta.license)?' · 非商业':'';
-      box.innerHTML='授权：'+meta.author+' · '+meta.license+nc+(mod?' · 已修改':'')+' · <a href="'+meta.pageUrl+'" target="_blank" rel="noopener noreferrer">原文链接</a>';
-    });
-  }
-  function applyMeta(slide){
-    if(metaL)metaL.innerHTML='SHARK-MSK<br>MOD: '+slide.mod+'<br>'+slide.title;
-    const imgNo=String(slide.imgIndex+1).padStart(2,'0')+'/'+String(slide.imgTotal).padStart(2,'0');
-    if(metaR)metaR.innerHTML=slide.region+'<br>SLIDE '+String(slide.slideNo).padStart(3,'0')+'/'+String(slides.length).padStart(3,'0')+'<br>'+slide.meta;
-    const s=slide.signs;
-    if(tag1)tag1.innerHTML=tagHtml(slide.region.split(' · ')[0],s[0]||slide.sub);
-    if(tag2)tag2.innerHTML=tagHtml(s[1]||slide.mod,s[2]||slide.sub);
-    if(tag3)tag3.innerHTML=tagHtml('窗宽窗位',slide.meta.split(' · ')[0]||slide.mod);
-    applyHeroAttrib(slide);
-  }
-  function revealSlide(slide,show,hide,fallback){
-    show.setAttribute('aria-hidden','false');
-    hide.setAttribute('aria-hidden','true');
-    show.classList.add('active');
-    hide.classList.remove('active');
-    front=show;
-    back=hide;
-    applyMeta(slide);
-    preload(slides[(idx+1)%slides.length].url);
-  }
-  function loadInto(slide,show,onReady){
-    if(swapTimer){clearTimeout(swapTimer);swapTimer=null;}
-    show.onload=null;
-    show.onerror=null;
-    let settled=false;
-    const finish=(fallback)=>{
-      if(settled)return;
-      settled=true;
-      if(swapTimer){clearTimeout(swapTimer);swapTimer=null;}
-      show.onload=null;
-      show.onerror=null;
-      if(fallback)show.classList.add('hero-fallback');
-      else show.classList.remove('hero-fallback');
-      onReady(fallback);
-    };
-    show.onload=()=>finish(false);
-    show.onerror=()=>finish(true);
-    swapTimer=setTimeout(()=>finish(true),loadTimeout);
-    show.alt=slide.mod+' — '+slide.title;
-    if(show.src!==slide.url)show.src=slide.url;
-    if(show.complete)finish(false);
-  }
-  function goToSlide(i){
-    if(i<0||i>=slides.length||pending)return;
-    pending=true;
-    idx=i;
-    const slide=slides[idx];
-    const show=back;
-    const hide=front;
-    loadInto(slide,show,(fallback)=>{
-      revealSlide(slide,show,hide,fallback);
-      pending=false;
-    });
-  }
-  function swap(){
-    if(pending)return;
-    goToSlide((idx+1)%slides.length);
-  }
-  function startTimer(){
-    if(timer||reduced||slides.length<2)return;
-    timer=setInterval(swap,interval);
-  }
-  function stopTimer(){
-    if(!timer)return;
-    clearInterval(timer);
-    timer=null;
-  }
-  loadInto(slides[0],front,(fallback)=>{revealSlide(slides[0],front,back,fallback);});
-  const heroFrame=document.getElementById('heroScanA');
-  bindZoomableImages(heroFrame&&heroFrame.parentElement?heroFrame.parentElement:document);
-  if(slides.length>1)preload(slides[1].url);
-  startTimer();
-  document.addEventListener('visibilitychange',()=>{
-    if(document.hidden)stopTimer();
-    else startTimer();
-  });
-  return function goToMod(key){
-    const i=slides.findIndex(s=>s.key===key);
-    if(i<0)return;
-    stopTimer();
-    goToSlide(i);
-    startTimer();
-  };
+  const item=items[index!=null?index:0];
+  return galleryImgSrc(item,width);
 }
 
 /* ---------- page layers (仅疾病图谱可折叠) ---------- */
@@ -5418,19 +5866,41 @@ function initEmbedAtlasMode(){
   }
   if(typeof showAtlasNavPicker==='function')showAtlasNavPicker();
   const params=new URLSearchParams(location.search);
+  const sysKey=params.get('sys');
   const navKey=params.get('nav');
   const dType=params.get('d');
   const subKey=params.get('sub');
-  if(navKey&&NAV_GROUPS[navKey])selectAtlasNavGroup(navKey);
+  if(sysKey&&SYS_GROUPS[sysKey]){
+    if(systemHasSubNav(sysKey)){
+      activeSystem=sysKey;
+      const {groups}=getNavGroupsForSystem(sysKey);
+      if(navKey&&groups[navKey])selectAtlasNavGroup(navKey);
+      else showSystemSubNavPicker(sysKey);
+    }else selectSystem(sysKey);
+  }else if(navKey&&NAV_GROUPS[navKey]){
+    activeSystem='bone';
+    selectAtlasNavGroup(navKey);
+  }
   if(subKey){
     activeSub=subKey;
     activeZone='all';
-    renderSubChips();
-    renderAtlas();
+    if(!activeNavGroup){
+      const sample=diseases.find(d=>d.subcat===subKey);
+      if(sample&&sample.navGroup){
+        activeSystem=sample.sys||'bone';
+        selectAtlasNavGroup(sample.navGroup);
+      }
+    }
+    if(activeNavGroup){
+      renderSubChips();
+      renderZoneChips();
+      renderAtlas();
+    }
   }
   if(dType){
     const disease=diseases.find(x=>x.type===dType);
     if(disease){
+      activeSystem=disease.sys||'bone';
       if(!navKey)selectAtlasNavGroup(disease.navGroup);
       setTimeout(()=>openDetail(disease),360);
     }
@@ -5442,8 +5912,63 @@ function initEmbedAtlasMode(){
   if(activeNavGroup)renderAtlas();
   return true;
 }
+/* ---------- index landing / subviews ---------- */
+const INDEX_SUBVIEWS=['about'];
+const REMOVED_INDEX_HASHES=new Set(['protocol','deepdive','filmlib']);
+function applyIndexRoute(){
+  if(isEmbedAtlas())return;
+  let id=(location.hash||'').slice(1);
+  if(REMOVED_INDEX_HASHES.has(id)){
+    history.replaceState(null,'',location.pathname+location.search);
+    id='';
+  }
+  if(!id||id==='home'){
+    document.body.classList.add('index-landing');
+    document.body.classList.remove('index-subview');
+    document.body.removeAttribute('data-subview');
+    window.scrollTo({top:0,behavior:'auto'});
+    return;
+  }
+  if(id==='modality'){
+    document.body.classList.add('index-landing');
+    document.body.classList.remove('index-subview');
+    document.body.removeAttribute('data-subview');
+    requestAnimationFrame(()=>{
+      document.getElementById('modality')?.scrollIntoView({behavior:'smooth',block:'end'});
+    });
+    return;
+  }
+  if(INDEX_SUBVIEWS.includes(id)){
+    document.body.classList.remove('index-landing');
+    document.body.classList.add('index-subview');
+    document.body.dataset.subview=id;
+    if(typeof observeReveals==='function')observeReveals();
+    requestAnimationFrame(()=>window.scrollTo({top:0,behavior:'auto'}));
+    return;
+  }
+  document.body.classList.add('index-landing');
+  document.body.classList.remove('index-subview');
+  document.body.removeAttribute('data-subview');
+}
+function goHomeLanding(e){
+  if(e){e.preventDefault?.();}
+  if(isEmbedAtlas()){window.location.href='/';return;}
+  if(location.hash)location.hash='';
+  else applyIndexRoute();
+}
+window.goHomeLanding=goHomeLanding;
+function initIndexLanding(){
+  if(isEmbedAtlas())return;
+  document.body.classList.add('index-landing');
+  applyIndexRoute();
+}
 function scrollToSection(id){
   if(id==='atlas'){window.location.href='atlas.html';return;}
+  if(INDEX_SUBVIEWS.includes(id)||id==='modality'){
+    if((location.hash||'').slice(1)===id)applyIndexRoute();
+    else location.hash=id;
+    return;
+  }
   const el=document.getElementById(id);
   if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
 }
@@ -5461,12 +5986,14 @@ function openPageLayer(id,opts){
     el.classList.add('is-open');
     const head=el.querySelector('.layer-head');
     if(head)head.setAttribute('aria-expanded','true');
-    if(!activeNavGroup)showAtlasNavPicker();
+    if(!activeNavGroup){
+      if(systemHasSubNav(activeSystem))showSystemSubNavPicker(activeSystem);
+      else showAtlasNavPicker();
+    }
   }
   if(opts.scroll!==false){
     requestAnimationFrame(()=>el.scrollIntoView({behavior:'smooth',block:'start'}));
   }
-  if(id==='statband')countUp();
   observeReveals();
 }
 function togglePageLayer(id){
@@ -5485,7 +6012,10 @@ function togglePageLayer(id){
     showLearningHub(true);
     el.classList.add('is-open');
     if(head)head.setAttribute('aria-expanded','true');
-    if(!activeNavGroup)showAtlasNavPicker();
+    if(!activeNavGroup){
+      if(systemHasSubNav(activeSystem))showSystemSubNavPicker(activeSystem);
+      else showAtlasNavPicker();
+    }
   }
 }
 window.openPageLayer=openPageLayer;
@@ -5508,13 +6038,17 @@ function initPageLayers(){
   if(hashId===ATLAS_LAYER_ID){
     if(isEmbedAtlas())openPageLayer(ATLAS_LAYER_ID,{scroll:false});
     else window.location.href='atlas.html';
+  }else if(!isEmbedAtlas()){
+    applyIndexRoute();
   }
   window.addEventListener('hashchange',()=>{
     const id=location.hash.slice(1);
     if(id===ATLAS_LAYER_ID){
       if(isEmbedAtlas())openPageLayer(id,{scroll:true});
       else window.location.href='atlas.html';
+      return;
     }
+    if(!isEmbedAtlas())applyIndexRoute();
   });
 }
 
@@ -5593,18 +6127,74 @@ function initBgTheme(){
     });
   }
 }
+function patchNavOrder(arr,next){
+  if(!Array.isArray(arr)||!Array.isArray(next)||!next.length)return;
+  arr.splice(0,arr.length,...next);
+}
+function patchNavGroups(obj,next){
+  if(!obj||!next||typeof next!=='object')return;
+  Object.keys(obj).forEach(k=>delete obj[k]);
+  Object.assign(obj,next);
+}
+function applyNavDataPatch(data){
+  if(!data||typeof data!=='object')return;
+  if(data.SYS_GROUPS)SYS_GROUPS=data.SYS_GROUPS;
+  if(data.SYS_ORDER&&Array.isArray(data.SYS_ORDER))SYS_ORDER=data.SYS_ORDER;
+  if(data.RESPIRATORY_NAV_GROUPS)patchNavGroups(RESPIRATORY_NAV_GROUPS,data.RESPIRATORY_NAV_GROUPS);
+  if(data.RESPIRATORY_NAV_ORDER)patchNavOrder(RESPIRATORY_NAV_ORDER,data.RESPIRATORY_NAV_ORDER);
+  if(data.DIGESTIVE_NAV_GROUPS)patchNavGroups(DIGESTIVE_NAV_GROUPS,data.DIGESTIVE_NAV_GROUPS);
+  if(data.DIGESTIVE_NAV_ORDER)patchNavOrder(DIGESTIVE_NAV_ORDER,data.DIGESTIVE_NAV_ORDER);
+  if(data.CIRCULATORY_NAV_GROUPS)patchNavGroups(CIRCULATORY_NAV_GROUPS,data.CIRCULATORY_NAV_GROUPS);
+  if(data.CIRCULATORY_NAV_ORDER)patchNavOrder(CIRCULATORY_NAV_ORDER,data.CIRCULATORY_NAV_ORDER);
+  if(data.NERVOUS_NAV_GROUPS)patchNavGroups(NERVOUS_NAV_GROUPS,data.NERVOUS_NAV_GROUPS);
+  if(data.NERVOUS_NAV_ORDER)patchNavOrder(NERVOUS_NAV_ORDER,data.NERVOUS_NAV_ORDER);
+  if(data.UROGENITAL_NAV_GROUPS)patchNavGroups(UROGENITAL_NAV_GROUPS,data.UROGENITAL_NAV_GROUPS);
+  if(data.UROGENITAL_NAV_ORDER)patchNavOrder(UROGENITAL_NAV_ORDER,data.UROGENITAL_NAV_ORDER);
+  if(data.FEMALE_REPRO_NAV_GROUPS)patchNavGroups(FEMALE_REPRO_NAV_GROUPS,data.FEMALE_REPRO_NAV_GROUPS);
+  if(data.FEMALE_REPRO_NAV_ORDER)patchNavOrder(FEMALE_REPRO_NAV_ORDER,data.FEMALE_REPRO_NAV_ORDER);
+  if(data.ENDOCRINE_NAV_GROUPS)patchNavGroups(ENDOCRINE_NAV_GROUPS,data.ENDOCRINE_NAV_GROUPS);
+  if(data.ENDOCRINE_NAV_ORDER)patchNavOrder(ENDOCRINE_NAV_ORDER,data.ENDOCRINE_NAV_ORDER);
+  if(data.HEAD_NECK_NAV_GROUPS)patchNavGroups(HEAD_NECK_NAV_GROUPS,data.HEAD_NECK_NAV_GROUPS);
+  if(data.HEAD_NECK_NAV_ORDER)patchNavOrder(HEAD_NECK_NAV_ORDER,data.HEAD_NECK_NAV_ORDER);
+  if(data.BREAST_NAV_GROUPS)patchNavGroups(BREAST_NAV_GROUPS,data.BREAST_NAV_GROUPS);
+  if(data.BREAST_NAV_ORDER)patchNavOrder(BREAST_NAV_ORDER,data.BREAST_NAV_ORDER);
+  if(data.HEMATOLYMPH_NAV_GROUPS)patchNavGroups(HEMATOLYMPH_NAV_GROUPS,data.HEMATOLYMPH_NAV_GROUPS);
+  if(data.HEMATOLYMPH_NAV_ORDER)patchNavOrder(HEMATOLYMPH_NAV_ORDER,data.HEMATOLYMPH_NAV_ORDER);
+  if(data.SYSTEMIC_NAV_GROUPS)patchNavGroups(SYSTEMIC_NAV_GROUPS,data.SYSTEMIC_NAV_GROUPS);
+  if(data.SYSTEMIC_NAV_ORDER)patchNavOrder(SYSTEMIC_NAV_ORDER,data.SYSTEMIC_NAV_ORDER);
+}
+function refreshAfterSiteData(){
+  syncDiseaseCountLabels();
+  const navWrap=document.getElementById('atlasNavWrap');
+  if(navWrap&&!navWrap.hidden)renderAtlasNav();
+  updateNavPickerHead();
+  if(activeNavGroup)renderAtlas();
+  else if(activeSystem&&systemHasSubNav(activeSystem)&&atlasContainer&&!activeNavGroup){
+    const n=diseases.filter(d=>d.sys===activeSystem).length;
+    if(!n&&atlasContainer){
+      atlasContainer.innerHTML='<div class="atlas-empty-sys reveal in"><h3>数据加载异常</h3><p>分类导航已就绪，但疾病列表未加载。请确认通过 <strong>http://localhost:3000</strong> 访问（不要直接打开 html 文件），并刷新页面。</p><button type="button" class="btn-ghost" onclick="location.reload()">刷新页面</button></div>';
+    }
+  }
+}
 function applySiteDataPatch(data){
   if(!data||typeof data!=='object')return false;
   if(data.diseaseGalleries)diseaseGalleries=data.diseaseGalleries;
   if(data.galleryAnnTpl)galleryAnnTpl=data.galleryAnnTpl;
-  if(data.diseases)diseases=data.diseases;
-  if(data.diseaseDetails)window.SITE_DISEASE_DETAILS=data.diseaseDetails;
+  if(data.diseases){
+    diseases=data.diseases.map(d=>{
+      const {entryBatch,entryBatchLabel,...rest}=d;
+      return rest;
+    });
+  }
+  if(data.diseaseDetails){
+    window.SITE_DISEASE_DETAILS={...(window.SITE_DISEASE_DETAILS||{}),...data.diseaseDetails};
+  }
   if(data.imageAttribRegistry){
     window.IMAGE_ATTRIB_REGISTRY={...(window.IMAGE_ATTRIB_REGISTRY||{}),...data.imageAttribRegistry};
   }
-  if(data.filmData)filmData=data.filmData;
   if(data.TAXONOMY)TAXONOMY=data.TAXONOMY;
   if(data.NAV_GROUPS)NAV_GROUPS=data.NAV_GROUPS;
+  applyNavDataPatch(data);
   if(data.taxByType)taxByType=data.taxByType;
   enrichDiseases();
   mergeGalleryAnnotations();
@@ -5617,17 +6207,44 @@ function getDiseaseDetail(type){
   if(!remote)return embedded;
   return {...embedded,...remote};
 }
+async function loadNavFallback(){
+  try{
+    const res=await fetch('/data/nav-fallback.json',{cache:'no-store'});
+    if(!res.ok)return false;
+    applyNavDataPatch(await res.json());
+    return true;
+  }catch(e){return false;}
+}
+async function loadDiseaseDetailsBackground(){
+  if(window.SITE_DISEASE_DETAILS&&Object.keys(window.SITE_DISEASE_DETAILS).length>500)return;
+  try{
+    const res=await fetch('/data/site-disease-details.json',{cache:'no-store'});
+    if(!res.ok)return;
+    const details=await res.json();
+    window.SITE_DISEASE_DETAILS={...(window.SITE_DISEASE_DETAILS||{}),...details};
+  }catch(e){}
+}
 async function loadRemoteSiteData(){
-  const urls=['/api/content','/data/site-data.json'];
+  await loadNavFallback();
+  const urls=['/data/site-data-lite.json','/data/site-data.json','/api/content'];
+  let loaded=false;
   for(const url of urls){
     try{
       const res=await fetch(url,{cache:'no-store'});
       if(!res.ok)continue;
       const data=await res.json();
-      if(applySiteDataPatch(data))return true;
+      if(applySiteDataPatch(data)){
+        loaded=true;
+        if(url.includes('lite'))loadDiseaseDetailsBackground();
+        break;
+      }
     }catch(e){}
   }
-  return false;
+  if(!loaded||diseases.length<200){
+    console.warn('[shark] site-data load incomplete, diseases=',diseases.length);
+  }
+  refreshAfterSiteData();
+  return loaded;
 }
 function bootApp(){
   sanitizeSavedImgUrls();
@@ -5635,26 +6252,19 @@ function bootApp(){
   document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
   safeRun('initImgLightbox',initImgLightbox);
   safeRun('initPageLayers',initPageLayers);
+  safeRun('initIndexLanding',initIndexLanding);
   safeRun('initAtlasNav',initAtlasNav);
   safeRun('initFilters',initFilters);
   safeRun('initEmbedAtlasMode',initEmbedAtlasMode);
+  refreshAfterSiteData();
   if(isEmbedAtlas())safeRun('renderAtlas',renderAtlas);
   else safeRun('renderAtlas',()=>{if(atlasContainer)atlasContainer.innerHTML='';});
-  safeRun('renderFilms',()=>selectFilmMod('xray'));
-  safeRun('ddGallery',()=>{
-    const ddGal=document.getElementById('ddGallery');
-    if(!ddGal)return;
-    ddGal.innerHTML=renderGallery('knee','前交叉韧带损伤',{width:960,large:true});
-    bindImgFallback(ddGal);
-    initGalleries(ddGal);
-    initImageAttributions(ddGal);
-    bindZoomableImages(ddGal);
-  });
   safeRun('prefetchAttributions',prefetchAllAttributions);
   safeRun('initAttribRegistry',initAttribRegistryPanel);
   safeRun('initAttribSheet',initAttribSheet);
   safeRun('initAttribCloseButtons',initAttribCloseButtons);
   safeRun('initMobileNav',initMobileNav);
+  safeRun('initNavChrome',initNavChrome);
   safeRun('initSiteAuth',initSiteAuth);
   safeRun('initBgTheme',initBgTheme);
   safeRun('initSearch',initSearch);

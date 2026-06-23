@@ -1,0 +1,292 @@
+{
+  "mode": "apply",
+  "removed": [
+    {
+      "type": "parosteo",
+      "title": "旁骨性骨肉瘤",
+      "file": "Osteogenic sarcoma2.jpg",
+      "reason": "普通骨肉瘤图≠骨膜型"
+    },
+    {
+      "type": "periosteo",
+      "title": "骨膜性骨肉瘤",
+      "file": "Osteogenic sarcoma2.jpg",
+      "reason": "普通骨肉瘤图≠骨膜型"
+    },
+    {
+      "type": "plasmacytoma",
+      "title": "孤立性浆细胞瘤",
+      "file": "Plasmozytom multiple Osteolysen Unterarm.png",
+      "reason": "骨髓瘤/多发病≠孤立性浆细胞瘤"
+    },
+    {
+      "type": "plasmacytoma",
+      "title": "孤立性浆细胞瘤",
+      "file": "Left femur with myeloma.jpg",
+      "reason": "骨髓瘤/多发病≠孤立性浆细胞瘤"
+    },
+    {
+      "type": "fd-mazabraud",
+      "title": "Mazabraud 综合征",
+      "file": "Vertebral hemangioma 01.jpg",
+      "reason": "单纯血管瘤≠Mazabraud"
+    },
+    {
+      "type": "supracondylar",
+      "title": "肱骨髁上骨折",
+      "file": "Proxhumerousfracture(surgneck,lesserandgreatertroch).png",
+      "reason": "肱骨近端≠髁上骨折"
+    },
+    {
+      "type": "supracondylar",
+      "title": "肱骨髁上骨折",
+      "file": "Subcapital humerus fracture.jpg",
+      "reason": "肱骨近端≠髁上骨折"
+    },
+    {
+      "type": "olecranon",
+      "title": "尺骨鹰嘴骨折",
+      "file": "Radiographie d'une luxation postérieur du coude gauche sans fracture.jpg",
+      "reason": "肘脱位≠鹰嘴骨折; 肘脱位≠鹰嘴骨折; 肘脱位无骨折≠鹰嘴骨折"
+    },
+    {
+      "type": "radialhead",
+      "title": "桡骨头骨折",
+      "file": "X-ray of ventral dislocation of the radial head with calcification of annular ligament.jpg",
+      "reason": "桡骨头脱位≠桡骨颈骨折"
+    },
+    {
+      "type": "mason",
+      "title": "Mason 骨折",
+      "file": "X-ray of ventral dislocation of the radial head with calcification of annular ligament.jpg",
+      "reason": "桡骨头脱位≠桡骨颈骨折"
+    },
+    {
+      "type": "pilon",
+      "title": "Pilon 骨折",
+      "file": "Lateral Tibial Plateau fracture XRay with Depression.jpg",
+      "reason": "胫骨平台≠Pilon"
+    },
+    {
+      "type": "pilon",
+      "title": "Pilon 骨折",
+      "file": "Tibial Plateau Fracture.jpg",
+      "reason": "胫骨平台≠Pilon"
+    },
+    {
+      "type": "subscap",
+      "title": "肩胛下肌撕裂",
+      "file": "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+      "reason": "冈上肌图≠冈下肌撕裂"
+    },
+    {
+      "type": "infraspinatus",
+      "title": "冈下肌撕裂",
+      "file": "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+      "reason": "冈上肌图≠冈下肌撕裂"
+    },
+    {
+      "type": "spondylolisthesis",
+      "title": "腰椎滑脱",
+      "file": "Lumbar spinal stenosis 3 9.png",
+      "reason": "椎管狭窄≠滑脱"
+    },
+    {
+      "type": "thoracic-disc",
+      "title": "胸椎间盘突出",
+      "file": "L4-l5-disc-herniation.png",
+      "reason": "腰椎≠胸椎间盘"
+    },
+    {
+      "type": "subchondral-insufficiency",
+      "title": "软骨下功能不全骨折",
+      "file": "Crescent sign annotated.jpg",
+      "reason": "新月征≠软骨下不全骨折"
+    },
+    {
+      "type": "preiser",
+      "title": "Preiser 病",
+      "file": "Scaphoid non-union advanced collapse 80M - CR ap - 001.jpg",
+      "reason": "舟骨骨折≠Preiser 骨坏死"
+    },
+    {
+      "type": "preiser",
+      "title": "Preiser 病",
+      "file": "Scaphoid fracture - barely visible on initial X-ray.jpg",
+      "reason": "舟骨骨折≠Preiser 骨坏死"
+    }
+  ],
+  "replaced": [
+    {
+      "type": "parosteo",
+      "title": "旁骨性骨肉瘤",
+      "added": [
+        "openi__PMC4678793_gr2.png",
+        "openi__PMC4678793_gr1.png",
+        "openi__PMC3850780_1477-7819-11-241-10.png",
+        "openi__PMC4052023_IJOrtho-48-255-g002.png",
+        "openi__PMC3929827_ircmj-15-870-g001.png"
+      ]
+    },
+    {
+      "type": "periosteo",
+      "title": "骨膜性骨肉瘤",
+      "added": [
+        "openi__PMC4678793_gr3.png",
+        "openi__PMC4474449_12957_2015_618_Fig1_HTML.png",
+        "openi__PMC4052027_IJOrtho-48-279-g002.png",
+        "openi__PMC5127970_40744_2016_46_Fig7_HTML.png",
+        "openi__PMC4678793_gr2.png",
+        "openi__PMC3850780_1477-7819-11-241-10.png"
+      ]
+    },
+    {
+      "type": "plasmacytoma",
+      "title": "孤立性浆细胞瘤",
+      "added": [
+        "openi__PMC4605096_13019_2015_335_Fig1_HTML.png",
+        "openi__PMC4737237_BJH-171-29-g007.png",
+        "openi__PMC4931792_IJRI-26-279-g020.png",
+        "openi__PMC2791472_259_2009_1199_Fig1_HTML.png",
+        "openi__PMC4506104_crt-2014-010f1.png",
+        "openi__PMC4150974_12957_2014_1745_Fig1_HTML.png"
+      ]
+    },
+    {
+      "type": "fd-mazabraud",
+      "title": "Mazabraud 综合征",
+      "added": [
+        "openi__PMC3141698_1752-1947-5-239-7.png",
+        "openi__PMC2626811_kjr-8-438-g001.png",
+        "openi__PMC3362015_TSWJ2012-290930.005.png",
+        "openi__PMC4531453_IJRI-25-280-g001.png",
+        "openi__PMC3141698_1752-1947-5-239-1.png"
+      ]
+    },
+    {
+      "type": "supracondylar",
+      "title": "肱骨髁上骨折",
+      "added": [
+        "openi__PMC4340853_11832_2015_642_Fig1_HTML.png",
+        "openi__PMC4340853_11832_2015_642_Fig2_HTML.png",
+        "openi__PMC3725436_JMedLife-06-131-g003.png",
+        "openi__PMC4242976_590_2013_1337_Fig1_HTML.png",
+        "openi__PMC3725436_JMedLife-06-131-g004.png",
+        "openi__PMC4275853_gr1.png"
+      ]
+    },
+    {
+      "type": "olecranon",
+      "title": "尺骨鹰嘴骨折",
+      "added": [
+        "openi__PMC4651706_CRIM2015-495164.004.png",
+        "openi__PMC4719357_JOCR-5-58-g001.png",
+        "openi__PMC4155716_JRMS-19-574-g001.png",
+        "openi__PMC3470946_1752-1947-6-273-5.png",
+        "openi__PMC4651706_CRIM2015-495164.006.png",
+        "openi__PMC3977122_CRIS2014-723756.001.png"
+      ]
+    },
+    {
+      "type": "radialhead",
+      "title": "桡骨头骨折",
+      "added": [
+        "openi__PMC4866299_13256_2016_904_Fig2_HTML.png",
+        "openi__PMC3548664_10.1177_1941738112467941-fig6.png",
+        "openi__PMC3678412_ARTH2013-473259.002.png",
+        "openi__PMC4275958_gr1.png",
+        "openi__PMC3115650_TOORTHJ-5-198_F1.png",
+        "openi__PMC4456693_12891_2015_603_Fig2_HTML.png"
+      ]
+    },
+    {
+      "type": "mason",
+      "title": "Mason 骨折",
+      "added": [
+        "openi__PMC2876842_ORT-1745-3674-81-373-g001.png",
+        "openi__PMC4686843_IPRS-04-12-g-002.png",
+        "openi__PMC4686843_IPRS-04-12-g-001.png",
+        "openi__PMC3994219_2045-709X-22-14-2.png",
+        "openi__PMC3745684_IJOrtho-47-323-g002.png",
+        "openi__PMC3745684_IJOrtho-47-323-g001.png"
+      ]
+    },
+    {
+      "type": "pilon",
+      "title": "Pilon 骨折",
+      "added": [
+        "openi__PMC4974710_12891_2016_1182_Fig1_HTML.png",
+        "openi__PMC4719236_JOCR-3-16-g001.png",
+        "openi__PMC4897832_gr4.png",
+        "openi__PMC3150798_590_2010_732_Fig1_HTML.png",
+        "openi__PMC3150798_590_2010_732_Fig6_HTML.png",
+        "openi__PMC4600938_gr3.png"
+      ]
+    },
+    {
+      "type": "subscap",
+      "title": "肩胛下肌撕裂",
+      "added": [
+        "openi__PMC4232835_IJOrtho-48-625-g001.png",
+        "openi__PMC4232835_IJOrtho-48-625-g003.png",
+        "openi__PMC4885299_IJOrtho-50-297-g001.png",
+        "openi__PMC4885299_IJOrtho-50-297-g002.png",
+        "openi__PMC4410472_IJSS-9-52-g002.png",
+        "openi__PMC4332639_10.1177_1941738114533657-fig2.png"
+      ]
+    },
+    {
+      "type": "infraspinatus",
+      "title": "冈下肌撕裂",
+      "added": [
+        "openi__PMC3438862_10.1177_1941738109350404-fig1.png",
+        "openi__PMC3807946_IJSS-7-116-g002.png",
+        "openi__PMC3922330_1749-799X-9-6-2.png",
+        "openi__PMC4220601_poljradiol-79-391-g004.png",
+        "openi__PMC3445076_10.1177_1941738108326701-fig7.png",
+        "openi__PMC4181170_TOORTHJ-8-298_F2.png"
+      ]
+    },
+    {
+      "type": "spondylolisthesis",
+      "title": "腰椎滑脱",
+      "added": [
+        "openi__PMC1934928_256_2006_270_Fig17_HTML.png",
+        "openi__PMC3372545_asj-6-105-g004.png",
+        "openi__PMC3372545_asj-6-105-g005.png",
+        "openi__PMC4397729_13018_2015_186_Fig1_HTML.png",
+        "openi__PMC4786379_cureus-0008-000000000485-i01.png"
+      ]
+    },
+    {
+      "type": "thoracic-disc",
+      "title": "胸椎间盘突出",
+      "added": [
+        "openi__PMC3609007_ebsj01021-5.png",
+        "openi__PMC3609007_ebsj01021-2.png",
+        "openi__PMC3582544_1752-1947-7-41-1.png",
+        "openi__PMC5215450_BMRI2016-6808507.003.png",
+        "openi__PMC3196737_1471-2474-12-216-1.png"
+      ]
+    },
+    {
+      "type": "subchondral-insufficiency",
+      "title": "软骨下功能不全骨折",
+      "added": [
+        "openi__PMC3369150_ORT-1745-3674-083-249_g002.png",
+        "openi__PMC3369150_ORT-1745-3674-083-249_g003.png",
+        "openi__PMC5069801_13256_2016_1063_Fig7_HTML.png",
+        "openi__PMC3425646_cios-4-173-g006.png",
+        "openi__PMC5367544_eor-1-219-g006.png",
+        "openi__PMC4868907_CRIOR2016-2574975.001.png"
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "type": "preiser",
+      "reason": "no-match"
+    }
+  ],
+  "errors": []
+}

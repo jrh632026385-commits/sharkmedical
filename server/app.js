@@ -7,11 +7,16 @@ import {
   createContentRouter,
   createSessionMiddleware
 } from './routes.js';
-
-dotenv.config();
+import { createWikimediaRouter } from './lib/wikimediaProxy.js';
+import { createOpeniRouter } from './lib/openiProxy.js';
+import { readSiteData } from './lib/dataStore.js';
+import { toPublicSiteData } from './lib/publicSiteData.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+
+dotenv.config();
+dotenv.config({ path: path.join(root, 'data', 'local.env') });
 
 export function createApp() {
   const username = process.env.ADMIN_USERNAME || 'admin';
@@ -28,8 +33,20 @@ export function createApp() {
   app.use('/api', sessionMiddleware);
   app.use('/api/auth', createAuthRouter({ bootstrapUsername: username, bootstrapPassword: password }));
   app.use('/api/content', createContentRouter());
+  app.use('/api/wikimedia', createWikimediaRouter());
+  app.use('/api/openi', createOpeniRouter());
 
   if (!process.env.VERCEL) {
+    app.get('/data/site-data.json', async (req, res) => {
+      try {
+        const data = await readSiteData();
+        if (!data) return res.status(404).json({ ok: false, error: '数据不存在' });
+        res.setHeader('Cache-Control', 'no-store');
+        res.json(toPublicSiteData(data));
+      } catch (err) {
+        res.status(500).json({ ok: false, error: err.message });
+      }
+    });
     app.use('/data', express.static(path.join(root, 'data'), {
       setHeaders(res) {
         res.setHeader('Cache-Control', 'no-store');

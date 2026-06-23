@@ -1,0 +1,3320 @@
+{
+  "at": "2026-06-23T23:13:36.807Z",
+  "removed": 0,
+  "removedSamples": [],
+  "withImg": 423,
+  "empty": 827,
+  "slots": 2070,
+  "openiRegistry": 8956,
+  "onlineVerifiedTypes": 365,
+  "emptyList": [
+    {
+      "type": "tb",
+      "title": "脊柱结核"
+    },
+    {
+      "type": "melorheostosis",
+      "title": "蜡油样骨病"
+    },
+    {
+      "type": "striata",
+      "title": "骨条纹症"
+    },
+    {
+      "type": "wdlps",
+      "title": "高分化脂肪肉瘤"
+    },
+    {
+      "type": "teres-minor",
+      "title": "小圆肌损伤"
+    },
+    {
+      "type": "enteropathic",
+      "title": "肠病性关节病"
+    },
+    {
+      "type": "pmr",
+      "title": "风湿性多肌痛"
+    },
+    {
+      "type": "lyme",
+      "title": "莱姆关节炎"
+    },
+    {
+      "type": "adhesive",
+      "title": "粘连性关节囊炎"
+    },
+    {
+      "type": "tfcc",
+      "title": "三角纤维软骨复合体损伤"
+    },
+    {
+      "type": "ups",
+      "title": "未分化多形性肉瘤"
+    },
+    {
+      "type": "soleus",
+      "title": "比目鱼肌损伤"
+    },
+    {
+      "type": "snapping-hip",
+      "title": "弹响髋"
+    },
+    {
+      "type": "itb",
+      "title": "髂胫束摩擦综合征"
+    },
+    {
+      "type": "patellar-tend",
+      "title": "髌腱病"
+    },
+    {
+      "type": "peroneal",
+      "title": "腓骨肌腱病"
+    },
+    {
+      "type": "fhl",
+      "title": "拇长屈肌腱病"
+    },
+    {
+      "type": "fdl",
+      "title": "趾长屈肌腱病"
+    },
+    {
+      "type": "teres-major",
+      "title": "大圆肌损伤"
+    },
+    {
+      "type": "forearm-flex",
+      "title": "前臂屈肌群劳损"
+    },
+    {
+      "type": "forearm-ext",
+      "title": "前臂伸肌群劳损"
+    },
+    {
+      "type": "tennis-elbow",
+      "title": "网球肘"
+    },
+    {
+      "type": "golfer-elbow",
+      "title": "高尔夫肘"
+    },
+    {
+      "type": "ulnar-neuritis",
+      "title": "尺神经炎"
+    },
+    {
+      "type": "radial-tunnel",
+      "title": "桡管综合征"
+    },
+    {
+      "type": "trigger-finger",
+      "title": "扳机指"
+    },
+    {
+      "type": "plantar-fasc",
+      "title": "跖筋膜炎"
+    },
+    {
+      "type": "tarsal-tunnel",
+      "title": "跗管综合征"
+    },
+    {
+      "type": "sinus-tarsi",
+      "title": "窦道综合征"
+    },
+    {
+      "type": "fibromyalgia",
+      "title": "纤维肌痛"
+    },
+    {
+      "type": "quadriceps-contusion",
+      "title": "股四头肌挫伤"
+    },
+    {
+      "type": "rectus-femoris",
+      "title": "股直肌损伤"
+    },
+    {
+      "type": "sartorius",
+      "title": "缝匠肌损伤"
+    },
+    {
+      "type": "si-dysfunction",
+      "title": "骶髂关节功能障碍"
+    },
+    {
+      "type": "sacroiliitis-infl",
+      "title": "炎性骶髂关节炎"
+    },
+    {
+      "type": "plica",
+      "title": "膝滑膜皱襞综合征"
+    },
+    {
+      "type": "acute-sinusitis",
+      "title": "急性鼻窦炎"
+    },
+    {
+      "type": "laryngeal-cancer",
+      "title": "喉癌"
+    },
+    {
+      "type": "epiglottitis",
+      "title": "会厌炎"
+    },
+    {
+      "type": "adenoid-hypertrophy",
+      "title": "腺样体肥大"
+    },
+    {
+      "type": "tracheobronchial-ossification",
+      "title": "骨化性气管支气管病"
+    },
+    {
+      "type": "rp-airway",
+      "title": "复发性多软骨炎(气道)"
+    },
+    {
+      "type": "tracheobronchial-fb",
+      "title": "气管支气管异物"
+    },
+    {
+      "type": "tracheoesophageal-fistula",
+      "title": "气管食管瘘"
+    },
+    {
+      "type": "bronchopneumonia",
+      "title": "支气管肺炎"
+    },
+    {
+      "type": "staph-pneumonia",
+      "title": "葡萄球菌肺炎"
+    },
+    {
+      "type": "pseudomonas-pneumonia",
+      "title": "铜绿假单胞菌肺炎"
+    },
+    {
+      "type": "necrotizing-pneumonia",
+      "title": "坏死性肺炎"
+    },
+    {
+      "type": "primary-tb",
+      "title": "原发型肺结核"
+    },
+    {
+      "type": "postprimary-tb",
+      "title": "继发型肺结核"
+    },
+    {
+      "type": "tuberculoma",
+      "title": "结核球"
+    },
+    {
+      "type": "tb-pleurisy",
+      "title": "结核性胸膜炎"
+    },
+    {
+      "type": "ntm",
+      "title": "非结核分枝杆菌病"
+    },
+    {
+      "type": "influenza-pneumonia",
+      "title": "流感病毒性肺炎"
+    },
+    {
+      "type": "covid19-pneumonia",
+      "title": "新冠肺炎"
+    },
+    {
+      "type": "cmv-pneumonia",
+      "title": "巨细胞病毒肺炎"
+    },
+    {
+      "type": "adenovirus-pneumonia",
+      "title": "腺病毒肺炎"
+    },
+    {
+      "type": "aspergilloma",
+      "title": "曲霉球"
+    },
+    {
+      "type": "abpa",
+      "title": "变应性支气管肺曲霉病"
+    },
+    {
+      "type": "pulmonary-cryptococcosis",
+      "title": "肺隐球菌病"
+    },
+    {
+      "type": "pcp",
+      "title": "肺孢子菌肺炎"
+    },
+    {
+      "type": "histoplasmosis",
+      "title": "肺组织胞浆菌病"
+    },
+    {
+      "type": "mucormycosis",
+      "title": "肺毛霉病"
+    },
+    {
+      "type": "mycoplasma-pneumonia",
+      "title": "支原体肺炎"
+    },
+    {
+      "type": "legionella-pneumonia",
+      "title": "军团菌肺炎"
+    },
+    {
+      "type": "pulmonary-echinococcosis",
+      "title": "肺包虫病"
+    },
+    {
+      "type": "paragonimiasis",
+      "title": "肺吸虫病"
+    },
+    {
+      "type": "chronic-bronchitis",
+      "title": "慢性支气管炎"
+    },
+    {
+      "type": "emphysema",
+      "title": "肺气肿"
+    },
+    {
+      "type": "copd",
+      "title": "慢性阻塞性肺疾病"
+    },
+    {
+      "type": "asthma",
+      "title": "支气管哮喘"
+    },
+    {
+      "type": "bronchiectasis",
+      "title": "支气管扩张症"
+    },
+    {
+      "type": "cystic-fibrosis",
+      "title": "囊性纤维化"
+    },
+    {
+      "type": "obliterative-bronchiolitis",
+      "title": "闭塞性细支气管炎"
+    },
+    {
+      "type": "diffuse-panbronchiolitis",
+      "title": "弥漫性泛细支气管炎"
+    },
+    {
+      "type": "ipf-uip",
+      "title": "特发性肺纤维化(UIP)"
+    },
+    {
+      "type": "nsip",
+      "title": "非特异性间质性肺炎"
+    },
+    {
+      "type": "cop",
+      "title": "隐源性机化性肺炎"
+    },
+    {
+      "type": "aip",
+      "title": "急性间质性肺炎"
+    },
+    {
+      "type": "dip",
+      "title": "脱屑性间质性肺炎"
+    },
+    {
+      "type": "rb-ild",
+      "title": "呼吸性细支气管炎相关性ILD"
+    },
+    {
+      "type": "lip",
+      "title": "淋巴细胞性间质性肺炎"
+    },
+    {
+      "type": "hypersensitivity-pneumonitis",
+      "title": "过敏性肺炎"
+    },
+    {
+      "type": "egpa",
+      "title": "嗜酸性肉芽肿性多血管炎"
+    },
+    {
+      "type": "mpa",
+      "title": "显微镜下多血管炎"
+    },
+    {
+      "type": "goodpasture",
+      "title": "肺出血-肾炎综合征"
+    },
+    {
+      "type": "ctd-ild",
+      "title": "结缔组织病相关性肺病"
+    },
+    {
+      "type": "loffler-syndrome",
+      "title": "单纯性肺嗜酸性粒细胞增多症"
+    },
+    {
+      "type": "acute-eosinophilic-pneumonia",
+      "title": "急性嗜酸性粒细胞性肺炎"
+    },
+    {
+      "type": "silicosis",
+      "title": "矽肺"
+    },
+    {
+      "type": "coal-workers-pneumoconiosis",
+      "title": "煤工尘肺"
+    },
+    {
+      "type": "asbestosis",
+      "title": "石棉肺"
+    },
+    {
+      "type": "berylliosis",
+      "title": "铍肺"
+    },
+    {
+      "type": "eaa",
+      "title": "外源性过敏性肺泡炎"
+    },
+    {
+      "type": "hard-metal-lung",
+      "title": "硬金属肺病"
+    },
+    {
+      "type": "evali",
+      "title": "电子烟相关肺损伤"
+    },
+    {
+      "type": "acute-pe",
+      "title": "急性肺栓塞"
+    },
+    {
+      "type": "pulmonary-hypertension",
+      "title": "肺动脉高压"
+    },
+    {
+      "type": "pavm",
+      "title": "肺动静脉畸形"
+    },
+    {
+      "type": "idiopathic-pulmonary-hemosiderosis",
+      "title": "特发性肺含铁血黄素沉着症"
+    },
+    {
+      "type": "peripheral-lung-cancer",
+      "title": "周围型肺癌"
+    },
+    {
+      "type": "sclc",
+      "title": "小细胞肺癌"
+    },
+    {
+      "type": "lung-squamous-cancer",
+      "title": "肺鳞癌"
+    },
+    {
+      "type": "pulmonary-carcinoid",
+      "title": "肺类癌"
+    },
+    {
+      "type": "pulmonary-lymphoma",
+      "title": "肺淋巴瘤"
+    },
+    {
+      "type": "sarcomatoid-carcinoma",
+      "title": "肺肉瘤样癌"
+    },
+    {
+      "type": "lung-metastasis",
+      "title": "肺转移瘤"
+    },
+    {
+      "type": "solitary-pulmonary-nodule",
+      "title": "孤立性肺结节"
+    },
+    {
+      "type": "pulmonary-hamartoma",
+      "title": "肺错构瘤"
+    },
+    {
+      "type": "sclerosing-pneumocytoma",
+      "title": "肺硬化性血管瘤"
+    },
+    {
+      "type": "inflammatory-myofibroblastic-tumor",
+      "title": "肺炎性肌纤维母细胞瘤"
+    },
+    {
+      "type": "tension-pneumothorax",
+      "title": "张力性气胸"
+    },
+    {
+      "type": "empyema",
+      "title": "脓胸"
+    },
+    {
+      "type": "hemothorax",
+      "title": "血胸"
+    },
+    {
+      "type": "chylothorax",
+      "title": "乳糜胸"
+    },
+    {
+      "type": "pleural-thickening",
+      "title": "胸膜增厚"
+    },
+    {
+      "type": "pleural-plaque",
+      "title": "胸膜斑(石棉相关)"
+    },
+    {
+      "type": "malignant-mesothelioma",
+      "title": "恶性胸膜间皮瘤"
+    },
+    {
+      "type": "thymoma",
+      "title": "胸腺瘤"
+    },
+    {
+      "type": "thymic-carcinoma",
+      "title": "胸腺癌"
+    },
+    {
+      "type": "mediastinal-teratoma",
+      "title": "纵隔畸胎瘤"
+    },
+    {
+      "type": "neurogenic-tumor-mediastinum",
+      "title": "神经源性肿瘤"
+    },
+    {
+      "type": "bronchogenic-cyst",
+      "title": "支气管源性囊肿"
+    },
+    {
+      "type": "pericardial-cyst",
+      "title": "心包囊肿"
+    },
+    {
+      "type": "pneumomediastinum",
+      "title": "纵隔气肿"
+    },
+    {
+      "type": "fibrosing-mediastinitis",
+      "title": "纤维性纵隔炎"
+    },
+    {
+      "type": "hiatal-hernia",
+      "title": "食管裂孔疝"
+    },
+    {
+      "type": "eventration-diaphragm",
+      "title": "膈膨升"
+    },
+    {
+      "type": "diaphragm-paralysis",
+      "title": "膈肌麻痹"
+    },
+    {
+      "type": "pulmonary-hypoplasia",
+      "title": "肺发育不全"
+    },
+    {
+      "type": "bronchial-atresia",
+      "title": "支气管闭锁"
+    },
+    {
+      "type": "pulmonary-contusion",
+      "title": "肺挫伤"
+    },
+    {
+      "type": "pulmonary-laceration",
+      "title": "肺裂伤"
+    },
+    {
+      "type": "tracheobronchial-injury",
+      "title": "气管支气管断裂"
+    },
+    {
+      "type": "radiation-pneumonitis",
+      "title": "放射性肺炎"
+    },
+    {
+      "type": "drug-induced-lung-disease",
+      "title": "药物性肺损伤"
+    },
+    {
+      "type": "post-transplant-bos",
+      "title": "肺移植后排斥"
+    },
+    {
+      "type": "noncardiogenic-pulmonary-edema",
+      "title": "非心源性肺水肿"
+    },
+    {
+      "type": "pulmonary-alveolar-proteinosis",
+      "title": "肺泡蛋白沉积症"
+    },
+    {
+      "type": "lam",
+      "title": "淋巴管平滑肌瘤病"
+    },
+    {
+      "type": "plch",
+      "title": "肺朗格汉斯细胞组织细胞增生症"
+    },
+    {
+      "type": "dig-sialolithiasis",
+      "title": "涎腺结石"
+    },
+    {
+      "type": "dig-acute-sialadenitis",
+      "title": "急性涎腺炎"
+    },
+    {
+      "type": "dig-chronic-sialadenitis",
+      "title": "慢性涎腺炎"
+    },
+    {
+      "type": "dig-pleomorphic-adenoma",
+      "title": "涎腺多形性腺瘤"
+    },
+    {
+      "type": "dig-warthin-tumor",
+      "title": "腮腺Warthin瘤"
+    },
+    {
+      "type": "dig-salivary-carcinoma",
+      "title": "涎腺癌"
+    },
+    {
+      "type": "dig-tongue-cancer",
+      "title": "舌癌"
+    },
+    {
+      "type": "dig-floor-mouth-cancer",
+      "title": "口底癌"
+    },
+    {
+      "type": "dig-peritonsillar-abscess",
+      "title": "扁桃体周脓肿"
+    },
+    {
+      "type": "dig-retropharyngeal-abscess",
+      "title": "咽后脓肿"
+    },
+    {
+      "type": "dig-reflux-esophagitis",
+      "title": "反流性食管炎"
+    },
+    {
+      "type": "dig-eosinophilic-esophagitis",
+      "title": "嗜酸性食管炎"
+    },
+    {
+      "type": "dig-infectious-esophagitis",
+      "title": "感染性食管炎(念珠菌/疱疹)"
+    },
+    {
+      "type": "dig-caustic-esophagitis",
+      "title": "腐蚀性食管炎"
+    },
+    {
+      "type": "dig-achalasia",
+      "title": "贲门失弛缓症"
+    },
+    {
+      "type": "dig-diffuse-esophageal-spasm",
+      "title": "弥漫性食管痉挛"
+    },
+    {
+      "type": "dig-scleroderma-esophagus",
+      "title": "硬皮病食管"
+    },
+    {
+      "type": "dig-hiatal-hernia",
+      "title": "食管裂孔疝(滑动型/食管旁型)"
+    },
+    {
+      "type": "dig-esophageal-web",
+      "title": "食管蹼"
+    },
+    {
+      "type": "dig-schatzki-ring",
+      "title": "Schatzki环"
+    },
+    {
+      "type": "dig-esophageal-cancer",
+      "title": "食管癌"
+    },
+    {
+      "type": "dig-esophageal-leiomyoma",
+      "title": "食管平滑肌瘤"
+    },
+    {
+      "type": "dig-esophageal-gist",
+      "title": "食管间质瘤"
+    },
+    {
+      "type": "dig-esophageal-varices",
+      "title": "食管静脉曲张"
+    },
+    {
+      "type": "dig-esophageal-fb",
+      "title": "食管异物"
+    },
+    {
+      "type": "dig-acute-gastritis",
+      "title": "急性胃炎"
+    },
+    {
+      "type": "dig-erosive-gastritis",
+      "title": "糜烂性胃炎"
+    },
+    {
+      "type": "dig-gastric-cancer",
+      "title": "胃癌"
+    },
+    {
+      "type": "dig-early-gastric-cancer",
+      "title": "早期胃癌"
+    },
+    {
+      "type": "dig-gastric-net",
+      "title": "胃神经内分泌肿瘤"
+    },
+    {
+      "type": "dig-gastric-polyp",
+      "title": "胃息肉"
+    },
+    {
+      "type": "dig-fundic-gland-polyp",
+      "title": "胃底腺息肉"
+    },
+    {
+      "type": "dig-pyloric-obstruction",
+      "title": "幽门梗阻"
+    },
+    {
+      "type": "dig-gastric-volvulus",
+      "title": "胃扭转"
+    },
+    {
+      "type": "dig-gastric-bezoar",
+      "title": "胃石"
+    },
+    {
+      "type": "dig-crohn-disease",
+      "title": "克罗恩病"
+    },
+    {
+      "type": "dig-intestinal-tb",
+      "title": "肠结核"
+    },
+    {
+      "type": "dig-radiation-enteritis",
+      "title": "放射性肠炎"
+    },
+    {
+      "type": "dig-eosinophilic-gastroenteritis",
+      "title": "嗜酸性胃肠炎"
+    },
+    {
+      "type": "dig-intussusception",
+      "title": "肠套叠"
+    },
+    {
+      "type": "dig-small-bowel-volvulus",
+      "title": "小肠扭转"
+    },
+    {
+      "type": "dig-smas",
+      "title": "肠系膜上动脉综合征"
+    },
+    {
+      "type": "dig-meckel-diverticulum",
+      "title": "Meckel憩室"
+    },
+    {
+      "type": "dig-ischemic-enteropathy",
+      "title": "缺血性肠病"
+    },
+    {
+      "type": "dig-mesenteric-ischemia",
+      "title": "肠系膜缺血"
+    },
+    {
+      "type": "dig-small-bowel-adenocarcinoma",
+      "title": "小肠腺癌"
+    },
+    {
+      "type": "dig-small-bowel-carcinoid",
+      "title": "小肠类癌"
+    },
+    {
+      "type": "dig-small-bowel-gist",
+      "title": "GIST"
+    },
+    {
+      "type": "dig-ulcerative-colitis",
+      "title": "溃疡性结肠炎"
+    },
+    {
+      "type": "dig-crohn-colitis",
+      "title": "克罗恩结肠炎"
+    },
+    {
+      "type": "dig-ischemic-colitis",
+      "title": "缺血性结肠炎"
+    },
+    {
+      "type": "dig-pseudomembranous-colitis",
+      "title": "伪膜性肠炎"
+    },
+    {
+      "type": "dig-diverticulitis",
+      "title": "憩室炎"
+    },
+    {
+      "type": "dig-radiation-proctitis",
+      "title": "放射性直肠炎"
+    },
+    {
+      "type": "dig-colonic-adenoma",
+      "title": "结肠腺瘤性息肉"
+    },
+    {
+      "type": "dig-appendiceal-carcinoid",
+      "title": "阑尾类癌"
+    },
+    {
+      "type": "dig-acute-appendicitis",
+      "title": "急性阑尾炎"
+    },
+    {
+      "type": "dig-sigmoid-volvulus",
+      "title": "乙状结肠扭转"
+    },
+    {
+      "type": "dig-cecal-volvulus",
+      "title": "盲肠扭转"
+    },
+    {
+      "type": "dig-toxic-megacolon",
+      "title": "中毒性巨结肠"
+    },
+    {
+      "type": "dig-colorectal-obstruction",
+      "title": "肠梗阻"
+    },
+    {
+      "type": "dig-pneumatosis-cystoides",
+      "title": "肠气囊肿症"
+    },
+    {
+      "type": "dig-fatty-liver",
+      "title": "脂肪肝"
+    },
+    {
+      "type": "dig-portal-hypertension",
+      "title": "门静脉高压"
+    },
+    {
+      "type": "dig-hemochromatosis",
+      "title": "血色病"
+    },
+    {
+      "type": "dig-wilson-disease",
+      "title": "肝豆状核变性(Wilson病)"
+    },
+    {
+      "type": "dig-budd-chiari",
+      "title": "布加综合征"
+    },
+    {
+      "type": "dig-polycystic-liver",
+      "title": "多囊肝"
+    },
+    {
+      "type": "dig-hepatic-abscess",
+      "title": "肝脓肿"
+    },
+    {
+      "type": "dig-hepatic-echinococcosis",
+      "title": "肝包虫病"
+    },
+    {
+      "type": "dig-hepatic-tb",
+      "title": "肝结核"
+    },
+    {
+      "type": "dig-hcc",
+      "title": "肝细胞癌(HCC)"
+    },
+    {
+      "type": "dig-hepatoblastoma",
+      "title": "肝母细胞瘤"
+    },
+    {
+      "type": "dig-hepatic-angiosarcoma",
+      "title": "肝血管肉瘤"
+    },
+    {
+      "type": "dig-cholelithiasis",
+      "title": "胆囊结石"
+    },
+    {
+      "type": "dig-choledocholithiasis",
+      "title": "胆总管结石"
+    },
+    {
+      "type": "dig-gallbladder-polyp",
+      "title": "胆囊息肉"
+    },
+    {
+      "type": "dig-adenomyomatosis",
+      "title": "胆囊腺肌症"
+    },
+    {
+      "type": "dig-psc",
+      "title": "原发性硬化性胆管炎"
+    },
+    {
+      "type": "dig-gallbladder-cancer",
+      "title": "胆囊癌"
+    },
+    {
+      "type": "dig-cholangiocarcinoma-extra",
+      "title": "胆管癌(肝门部/远端)"
+    },
+    {
+      "type": "dig-periampullary-cancer",
+      "title": "壶腹周围癌"
+    },
+    {
+      "type": "dig-caroli",
+      "title": "Caroli病"
+    },
+    {
+      "type": "dig-biliary-atresia",
+      "title": "胆道闭锁"
+    },
+    {
+      "type": "dig-groove-pancreatitis",
+      "title": "沟槽状胰腺炎"
+    },
+    {
+      "type": "dig-serous-cystadenoma",
+      "title": "浆液性囊腺瘤"
+    },
+    {
+      "type": "dig-mucinous-cystadenoma",
+      "title": "黏液性囊腺瘤"
+    },
+    {
+      "type": "dig-spn",
+      "title": "实性假乳头状瘤(SPN)"
+    },
+    {
+      "type": "dig-pancreas-divisum",
+      "title": "胰腺分裂"
+    },
+    {
+      "type": "dig-splenic-hamartoma",
+      "title": "脾错构瘤"
+    },
+    {
+      "type": "dig-accessory-spleen",
+      "title": "副脾"
+    },
+    {
+      "type": "dig-peritonitis",
+      "title": "腹膜炎"
+    },
+    {
+      "type": "dig-tb-peritonitis",
+      "title": "结核性腹膜炎"
+    },
+    {
+      "type": "dig-ascites",
+      "title": "腹水"
+    },
+    {
+      "type": "dig-peritoneal-carcinomatosis",
+      "title": "腹膜转移癌"
+    },
+    {
+      "type": "dig-pseudomyxoma",
+      "title": "腹膜假黏液瘤"
+    },
+    {
+      "type": "dig-mesenteric-panniculitis",
+      "title": "肠系膜脂膜炎"
+    },
+    {
+      "type": "dig-mesenteric-cyst",
+      "title": "肠系膜囊肿"
+    },
+    {
+      "type": "dig-retroperitoneal-fibrosis",
+      "title": "腹膜后纤维化"
+    },
+    {
+      "type": "dig-retroperitoneal-tumor",
+      "title": "腹膜后肿瘤(脂肪肉瘤/平滑肌肉瘤)"
+    },
+    {
+      "type": "dig-sma-embolism",
+      "title": "肠系膜动脉栓塞"
+    },
+    {
+      "type": "dig-smv-thrombosis",
+      "title": "肠系膜静脉血栓"
+    },
+    {
+      "type": "dig-ischemic-bowel-necrosis",
+      "title": "缺血性肠坏死"
+    },
+    {
+      "type": "dig-abdominal-aortic-aneurysm",
+      "title": "腹主动脉瘤"
+    },
+    {
+      "type": "dig-internal-hernia",
+      "title": "内疝"
+    },
+    {
+      "type": "dig-external-hernia",
+      "title": "腹外疝(腹股沟疝/股疝/脐疝/切口疝)"
+    },
+    {
+      "type": "dig-anal-fistula",
+      "title": "肛瘘"
+    },
+    {
+      "type": "dig-perianal-abscess",
+      "title": "肛周脓肿"
+    },
+    {
+      "type": "dig-rectal-prolapse",
+      "title": "直肠脱垂"
+    },
+    {
+      "type": "dig-rectal-cancer",
+      "title": "直肠癌"
+    },
+    {
+      "type": "dig-anal-cancer",
+      "title": "肛管癌"
+    },
+    {
+      "type": "dig-pilonidal-sinus",
+      "title": "藏毛窦"
+    },
+    {
+      "type": "dig-abdominal-wall-hernia",
+      "title": "腹壁疝"
+    },
+    {
+      "type": "dig-diaphragmatic-hernia",
+      "title": "膈疝(Bochdalek/Morgagni)"
+    },
+    {
+      "type": "dig-intestinal-malrotation",
+      "title": "肠旋转不良"
+    },
+    {
+      "type": "dig-midgut-volvulus",
+      "title": "中肠扭转"
+    },
+    {
+      "type": "dig-duodenal-atresia-ped",
+      "title": "十二指肠闭锁"
+    },
+    {
+      "type": "dig-hirschsprung",
+      "title": "先天性巨结肠(Hirschsprung病)"
+    },
+    {
+      "type": "dig-anal-atresia",
+      "title": "肛门闭锁"
+    },
+    {
+      "type": "dig-biliary-atresia-ped",
+      "title": "胆道闭锁"
+    },
+    {
+      "type": "dig-amebic-liver-abscess",
+      "title": "阿米巴肝脓肿"
+    },
+    {
+      "type": "dig-schistosomiasis",
+      "title": "血吸虫病(肝/肠)"
+    },
+    {
+      "type": "dig-clonorchiasis",
+      "title": "华支睾吸虫病"
+    },
+    {
+      "type": "dig-abdominal-tuberculosis",
+      "title": "腹腔结核"
+    },
+    {
+      "type": "dig-pancreatic-trauma",
+      "title": "胰腺创伤"
+    },
+    {
+      "type": "dig-anastomotic-leak",
+      "title": "术后吻合口瘘"
+    },
+    {
+      "type": "dig-postop-bile-leak",
+      "title": "术后胆漏"
+    },
+    {
+      "type": "circ-coronary-atherosclerosis",
+      "title": "冠状动脉粥样硬化"
+    },
+    {
+      "type": "circ-stable-angina",
+      "title": "稳定型心绞痛"
+    },
+    {
+      "type": "circ-old-mi",
+      "title": "陈旧性心肌梗死"
+    },
+    {
+      "type": "circ-coronary-calcium",
+      "title": "冠状动脉钙化"
+    },
+    {
+      "type": "circ-myocardial-ischemia",
+      "title": "心肌缺血"
+    },
+    {
+      "type": "circ-anomalous-origin",
+      "title": "冠状动脉起源异常"
+    },
+    {
+      "type": "circ-myocardial-bridge",
+      "title": "心肌桥"
+    },
+    {
+      "type": "circ-ischemic-cmp",
+      "title": "缺血性心肌病"
+    },
+    {
+      "type": "circ-dcm",
+      "title": "扩张型心肌病"
+    },
+    {
+      "type": "circ-hcm",
+      "title": "肥厚型心肌病"
+    },
+    {
+      "type": "circ-rcm",
+      "title": "限制型心肌病"
+    },
+    {
+      "type": "circ-arvc",
+      "title": "致心律失常性右室心肌病(ARVC)"
+    },
+    {
+      "type": "circ-ncm",
+      "title": "心肌致密化不全"
+    },
+    {
+      "type": "circ-myocarditis",
+      "title": "心肌炎"
+    },
+    {
+      "type": "circ-amyloid",
+      "title": "心肌淀粉样变"
+    },
+    {
+      "type": "circ-cardiac-sarcoid",
+      "title": "心脏结节病"
+    },
+    {
+      "type": "circ-iron-overload",
+      "title": "心肌铁过载"
+    },
+    {
+      "type": "circ-ms",
+      "title": "二尖瓣狭窄"
+    },
+    {
+      "type": "circ-mr",
+      "title": "二尖瓣关闭不全"
+    },
+    {
+      "type": "circ-ar",
+      "title": "主动脉瓣关闭不全"
+    },
+    {
+      "type": "circ-tricuspid",
+      "title": "三尖瓣病变"
+    },
+    {
+      "type": "circ-bicuspid-aov",
+      "title": "二叶式主动脉瓣"
+    },
+    {
+      "type": "circ-endocarditis",
+      "title": "感染性心内膜炎(赘生物)"
+    },
+    {
+      "type": "circ-valve-calcification",
+      "title": "瓣膜钙化"
+    },
+    {
+      "type": "circ-mvp",
+      "title": "二尖瓣脱垂"
+    },
+    {
+      "type": "circ-acute-pericarditis",
+      "title": "急性心包炎"
+    },
+    {
+      "type": "circ-constrictive-pericarditis",
+      "title": "缩窄性心包炎"
+    },
+    {
+      "type": "circ-cardiac-tamponade",
+      "title": "心脏压塞"
+    },
+    {
+      "type": "circ-pericardial-defect",
+      "title": "心包缺如"
+    },
+    {
+      "type": "circ-pericardial-calcification",
+      "title": "心包钙化"
+    },
+    {
+      "type": "circ-atrial-myxoma",
+      "title": "心房黏液瘤"
+    },
+    {
+      "type": "circ-papillary-fibroelastoma",
+      "title": "乳头状弹力纤维瘤"
+    },
+    {
+      "type": "circ-rhabdomyoma",
+      "title": "心脏横纹肌瘤"
+    },
+    {
+      "type": "circ-cardiac-thrombus",
+      "title": "心腔内血栓"
+    },
+    {
+      "type": "circ-asd",
+      "title": "房间隔缺损(ASD)"
+    },
+    {
+      "type": "circ-vsd",
+      "title": "室间隔缺损(VSD)"
+    },
+    {
+      "type": "circ-pda",
+      "title": "动脉导管未闭(PDA)"
+    },
+    {
+      "type": "circ-avsd",
+      "title": "房室间隔缺损"
+    },
+    {
+      "type": "circ-tof",
+      "title": "法洛四联症"
+    },
+    {
+      "type": "circ-tga",
+      "title": "大动脉转位"
+    },
+    {
+      "type": "circ-truncus",
+      "title": "永存动脉干"
+    },
+    {
+      "type": "circ-tricuspid-atresia",
+      "title": "三尖瓣闭锁"
+    },
+    {
+      "type": "circ-tapvr",
+      "title": "肺静脉异位引流"
+    },
+    {
+      "type": "circ-coarctation",
+      "title": "主动脉缩窄"
+    },
+    {
+      "type": "circ-pulmonary-stenosis-chd",
+      "title": "肺动脉狭窄"
+    },
+    {
+      "type": "circ-aortic-interruption",
+      "title": "主动脉弓离断"
+    },
+    {
+      "type": "circ-single-ventricle",
+      "title": "单心室"
+    },
+    {
+      "type": "circ-ebstein",
+      "title": "Ebstein畸形"
+    },
+    {
+      "type": "circ-thoracic-aneurysm",
+      "title": "胸主动脉瘤"
+    },
+    {
+      "type": "circ-abdominal-aneurysm",
+      "title": "腹主动脉瘤"
+    },
+    {
+      "type": "circ-imh",
+      "title": "壁内血肿"
+    },
+    {
+      "type": "circ-pau",
+      "title": "穿透性溃疡"
+    },
+    {
+      "type": "circ-coarctation-aortic",
+      "title": "主动脉缩窄"
+    },
+    {
+      "type": "circ-marfan-aorta",
+      "title": "马凡综合征(主动脉根部扩张)"
+    },
+    {
+      "type": "circ-aortitis",
+      "title": "主动脉炎(大动脉炎)"
+    },
+    {
+      "type": "circ-pe",
+      "title": "肺栓塞"
+    },
+    {
+      "type": "circ-pah",
+      "title": "肺动脉高压"
+    },
+    {
+      "type": "circ-pad",
+      "title": "下肢动脉粥样硬化闭塞症"
+    },
+    {
+      "type": "circ-carotid-stenosis",
+      "title": "颈动脉狭窄"
+    },
+    {
+      "type": "circ-mesenteric-stenosis",
+      "title": "肠系膜动脉狭窄"
+    },
+    {
+      "type": "circ-raynaud",
+      "title": "雷诺现象"
+    },
+    {
+      "type": "circ-buerger",
+      "title": "血栓闭塞性脉管炎(Buerger病)"
+    },
+    {
+      "type": "circ-dvt",
+      "title": "深静脉血栓(DVT)"
+    },
+    {
+      "type": "circ-ivc-filter",
+      "title": "下腔静脉滤器相关"
+    },
+    {
+      "type": "circ-svc-syndrome",
+      "title": "上腔静脉综合征"
+    },
+    {
+      "type": "circ-varicose",
+      "title": "静脉曲张"
+    },
+    {
+      "type": "circ-budd-chiari",
+      "title": "布加综合征"
+    },
+    {
+      "type": "circ-portal-thrombosis",
+      "title": "门静脉血栓"
+    },
+    {
+      "type": "circ-venous-malformation",
+      "title": "静脉畸形"
+    },
+    {
+      "type": "circ-chf",
+      "title": "充血性心力衰竭"
+    },
+    {
+      "type": "circ-lhf-ped",
+      "title": "左心衰(肺水肿)"
+    },
+    {
+      "type": "circ-rhf",
+      "title": "右心衰"
+    },
+    {
+      "type": "circ-cardiomegaly",
+      "title": "心脏扩大"
+    },
+    {
+      "type": "circ-ventricular-aneurysm",
+      "title": "室壁瘤"
+    },
+    {
+      "type": "circ-mural-thrombus",
+      "title": "附壁血栓"
+    },
+    {
+      "type": "nerv-lbiwpe",
+      "title": "超急性期脑梗死"
+    },
+    {
+      "type": "nerv-mqcgbk",
+      "title": "腔隙性脑梗死"
+    },
+    {
+      "type": "nerv-ggnln5",
+      "title": "分水岭脑梗死"
+    },
+    {
+      "type": "nerv-oegk9h",
+      "title": "出血性脑梗死"
+    },
+    {
+      "type": "nerv-1jdz7u",
+      "title": "脑出血"
+    },
+    {
+      "type": "nerv-6mqtbk",
+      "title": "脑干出血"
+    },
+    {
+      "type": "nerv-o773kv",
+      "title": "小脑出血"
+    },
+    {
+      "type": "nerv-u9h5ms",
+      "title": "基底节出血"
+    },
+    {
+      "type": "nerv-lcyu2w",
+      "title": "丘脑出血"
+    },
+    {
+      "type": "nerv-4obit2",
+      "title": "蛛网膜下腔出血"
+    },
+    {
+      "type": "nerv-brz46o",
+      "title": "颅内动脉瘤"
+    },
+    {
+      "type": "nerv-xmasxo",
+      "title": "脑动静脉畸形"
+    },
+    {
+      "type": "nerv-ravhcu",
+      "title": "海绵状血管瘤"
+    },
+    {
+      "type": "nerv-vmkb8b",
+      "title": "发育性静脉异常"
+    },
+    {
+      "type": "nerv-n2je4e",
+      "title": "颈动脉海绵窦瘘"
+    },
+    {
+      "type": "nerv-ejs8fj",
+      "title": "烟雾病"
+    },
+    {
+      "type": "nerv-ty1kqs",
+      "title": "静脉窦血栓形成"
+    },
+    {
+      "type": "nerv-tbs5am",
+      "title": "脑淀粉样血管病"
+    },
+    {
+      "type": "nerv-hwhqnd",
+      "title": "颈动脉夹层"
+    },
+    {
+      "type": "nerv-3txsz7",
+      "title": "椎动脉夹层"
+    },
+    {
+      "type": "nerv-p6lasr",
+      "title": "颈动脉狭窄"
+    },
+    {
+      "type": "nerv-mdhbof",
+      "title": "弥漫性星形细胞瘤"
+    },
+    {
+      "type": "nerv-tjk5rl",
+      "title": "间变性星形细胞瘤"
+    },
+    {
+      "type": "nerv-srmk42",
+      "title": "胶质母细胞瘤"
+    },
+    {
+      "type": "nerv-77k00f",
+      "title": "少突胶质细胞瘤"
+    },
+    {
+      "type": "nerv-kcdy5q",
+      "title": "室管膜瘤"
+    },
+    {
+      "type": "nerv-9jwwah",
+      "title": "黏液乳头型室管膜瘤"
+    },
+    {
+      "type": "nerv-3ytgqy",
+      "title": "毛细胞型星形细胞瘤"
+    },
+    {
+      "type": "nerv-5azet3",
+      "title": "多形性黄色星形细胞瘤"
+    },
+    {
+      "type": "nerv-cckqn0",
+      "title": "室管膜下巨细胞星形细胞瘤"
+    },
+    {
+      "type": "nerv-95wym4",
+      "title": "弥漫性中线胶质瘤"
+    },
+    {
+      "type": "nerv-693r32",
+      "title": "神经节细胞胶质瘤"
+    },
+    {
+      "type": "nerv-dnet",
+      "title": "DNET"
+    },
+    {
+      "type": "nerv-gd8zo5",
+      "title": "髓母细胞瘤"
+    },
+    {
+      "type": "nerv-at-rt",
+      "title": "AT/RT"
+    },
+    {
+      "type": "nerv-ngq070",
+      "title": "松果体细胞瘤"
+    },
+    {
+      "type": "nerv-t292t",
+      "title": "松果体母细胞瘤"
+    },
+    {
+      "type": "nerv-mjbtbc",
+      "title": "生殖细胞瘤"
+    },
+    {
+      "type": "nerv-7zosud",
+      "title": "中枢神经细胞瘤"
+    },
+    {
+      "type": "nerv-mj4q9g",
+      "title": "脑膜瘤"
+    },
+    {
+      "type": "nerv-qr4fb9",
+      "title": "非典型脑膜瘤"
+    },
+    {
+      "type": "nerv-io2238",
+      "title": "听神经瘤"
+    },
+    {
+      "type": "nerv-gdy3xk",
+      "title": "三叉神经鞘瘤"
+    },
+    {
+      "type": "nerv-ayhn97",
+      "title": "孤立性纤维性肿瘤"
+    },
+    {
+      "type": "nerv-96fj22",
+      "title": "垂体微腺瘤"
+    },
+    {
+      "type": "nerv-5376kf",
+      "title": "垂体大腺瘤"
+    },
+    {
+      "type": "nerv-yxqv6h",
+      "title": "原发中枢淋巴瘤"
+    },
+    {
+      "type": "nerv-m5snb7",
+      "title": "血管母细胞瘤"
+    },
+    {
+      "type": "nerv-7nesr9",
+      "title": "脊索瘤"
+    },
+    {
+      "type": "nerv-5we15x",
+      "title": "颅底软骨肉瘤"
+    },
+    {
+      "type": "nerv-3klma7",
+      "title": "表皮样囊肿"
+    },
+    {
+      "type": "nerv-vr7fxx",
+      "title": "皮样囊肿"
+    },
+    {
+      "type": "nerv-2nrzbx",
+      "title": "胶样囊肿"
+    },
+    {
+      "type": "nerv-rn3gqw",
+      "title": "蛛网膜囊肿"
+    },
+    {
+      "type": "nerv-21epic",
+      "title": "脉络丛乳头状瘤"
+    },
+    {
+      "type": "nerv-ipym2j",
+      "title": "颅骨转移"
+    },
+    {
+      "type": "nerv-v5a3f1",
+      "title": "脑膜转移"
+    },
+    {
+      "type": "nerv-kpxmqu",
+      "title": "脑脓肿"
+    },
+    {
+      "type": "nerv-8a6aks",
+      "title": "硬膜下积脓"
+    },
+    {
+      "type": "nerv-ejhc7n",
+      "title": "硬膜外脓肿"
+    },
+    {
+      "type": "nerv-ynxuzs",
+      "title": "化脓性脑膜炎"
+    },
+    {
+      "type": "nerv-z067zs",
+      "title": "结核性脑膜炎"
+    },
+    {
+      "type": "nerv-69zo2p",
+      "title": "脑结核瘤"
+    },
+    {
+      "type": "nerv-gof638",
+      "title": "单纯疱疹脑炎"
+    },
+    {
+      "type": "nerv-ktaszw",
+      "title": "自身免疫性脑炎"
+    },
+    {
+      "type": "nerv-8iimn8",
+      "title": "神经囊虫病"
+    },
+    {
+      "type": "nerv-wrryh7",
+      "title": "脑弓形虫病"
+    },
+    {
+      "type": "nerv-d7uxe9",
+      "title": "脑包虫病"
+    },
+    {
+      "type": "nerv-pml",
+      "title": "PML"
+    },
+    {
+      "type": "nerv-hiv",
+      "title": "HIV脑病"
+    },
+    {
+      "type": "nerv-1dvk94",
+      "title": "克雅病"
+    },
+    {
+      "type": "nerv-90x0kt",
+      "title": "肿瘤样脱髓鞘"
+    },
+    {
+      "type": "nerv-lybi9w",
+      "title": "视神经脊髓炎谱系病"
+    },
+    {
+      "type": "nerv-adem",
+      "title": "ADEM"
+    },
+    {
+      "type": "nerv-2glbxj",
+      "title": "肾上腺脑白质营养不良"
+    },
+    {
+      "type": "nerv-jc450w",
+      "title": "中央脑桥髓鞘溶解"
+    },
+    {
+      "type": "nerv-8wwazp",
+      "title": "放射性脑白质损伤"
+    },
+    {
+      "type": "nerv-8zapep",
+      "title": "血管周围间隙扩大"
+    },
+    {
+      "type": "nerv-nds0e8",
+      "title": "阿尔茨海默病"
+    },
+    {
+      "type": "nerv-42dbju",
+      "title": "额颞叶痴呆"
+    },
+    {
+      "type": "nerv-12cpfa",
+      "title": "路易体痴呆"
+    },
+    {
+      "type": "nerv-bpudib",
+      "title": "血管性痴呆"
+    },
+    {
+      "type": "nerv-kcfne",
+      "title": "帕金森病"
+    },
+    {
+      "type": "nerv-chd7ne",
+      "title": "多系统萎缩"
+    },
+    {
+      "type": "nerv-192xum",
+      "title": "进行性核上性麻痹"
+    },
+    {
+      "type": "nerv-pvglgo",
+      "title": "亨廷顿病"
+    },
+    {
+      "type": "nerv-9681y3",
+      "title": "肌萎缩侧索硬化"
+    },
+    {
+      "type": "nerv-ihrff0",
+      "title": "脊髓小脑性共济失调"
+    },
+    {
+      "type": "nerv-frl6i1",
+      "title": "肝豆状核变性"
+    },
+    {
+      "type": "nerv-leigh",
+      "title": "Leigh病"
+    },
+    {
+      "type": "nerv-uu5r4w",
+      "title": "神经铁沉积病"
+    },
+    {
+      "type": "nerv-e32ho2",
+      "title": "一氧化碳中毒脑病"
+    },
+    {
+      "type": "nerv-t18u7t",
+      "title": "缺氧缺血性脑病"
+    },
+    {
+      "type": "nerv-7qu60z",
+      "title": "急性硬膜下血肿"
+    },
+    {
+      "type": "nerv-f55dwe",
+      "title": "慢性硬膜下血肿"
+    },
+    {
+      "type": "nerv-i2pfyc",
+      "title": "创伤性蛛网膜下腔出血"
+    },
+    {
+      "type": "nerv-fc9xpf",
+      "title": "脑挫裂伤"
+    },
+    {
+      "type": "nerv-21zcfu",
+      "title": "脑内血肿"
+    },
+    {
+      "type": "nerv-scp8lx",
+      "title": "弥漫性轴索损伤"
+    },
+    {
+      "type": "nerv-v1fd6g",
+      "title": "颅骨骨折"
+    },
+    {
+      "type": "nerv-n44d53",
+      "title": "颅底骨折"
+    },
+    {
+      "type": "nerv-v77mcz",
+      "title": "脑疝"
+    },
+    {
+      "type": "nerv-ny9dm6",
+      "title": "张力性气颅"
+    },
+    {
+      "type": "nerv-ff5ov6",
+      "title": "头皮血肿"
+    },
+    {
+      "type": "nerv-squ10v",
+      "title": "胼胝体发育不全"
+    },
+    {
+      "type": "nerv-g6b4i0",
+      "title": "视隔发育不良"
+    },
+    {
+      "type": "nerv-5y4wyw",
+      "title": "灰质异位"
+    },
+    {
+      "type": "nerv-8gpd78",
+      "title": "脑裂畸形"
+    },
+    {
+      "type": "nerv-w7jlu2",
+      "title": "无脑回畸形"
+    },
+    {
+      "type": "nerv-731qfl",
+      "title": "多小脑回"
+    },
+    {
+      "type": "nerv-kgl086",
+      "title": "半侧巨脑症"
+    },
+    {
+      "type": "nerv-llxk8j",
+      "title": "前脑无裂畸形"
+    },
+    {
+      "type": "nerv-rn3gqw-2",
+      "title": "蛛网膜囊肿"
+    },
+    {
+      "type": "nerv-3odb02",
+      "title": "脑膨出"
+    },
+    {
+      "type": "nerv-j75bo9",
+      "title": "结节性硬化"
+    },
+    {
+      "type": "nerv-r42rs7",
+      "title": "脑积水"
+    },
+    {
+      "type": "nerv-a4tbzn",
+      "title": "导水管狭窄"
+    },
+    {
+      "type": "nerv-b1wj2i",
+      "title": "脊髓脊膜膨出"
+    },
+    {
+      "type": "nerv-lsq7d5",
+      "title": "椎间盘膨出"
+    },
+    {
+      "type": "nerv-mw7ivi",
+      "title": "椎间盘脱出"
+    },
+    {
+      "type": "nerv-met5rt",
+      "title": "椎管狭窄"
+    },
+    {
+      "type": "nerv-u7k27x",
+      "title": "后纵韧带骨化"
+    },
+    {
+      "type": "nerv-ipyadr",
+      "title": "黄韧带肥厚"
+    },
+    {
+      "type": "nerv-cqfoyx",
+      "title": "脊髓室管膜瘤"
+    },
+    {
+      "type": "nerv-vw1x1j",
+      "title": "脊髓星形细胞瘤"
+    },
+    {
+      "type": "nerv-uji6g0",
+      "title": "脊髓血管母细胞瘤"
+    },
+    {
+      "type": "nerv-l2oywb",
+      "title": "脊膜瘤"
+    },
+    {
+      "type": "nerv-bwd0s6",
+      "title": "神经鞘瘤"
+    },
+    {
+      "type": "nerv-fnu7uq",
+      "title": "硬膜外肿瘤"
+    },
+    {
+      "type": "nerv-esrd5t",
+      "title": "椎体转移"
+    },
+    {
+      "type": "nerv-wjhci1",
+      "title": "脊髓空洞症"
+    },
+    {
+      "type": "nerv-47tclr",
+      "title": "脊髓损伤"
+    },
+    {
+      "type": "nerv-37i45",
+      "title": "脊髓挫伤"
+    },
+    {
+      "type": "nerv-4g7e39",
+      "title": "硬脊膜动静脉瘘"
+    },
+    {
+      "type": "nerv-gzhg6p",
+      "title": "椎管内脓肿"
+    },
+    {
+      "type": "nerv-gfhclr",
+      "title": "椎间盘炎"
+    },
+    {
+      "type": "nerv-r74t2p",
+      "title": "椎体骨髓炎"
+    },
+    {
+      "type": "nerv-a2faao",
+      "title": "脊髓栓系"
+    },
+    {
+      "type": "uro-n3dp98",
+      "title": "肾透明细胞癌"
+    },
+    {
+      "type": "uro-jk3ngi",
+      "title": "乳头状肾细胞癌"
+    },
+    {
+      "type": "uro-3d1f6z",
+      "title": "嫌色细胞癌"
+    },
+    {
+      "type": "uro-sh36ce",
+      "title": "集合管癌"
+    },
+    {
+      "type": "uro-r5ydes",
+      "title": "肾母细胞瘤"
+    },
+    {
+      "type": "uro-w8wp5a",
+      "title": "肾淋巴瘤"
+    },
+    {
+      "type": "uro-xu3f5s",
+      "title": "肾转移瘤"
+    },
+    {
+      "type": "uro-o9210z",
+      "title": "单纯性肾囊肿"
+    },
+    {
+      "type": "uro-5s2uao",
+      "title": "复杂性肾囊肿"
+    },
+    {
+      "type": "uro-ltrg4",
+      "title": "髓质海绵肾"
+    },
+    {
+      "type": "uro-gkyu2m",
+      "title": "多房性囊性肾瘤"
+    },
+    {
+      "type": "uro-7hpwx",
+      "title": "急性肾盂肾炎"
+    },
+    {
+      "type": "uro-afdavp",
+      "title": "肾脓肿"
+    },
+    {
+      "type": "uro-lo4yyd",
+      "title": "肾周脓肿"
+    },
+    {
+      "type": "uro-h2edwt",
+      "title": "气肿性肾盂肾炎"
+    },
+    {
+      "type": "uro-pqj1w5",
+      "title": "黄色肉芽肿性肾盂肾炎"
+    },
+    {
+      "type": "uro-c2269i",
+      "title": "肾结核"
+    },
+    {
+      "type": "uro-35o9jz",
+      "title": "肾结石"
+    },
+    {
+      "type": "uro-h2vtkg",
+      "title": "鹿角形结石"
+    },
+    {
+      "type": "uro-eemoti",
+      "title": "肾积水"
+    },
+    {
+      "type": "uro-sjzi93",
+      "title": "肾盂"
+    },
+    {
+      "type": "uro-v3e79q",
+      "title": "连接部梗阻"
+    },
+    {
+      "type": "uro-enubtd",
+      "title": "肾动脉狭窄"
+    },
+    {
+      "type": "uro-nflbi3",
+      "title": "肾梗死"
+    },
+    {
+      "type": "uro-7qdw8e",
+      "title": "肾静脉血栓"
+    },
+    {
+      "type": "uro-indi3v",
+      "title": "胡桃夹综合征"
+    },
+    {
+      "type": "uro-sbi6zh",
+      "title": "肾外伤"
+    },
+    {
+      "type": "uro-33zdev",
+      "title": "马蹄肾"
+    },
+    {
+      "type": "uro-780laq",
+      "title": "异位肾"
+    },
+    {
+      "type": "uro-mql61p",
+      "title": "重复肾"
+    },
+    {
+      "type": "uro-dok9ob",
+      "title": "肾发育不全"
+    },
+    {
+      "type": "uro-ts0sgn",
+      "title": "交叉融合肾\n输尿管\n输尿管结石"
+    },
+    {
+      "type": "uro-7w9lok",
+      "title": "输尿管尿路上皮癌"
+    },
+    {
+      "type": "uro-dbgqp7",
+      "title": "输尿管狭窄"
+    },
+    {
+      "type": "uro-jcyomu",
+      "title": "先天性巨输尿管"
+    },
+    {
+      "type": "uro-e1l9f9",
+      "title": "输尿管囊肿"
+    },
+    {
+      "type": "uro-cym9a4",
+      "title": "输尿管膨出"
+    },
+    {
+      "type": "uro-zidg70",
+      "title": "输尿管反流"
+    },
+    {
+      "type": "uro-47bay8",
+      "title": "重复输尿管"
+    },
+    {
+      "type": "uro-czatd3",
+      "title": "下腔静脉后输尿管"
+    },
+    {
+      "type": "uro-ke5tl8",
+      "title": "膀胱腺癌"
+    },
+    {
+      "type": "uro-mz6fe0",
+      "title": "膀胱结石"
+    },
+    {
+      "type": "uro-8p3imr",
+      "title": "腺性膀胱炎"
+    },
+    {
+      "type": "uro-posgip",
+      "title": "放射性膀胱炎"
+    },
+    {
+      "type": "uro-8zbcm0",
+      "title": "膀胱破裂"
+    },
+    {
+      "type": "uro-92e4dg",
+      "title": "脐尿管囊肿"
+    },
+    {
+      "type": "uro-b13qbn",
+      "title": "脐尿管癌"
+    },
+    {
+      "type": "uro-3in8m",
+      "title": "前列腺增生"
+    },
+    {
+      "type": "uro-u73sqd",
+      "title": "前列腺癌"
+    },
+    {
+      "type": "uro-z5drt3",
+      "title": "前列腺脓肿"
+    },
+    {
+      "type": "uro-4ozdui",
+      "title": "前列腺囊肿"
+    },
+    {
+      "type": "uro-214f9q",
+      "title": "尿道狭窄"
+    },
+    {
+      "type": "uro-vk6aei",
+      "title": "尿道憩室"
+    },
+    {
+      "type": "uro-79zr0m",
+      "title": "精囊囊肿"
+    },
+    {
+      "type": "uro-9qtxwb",
+      "title": "射精管囊肿"
+    },
+    {
+      "type": "uro-w7jf6a",
+      "title": "精原细胞瘤"
+    },
+    {
+      "type": "uro-2esvom",
+      "title": "非精原性生殖细胞瘤"
+    },
+    {
+      "type": "uro-fa8mw",
+      "title": "睾丸淋巴瘤"
+    },
+    {
+      "type": "uro-525s7q",
+      "title": "睾丸扭转"
+    },
+    {
+      "type": "uro-ow1vad",
+      "title": "附睾炎"
+    },
+    {
+      "type": "uro-6lbtct",
+      "title": "隐睾"
+    },
+    {
+      "type": "uro-y1o8xt",
+      "title": "精索静脉曲张"
+    },
+    {
+      "type": "uro-jnuyna",
+      "title": "睾丸鞘膜积液"
+    },
+    {
+      "type": "uro-ti6f6a",
+      "title": "精液囊肿"
+    },
+    {
+      "type": "uro-ou83yg",
+      "title": "附睾囊肿"
+    },
+    {
+      "type": "uro-l76ujt",
+      "title": "睾丸微石症"
+    },
+    {
+      "type": "uro-qjat3j",
+      "title": "肾上腺腺瘤"
+    },
+    {
+      "type": "uro-lb4qhj",
+      "title": "肾上腺皮质癌"
+    },
+    {
+      "type": "uro-fgmt99",
+      "title": "嗜铬细胞瘤"
+    },
+    {
+      "type": "uro-g4da6y",
+      "title": "肾上腺增生"
+    },
+    {
+      "type": "uro-849sbq",
+      "title": "肾上腺囊肿"
+    },
+    {
+      "type": "uro-fyvrfn",
+      "title": "肾上腺出血"
+    },
+    {
+      "type": "uro-c1cj5m",
+      "title": "肾上腺结核"
+    },
+    {
+      "type": "uro-1j6zhp",
+      "title": "神经母细胞瘤"
+    },
+    {
+      "type": "uro-861nuy",
+      "title": "节细胞神经瘤"
+    },
+    {
+      "type": "fem-amccgc",
+      "title": "子宫肌瘤"
+    },
+    {
+      "type": "fem-gkkfzz",
+      "title": "子宫肌瘤变性"
+    },
+    {
+      "type": "fem-5otkif",
+      "title": "子宫腺肌症"
+    },
+    {
+      "type": "fem-6vhk0m",
+      "title": "子宫内膜增生"
+    },
+    {
+      "type": "fem-vedjs5",
+      "title": "子宫内膜息肉"
+    },
+    {
+      "type": "fem-9iky9r",
+      "title": "子宫肉瘤"
+    },
+    {
+      "type": "fem-m9dhn2",
+      "title": "宫腔积液/积脓"
+    },
+    {
+      "type": "fem-k6ri8f",
+      "title": "剖宫产瘢痕憩室"
+    },
+    {
+      "type": "fem-mhq8ej",
+      "title": "苗勒管发育异常(纵隔/双角/双子宫/单角)"
+    },
+    {
+      "type": "fem-3e05fm",
+      "title": "宫颈癌"
+    },
+    {
+      "type": "fem-s3lxsd",
+      "title": "宫颈纳氏囊肿"
+    },
+    {
+      "type": "fem-rgi2xo",
+      "title": "卵泡囊肿"
+    },
+    {
+      "type": "fem-1u98tp",
+      "title": "黄体囊肿"
+    },
+    {
+      "type": "fem-zafayg",
+      "title": "卵巢子宫内膜异位囊肿"
+    },
+    {
+      "type": "fem-30i1zf",
+      "title": "输卵管卵巢脓肿"
+    },
+    {
+      "type": "fem-io66e",
+      "title": "浆液性囊腺瘤"
+    },
+    {
+      "type": "fem-nwcuv6",
+      "title": "浆液性囊腺癌"
+    },
+    {
+      "type": "fem-n5aull",
+      "title": "黏液性囊腺瘤"
+    },
+    {
+      "type": "fem-j0yj8f",
+      "title": "黏液性囊腺癌"
+    },
+    {
+      "type": "fem-h3uxni",
+      "title": "子宫内膜样癌"
+    },
+    {
+      "type": "fem-q1xcm0",
+      "title": "透明细胞癌"
+    },
+    {
+      "type": "fem-xilyqz",
+      "title": "交界性肿瘤"
+    },
+    {
+      "type": "fem-brenner",
+      "title": "Brenner瘤"
+    },
+    {
+      "type": "fem-5n6htf",
+      "title": "成熟性畸胎瘤"
+    },
+    {
+      "type": "fem-c619hm",
+      "title": "未成熟畸胎瘤"
+    },
+    {
+      "type": "fem-8vyr7s",
+      "title": "无性细胞瘤"
+    },
+    {
+      "type": "fem-gxxjbm",
+      "title": "卵黄囊瘤"
+    },
+    {
+      "type": "fem-2nl73u",
+      "title": "卵巢纤维瘤"
+    },
+    {
+      "type": "fem-s8acv9",
+      "title": "卵泡膜细胞瘤"
+    },
+    {
+      "type": "fem-9b1iks",
+      "title": "颗粒细胞瘤"
+    },
+    {
+      "type": "fem-808bkn",
+      "title": "卵巢扭转"
+    },
+    {
+      "type": "fem-18aji1",
+      "title": "卵巢囊肿破裂"
+    },
+    {
+      "type": "fem-x86ja1",
+      "title": "输卵管积水"
+    },
+    {
+      "type": "fem-p8rvjm",
+      "title": "输卵管积脓"
+    },
+    {
+      "type": "fem-79mrz9",
+      "title": "盆腔炎"
+    },
+    {
+      "type": "fem-nluueq",
+      "title": "盆腔淤血综合征"
+    },
+    {
+      "type": "fem-s5empj",
+      "title": "盆腔脓肿"
+    },
+    {
+      "type": "fem-1u935b",
+      "title": "腹膜包涵囊肿"
+    },
+    {
+      "type": "fem-iwpmw3",
+      "title": "子宫内膜异位症"
+    },
+    {
+      "type": "fem-d0licz",
+      "title": "稽留流产"
+    },
+    {
+      "type": "fem-59g9aa",
+      "title": "葡萄胎"
+    },
+    {
+      "type": "fem-mtn0z2",
+      "title": "侵蚀性葡萄胎"
+    },
+    {
+      "type": "fem-9z973q",
+      "title": "绒毛膜癌"
+    },
+    {
+      "type": "fem-ak053j",
+      "title": "无脑儿"
+    },
+    {
+      "type": "fem-3odb02",
+      "title": "脑膨出"
+    },
+    {
+      "type": "fem-vikyna",
+      "title": "胎儿脑积水"
+    },
+    {
+      "type": "fem-k62hd5",
+      "title": "唇腭裂"
+    },
+    {
+      "type": "fem-rzrzyh",
+      "title": "胎儿先天性心脏病"
+    },
+    {
+      "type": "fem-ao3f27",
+      "title": "胎儿膈疝"
+    },
+    {
+      "type": "fem-ujihqw",
+      "title": "胎儿肺囊腺瘤"
+    },
+    {
+      "type": "fem-j9156z",
+      "title": "十二指肠闭锁"
+    },
+    {
+      "type": "fem-i6zxfi",
+      "title": "腹裂"
+    },
+    {
+      "type": "fem-zb1x8t",
+      "title": "脐膨出"
+    },
+    {
+      "type": "fem-1pltyf",
+      "title": "胎儿肾积水"
+    },
+    {
+      "type": "fem-z41sts",
+      "title": "胎儿多囊肾"
+    },
+    {
+      "type": "fem-5dc8a2",
+      "title": "骨骼发育不良"
+    },
+    {
+      "type": "fem-6unuiv",
+      "title": "骶尾部畸胎瘤"
+    },
+    {
+      "type": "fem-q3hn4h",
+      "title": "胎儿生长受限"
+    },
+    {
+      "type": "fem-g0oyj9",
+      "title": "双胎输血综合征"
+    },
+    {
+      "type": "fem-wr3kb0",
+      "title": "前置胎盘"
+    },
+    {
+      "type": "fem-2gp4et",
+      "title": "胎盘植入"
+    },
+    {
+      "type": "fem-9fpcjr",
+      "title": "胎盘早剥"
+    },
+    {
+      "type": "fem-mh3yyp",
+      "title": "血管前置"
+    },
+    {
+      "type": "fem-2j4spm",
+      "title": "羊水过多"
+    },
+    {
+      "type": "fem-xbfz",
+      "title": "羊水过少"
+    },
+    {
+      "type": "endo-a1epqf",
+      "title": "甲状腺腺瘤"
+    },
+    {
+      "type": "endo-m9je90",
+      "title": "甲状腺乳头状癌"
+    },
+    {
+      "type": "endo-uf20sk",
+      "title": "滤泡状癌"
+    },
+    {
+      "type": "endo-fvdfd3",
+      "title": "髓样癌"
+    },
+    {
+      "type": "endo-amz2n9",
+      "title": "未分化癌"
+    },
+    {
+      "type": "endo-73sc7a",
+      "title": "甲状腺淋巴瘤"
+    },
+    {
+      "type": "endo-dj31v2",
+      "title": "结节性甲状腺肿"
+    },
+    {
+      "type": "endo-aw45zg",
+      "title": "桥本甲状腺炎"
+    },
+    {
+      "type": "endo-bpnb0j",
+      "title": "亚急性甲状腺炎"
+    },
+    {
+      "type": "endo-graves",
+      "title": "Graves病"
+    },
+    {
+      "type": "endo-k1s5l9",
+      "title": "甲状舌管囊肿"
+    },
+    {
+      "type": "endo-7umht2",
+      "title": "异位甲状腺"
+    },
+    {
+      "type": "endo-1o9vqy",
+      "title": "胸骨后甲状腺肿"
+    },
+    {
+      "type": "endo-rqzqf4",
+      "title": "甲状旁腺腺瘤"
+    },
+    {
+      "type": "endo-d6fwo5",
+      "title": "甲状旁腺增生"
+    },
+    {
+      "type": "endo-id002a",
+      "title": "功能性皮质腺瘤"
+    },
+    {
+      "type": "endo-73bhmh",
+      "title": "无功能腺瘤"
+    },
+    {
+      "type": "endo-lb4qhj",
+      "title": "肾上腺皮质癌"
+    },
+    {
+      "type": "endo-fgmt99",
+      "title": "嗜铬细胞瘤"
+    },
+    {
+      "type": "endo-720q34",
+      "title": "肾上腺转移瘤"
+    },
+    {
+      "type": "endo-g4da6y",
+      "title": "肾上腺增生"
+    },
+    {
+      "type": "endo-849sbq",
+      "title": "肾上腺囊肿"
+    },
+    {
+      "type": "endo-m6vtdl",
+      "title": "髓样脂肪瘤"
+    },
+    {
+      "type": "endo-fyvrfn",
+      "title": "肾上腺出血"
+    },
+    {
+      "type": "endo-1j6zhp",
+      "title": "神经母细胞瘤"
+    },
+    {
+      "type": "endo-861nuy",
+      "title": "节细胞神经瘤"
+    },
+    {
+      "type": "endo-96fj22",
+      "title": "垂体微腺瘤"
+    },
+    {
+      "type": "endo-5376kf",
+      "title": "垂体大腺瘤"
+    },
+    {
+      "type": "endo-w1m3ev",
+      "title": "垂体卒中"
+    },
+    {
+      "type": "endo-szsio1",
+      "title": "空泡蝶鞍"
+    },
+    {
+      "type": "endo-b3ptoe",
+      "title": "颅咽管瘤"
+    },
+    {
+      "type": "endo-7r95hg",
+      "title": "下丘脑错构瘤"
+    },
+    {
+      "type": "endo-mjbtbc",
+      "title": "生殖细胞瘤"
+    },
+    {
+      "type": "endo-n5uu40",
+      "title": "胰岛素瘤"
+    },
+    {
+      "type": "endo-nr5ala",
+      "title": "胃泌素瘤"
+    },
+    {
+      "type": "endo-rilgfy",
+      "title": "胰腺神经内分泌肿瘤"
+    },
+    {
+      "type": "endo-jveb0h",
+      "title": "甲旁亢骨改变"
+    },
+    {
+      "type": "endo-22a5no",
+      "title": "肢端肥大症骨改变"
+    },
+    {
+      "type": "endo-jlt3s",
+      "title": "骨质疏松"
+    },
+    {
+      "type": "endo-g464ex",
+      "title": "骨软化症"
+    },
+    {
+      "type": "hn-aj9e53",
+      "title": "眼眶蜂窝织炎"
+    },
+    {
+      "type": "hn-9updu4",
+      "title": "眶骨膜下脓肿"
+    },
+    {
+      "type": "hn-rddhrw",
+      "title": "视神经胶质瘤"
+    },
+    {
+      "type": "hn-f3vx5t",
+      "title": "视神经鞘脑膜瘤"
+    },
+    {
+      "type": "hn-pmq79l",
+      "title": "眶内海绵状血管瘤"
+    },
+    {
+      "type": "hn-tybg0h",
+      "title": "眶静脉曲张"
+    },
+    {
+      "type": "hn-tsc2al",
+      "title": "甲状腺相关眼病"
+    },
+    {
+      "type": "hn-t7ivef",
+      "title": "眼眶炎性假瘤"
+    },
+    {
+      "type": "hn-u0k1as",
+      "title": "眼眶淋巴瘤"
+    },
+    {
+      "type": "hn-ahhgbh",
+      "title": "横纹肌肉瘤"
+    },
+    {
+      "type": "hn-tc6oy0",
+      "title": "泪腺多形性腺瘤"
+    },
+    {
+      "type": "hn-gdaoh3",
+      "title": "泪腺腺样囊性癌"
+    },
+    {
+      "type": "hn-mwh58b",
+      "title": "视网膜母细胞瘤"
+    },
+    {
+      "type": "hn-bxux4b",
+      "title": "脉络膜黑色素瘤"
+    },
+    {
+      "type": "hn-ftr2gh",
+      "title": "眼眶骨折"
+    },
+    {
+      "type": "hn-3nxwb1",
+      "title": "眼内异物"
+    },
+    {
+      "type": "hn-f3szof",
+      "title": "胆脂瘤"
+    },
+    {
+      "type": "hn-deryaz",
+      "title": "乳突炎"
+    },
+    {
+      "type": "hn-uxdq7s",
+      "title": "岩尖炎"
+    },
+    {
+      "type": "hn-io2238",
+      "title": "听神经瘤"
+    },
+    {
+      "type": "hn-lp2z1m",
+      "title": "面神经鞘瘤"
+    },
+    {
+      "type": "hn-r4pcla",
+      "title": "颈静脉球瘤"
+    },
+    {
+      "type": "hn-ifakg5",
+      "title": "鼓室球瘤"
+    },
+    {
+      "type": "hn-ka2gsp",
+      "title": "耳硬化症"
+    },
+    {
+      "type": "hn-m1ht9y",
+      "title": "大前庭水管综合征"
+    },
+    {
+      "type": "hn-hsmq25",
+      "title": "内耳畸形"
+    },
+    {
+      "type": "hn-ugbci5",
+      "title": "外耳道闭锁"
+    },
+    {
+      "type": "hn-9nxffr",
+      "title": "慢性鼻窦炎"
+    },
+    {
+      "type": "hn-75f69a",
+      "title": "鼻息肉"
+    },
+    {
+      "type": "hn-d42qxe",
+      "title": "鼻窦黏液囊肿"
+    },
+    {
+      "type": "hn-f5ift0",
+      "title": "真菌性鼻窦炎"
+    },
+    {
+      "type": "hn-eh6m8b",
+      "title": "侵袭性真菌性鼻窦炎"
+    },
+    {
+      "type": "hn-6oeaka",
+      "title": "鼻咽纤维血管瘤"
+    },
+    {
+      "type": "hn-ih2ki1",
+      "title": "内翻性乳头状瘤"
+    },
+    {
+      "type": "hn-cy6wr4",
+      "title": "鼻腔鳞癌"
+    },
+    {
+      "type": "hn-2rvb0s",
+      "title": "鼻窦腺样囊性癌"
+    },
+    {
+      "type": "hn-n38p16",
+      "title": "嗅神经母细胞瘤"
+    },
+    {
+      "type": "hn-i09t74",
+      "title": "鼻窦骨瘤"
+    },
+    {
+      "type": "hn-5k0ads",
+      "title": "骨化性纤维瘤"
+    },
+    {
+      "type": "hn-qdq116",
+      "title": "纤维结构不良"
+    },
+    {
+      "type": "hn-7vyux5",
+      "title": "上颌窦癌"
+    },
+    {
+      "type": "hn-gejxhn",
+      "title": "鼻咽癌"
+    },
+    {
+      "type": "hn-quhvh9",
+      "title": "口咽癌"
+    },
+    {
+      "type": "hn-86l0ij",
+      "title": "下咽癌"
+    },
+    {
+      "type": "hn-fc6kzs",
+      "title": "喉癌"
+    },
+    {
+      "type": "hn-dnjyxb",
+      "title": "喉囊肿"
+    },
+    {
+      "type": "hn-nb5lao",
+      "title": "扁桃体周脓肿"
+    },
+    {
+      "type": "hn-5wwoxw",
+      "title": "咽后脓肿"
+    },
+    {
+      "type": "hn-gzui9z",
+      "title": "咽旁间隙肿瘤"
+    },
+    {
+      "type": "hn-cr94kl",
+      "title": "舌癌"
+    },
+    {
+      "type": "hn-obca7f",
+      "title": "口底癌"
+    },
+    {
+      "type": "hn-om6b4d",
+      "title": "舌下囊肿"
+    },
+    {
+      "type": "hn-9jkhwv",
+      "title": "涎腺结石"
+    },
+    {
+      "type": "hn-jon431",
+      "title": "涎腺炎"
+    },
+    {
+      "type": "hn-6vi64o",
+      "title": "多形性腺瘤"
+    },
+    {
+      "type": "hn-warthin",
+      "title": "Warthin瘤"
+    },
+    {
+      "type": "hn-yar6or",
+      "title": "黏液表皮样癌"
+    },
+    {
+      "type": "hn-du8fo9",
+      "title": "腺样囊性癌"
+    },
+    {
+      "type": "hn-fgmwbm",
+      "title": "涎腺淋巴瘤"
+    },
+    {
+      "type": "hn-a25xvc",
+      "title": "颈部淋巴结结核"
+    },
+    {
+      "type": "hn-8quev6",
+      "title": "颈部淋巴结转移"
+    },
+    {
+      "type": "hn-5acnve",
+      "title": "淋巴瘤"
+    },
+    {
+      "type": "hn-6bbj2b",
+      "title": "鳃裂囊肿"
+    },
+    {
+      "type": "hn-k1s5l9",
+      "title": "甲状舌管囊肿"
+    },
+    {
+      "type": "hn-dm67vm",
+      "title": "囊性水瘤"
+    },
+    {
+      "type": "hn-9qxsej",
+      "title": "颈动脉体瘤"
+    },
+    {
+      "type": "hn-ljos69",
+      "title": "颈部脓肿"
+    },
+    {
+      "type": "hn-ufa832",
+      "title": "颈部神经鞘瘤"
+    },
+    {
+      "type": "hn-r979he",
+      "title": "颌骨囊肿"
+    },
+    {
+      "type": "hn-3w68fa",
+      "title": "成釉细胞瘤"
+    },
+    {
+      "type": "hn-bta1ne",
+      "title": "颌骨骨髓炎"
+    },
+    {
+      "type": "hn-qn3ixe",
+      "title": "颞下颌关节紊乱"
+    },
+    {
+      "type": "brs-2gsec2",
+      "title": "乳腺纤维腺瘤"
+    },
+    {
+      "type": "brs-ewxu0r",
+      "title": "乳腺囊肿"
+    },
+    {
+      "type": "brs-nybqeh",
+      "title": "复杂囊肿"
+    },
+    {
+      "type": "brs-lb8vxe",
+      "title": "纤维囊性变"
+    },
+    {
+      "type": "brs-gdr8y9",
+      "title": "硬化性腺病"
+    },
+    {
+      "type": "brs-q523q2",
+      "title": "放射状瘢痕"
+    },
+    {
+      "type": "brs-dx53qs",
+      "title": "导管内乳头状瘤"
+    },
+    {
+      "type": "brs-f7x28j",
+      "title": "乳腺错构瘤"
+    },
+    {
+      "type": "brs-8u2qk8",
+      "title": "积乳囊肿"
+    },
+    {
+      "type": "brs-7vpdv",
+      "title": "男性乳腺发育"
+    },
+    {
+      "type": "brs-ami8dl",
+      "title": "副乳"
+    },
+    {
+      "type": "brs-aw8x4e",
+      "title": "急性乳腺炎"
+    },
+    {
+      "type": "brs-537r9i",
+      "title": "乳腺脓肿"
+    },
+    {
+      "type": "brs-z186fb",
+      "title": "浆细胞性乳腺炎"
+    },
+    {
+      "type": "brs-gsao7i",
+      "title": "肉芽肿性乳腺炎"
+    },
+    {
+      "type": "brs-e73jdx",
+      "title": "乳腺结核"
+    },
+    {
+      "type": "brs-z64alq",
+      "title": "导管原位癌"
+    },
+    {
+      "type": "brs-gv4ec3",
+      "title": "浸润性导管癌"
+    },
+    {
+      "type": "brs-ogl8s3",
+      "title": "浸润性小叶癌"
+    },
+    {
+      "type": "brs-fvdfd3",
+      "title": "髓样癌"
+    },
+    {
+      "type": "brs-v6rb0o",
+      "title": "黏液癌"
+    },
+    {
+      "type": "brs-tibp2t",
+      "title": "炎性乳腺癌"
+    },
+    {
+      "type": "brs-paget",
+      "title": "Paget病"
+    },
+    {
+      "type": "brs-5uirpm",
+      "title": "叶状肿瘤"
+    },
+    {
+      "type": "brs-2zcnhy",
+      "title": "乳腺血管肉瘤"
+    },
+    {
+      "type": "brs-ieauyf",
+      "title": "乳腺淋巴瘤"
+    },
+    {
+      "type": "brs-mndza5",
+      "title": "乳腺转移瘤"
+    },
+    {
+      "type": "hem-5b0d59",
+      "title": "霍奇金淋巴瘤"
+    },
+    {
+      "type": "hem-b",
+      "title": "弥漫大B细胞淋巴瘤"
+    },
+    {
+      "type": "hem-i8sgjk",
+      "title": "滤泡性淋巴瘤"
+    },
+    {
+      "type": "hem-i7cgct",
+      "title": "套细胞淋巴瘤"
+    },
+    {
+      "type": "hem-burkitt",
+      "title": "Burkitt淋巴瘤"
+    },
+    {
+      "type": "hem-malt",
+      "title": "MALT淋巴瘤"
+    },
+    {
+      "type": "hem-b-2",
+      "title": "纵隔大B细胞淋巴瘤"
+    },
+    {
+      "type": "hem-yxqv6h",
+      "title": "原发中枢淋巴瘤"
+    },
+    {
+      "type": "hem-dpm959",
+      "title": "结外淋巴瘤(胃/肠/脾/骨/肺)"
+    },
+    {
+      "type": "hem-w8mfhc",
+      "title": "髓系肉瘤(绿色瘤)"
+    },
+    {
+      "type": "hem-nmp5wm",
+      "title": "白血病中枢浸润"
+    },
+    {
+      "type": "hem-u5xzi9",
+      "title": "孤立性浆细胞瘤"
+    },
+    {
+      "type": "hem-wv00n6",
+      "title": "髓外浆细胞瘤"
+    },
+    {
+      "type": "hem-x33fyi",
+      "title": "骨髓纤维化"
+    },
+    {
+      "type": "hem-xx150c",
+      "title": "髓外造血"
+    },
+    {
+      "type": "hem-plde55",
+      "title": "地中海贫血骨改变"
+    },
+    {
+      "type": "hem-yedvye",
+      "title": "含铁血黄素沉着"
+    },
+    {
+      "type": "hem-6y0sci",
+      "title": "戈谢病"
+    },
+    {
+      "type": "hem-ygzz6h",
+      "title": "脾肿大"
+    },
+    {
+      "type": "hem-i1jpc5",
+      "title": "脾梗死"
+    },
+    {
+      "type": "hem-6qqwnp",
+      "title": "脾脓肿"
+    },
+    {
+      "type": "hem-50k6oe",
+      "title": "脾淋巴瘤"
+    },
+    {
+      "type": "hem-castleman",
+      "title": "Castleman病"
+    },
+    {
+      "type": "hem-h71ddl",
+      "title": "朗格汉斯细胞组织细胞增生症"
+    },
+    {
+      "type": "hem-erdheim-chester",
+      "title": "Erdheim-Chester病"
+    },
+    {
+      "type": "hem-rosai-dorfman",
+      "title": "Rosai-Dorfman病"
+    },
+    {
+      "type": "hem-o9ngpr",
+      "title": "淋巴管瘤"
+    },
+    {
+      "type": "hem-dm67vm",
+      "title": "囊性水瘤"
+    },
+    {
+      "type": "hem-vbp6mg",
+      "title": "淋巴管平滑肌瘤病"
+    },
+    {
+      "type": "hem-7rjj7z",
+      "title": "淋巴水肿"
+    },
+    {
+      "type": "hem-b6nyl6",
+      "title": "乳糜胸"
+    },
+    {
+      "type": "hem-olyzi1",
+      "title": "乳糜腹"
+    },
+    {
+      "type": "sys-qddxvk",
+      "title": "全身多发转移瘤"
+    },
+    {
+      "type": "sys-vhfejo",
+      "title": "骨转移(成骨/溶骨/混合)"
+    },
+    {
+      "type": "sys-cfkm1c",
+      "title": "癌性淋巴管炎"
+    },
+    {
+      "type": "sys-85q6lp",
+      "title": "脑膜癌病"
+    },
+    {
+      "type": "sys-j3anjf",
+      "title": "腹膜转移癌"
+    },
+    {
+      "type": "sys-3gxf5w",
+      "title": "胸膜转移"
+    },
+    {
+      "type": "sys-mg7lpd",
+      "title": "原发灶不明转移癌"
+    },
+    {
+      "type": "sys-v028n5",
+      "title": "结节病"
+    },
+    {
+      "type": "sys-88q9dd",
+      "title": "播散性结核"
+    },
+    {
+      "type": "sys-igg4",
+      "title": "IgG4相关性疾病"
+    },
+    {
+      "type": "sys-h71ddl",
+      "title": "朗格汉斯细胞组织细胞增生症"
+    },
+    {
+      "type": "sys-h8t4x8",
+      "title": "系统性淀粉样变"
+    },
+    {
+      "type": "sys-yedvye",
+      "title": "含铁血黄素沉着"
+    },
+    {
+      "type": "sys-snu7je",
+      "title": "血色病"
+    },
+    {
+      "type": "sys-6y0sci",
+      "title": "戈谢病"
+    },
+    {
+      "type": "sys-5q0d66",
+      "title": "黏多糖贮积症"
+    },
+    {
+      "type": "sys-j8qi90",
+      "title": "痛风"
+    },
+    {
+      "type": "sys-wilson",
+      "title": "Wilson病"
+    },
+    {
+      "type": "sys-ow2p6a",
+      "title": "类风湿关节炎"
+    },
+    {
+      "type": "sys-29ascu",
+      "title": "硬皮病"
+    },
+    {
+      "type": "sys-9xkrzp",
+      "title": "大动脉炎"
+    },
+    {
+      "type": "sys-d21aiy",
+      "title": "巨细胞动脉炎"
+    },
+    {
+      "type": "sys-schd5w",
+      "title": "结节性多动脉炎"
+    },
+    {
+      "type": "sys-anca",
+      "title": "ANCA相关血管炎"
+    },
+    {
+      "type": "sys-fax8jf",
+      "title": "白塞病"
+    },
+    {
+      "type": "sys-bxg4ho",
+      "title": "脓毒性栓塞"
+    },
+    {
+      "type": "sys-99ej4l",
+      "title": "播散性真菌感染"
+    },
+    {
+      "type": "sys-3v5d6m",
+      "title": "粟粒性结核"
+    },
+    {
+      "type": "sys-blv5i4",
+      "title": "包虫病"
+    },
+    {
+      "type": "sys-8ed5st",
+      "title": "血吸虫病"
+    },
+    {
+      "type": "sys-na1j0l",
+      "title": "囊虫病"
+    },
+    {
+      "type": "sys-i-ii",
+      "title": "神经纤维瘤病I/II型"
+    },
+    {
+      "type": "sys-j75bo9",
+      "title": "结节性硬化"
+    },
+    {
+      "type": "sys-peutz-jeghers",
+      "title": "Peutz-Jeghers综合征"
+    },
+    {
+      "type": "sys-vk9q6r",
+      "title": "家族性腺瘤性息肉病"
+    }
+  ]
+}

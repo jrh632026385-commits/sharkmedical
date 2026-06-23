@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-06-23T23:26:24.157Z",
+  "maxGalleryImages": 20,
+  "minScores": {
+    "openi": 26,
+    "wikimedia": 16,
+    "radiopaediaCommons": 20
+  },
+  "sources": {
+    "openi": {
+      "name": "Open-i (NLM / PMC)",
+      "api": "https://openi.nlm.nih.gov/api/search",
+      "license": "PMC Open Access；须署名并查阅原文许可",
+      "status": "已接入自动补充"
+    },
+    "radiopaedia": {
+      "name": "Radiopaedia",
+      "url": "https://radiopaedia.org",
+      "license": "CC BY-NC-SA 3.0（非商业）；无批量 API",
+      "status": "Commons 镜像检索 + 手工检索链接",
+      "reason": "优先匹配已上传至 Wikimedia 的 Radiopaedia 图；其余见 manualSearch",
+      "manualSearch": [
+        {
+          "type": "tb",
+          "title": "脊柱结核",
+          "searchUrl": "https://radiopaedia.org/search?q=spine%20tuberculosis&scope=articles"
+        },
+        {
+          "type": "melorheostosis",
+          "title": "蜡油样骨病",
+          "searchUrl": "https://radiopaedia.org/search?q=Melorheostosis&scope=articles"
+        },
+        {
+          "type": "striata",
+          "title": "骨条纹症",
+          "searchUrl": "https://radiopaedia.org/search?q=Osteopathia%20Striata&scope=articles"
+        },
+        {
+          "type": "wdlps",
+          "title": "高分化脂肪肉瘤",
+          "searchUrl": "https://radiopaedia.org/search?q=Well-diff.%20Liposarcoma&scope=articles"
+        },
+        {
+          "type": "teres-minor",
+          "title": "小圆肌损伤",
+          "searchUrl": "https://radiopaedia.org/search?q=Teres%20Minor%20Tear&scope=articles"
+        },
+        {
+          "type": "enteropathic",
+          "title": "肠病性关节病",
+          "searchUrl": "https://radiopaedia.org/search?q=%E8%82%A0%E7%97%85%E6%80%A7%E5%85%B3%E8%8A%82%E7%97%85&scope=articles"
+        },
+        {
+          "type": "pmr",
+          "title": "风湿性多肌痛",
+          "searchUrl": "https://radiopaedia.org/search?q=%E9%A3%8E%E6%B9%BF%E6%80%A7%E5%A4%9A%E8%82%8C%E7%97%9B&scope=articles"
+        },
+        {
+          "type": "lyme",
+          "title": "莱姆关节炎",
+          "searchUrl": "https://radiopaedia.org/search?q=inflammation&scope=articles"
+        },
+        {
+          "type": "adhesive",
+          "title": "粘连性关节囊炎",
+          "searchUrl": "https://radiopaedia.org/search?q=inflammation&scope=articles"
+        },
+        {
+          "type": "tfcc",
+          "title": "三角纤维软骨复合体损伤",
+          "searchUrl": "https://radiopaedia.org/search?q=injury&scope=articles"
+        },
+        {
+          "type": "ups",
+          "title": "未分化多形性肉瘤",
+          "searchUrl": "https://radiopaedia.org/search?q=sarcoma&scope=articles"
+        },
+        {
+          "type": "soleus",
+          "title": "比目鱼肌损伤",
+          "searchUrl": "https://radiopaedia.org/search?q=injury&scope=articles"
+        },
+        {
+          "type": "snapping-hip",
+          "title": "弹响髋",
+          "searchUrl": "https://radiopaedia.org/search?q=%E5%BC%B9%E5%93%8D%E9%AB%8B&scope=articles"
+        },
+        {
+          "type": "itb",
+          "title": "髂胫束摩擦综合征",
+          "searchUrl": "https://radiopaedia.org/search?q=syndrome&scope=articles"
+        },
+        {
+          "type": "patellar-tend",
+          "title": "髌腱病",
+          "searchUrl": "https://radiopaedia.org/search?q=%E9%AB%8C%E8%85%B1%E7%97%85&scope=articles"
+        },
+        {
+          "type": "peroneal",
+          "title": "腓骨肌腱病",
+          "searchUrl": "https://radiopaedia.org/search?q=%E8%85%93%E9%AA%A8%E8%82%8C%E8%85%B1%E7%97%85&scope=articles"
+        },
+        {
+          "type": "fhl",
+          "title": "拇长屈肌腱病",
+          "searchUrl": "https://radiopaedia.org/search?q=%E6%8B%87%E9%95%BF%E5%B1%88%E8%82%8C%E8%85%B1%E7%97%85&scope=articles"
+        },
+        {
+          "type": "fdl",
+          "title": "趾长屈肌腱病",
+          "searchUrl": "https://radiopaedia.org/search?q=%E8%B6%BE%E9%95%BF%E5%B1%88%E8%82%8C%E8%85%B1%E7%97%85&scope=articles"
+        },
+        {
+          "type": "teres-major",
+          "title": "大圆肌损伤",
+          "searchUrl": "https://radiopaedia.org/search?q=injury&scope=articles"
+        },
+        {
+          "type": "forearm-flex",
+          "title": "前臂屈肌群劳损",
+          "searchUrl": "https://radiopaedia.org/search?q=%E5%89%8D%E8%87%82%E5%B1%88%E8%82%8C%E7%BE%A4%E5%8A%B3%E6%8D%9F&scope=articles"
+        },
+        {
+          "type": "forearm-ext",
+          "title": "前臂伸肌群劳损",
+          "searchUrl": "https://radiopaedia.org/search?q=%E5%89%8D%E8%87%82%E4%BC%B8%E8%82%8C%E7%BE%A4%E5%8A%B3%E6%8D%9F&scope=articles"
+        },
+        {
+          "type": "tennis-elbow",
+          "title": "网球肘",
+          "searchUrl": "https://radiopaedia.org/search?q=%E7%BD%91%E7%90%83%E8%82%98&scope=articles"
+        },
+        {
+          "type": "golfer-elbow",
+          "title": "高尔夫肘",
+          "searchUrl": "https://radiopaedia.org/search?q=%E9%AB%98%E5%B0%94%E5%A4%AB%E8%82%98&scope=articles"
+        },
+        {
+          "type": "ulnar-neuritis",
+          "title": "尺神经炎",
+          "searchUrl": "https://radiopaedia.org/search?q=inflammation&scope=articles"
+        },
+        {
+          "type": "radial-tunnel",
+          "title": "桡管综合征",
+          "searchUrl": "https://radiopaedia.org/search?q=syndrome&scope=articles"
+        },
+        {
+          "type": "trigger-finger",
+          "title": "扳机指",
+          "searchUrl": "https://radiopaedia.org/search?q=%E6%89%B3%E6%9C%BA%E6%8C%87&scope=articles"
+        },
+        {
+          "type": "plantar-fasc",
+          "title": "跖筋膜炎",
+          "searchUrl": "https://radiopaedia.org/search?q=inflammation&scope=articles"
+        },
+        {
+          "type": "tarsal-tunnel",
+          "title": "跗管综合征",
+          "searchUrl": "https://radiopaedia.org/search?q=syndrome&scope=articles"
+        },
+        {
+          "type": "sinus-tarsi",
+          "title": "窦道综合征",
+          "searchUrl": "https://radiopaedia.org/search?q=syndrome&scope=articles"
+        },
+        {
+          "type": "fibromyalgia",
+          "title": "纤维肌痛",
+          "searchUrl": "https://radiopaedia.org/search?q=%E7%BA%A4%E7%BB%B4%E8%82%8C%E7%97%9B&scope=articles"
+        }
+      ]
+    },
+    "openmrs": {
+      "name": "OpenMRS",
+      "url": "https://openmrs.org",
+      "status": "跳过",
+      "reason": "电子病历 + Orthanc PACS 集成，非公开可检索影像库"
+    },
+    "wikimedia": {
+      "name": "Wikimedia Commons",
+      "status": "已接入（严格病理匹配评分）"
+    }
+  },
+  "targetCount": 1243,
+  "emptyCount": 827
+}

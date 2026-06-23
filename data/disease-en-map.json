@@ -1,0 +1,4298 @@
+{
+  "knee": {
+    "en": "anterior cruciate ligament injury",
+    "title": "前交叉韧带损伤"
+  },
+  "hip": {
+    "en": "hip osteoarthritis",
+    "title": "髋关节骨关节炎"
+  },
+  "tumor": {
+    "en": "osteosarcoma",
+    "title": "骨肉瘤"
+  },
+  "spine": {
+    "en": "lumbar disc herniation",
+    "title": "腰椎间盘突出"
+  },
+  "wrist": {
+    "en": "scaphoid fracture",
+    "title": "舟骨骨折"
+  },
+  "shoulder": {
+    "en": "rotator cuff tear",
+    "title": "肩袖撕裂"
+  },
+  "ankle": {
+    "en": "ankle fracture dislocation",
+    "title": "踝关节骨折脱位"
+  },
+  "hand": {
+    "en": "rheumatoid arthritis",
+    "title": "类风湿性关节炎"
+  },
+  "infect": {
+    "en": "acute osteomyelitis",
+    "title": "急性骨髓炎"
+  },
+  "radius": {
+    "en": "distal radius fracture",
+    "title": "桡骨远端骨折"
+  },
+  "femneck": {
+    "en": "femoral neck fracture",
+    "title": "股骨颈骨折"
+  },
+  "vertfx": {
+    "en": "vertebral compression fracture",
+    "title": "椎体压缩骨折"
+  },
+  "meniscus": {
+    "en": "meniscus tear",
+    "title": "半月板撕裂"
+  },
+  "cervical": {
+    "en": "cervical spondylosis",
+    "title": "颈椎病"
+  },
+  "gout": {
+    "en": "gouty arthritis",
+    "title": "痛风性关节炎"
+  },
+  "avn": {
+    "en": "avascular necrosis of femoral head",
+    "title": "股骨头缺血坏死"
+  },
+  "gct": {
+    "en": "giant cell tumor of bone",
+    "title": "骨巨细胞瘤"
+  },
+  "osteochondroma": {
+    "en": "osteochondroma",
+    "title": "骨软骨瘤"
+  },
+  "hemangioma": {
+    "en": "vertebral body hemangioma",
+    "title": "椎体血管瘤"
+  },
+  "as": {
+    "en": "ankylosing spondylitis",
+    "title": "强直性脊柱炎"
+  },
+  "tb": {
+    "en": "spine tuberculosis",
+    "title": "脊柱结核"
+  },
+  "humerus": {
+    "en": "proximal humerus fracture",
+    "title": "肱骨近端骨折"
+  },
+  "clavicle": {
+    "en": "clavicle fracture",
+    "title": "锁骨骨折"
+  },
+  "pelvis": {
+    "en": "pelvic ring fracture",
+    "title": "骨盆环骨折"
+  },
+  "calcaneus": {
+    "en": "calcaneus fracture",
+    "title": "跟骨骨折"
+  },
+  "pcl": {
+    "en": "posterior cruciate ligament injury",
+    "title": "后交叉韧带损伤"
+  },
+  "elbow": {
+    "en": "elbow dislocation",
+    "title": "肘关节脱位"
+  },
+  "kneeoa": {
+    "en": "knee osteoarthritis",
+    "title": "膝关节骨关节炎"
+  },
+  "osteoporosis": {
+    "en": "osteoporosis",
+    "title": "骨质疏松症"
+  },
+  "achilles": {
+    "en": "Achilles tendon inflammation calcaneus spur",
+    "title": "跟腱炎/跟骨骨刺"
+  },
+  "ewing": {
+    "en": "Ewing sarcoma",
+    "title": "尤文肉瘤"
+  },
+  "myeloma": {
+    "en": "multiple myeloma",
+    "title": "多发性骨髓瘤"
+  },
+  "metastasis": {
+    "en": "metastasis",
+    "title": "骨转移瘤"
+  },
+  "septic": {
+    "en": "inflammation",
+    "title": "化脓性关节炎"
+  },
+  "ddh": {
+    "en": "developmental hip developmental",
+    "title": "发育性髋关节发育不良"
+  },
+  "mcl": {
+    "en": "injury",
+    "title": "内侧副韧带损伤"
+  },
+  "tibplat": {
+    "en": "fracture",
+    "title": "胫骨平台骨折"
+  },
+  "patella": {
+    "en": "fracture",
+    "title": "髌骨骨折"
+  },
+  "stressfx": {
+    "en": "fracture",
+    "title": "应力性骨折"
+  },
+  "monteggia": {
+    "en": "fracture Monteggia",
+    "title": "Monteggia 骨折"
+  },
+  "lisfranc": {
+    "en": "injury Lisfranc",
+    "title": "Lisfranc 损伤"
+  },
+  "talus": {
+    "en": "fracture",
+    "title": "距骨骨折"
+  },
+  "spinalstenosis": {
+    "en": "spinal canal stenosis",
+    "title": "腰椎管狭窄"
+  },
+  "handoaa": {
+    "en": "osteoarthritis",
+    "title": "手部骨关节炎"
+  },
+  "hipimp": {
+    "en": "syndrome",
+    "title": "髋臼撞击综合征"
+  },
+  "psa": {
+    "en": "inflammation",
+    "title": "银屑病关节炎"
+  },
+  "chondrosarcoma": {
+    "en": "chondrosarcoma",
+    "title": "软骨肉瘤"
+  },
+  "perthes": {
+    "en": "Perthes",
+    "title": "Perthes 病"
+  },
+  "ostoidoma": {
+    "en": "Osteoid Osteoma",
+    "title": "骨样骨瘤"
+  },
+  "ostoblastoma": {
+    "en": "Osteoblastoma",
+    "title": "骨母细胞瘤"
+  },
+  "fibrodysplasia": {
+    "en": "Fibrous Dysplasia",
+    "title": "纤维结构不良"
+  },
+  "abc": {
+    "en": "Aneurysmal Bone Cyst",
+    "title": "动脉瘤样骨囊肿"
+  },
+  "ubc": {
+    "en": "Unicameral Bone Cyst",
+    "title": "单纯性骨囊肿"
+  },
+  "enchondroma": {
+    "en": "Enchondroma",
+    "title": "内生软骨瘤"
+  },
+  "chondroblastoma": {
+    "en": "Chondroblastoma",
+    "title": "软骨母细胞瘤"
+  },
+  "nof": {
+    "en": "Non-Ossifying Fibroma",
+    "title": "非骨化性纤维瘤"
+  },
+  "lchbone": {
+    "en": "Langerhans Cell Histiocytosis",
+    "title": "骨嗜酸细胞肉芽肿"
+  },
+  "chordoma": {
+    "en": "Chordoma",
+    "title": "脊索瘤"
+  },
+  "parosteo": {
+    "en": "Parosteal Osteosarcoma",
+    "title": "旁骨性骨肉瘤"
+  },
+  "telosteo": {
+    "en": "Telangiectatic OS",
+    "title": "血管扩张性骨肉瘤"
+  },
+  "periosteo": {
+    "en": "Periosteal Osteosarcoma",
+    "title": "骨膜性骨肉瘤"
+  },
+  "lgc-osteo": {
+    "en": "Low-grade Central OS",
+    "title": "低度中心性骨肉瘤"
+  },
+  "plasmacytoma": {
+    "en": "Solitary Plasmacytoma",
+    "title": "孤立性浆细胞瘤"
+  },
+  "lymphomabone": {
+    "en": "Primary Bone Lymphoma",
+    "title": "骨原发性淋巴瘤"
+  },
+  "adamantinoma": {
+    "en": "Adamantinoma",
+    "title": "牙釉质瘤"
+  },
+  "fibrosarcomabone": {
+    "en": "Fibrosarcoma of Bone",
+    "title": "骨纤维肉瘤"
+  },
+  "hemangioendo": {
+    "en": "Epithelioid Hemangioendothelioma",
+    "title": "骨上皮样血管内皮瘤"
+  },
+  "cc-chondro": {
+    "en": "Clear Cell Chondrosarcoma",
+    "title": "透明细胞软骨肉瘤"
+  },
+  "dediff-chondro": {
+    "en": "Dedifferentiated Chondrosarcoma",
+    "title": "去分化软骨肉瘤"
+  },
+  "mesench-chondro": {
+    "en": "Mesenchymal Chondrosarcoma",
+    "title": "间叶性软骨肉瘤"
+  },
+  "peri-chondro": {
+    "en": "Periosteal Chondrosarcoma",
+    "title": "骨膜性软骨肉瘤"
+  },
+  "osteoma": {
+    "en": "Osteoma",
+    "title": "骨瘤"
+  },
+  "melorheostosis": {
+    "en": "Melorheostosis",
+    "title": "蜡油样骨病"
+  },
+  "osteopoikilosis": {
+    "en": "Osteopoikilosis",
+    "title": "骨斑点症"
+  },
+  "striata": {
+    "en": "Osteopathia Striata",
+    "title": "骨条纹症"
+  },
+  "cortdesmoid": {
+    "en": "Cortical Desmoid",
+    "title": "皮质旁纤维瘤"
+  },
+  "iolipoma": {
+    "en": "Intraosseous Lipoma",
+    "title": "骨内脂肪瘤"
+  },
+  "browntumor": {
+    "en": "Brown Tumor",
+    "title": "棕色瘤"
+  },
+  "skelet-hemang": {
+    "en": "Skeletal Hemangioma",
+    "title": "骨血管瘤"
+  },
+  "fd-mazabraud": {
+    "en": "Mazabraud Syndrome",
+    "title": "Mazabraud 综合征"
+  },
+  "ossifying-fibroma": {
+    "en": "Ossifying Fibroma",
+    "title": "骨化性纤维瘤"
+  },
+  "paget": {
+    "en": "Paget Disease of Bone",
+    "title": "Paget 骨病"
+  },
+  "polyostotic-fd": {
+    "en": "Polyostotic FD",
+    "title": "多骨性纤维结构不良"
+  },
+  "hme": {
+    "en": "Hereditary Multiple Exostoses",
+    "title": "遗传性多发外生骨疣"
+  },
+  "maffucci": {
+    "en": "Maffucci Syndrome",
+    "title": "Maffucci 综合征"
+  },
+  "galeazzi": {
+    "en": "Galeazzi Fracture",
+    "title": "Galeazzi 骨折"
+  },
+  "bennett": {
+    "en": "Bennett Fracture",
+    "title": "Bennett 骨折"
+  },
+  "boxer": {
+    "en": "Boxer's Fracture",
+    "title": "拳击手骨折"
+  },
+  "scapholunate": {
+    "en": "Scapholunate Dissociation",
+    "title": "舟月韧带损伤"
+  },
+  "triquetrum": {
+    "en": "Triquetrum Fracture",
+    "title": "三角骨骨折"
+  },
+  "jefferson": {
+    "en": "Jefferson Fracture",
+    "title": "Jefferson 骨折"
+  },
+  "hangman": {
+    "en": "Hangman Fracture",
+    "title": "Hangman 骨折"
+  },
+  "chance": {
+    "en": "Chance Fracture",
+    "title": "Chance 骨折"
+  },
+  "odontoid": {
+    "en": "Odontoid Fracture",
+    "title": "齿状突骨折"
+  },
+  "supracondylar": {
+    "en": "Supracondylar Humerus Fx",
+    "title": "肱骨髁上骨折"
+  },
+  "olecranon": {
+    "en": "Olecranon Fracture",
+    "title": "尺骨鹰嘴骨折"
+  },
+  "radialhead": {
+    "en": "Radial Head Fracture",
+    "title": "桡骨头骨折"
+  },
+  "mason": {
+    "en": "Mason Fracture",
+    "title": "Mason 骨折"
+  },
+  "essex": {
+    "en": "Essex-Lopresti Injury",
+    "title": "Essex-Lopresti 损伤"
+  },
+  "hillsachs": {
+    "en": "Hill-Sachs Lesion",
+    "title": "Hill-Sachs 损伤"
+  },
+  "bankart": {
+    "en": "Bankart Lesion",
+    "title": "Bankart 损伤"
+  },
+  "pilon": {
+    "en": "Pilon Fracture",
+    "title": "Pilon 骨折"
+  },
+  "maisonneuve": {
+    "en": "Maisonneuve Fracture",
+    "title": "Maisonneuve 骨折"
+  },
+  "segond": {
+    "en": "Segond Fracture",
+    "title": "Segond 骨折"
+  },
+  "tibialshaft": {
+    "en": "Tibial Shaft Fracture",
+    "title": "胫骨骨干骨折"
+  },
+  "proxfibula": {
+    "en": "Proximal Fibula Fracture",
+    "title": "腓骨近端骨折"
+  },
+  "burst-lumbar": {
+    "en": "Lumbar Burst Fracture",
+    "title": "腰椎爆裂骨折"
+  },
+  "hemarthrosis": {
+    "en": "Hemophilic Arthropathy",
+    "title": "血友病性关节病"
+  },
+  "charcot": {
+    "en": "Neuropathic Arthropathy",
+    "title": "夏科关节病"
+  },
+  "dish": {
+    "en": "DISH",
+    "title": "弥漫性特发性骨肥厚"
+  },
+  "synov-chondro": {
+    "en": "Synovial Chondromatosis",
+    "title": "滑膜软骨瘤病"
+  },
+  "pvns": {
+    "en": "PVNS",
+    "title": "色素沉着绒毛结节性滑膜炎"
+  },
+  "sapho": {
+    "en": "SAPHO Syndrome",
+    "title": "SAPHO 综合征"
+  },
+  "erosive-oa": {
+    "en": "Erosive Osteoarthritis",
+    "title": "侵蚀性骨关节炎"
+  },
+  "shoulder-oa": {
+    "en": "Shoulder Osteoarthritis",
+    "title": "肩关节骨关节炎"
+  },
+  "ankle-oa": {
+    "en": "Ankle Osteoarthritis",
+    "title": "踝关节骨关节炎"
+  },
+  "oci": {
+    "en": "Osteitis Condensans Ilii",
+    "title": "髂骨致密性骨炎"
+  },
+  "lipoma": {
+    "en": "Lipoma",
+    "title": "脂肪瘤"
+  },
+  "angiolipoma": {
+    "en": "Angiolipoma",
+    "title": "血管脂肪瘤"
+  },
+  "schwannoma": {
+    "en": "Schwannoma",
+    "title": "神经鞘瘤"
+  },
+  "neurofibroma": {
+    "en": "Neurofibroma",
+    "title": "神经纤维瘤"
+  },
+  "hemangioma-st": {
+    "en": "Soft Tissue Hemangioma",
+    "title": "软组织血管瘤"
+  },
+  "lymphangioma": {
+    "en": "Lymphangioma",
+    "title": "淋巴管瘤"
+  },
+  "ganglion": {
+    "en": "Ganglion Cyst",
+    "title": "腱鞘囊肿"
+  },
+  "baker": {
+    "en": "Baker Cyst",
+    "title": "腘窝囊肿"
+  },
+  "myositis-oss": {
+    "en": "Myositis Ossificans",
+    "title": "骨化性肌炎"
+  },
+  "elastofibroma": {
+    "en": "Elastofibroma Dorsi",
+    "title": "弹力纤维瘤"
+  },
+  "lipoblastoma": {
+    "en": "Lipoblastoma",
+    "title": "脂肪母细胞瘤"
+  },
+  "fibroma-sheath": {
+    "en": "Fibroma of Tendon Sheath",
+    "title": "腱鞘纤维瘤"
+  },
+  "soft-chondroma": {
+    "en": "Soft Tissue Chondroma",
+    "title": "软组织软骨瘤"
+  },
+  "granular-cell": {
+    "en": "Granular Cell Tumor",
+    "title": "颗粒细胞瘤"
+  },
+  "leiomyoma": {
+    "en": "Leiomyoma",
+    "title": "平滑肌瘤"
+  },
+  "myxoma": {
+    "en": "Soft Tissue Myxoma",
+    "title": "软组织黏液瘤"
+  },
+  "tgct": {
+    "en": "Tenosynovial Giant Cell Tumor",
+    "title": "腱鞘巨细胞瘤"
+  },
+  "nodular-fasciitis": {
+    "en": "Nodular Fasciitis",
+    "title": "结节性筋膜炎"
+  },
+  "desmoid": {
+    "en": "Desmoid / Aggressive Fibromatosis",
+    "title": "侵袭性纤维瘤病"
+  },
+  "alt": {
+    "en": "Atypical Lipomatous Tumor",
+    "title": "非典型脂肪瘤"
+  },
+  "wdlps": {
+    "en": "Well-diff. Liposarcoma",
+    "title": "高分化脂肪肉瘤"
+  },
+  "myxoid-lps": {
+    "en": "Myxoid Liposarcoma",
+    "title": "黏液样脂肪肉瘤"
+  },
+  "synovialsarcoma": {
+    "en": "Synovial Sarcoma",
+    "title": "滑膜肉瘤"
+  },
+  "dfsp": {
+    "en": "DFSP",
+    "title": "隆突性皮肤纤维肉瘤"
+  },
+  "asps": {
+    "en": "Alveolar Soft Part Sarcoma",
+    "title": "腺泡状软组织肉瘤"
+  },
+  "ewing-extra": {
+    "en": "Extraskeletal Ewing Sarcoma",
+    "title": "骨外尤文肉瘤"
+  },
+  "hemangiopericytoma": {
+    "en": "Hemangiopericytoma",
+    "title": "血管外皮瘤"
+  },
+  "sft": {
+    "en": "Solitary Fibrous Tumor",
+    "title": "孤立性纤维瘤"
+  },
+  "plantar-fibroma": {
+    "en": "Plantar Fibromatosis",
+    "title": "足底纤维瘤病"
+  },
+  "quad-tear": {
+    "en": "Quadriceps Tear",
+    "title": "股四头肌撕裂"
+  },
+  "hamstring": {
+    "en": "Hamstring Injury",
+    "title": "腘绳肌损伤"
+  },
+  "calf-tear": {
+    "en": "Gastrocnemius Tear",
+    "title": "腓肠肌撕裂"
+  },
+  "adductor": {
+    "en": "Adductor Tear",
+    "title": "内收肌撕裂"
+  },
+  "gluteus-min": {
+    "en": "Gluteus Minimus Tear",
+    "title": "臀小肌损伤"
+  },
+  "subscap": {
+    "en": "Subscapularis Tear",
+    "title": "肩胛下肌撕裂"
+  },
+  "infraspinatus": {
+    "en": "Infraspinatus Tear",
+    "title": "冈下肌撕裂"
+  },
+  "teres-minor": {
+    "en": "Teres Minor Tear",
+    "title": "小圆肌损伤"
+  },
+  "deltoid": {
+    "en": "Deltoid Tear",
+    "title": "三角肌撕裂"
+  },
+  "biceps-long": {
+    "en": "Biceps Long Head Rupture",
+    "title": "肱二头肌长头腱断裂"
+  },
+  "biceps-dist": {
+    "en": "Distal Biceps Rupture",
+    "title": "肱二头肌腱远端断裂"
+  },
+  "triceps": {
+    "en": "Triceps Tendon Rupture",
+    "title": "肱三头肌腱断裂"
+  },
+  "pec-major": {
+    "en": "Pectoralis Major Tear",
+    "title": "胸大肌撕裂"
+  },
+  "extensor": {
+    "en": "Extensor Tendon Tear",
+    "title": "伸肌腱撕裂"
+  },
+  "plantaris": {
+    "en": "Plantaris Tear",
+    "title": "跖肌撕裂"
+  },
+  "supraspinatus-calc": {
+    "en": "Calcific Tendinitis",
+    "title": "钙化性肌腱炎"
+  },
+  "mallet": {
+    "en": "Mallet Finger",
+    "title": "槌状指"
+  },
+  "volar-plate": {
+    "en": "Volar Plate Injury",
+    "title": "掌侧板损伤"
+  },
+  "central-slip": {
+    "en": "Central Slip Injury",
+    "title": "中央束损伤"
+  },
+  "mortons": {
+    "en": "Morton Neuroma",
+    "title": "Morton 神经瘤"
+  },
+  "os-trigonum": {
+    "en": "Os Trigonum Impingement",
+    "title": "距骨后突/os trigonum"
+  },
+  "stress-tib-ant": {
+    "en": "Shin Splints / MTSS",
+    "title": "胫前肌综合征"
+  },
+  "compartment": {
+    "en": "Compartment Syndrome",
+    "title": "筋膜室综合征"
+  },
+  "myositis": {
+    "en": "Pyomyositis",
+    "title": "感染性肌炎"
+  },
+  "rhabdo-trauma": {
+    "en": "Traumatic Rhabdomyolysis",
+    "title": "创伤性横纹肌溶解"
+  },
+  "denervation": {
+    "en": "Denervation Atrophy",
+    "title": "神经源性肌萎缩"
+  },
+  "tendon-xanthoma": {
+    "en": "Tendon Xanthoma",
+    "title": "腱黄瘤"
+  },
+  "spondylolysis": {
+    "en": "Spondylolysis",
+    "title": "椎弓峡部裂"
+  },
+  "spondylolisthesis": {
+    "en": "Spondylolisthesis",
+    "title": "腰椎滑脱"
+  },
+  "schmorl": {
+    "en": "Schmorl Node",
+    "title": "Schmorl 结节"
+  },
+  "modic": {
+    "en": "Modic Endplate Changes",
+    "title": "Modic 终板改变"
+  },
+  "thoracic-disc": {
+    "en": "Thoracic Disc Herniation",
+    "title": "胸椎间盘突出"
+  },
+  "syringomyelia": {
+    "en": "Syringomyelia",
+    "title": "脊髓空洞症"
+  },
+  "chiari": {
+    "en": "Chiari Malformation",
+    "title": "Chiari 畸形"
+  },
+  "atlantoaxial": {
+    "en": "Atlantoaxial Instability",
+    "title": "寰枢不稳"
+  },
+  "odontoid-hypo": {
+    "en": "Odontoid Hypoplasia",
+    "title": "齿状突发育不全"
+  },
+  "discitis": {
+    "en": "Discitis",
+    "title": "椎间盘炎"
+  },
+  "epidural-abscess": {
+    "en": "Spinal Epidural Abscess",
+    "title": "硬膜外脓肿"
+  },
+  "meniscoid": {
+    "en": "Cervical Disc Protrusion",
+    "title": "颈椎间盘疝"
+  },
+  "oss-flavum": {
+    "en": "Ossification of Ligamentum Flavum",
+    "title": "黄韧带骨化"
+  },
+  "opll": {
+    "en": "OPLL",
+    "title": "后纵韧带骨化"
+  },
+  "blount": {
+    "en": "Blount Disease",
+    "title": "Blount 病"
+  },
+  "rickets": {
+    "en": "Rickets",
+    "title": "佝偻病"
+  },
+  "acetabular-dysplasia": {
+    "en": "Adult Hip Dysplasia",
+    "title": "髋臼发育不良(成人)"
+  },
+  "transient-osteoporosis": {
+    "en": "Transient Osteoporosis",
+    "title": "一过性骨质疏松"
+  },
+  "bone-marrow-edema": {
+    "en": "Bone Marrow Edema Syndrome",
+    "title": "骨髓水肿综合征"
+  },
+  "subchondral-insufficiency": {
+    "en": "Subchondral Insufficiency Fx",
+    "title": "软骨下功能不全骨折"
+  },
+  "osteonecrosis-knee": {
+    "en": "Spontaneous Osteonecrosis of Knee",
+    "title": "股骨髁坏死"
+  },
+  "osteochondritis": {
+    "en": "Osteochondritis Dissecans",
+    "title": "剥脱性骨软骨炎"
+  },
+  "meniscal-cyst": {
+    "en": "Meniscal Cyst",
+    "title": "半月板囊肿"
+  },
+  "discoid-meniscus": {
+    "en": "Discoid Meniscus",
+    "title": "盘状半月板"
+  },
+  "acl-ganglion": {
+    "en": "ACL Ganglion Cyst",
+    "title": "ACL 腱鞘囊肿"
+  },
+  "slap": {
+    "en": "SLAP Tear",
+    "title": "SLAP 损伤"
+  },
+  "ac-joint": {
+    "en": "AC Joint Arthropathy",
+    "title": "肩锁关节病"
+  },
+  "glenohumeral-oa": {
+    "en": "Glenohumeral OA",
+    "title": "盂肱关节骨关节炎"
+  },
+  "elbow-oa": {
+    "en": "Elbow Osteoarthritis",
+    "title": "肘关节骨关节炎"
+  },
+  "radioulnar-synostosis": {
+    "en": "Radioulnar Synostosis",
+    "title": "桡尺骨融合"
+  },
+  "madelung": {
+    "en": "Madelung Deformity",
+    "title": "Madelung 畸形"
+  },
+  "kienbock": {
+    "en": "Kienböck Disease",
+    "title": "Kienböck 病"
+  },
+  "preiser": {
+    "en": "Preiser Disease",
+    "title": "Preiser 病"
+  },
+  "loose-body-knee": {
+    "en": "Knee Loose Bodies",
+    "title": "膝关节游离体"
+  },
+  "osgood": {
+    "en": "Osgood-Schlatter",
+    "title": "Osgood-Schlatter 病"
+  },
+  "sinding": {
+    "en": "Sinding-Larsen-Johansson",
+    "title": "Sinding-Larsen 病"
+  },
+  "patellofemoral": {
+    "en": "Patellofemoral Syndrome",
+    "title": "髌股关节病"
+  },
+  "hip-labral": {
+    "en": "Acetabular Labral Tear",
+    "title": "髋盂唇撕裂"
+  },
+  "facet-arthropathy": {
+    "en": "Facet Arthropathy",
+    "title": "小关节病变"
+  },
+  "reactive": {
+    "en": "inflammation",
+    "title": "反应性关节炎"
+  },
+  "sle-arth": {
+    "en": "inflammation",
+    "title": "狼疮性关节炎"
+  },
+  "still": {
+    "en": "Still",
+    "title": "成人 Still 病"
+  },
+  "lyme": {
+    "en": "inflammation",
+    "title": "莱姆关节炎"
+  },
+  "adhesive": {
+    "en": "inflammation",
+    "title": "粘连性关节囊炎"
+  },
+  "bicipital": {
+    "en": "inflammation",
+    "title": "肱二头肌长头腱炎"
+  },
+  "tfcc": {
+    "en": "injury",
+    "title": "三角纤维软骨复合体损伤"
+  },
+  "pleo-lps": {
+    "en": "sarcoma",
+    "title": "多形性脂肪肉瘤"
+  },
+  "leiomyosarcoma": {
+    "en": "sarcoma",
+    "title": "平滑肌肉瘤"
+  },
+  "rhabdo": {
+    "en": "sarcoma",
+    "title": "横纹肌肉瘤"
+  },
+  "ups": {
+    "en": "sarcoma",
+    "title": "未分化多形性肉瘤"
+  },
+  "fibrosarcoma-st": {
+    "en": "sarcoma",
+    "title": "软组织纤维肉瘤"
+  },
+  "angiosarcoma": {
+    "en": "sarcoma",
+    "title": "血管肉瘤"
+  },
+  "epithelioid-sarcoma": {
+    "en": "sarcoma",
+    "title": "上皮样肉瘤"
+  },
+  "clearcell-sarcoma": {
+    "en": "sarcoma",
+    "title": "透明细胞肉瘤"
+  },
+  "myxofibrosarcoma": {
+    "en": "sarcoma",
+    "title": "黏液纤维肉瘤"
+  },
+  "lgfm": {
+    "en": "sarcoma",
+    "title": "低度纤维黏液样肉瘤"
+  },
+  "extraskeletal-osteo": {
+    "en": "osteosarcoma",
+    "title": "骨外骨肉瘤"
+  },
+  "infantile-fibrosarcoma": {
+    "en": "sarcoma",
+    "title": "婴儿型纤维肉瘤"
+  },
+  "kaposi": {
+    "en": "sarcoma",
+    "title": "卡波西肉瘤"
+  },
+  "soleus": {
+    "en": "injury",
+    "title": "比目鱼肌损伤"
+  },
+  "hip-flexor": {
+    "en": "injury",
+    "title": "髂腰肌损伤"
+  },
+  "piriformis": {
+    "en": "syndrome",
+    "title": "梨状肌综合征"
+  },
+  "itb": {
+    "en": "syndrome",
+    "title": "髂胫束摩擦综合征"
+  },
+  "biceps-fem": {
+    "en": "injury",
+    "title": "股二头肌损伤"
+  },
+  "lat-dorsi": {
+    "en": "tear",
+    "title": "背阔肌撕裂"
+  },
+  "teres-major": {
+    "en": "injury",
+    "title": "大圆肌损伤"
+  },
+  "supraspinatus": {
+    "en": "supraspinatus",
+    "title": "冈上肌肌腱病"
+  },
+  "adhesive-caps": {
+    "en": "shoulder inflammation",
+    "title": "肩关节囊炎"
+  },
+  "ulnar-neuritis": {
+    "en": "inflammation",
+    "title": "尺神经炎"
+  },
+  "radial-tunnel": {
+    "en": "syndrome",
+    "title": "桡管综合征"
+  },
+  "dequervain": {
+    "en": "inflammation",
+    "title": "德奎尔万腱鞘炎"
+  },
+  "plantar-fasc": {
+    "en": "inflammation",
+    "title": "跖筋膜炎"
+  },
+  "tarsal-tunnel": {
+    "en": "syndrome",
+    "title": "跗管综合征"
+  },
+  "sinus-tarsi": {
+    "en": "syndrome",
+    "title": "窦道综合征"
+  },
+  "rectus-femoris": {
+    "en": "injury",
+    "title": "股直肌损伤"
+  },
+  "sartorius": {
+    "en": "injury",
+    "title": "缝匠肌损伤"
+  },
+  "sacroiliitis-infl": {
+    "en": "inflammation inflammation",
+    "title": "炎性骶髂关节炎"
+  },
+  "hip-synovitis": {
+    "en": "hip synovitis",
+    "title": "髋关节滑膜炎"
+  },
+  "plica": {
+    "en": "syndrome",
+    "title": "膝滑膜皱襞综合征"
+  },
+  "shoulder-instability": {
+    "en": "shoulder",
+    "title": "肩关节不稳"
+  },
+  "tfcc-degen": {
+    "en": "TFCC",
+    "title": "TFCC 退变"
+  },
+  "acute-sinusitis": {
+    "en": "acute sinusitis",
+    "title": "急性鼻窦炎"
+  },
+  "chronic-sinusitis": {
+    "en": "chronic sinusitis",
+    "title": "慢性鼻窦炎"
+  },
+  "nasal-polyp": {
+    "en": "nasal polyp",
+    "title": "鼻息肉"
+  },
+  "laryngeal-cancer": {
+    "en": "laryngeal carcinoma",
+    "title": "喉癌"
+  },
+  "subglottic-stenosis": {
+    "en": "stenosis",
+    "title": "声门下狭窄"
+  },
+  "epiglottitis": {
+    "en": "inflammation",
+    "title": "会厌炎"
+  },
+  "peritonsillar-abscess": {
+    "en": "abscess",
+    "title": "扁桃体周脓肿"
+  },
+  "tracheal-stenosis": {
+    "en": "stenosis",
+    "title": "气管狭窄"
+  },
+  "tracheal-tumor": {
+    "en": "tumor",
+    "title": "气管肿瘤"
+  },
+  "tracheobronchomalacia": {
+    "en": "bronchial",
+    "title": "气管支气管软化"
+  },
+  "tracheobronchial-ossification": {
+    "en": "bronchial",
+    "title": "骨化性气管支气管病"
+  },
+  "rp-airway": {
+    "en": "inflammation",
+    "title": "复发性多软骨炎(气道)"
+  },
+  "tracheobronchial-fb": {
+    "en": "bronchial",
+    "title": "气管支气管异物"
+  },
+  "tracheoesophageal-fistula": {
+    "en": "esophageal",
+    "title": "气管食管瘘"
+  },
+  "lobar-pneumonia": {
+    "en": "pneumonia",
+    "title": "大叶性肺炎"
+  },
+  "bronchopneumonia": {
+    "en": "bronchial pneumonia",
+    "title": "支气管肺炎"
+  },
+  "klebsiella-pneumonia": {
+    "en": "pneumonia",
+    "title": "克雷伯杆菌肺炎"
+  },
+  "staph-pneumonia": {
+    "en": "pneumonia",
+    "title": "葡萄球菌肺炎"
+  },
+  "pseudomonas-pneumonia": {
+    "en": "pneumonia",
+    "title": "铜绿假单胞菌肺炎"
+  },
+  "lung-abscess": {
+    "en": "lung abscess",
+    "title": "肺脓肿"
+  },
+  "necrotizing-pneumonia": {
+    "en": "necrosis pneumonia",
+    "title": "坏死性肺炎"
+  },
+  "primary-tb": {
+    "en": "lung tuberculosis",
+    "title": "原发型肺结核"
+  },
+  "miliary-tb": {
+    "en": "lung tuberculosis",
+    "title": "血行播散型肺结核"
+  },
+  "postprimary-tb": {
+    "en": "lung tuberculosis",
+    "title": "继发型肺结核"
+  },
+  "tuberculoma": {
+    "en": "tuberculosis",
+    "title": "结核球"
+  },
+  "endobronchial-tb": {
+    "en": "bronchial tuberculosis",
+    "title": "气管支气管结核"
+  },
+  "tb-pleurisy": {
+    "en": "tuberculosis inflammation",
+    "title": "结核性胸膜炎"
+  },
+  "ntm": {
+    "en": "tuberculosis",
+    "title": "非结核分枝杆菌病"
+  },
+  "influenza-pneumonia": {
+    "en": "pneumonia",
+    "title": "流感病毒性肺炎"
+  },
+  "covid19-pneumonia": {
+    "en": "pneumonia",
+    "title": "新冠肺炎"
+  },
+  "cmv-pneumonia": {
+    "en": "pneumonia",
+    "title": "巨细胞病毒肺炎"
+  },
+  "adenovirus-pneumonia": {
+    "en": "pneumonia",
+    "title": "腺病毒肺炎"
+  },
+  "invasive-aspergillosis": {
+    "en": "lung",
+    "title": "侵袭性肺曲霉病"
+  },
+  "chronic-pulmonary-aspergillosis": {
+    "en": "chronic lung",
+    "title": "慢性肺曲霉病"
+  },
+  "abpa": {
+    "en": "bronchial lung",
+    "title": "变应性支气管肺曲霉病"
+  },
+  "pulmonary-cryptococcosis": {
+    "en": "lung",
+    "title": "肺隐球菌病"
+  },
+  "pcp": {
+    "en": "lung pneumonia",
+    "title": "肺孢子菌肺炎"
+  },
+  "histoplasmosis": {
+    "en": "lung",
+    "title": "肺组织胞浆菌病"
+  },
+  "mucormycosis": {
+    "en": "lung",
+    "title": "肺毛霉病"
+  },
+  "mycoplasma-pneumonia": {
+    "en": "pneumonia",
+    "title": "支原体肺炎"
+  },
+  "legionella-pneumonia": {
+    "en": "pneumonia",
+    "title": "军团菌肺炎"
+  },
+  "pulmonary-echinococcosis": {
+    "en": "lung",
+    "title": "肺包虫病"
+  },
+  "paragonimiasis": {
+    "en": "lung",
+    "title": "肺吸虫病"
+  },
+  "chronic-bronchitis": {
+    "en": "chronic bronchial inflammation",
+    "title": "慢性支气管炎"
+  },
+  "emphysema": {
+    "en": "lung",
+    "title": "肺气肿"
+  },
+  "copd": {
+    "en": "chronic lung",
+    "title": "慢性阻塞性肺疾病"
+  },
+  "asthma": {
+    "en": "bronchial",
+    "title": "支气管哮喘"
+  },
+  "bronchiectasis": {
+    "en": "bronchiectasis",
+    "title": "支气管扩张症"
+  },
+  "obliterative-bronchiolitis": {
+    "en": "bronchial inflammation",
+    "title": "闭塞性细支气管炎"
+  },
+  "diffuse-panbronchiolitis": {
+    "en": "bronchial inflammation",
+    "title": "弥漫性泛细支气管炎"
+  },
+  "alpha1-antitrypsin": {
+    "en": "pancreatic",
+    "title": "α1-抗胰蛋白酶缺乏症"
+  },
+  "ipf-uip": {
+    "en": "pulmonary fibrosis UIP",
+    "title": "特发性肺纤维化(UIP)"
+  },
+  "nsip": {
+    "en": "interstitial pneumonia",
+    "title": "非特异性间质性肺炎"
+  },
+  "cop": {
+    "en": "pneumonia",
+    "title": "隐源性机化性肺炎"
+  },
+  "aip": {
+    "en": "acute interstitial pneumonia",
+    "title": "急性间质性肺炎"
+  },
+  "dip": {
+    "en": "interstitial pneumonia",
+    "title": "脱屑性间质性肺炎"
+  },
+  "rb-ild": {
+    "en": "bronchial inflammation ILD",
+    "title": "呼吸性细支气管炎相关性ILD"
+  },
+  "lip": {
+    "en": "interstitial pneumonia",
+    "title": "淋巴细胞性间质性肺炎"
+  },
+  "ppfe": {
+    "en": "lung hyperplasia",
+    "title": "特发性胸膜肺弹力纤维增生症"
+  },
+  "sarcoidosis": {
+    "en": "sarcoidosis",
+    "title": "结节病"
+  },
+  "hypersensitivity-pneumonitis": {
+    "en": "pneumonia",
+    "title": "过敏性肺炎"
+  },
+  "gpa": {
+    "en": "vasculitis",
+    "title": "肉芽肿性多血管炎"
+  },
+  "egpa": {
+    "en": "vasculitis",
+    "title": "嗜酸性肉芽肿性多血管炎"
+  },
+  "mpa": {
+    "en": "vasculitis",
+    "title": "显微镜下多血管炎"
+  },
+  "goodpasture": {
+    "en": "lung hemorrhage renal inflammation syndrome",
+    "title": "肺出血-肾炎综合征"
+  },
+  "ctd-ild": {
+    "en": "lung",
+    "title": "结缔组织病相关性肺病"
+  },
+  "loffler-syndrome": {
+    "en": "lung",
+    "title": "单纯性肺嗜酸性粒细胞增多症"
+  },
+  "acute-eosinophilic-pneumonia": {
+    "en": "acute pneumonia",
+    "title": "急性嗜酸性粒细胞性肺炎"
+  },
+  "chronic-eosinophilic-pneumonia": {
+    "en": "chronic pneumonia",
+    "title": "慢性嗜酸性粒细胞性肺炎"
+  },
+  "silicosis": {
+    "en": "lung",
+    "title": "矽肺"
+  },
+  "coal-workers-pneumoconiosis": {
+    "en": "lung",
+    "title": "煤工尘肺"
+  },
+  "asbestosis": {
+    "en": "lung",
+    "title": "石棉肺"
+  },
+  "berylliosis": {
+    "en": "lung",
+    "title": "铍肺"
+  },
+  "eaa": {
+    "en": "lung inflammation",
+    "title": "外源性过敏性肺泡炎"
+  },
+  "hard-metal-lung": {
+    "en": "lung",
+    "title": "硬金属肺病"
+  },
+  "evali": {
+    "en": "lung injury",
+    "title": "电子烟相关肺损伤"
+  },
+  "acute-pe": {
+    "en": "acute pulmonary embolism",
+    "title": "急性肺栓塞"
+  },
+  "cteph": {
+    "en": "chronic thrombosis embolism lung",
+    "title": "慢性血栓栓塞性肺动脉高压"
+  },
+  "pulmonary-hypertension": {
+    "en": "lung",
+    "title": "肺动脉高压"
+  },
+  "pavm": {
+    "en": "lung arteriovenous malformation",
+    "title": "肺动静脉畸形"
+  },
+  "idiopathic-pulmonary-hemosiderosis": {
+    "en": "lung",
+    "title": "特发性肺含铁血黄素沉着症"
+  },
+  "fat-embolism": {
+    "en": "embolism syndrome",
+    "title": "脂肪栓塞综合征"
+  },
+  "central-lung-cancer": {
+    "en": "lung carcinoma",
+    "title": "中央型肺癌"
+  },
+  "peripheral-lung-cancer": {
+    "en": "lung carcinoma",
+    "title": "周围型肺癌"
+  },
+  "lepidic-adenocarcinoma": {
+    "en": "carcinoma",
+    "title": "贴壁生长型腺癌"
+  },
+  "sclc": {
+    "en": "lung carcinoma",
+    "title": "小细胞肺癌"
+  },
+  "lung-squamous-cancer": {
+    "en": "lung carcinoma",
+    "title": "肺鳞癌"
+  },
+  "pulmonary-carcinoid": {
+    "en": "lung carcinoma",
+    "title": "肺类癌"
+  },
+  "pulmonary-lymphoma": {
+    "en": "lung lymphoma",
+    "title": "肺淋巴瘤"
+  },
+  "sarcomatoid-carcinoma": {
+    "en": "lung sarcoma carcinoma",
+    "title": "肺肉瘤样癌"
+  },
+  "lung-metastasis": {
+    "en": "lung metastasis",
+    "title": "肺转移瘤"
+  },
+  "solitary-pulmonary-nodule": {
+    "en": "lung",
+    "title": "孤立性肺结节"
+  },
+  "pulmonary-hamartoma": {
+    "en": "lung",
+    "title": "肺错构瘤"
+  },
+  "sclerosing-pneumocytoma": {
+    "en": "lung hemangioma",
+    "title": "肺硬化性血管瘤"
+  },
+  "inflammatory-myofibroblastic-tumor": {
+    "en": "pneumonia blastoma",
+    "title": "肺炎性肌纤维母细胞瘤"
+  },
+  "pneumothorax": {
+    "en": "pneumothorax",
+    "title": "气胸"
+  },
+  "tension-pneumothorax": {
+    "en": "pneumothorax",
+    "title": "张力性气胸"
+  },
+  "pleural-effusion": {
+    "en": "pleural effusion",
+    "title": "胸腔积液"
+  },
+  "solitary-fibrous-tumor-pleura": {
+    "en": "tumor",
+    "title": "孤立性纤维性肿瘤"
+  },
+  "thymoma": {
+    "en": "adenoma",
+    "title": "胸腺瘤"
+  },
+  "thymic-carcinoma": {
+    "en": "carcinoma",
+    "title": "胸腺癌"
+  },
+  "thymic-cyst": {
+    "en": "cyst",
+    "title": "胸腺囊肿"
+  },
+  "mediastinal-teratoma": {
+    "en": "mediastinal",
+    "title": "纵隔畸胎瘤"
+  },
+  "mediastinal-lymphoma": {
+    "en": "mediastinal lymphoma",
+    "title": "纵隔淋巴瘤"
+  },
+  "mediastinal-gct": {
+    "en": "mediastinal",
+    "title": "纵隔生殖细胞瘤"
+  },
+  "neurogenic-tumor-mediastinum": {
+    "en": "tumor",
+    "title": "神经源性肿瘤"
+  },
+  "bronchogenic-cyst": {
+    "en": "bronchial cyst",
+    "title": "支气管源性囊肿"
+  },
+  "pericardial-cyst": {
+    "en": "pericardial cyst",
+    "title": "心包囊肿"
+  },
+  "pneumomediastinum": {
+    "en": "mediastinal",
+    "title": "纵隔气肿"
+  },
+  "fibrosing-mediastinitis": {
+    "en": "mediastinal inflammation",
+    "title": "纤维性纵隔炎"
+  },
+  "bochdalek-hernia": {
+    "en": "diaphragmatic hernia Bochdalek",
+    "title": "膈疝(Bochdalek)"
+  },
+  "hiatal-hernia": {
+    "en": "esophageal",
+    "title": "食管裂孔疝"
+  },
+  "cpam": {
+    "en": "congenital lung malformation",
+    "title": "先天性肺气道畸形"
+  },
+  "pulmonary-sequestration": {
+    "en": "lung",
+    "title": "肺隔离症"
+  },
+  "pulmonary-hypoplasia": {
+    "en": "lung developmental",
+    "title": "肺发育不全"
+  },
+  "bronchial-atresia": {
+    "en": "bronchial",
+    "title": "支气管闭锁"
+  },
+  "congenital-lobar-emphysema": {
+    "en": "congenital lung",
+    "title": "先天性大叶性肺气肿"
+  },
+  "swyer-james": {
+    "en": "syndrome Swyer-James",
+    "title": "Swyer-James综合征"
+  },
+  "pulmonary-contusion": {
+    "en": "lung",
+    "title": "肺挫伤"
+  },
+  "pulmonary-laceration": {
+    "en": "lung",
+    "title": "肺裂伤"
+  },
+  "tracheobronchial-injury": {
+    "en": "bronchial",
+    "title": "气管支气管断裂"
+  },
+  "traumatic-diaphragmatic-hernia": {
+    "en": "diaphragmatic hernia",
+    "title": "创伤性膈疝"
+  },
+  "radiation-pneumonitis": {
+    "en": "pneumonia",
+    "title": "放射性肺炎"
+  },
+  "drug-induced-lung-disease": {
+    "en": "lung injury",
+    "title": "药物性肺损伤"
+  },
+  "post-transplant-bos": {
+    "en": "lung",
+    "title": "肺移植后排斥"
+  },
+  "ards": {
+    "en": "acute syndrome",
+    "title": "急性呼吸窘迫综合征"
+  },
+  "cardiogenic-pulmonary-edema": {
+    "en": "cardiac lung edema",
+    "title": "心源性肺水肿"
+  },
+  "noncardiogenic-pulmonary-edema": {
+    "en": "cardiac lung edema",
+    "title": "非心源性肺水肿"
+  },
+  "pulmonary-alveolar-proteinosis": {
+    "en": "lung",
+    "title": "肺泡蛋白沉积症"
+  },
+  "plch": {
+    "en": "lung hyperplasia",
+    "title": "肺朗格汉斯细胞组织细胞增生症"
+  },
+  "acute-respiratory-failure": {
+    "en": "acute",
+    "title": "急性呼吸衰竭"
+  },
+  "chronic-respiratory-failure": {
+    "en": "chronic",
+    "title": "慢性呼吸衰竭"
+  },
+  "dig-sialolithiasis": {
+    "en": "calculus",
+    "title": "涎腺结石"
+  },
+  "dig-acute-sialadenitis": {
+    "en": "acute inflammation",
+    "title": "急性涎腺炎"
+  },
+  "dig-chronic-sialadenitis": {
+    "en": "chronic inflammation",
+    "title": "慢性涎腺炎"
+  },
+  "dig-pleomorphic-adenoma": {
+    "en": "adenoma",
+    "title": "涎腺多形性腺瘤"
+  },
+  "dig-warthin-tumor": {
+    "en": "Warthin",
+    "title": "腮腺Warthin瘤"
+  },
+  "dig-salivary-carcinoma": {
+    "en": "carcinoma",
+    "title": "涎腺癌"
+  },
+  "dig-tongue-cancer": {
+    "en": "carcinoma",
+    "title": "舌癌"
+  },
+  "dig-floor-mouth-cancer": {
+    "en": "carcinoma",
+    "title": "口底癌"
+  },
+  "dig-peritonsillar-abscess": {
+    "en": "abscess",
+    "title": "扁桃体周脓肿"
+  },
+  "dig-retropharyngeal-abscess": {
+    "en": "pharyngeal abscess",
+    "title": "咽后脓肿"
+  },
+  "dig-reflux-esophagitis": {
+    "en": "esophageal inflammation",
+    "title": "反流性食管炎"
+  },
+  "dig-eosinophilic-esophagitis": {
+    "en": "esophageal inflammation",
+    "title": "嗜酸性食管炎"
+  },
+  "dig-infectious-esophagitis": {
+    "en": "infection esophageal inflammation",
+    "title": "感染性食管炎(念珠菌/疱疹)"
+  },
+  "dig-caustic-esophagitis": {
+    "en": "esophageal inflammation",
+    "title": "腐蚀性食管炎"
+  },
+  "dig-barrett-esophagus": {
+    "en": "esophageal Barrett",
+    "title": "Barrett食管"
+  },
+  "dig-diffuse-esophageal-spasm": {
+    "en": "esophageal",
+    "title": "弥漫性食管痉挛"
+  },
+  "dig-scleroderma-esophagus": {
+    "en": "esophageal",
+    "title": "硬皮病食管"
+  },
+  "dig-hiatal-hernia": {
+    "en": "esophageal",
+    "title": "食管裂孔疝(滑动型/食管旁型)"
+  },
+  "dig-zenker-diverticulum": {
+    "en": "diverticulum Zenker",
+    "title": "Zenker憩室"
+  },
+  "dig-epiphrenic-diverticulum": {
+    "en": "diverticulum",
+    "title": "膈上憩室"
+  },
+  "dig-esophageal-web": {
+    "en": "esophageal",
+    "title": "食管蹼"
+  },
+  "dig-schatzki-ring": {
+    "en": "Schatzki",
+    "title": "Schatzki环"
+  },
+  "dig-esophageal-cancer": {
+    "en": "esophageal carcinoma",
+    "title": "食管癌"
+  },
+  "dig-esophageal-leiomyoma": {
+    "en": "esophageal",
+    "title": "食管平滑肌瘤"
+  },
+  "dig-esophageal-gist": {
+    "en": "esophageal",
+    "title": "食管间质瘤"
+  },
+  "dig-esophageal-varices": {
+    "en": "esophageal",
+    "title": "食管静脉曲张"
+  },
+  "dig-esophageal-fb": {
+    "en": "esophageal",
+    "title": "食管异物"
+  },
+  "dig-boerhaave": {
+    "en": "esophageal perforation Boerhaave",
+    "title": "食管穿孔(Boerhaave综合征)"
+  },
+  "dig-mallory-weiss": {
+    "en": "syndrome Mallory-Weiss",
+    "title": "Mallory-Weiss综合征"
+  },
+  "dig-acute-gastritis": {
+    "en": "acute gastritis",
+    "title": "急性胃炎"
+  },
+  "dig-chronic-atrophic-gastritis": {
+    "en": "chronic gastritis",
+    "title": "慢性萎缩性胃炎"
+  },
+  "dig-erosive-gastritis": {
+    "en": "gastritis",
+    "title": "糜烂性胃炎"
+  },
+  "dig-gastric-ulcer": {
+    "en": "gastric ulcer",
+    "title": "胃溃疡"
+  },
+  "dig-duodenal-ulcer": {
+    "en": "duodenal",
+    "title": "十二指肠溃疡"
+  },
+  "dig-gastric-cancer": {
+    "en": "carcinoma",
+    "title": "胃癌"
+  },
+  "dig-early-gastric-cancer": {
+    "en": "carcinoma",
+    "title": "早期胃癌"
+  },
+  "dig-gastric-malt-lymphoma": {
+    "en": "lymphoma MALT",
+    "title": "胃淋巴瘤(MALT)"
+  },
+  "dig-gastric-gist": {
+    "en": "GIST",
+    "title": "胃间质瘤(GIST)"
+  },
+  "dig-gastric-net": {
+    "en": "tumor",
+    "title": "胃神经内分泌肿瘤"
+  },
+  "dig-gastric-polyp": {
+    "en": "polyp",
+    "title": "胃息肉"
+  },
+  "dig-fundic-gland-polyp": {
+    "en": "polyp",
+    "title": "胃底腺息肉"
+  },
+  "dig-gastric-volvulus": {
+    "en": "torsion",
+    "title": "胃扭转"
+  },
+  "dig-duodenal-diverticulum": {
+    "en": "duodenal diverticulum",
+    "title": "十二指肠憩室"
+  },
+  "dig-duodenal-atresia-stomach": {
+    "en": "duodenal",
+    "title": "十二指肠闭锁"
+  },
+  "dig-crohn-disease": {
+    "en": "Crohn",
+    "title": "克罗恩病"
+  },
+  "dig-intestinal-tb": {
+    "en": "tuberculosis",
+    "title": "肠结核"
+  },
+  "dig-radiation-enteritis": {
+    "en": "inflammation",
+    "title": "放射性肠炎"
+  },
+  "dig-eosinophilic-gastroenteritis": {
+    "en": "inflammation",
+    "title": "嗜酸性胃肠炎"
+  },
+  "dig-mechanical-obstruction": {
+    "en": "bowel obstruction",
+    "title": "机械性肠梗阻"
+  },
+  "dig-paralytic-ileus": {
+    "en": "bowel obstruction",
+    "title": "麻痹性肠梗阻"
+  },
+  "dig-small-bowel-volvulus": {
+    "en": "torsion",
+    "title": "小肠扭转"
+  },
+  "dig-smas": {
+    "en": "syndrome",
+    "title": "肠系膜上动脉综合征"
+  },
+  "dig-meckel-diverticulum": {
+    "en": "diverticulum Meckel",
+    "title": "Meckel憩室"
+  },
+  "dig-gallstone-ileus": {
+    "en": "gallstone bowel obstruction",
+    "title": "胆石性肠梗阻"
+  },
+  "dig-ischemic-enteropathy": {
+    "en": "ischemia",
+    "title": "缺血性肠病"
+  },
+  "dig-mesenteric-ischemia": {
+    "en": "ischemia",
+    "title": "肠系膜缺血"
+  },
+  "dig-small-bowel-adenocarcinoma": {
+    "en": "carcinoma",
+    "title": "小肠腺癌"
+  },
+  "dig-small-bowel-lymphoma": {
+    "en": "lymphoma",
+    "title": "小肠淋巴瘤"
+  },
+  "dig-small-bowel-carcinoid": {
+    "en": "carcinoma",
+    "title": "小肠类癌"
+  },
+  "dig-small-bowel-gist": {
+    "en": "GIST",
+    "title": "GIST"
+  },
+  "dig-ulcerative-colitis": {
+    "en": "ulcerative colitis",
+    "title": "溃疡性结肠炎"
+  },
+  "dig-crohn-colitis": {
+    "en": "Crohn inflammation",
+    "title": "克罗恩结肠炎"
+  },
+  "dig-ischemic-colitis": {
+    "en": "ischemia inflammation",
+    "title": "缺血性结肠炎"
+  },
+  "dig-pseudomembranous-colitis": {
+    "en": "inflammation",
+    "title": "伪膜性肠炎"
+  },
+  "dig-diverticulitis": {
+    "en": "diverticulum inflammation",
+    "title": "憩室炎"
+  },
+  "dig-radiation-proctitis": {
+    "en": "inflammation",
+    "title": "放射性直肠炎"
+  },
+  "dig-colorectal-cancer": {
+    "en": "rectal cancer",
+    "title": "结直肠癌"
+  },
+  "dig-colonic-adenoma": {
+    "en": "adenoma polyp",
+    "title": "结肠腺瘤性息肉"
+  },
+  "dig-fap": {
+    "en": "adenoma polyp FAP",
+    "title": "家族性腺瘤性息肉病(FAP)"
+  },
+  "dig-colonic-lipoma": {
+    "en": "lipoma",
+    "title": "结肠脂肪瘤"
+  },
+  "dig-appendiceal-mucocele": {
+    "en": "cyst",
+    "title": "阑尾黏液囊肿"
+  },
+  "dig-appendiceal-carcinoid": {
+    "en": "carcinoma",
+    "title": "阑尾类癌"
+  },
+  "dig-acute-appendicitis": {
+    "en": "acute appendicitis",
+    "title": "急性阑尾炎"
+  },
+  "dig-sigmoid-volvulus": {
+    "en": "torsion",
+    "title": "乙状结肠扭转"
+  },
+  "dig-cecal-volvulus": {
+    "en": "torsion",
+    "title": "盲肠扭转"
+  },
+  "dig-colorectal-obstruction": {
+    "en": "bowel obstruction",
+    "title": "肠梗阻"
+  },
+  "dig-pneumatosis-cystoides": {
+    "en": "cyst",
+    "title": "肠气囊肿症"
+  },
+  "dig-fatty-liver": {
+    "en": "liver",
+    "title": "脂肪肝"
+  },
+  "dig-cirrhosis": {
+    "en": "cirrhosis",
+    "title": "肝硬化"
+  },
+  "dig-wilson-disease": {
+    "en": "liver Wilson",
+    "title": "肝豆状核变性(Wilson病)"
+  },
+  "dig-budd-chiari": {
+    "en": "syndrome",
+    "title": "布加综合征"
+  },
+  "dig-portal-vein-thrombosis": {
+    "en": "thrombosis",
+    "title": "门静脉血栓"
+  },
+  "dig-hepatic-infarction": {
+    "en": "liver infarction",
+    "title": "肝梗死"
+  },
+  "dig-hepatic-hemangioma": {
+    "en": "liver hemangioma",
+    "title": "肝血管瘤"
+  },
+  "dig-hepatic-cyst": {
+    "en": "liver cyst",
+    "title": "肝囊肿"
+  },
+  "dig-polycystic-liver": {
+    "en": "liver",
+    "title": "多囊肝"
+  },
+  "dig-fnh": {
+    "en": "liver hyperplasia FNH",
+    "title": "肝局灶性结节性增生(FNH)"
+  },
+  "dig-hepatic-adenoma": {
+    "en": "liver adenoma",
+    "title": "肝细胞腺瘤"
+  },
+  "dig-hepatic-abscess": {
+    "en": "liver abscess",
+    "title": "肝脓肿"
+  },
+  "dig-hepatic-echinococcosis": {
+    "en": "liver",
+    "title": "肝包虫病"
+  },
+  "dig-hepatic-tb": {
+    "en": "liver tuberculosis",
+    "title": "肝结核"
+  },
+  "dig-hcc": {
+    "en": "liver carcinoma HCC",
+    "title": "肝细胞癌(HCC)"
+  },
+  "dig-cholangiocarcinoma": {
+    "en": "liver biliary carcinoma",
+    "title": "肝内胆管细胞癌"
+  },
+  "dig-hepatic-metastasis": {
+    "en": "liver metastasis",
+    "title": "肝转移瘤"
+  },
+  "dig-hepatoblastoma": {
+    "en": "liver blastoma",
+    "title": "肝母细胞瘤"
+  },
+  "dig-hepatic-angiosarcoma": {
+    "en": "liver sarcoma",
+    "title": "肝血管肉瘤"
+  },
+  "dig-cholelithiasis": {
+    "en": "biliary calculus",
+    "title": "胆囊结石"
+  },
+  "dig-acute-cholecystitis": {
+    "en": "acute cholecystitis",
+    "title": "急性胆囊炎"
+  },
+  "dig-chronic-cholecystitis": {
+    "en": "chronic cholecystitis",
+    "title": "慢性胆囊炎"
+  },
+  "dig-emphysematous-cholecystitis": {
+    "en": "cholecystitis",
+    "title": "气肿性胆囊炎"
+  },
+  "dig-choledocholithiasis": {
+    "en": "biliary calculus",
+    "title": "胆总管结石"
+  },
+  "dig-cholangitis": {
+    "en": "acute biliary inflammation",
+    "title": "急性化脓性胆管炎"
+  },
+  "dig-gb-empyema": {
+    "en": "biliary",
+    "title": "胆囊积脓"
+  },
+  "dig-gallbladder-polyp": {
+    "en": "biliary polyp",
+    "title": "胆囊息肉"
+  },
+  "dig-adenomyomatosis": {
+    "en": "biliary",
+    "title": "胆囊腺肌症"
+  },
+  "dig-psc": {
+    "en": "biliary inflammation",
+    "title": "原发性硬化性胆管炎"
+  },
+  "dig-mirizzi": {
+    "en": "syndrome Mirizzi",
+    "title": "Mirizzi综合征"
+  },
+  "dig-gallbladder-cancer": {
+    "en": "biliary carcinoma",
+    "title": "胆囊癌"
+  },
+  "dig-cholangiocarcinoma-extra": {
+    "en": "biliary carcinoma",
+    "title": "胆管癌(肝门部/远端)"
+  },
+  "dig-periampullary-cancer": {
+    "en": "carcinoma",
+    "title": "壶腹周围癌"
+  },
+  "dig-choledochal-cyst": {
+    "en": "congenital biliary cyst",
+    "title": "先天性胆管囊肿"
+  },
+  "dig-caroli": {
+    "en": "Caroli",
+    "title": "Caroli病"
+  },
+  "dig-biliary-atresia": {
+    "en": "biliary",
+    "title": "胆道闭锁"
+  },
+  "dig-acute-pancreatitis": {
+    "en": "acute pancreatitis",
+    "title": "急性胰腺炎"
+  },
+  "dig-chronic-pancreatitis": {
+    "en": "chronic pancreatitis",
+    "title": "慢性胰腺炎"
+  },
+  "dig-autoimmune-pancreatitis": {
+    "en": "pancreatitis",
+    "title": "自身免疫性胰腺炎"
+  },
+  "dig-groove-pancreatitis": {
+    "en": "pancreatitis",
+    "title": "沟槽状胰腺炎"
+  },
+  "dig-pancreatic-pseudocyst": {
+    "en": "pancreatic cyst",
+    "title": "胰腺假性囊肿"
+  },
+  "dig-serous-cystadenoma": {
+    "en": "adenoma",
+    "title": "浆液性囊腺瘤"
+  },
+  "dig-mucinous-cystadenoma": {
+    "en": "adenoma",
+    "title": "黏液性囊腺瘤"
+  },
+  "dig-ipmn": {
+    "en": "tumor IPMN",
+    "title": "导管内乳头状黏液性肿瘤(IPMN)"
+  },
+  "dig-spn": {
+    "en": "SPN",
+    "title": "实性假乳头状瘤(SPN)"
+  },
+  "dig-pancreatic-adenocarcinoma": {
+    "en": "pancreatic carcinoma",
+    "title": "胰腺导管腺癌"
+  },
+  "dig-pancreatic-net": {
+    "en": "pancreatic tumor",
+    "title": "胰腺神经内分泌肿瘤"
+  },
+  "dig-pancreatic-metastasis": {
+    "en": "pancreatic metastasis",
+    "title": "胰腺转移瘤"
+  },
+  "dig-pancreas-divisum": {
+    "en": "pancreatic",
+    "title": "胰腺分裂"
+  },
+  "dig-annular-pancreas": {
+    "en": "pancreatic",
+    "title": "环状胰腺"
+  },
+  "dig-splenomegaly": {
+    "en": "spleen",
+    "title": "脾肿大"
+  },
+  "dig-splenic-infarction": {
+    "en": "spleen infarction",
+    "title": "脾梗死"
+  },
+  "dig-splenic-rupture": {
+    "en": "spleen rupture",
+    "title": "脾破裂"
+  },
+  "dig-splenic-cyst": {
+    "en": "spleen cyst",
+    "title": "脾囊肿"
+  },
+  "dig-splenic-hemangioma": {
+    "en": "spleen hemangioma",
+    "title": "脾血管瘤"
+  },
+  "dig-splenic-hamartoma": {
+    "en": "spleen",
+    "title": "脾错构瘤"
+  },
+  "dig-splenic-lymphoma": {
+    "en": "spleen lymphoma",
+    "title": "脾淋巴瘤"
+  },
+  "dig-splenic-metastasis": {
+    "en": "spleen metastasis",
+    "title": "脾转移瘤"
+  },
+  "dig-accessory-spleen": {
+    "en": "spleen",
+    "title": "副脾"
+  },
+  "dig-splenic-abscess": {
+    "en": "spleen abscess",
+    "title": "脾脓肿"
+  },
+  "dig-peritonitis": {
+    "en": "inflammation",
+    "title": "腹膜炎"
+  },
+  "dig-tb-peritonitis": {
+    "en": "tuberculosis inflammation",
+    "title": "结核性腹膜炎"
+  },
+  "dig-peritoneal-carcinomatosis": {
+    "en": "carcinoma",
+    "title": "腹膜转移癌"
+  },
+  "dig-mesenteric-panniculitis": {
+    "en": "inflammation",
+    "title": "肠系膜脂膜炎"
+  },
+  "dig-mesenteric-cyst": {
+    "en": "cyst",
+    "title": "肠系膜囊肿"
+  },
+  "dig-omental-infarction": {
+    "en": "infarction",
+    "title": "网膜梗死"
+  },
+  "dig-retroperitoneal-tumor": {
+    "en": "tumor",
+    "title": "腹膜后肿瘤(脂肪肉瘤/平滑肌肉瘤)"
+  },
+  "dig-gi-perforation": {
+    "en": "perforation",
+    "title": "消化道穿孔(气腹)"
+  },
+  "dig-sma-embolism": {
+    "en": "embolism",
+    "title": "肠系膜动脉栓塞"
+  },
+  "dig-smv-thrombosis": {
+    "en": "thrombosis",
+    "title": "肠系膜静脉血栓"
+  },
+  "dig-ischemic-bowel-necrosis": {
+    "en": "ischemia necrosis",
+    "title": "缺血性肠坏死"
+  },
+  "dig-abdominal-aortic-aneurysm": {
+    "en": "aortic",
+    "title": "腹主动脉瘤"
+  },
+  "dig-perianal-abscess": {
+    "en": "abscess",
+    "title": "肛周脓肿"
+  },
+  "dig-rectal-cancer": {
+    "en": "rectal cancer",
+    "title": "直肠癌"
+  },
+  "dig-anal-cancer": {
+    "en": "carcinoma",
+    "title": "肛管癌"
+  },
+  "dig-rectus-hematoma": {
+    "en": "hematoma",
+    "title": "腹直肌血肿"
+  },
+  "dig-diaphragmatic-hernia": {
+    "en": "diaphragmatic hernia Bochdalek/Morgagni",
+    "title": "膈疝(Bochdalek/Morgagni)"
+  },
+  "dig-traumatic-diaphragmatic-hernia": {
+    "en": "diaphragmatic hernia",
+    "title": "创伤性膈疝"
+  },
+  "dig-esophageal-atresia-tef": {
+    "en": "esophageal esophageal",
+    "title": "食管闭锁与气管食管瘘"
+  },
+  "dig-congenital-hps": {
+    "en": "stenosis",
+    "title": "肥厚性幽门狭窄"
+  },
+  "dig-midgut-volvulus": {
+    "en": "torsion",
+    "title": "中肠扭转"
+  },
+  "dig-duodenal-atresia-ped": {
+    "en": "duodenal",
+    "title": "十二指肠闭锁"
+  },
+  "dig-hirschsprung": {
+    "en": "congenital Hirschsprung",
+    "title": "先天性巨结肠(Hirschsprung病)"
+  },
+  "dig-nec": {
+    "en": "necrosis inflammation",
+    "title": "坏死性小肠结肠炎"
+  },
+  "dig-biliary-atresia-ped": {
+    "en": "biliary",
+    "title": "胆道闭锁"
+  },
+  "dig-amebic-liver-abscess": {
+    "en": "liver abscess",
+    "title": "阿米巴肝脓肿"
+  },
+  "dig-abdominal-tuberculosis": {
+    "en": "tuberculosis",
+    "title": "腹腔结核"
+  },
+  "dig-hepatic-laceration": {
+    "en": "liver contusion laceration",
+    "title": "肝挫裂伤"
+  },
+  "dig-pancreatic-trauma": {
+    "en": "pancreatic",
+    "title": "胰腺创伤"
+  },
+  "dig-postop-bile-leak": {
+    "en": "biliary",
+    "title": "术后胆漏"
+  },
+  "circ-stable-angina": {
+    "en": "cardiac",
+    "title": "稳定型心绞痛"
+  },
+  "circ-acute-mi": {
+    "en": "acute myocardial infarction",
+    "title": "急性心肌梗死"
+  },
+  "circ-old-mi": {
+    "en": "old cardiac infarction",
+    "title": "陈旧性心肌梗死"
+  },
+  "circ-coronary-stenosis": {
+    "en": "stenosis",
+    "title": "冠状动脉狭窄"
+  },
+  "circ-myocardial-ischemia": {
+    "en": "cardiac ischemia",
+    "title": "心肌缺血"
+  },
+  "circ-coronary-aneurysm": {
+    "en": "aneurysm",
+    "title": "冠状动脉瘤"
+  },
+  "circ-myocardial-bridge": {
+    "en": "cardiac",
+    "title": "心肌桥"
+  },
+  "circ-ischemic-cmp": {
+    "en": "ischemia cardiac",
+    "title": "缺血性心肌病"
+  },
+  "circ-dcm": {
+    "en": "dilatation cardiac",
+    "title": "扩张型心肌病"
+  },
+  "circ-hcm": {
+    "en": "cardiac",
+    "title": "肥厚型心肌病"
+  },
+  "circ-rcm": {
+    "en": "cardiac",
+    "title": "限制型心肌病"
+  },
+  "circ-arvc": {
+    "en": "cardiac cardiac ARVC",
+    "title": "致心律失常性右室心肌病(ARVC)"
+  },
+  "circ-ncm": {
+    "en": "cardiac",
+    "title": "心肌致密化不全"
+  },
+  "circ-takotsubo": {
+    "en": "cardiac Takotsubo",
+    "title": "应激性心肌病(Takotsubo)"
+  },
+  "circ-myocarditis": {
+    "en": "cardiac inflammation",
+    "title": "心肌炎"
+  },
+  "circ-amyloid": {
+    "en": "cardiac",
+    "title": "心肌淀粉样变"
+  },
+  "circ-cardiac-sarcoid": {
+    "en": "cardiac sarcoidosis",
+    "title": "心脏结节病"
+  },
+  "circ-iron-overload": {
+    "en": "cardiac",
+    "title": "心肌铁过载"
+  },
+  "circ-ms": {
+    "en": "mitral stenosis",
+    "title": "二尖瓣狭窄"
+  },
+  "circ-mr": {
+    "en": "mitral",
+    "title": "二尖瓣关闭不全"
+  },
+  "circ-as": {
+    "en": "aortic stenosis",
+    "title": "主动脉瓣狭窄"
+  },
+  "circ-ar": {
+    "en": "aortic",
+    "title": "主动脉瓣关闭不全"
+  },
+  "circ-tricuspid": {
+    "en": "tricuspid",
+    "title": "三尖瓣病变"
+  },
+  "circ-ps": {
+    "en": "lung stenosis",
+    "title": "肺动脉瓣狭窄"
+  },
+  "circ-bicuspid-aov": {
+    "en": "aortic",
+    "title": "二叶式主动脉瓣"
+  },
+  "circ-endocarditis": {
+    "en": "infection cardiac inflammation",
+    "title": "感染性心内膜炎(赘生物)"
+  },
+  "circ-mvp": {
+    "en": "mitral",
+    "title": "二尖瓣脱垂"
+  },
+  "circ-acute-pericarditis": {
+    "en": "acute pericardial inflammation",
+    "title": "急性心包炎"
+  },
+  "circ-constrictive-pericarditis": {
+    "en": "pericardial inflammation",
+    "title": "缩窄性心包炎"
+  },
+  "circ-pericardial-effusion": {
+    "en": "pericardial effusion",
+    "title": "心包积液"
+  },
+  "circ-cardiac-tamponade": {
+    "en": "cardiac",
+    "title": "心脏压塞"
+  },
+  "circ-pericardial-cyst": {
+    "en": "pericardial cyst",
+    "title": "心包囊肿"
+  },
+  "circ-pericardial-defect": {
+    "en": "pericardial",
+    "title": "心包缺如"
+  },
+  "circ-pericardial-calcification": {
+    "en": "pericardial",
+    "title": "心包钙化"
+  },
+  "circ-pericardial-tumor": {
+    "en": "pericardial tumor",
+    "title": "心包肿瘤"
+  },
+  "circ-atrial-myxoma": {
+    "en": "cardiac",
+    "title": "心房黏液瘤"
+  },
+  "circ-papillary-fibroelastoma": {
+    "en": "fibroma",
+    "title": "乳头状弹力纤维瘤"
+  },
+  "circ-rhabdomyoma": {
+    "en": "cardiac",
+    "title": "心脏横纹肌瘤"
+  },
+  "circ-cardiac-fibroma": {
+    "en": "cardiac fibroma",
+    "title": "心脏纤维瘤"
+  },
+  "circ-angiosarcoma": {
+    "en": "cardiac sarcoma",
+    "title": "心脏血管肉瘤"
+  },
+  "circ-cardiac-metastasis": {
+    "en": "cardiac metastasis",
+    "title": "心脏转移瘤"
+  },
+  "circ-cardiac-thrombus": {
+    "en": "cardiac thrombosis",
+    "title": "心腔内血栓"
+  },
+  "circ-asd": {
+    "en": "ASD",
+    "title": "房间隔缺损(ASD)"
+  },
+  "circ-vsd": {
+    "en": "VSD",
+    "title": "室间隔缺损(VSD)"
+  },
+  "circ-pda": {
+    "en": "PDA",
+    "title": "动脉导管未闭(PDA)"
+  },
+  "circ-tricuspid-atresia": {
+    "en": "tricuspid",
+    "title": "三尖瓣闭锁"
+  },
+  "circ-tapvr": {
+    "en": "lung",
+    "title": "肺静脉异位引流"
+  },
+  "circ-coarctation": {
+    "en": "aortic",
+    "title": "主动脉缩窄"
+  },
+  "circ-pulmonary-stenosis-chd": {
+    "en": "lung stenosis",
+    "title": "肺动脉狭窄"
+  },
+  "circ-aortic-interruption": {
+    "en": "aortic",
+    "title": "主动脉弓离断"
+  },
+  "circ-single-ventricle": {
+    "en": "cardiac",
+    "title": "单心室"
+  },
+  "circ-ebstein": {
+    "en": "malformation Ebstein",
+    "title": "Ebstein畸形"
+  },
+  "circ-thoracic-aneurysm": {
+    "en": "aortic",
+    "title": "胸主动脉瘤"
+  },
+  "circ-abdominal-aneurysm": {
+    "en": "aortic",
+    "title": "腹主动脉瘤"
+  },
+  "circ-aortic-dissection": {
+    "en": "aortic dissection Stanford A/B",
+    "title": "主动脉夹层(Stanford A/B型)"
+  },
+  "circ-imh": {
+    "en": "hematoma",
+    "title": "壁内血肿"
+  },
+  "circ-coarctation-aortic": {
+    "en": "aortic",
+    "title": "主动脉缩窄"
+  },
+  "circ-marfan-aorta": {
+    "en": "syndrome",
+    "title": "马凡综合征(主动脉根部扩张)"
+  },
+  "circ-aortitis": {
+    "en": "aortic inflammation",
+    "title": "主动脉炎(大动脉炎)"
+  },
+  "circ-aortic-rupture": {
+    "en": "aortic rupture",
+    "title": "主动脉破裂"
+  },
+  "circ-pe": {
+    "en": "pulmonary embolism",
+    "title": "肺栓塞"
+  },
+  "circ-cteph": {
+    "en": "chronic thrombosis embolism lung CTEPH",
+    "title": "慢性血栓栓塞性肺动脉高压(CTEPH)"
+  },
+  "circ-pah": {
+    "en": "lung",
+    "title": "肺动脉高压"
+  },
+  "circ-pulmonary-aneurysm": {
+    "en": "lung aneurysm",
+    "title": "肺动脉瘤"
+  },
+  "circ-pavm": {
+    "en": "lung arteriovenous malformation",
+    "title": "肺动静脉畸形"
+  },
+  "circ-acute-embolism": {
+    "en": "acute embolism",
+    "title": "急性动脉栓塞"
+  },
+  "circ-peripheral-aneurysm": {
+    "en": "aneurysm",
+    "title": "动脉瘤(髂/股/腘动脉)"
+  },
+  "circ-carotid-stenosis": {
+    "en": "stenosis",
+    "title": "颈动脉狭窄"
+  },
+  "circ-renal-artery-stenosis": {
+    "en": "renal stenosis",
+    "title": "肾动脉狭窄"
+  },
+  "circ-mesenteric-stenosis": {
+    "en": "stenosis",
+    "title": "肠系膜动脉狭窄"
+  },
+  "circ-subclavian-steal": {
+    "en": "clavicle syndrome",
+    "title": "锁骨下动脉盗血综合征"
+  },
+  "circ-buerger": {
+    "en": "thrombosis inflammation Buerger",
+    "title": "血栓闭塞性脉管炎(Buerger病)"
+  },
+  "circ-fmd": {
+    "en": "developmental",
+    "title": "纤维肌发育不良"
+  },
+  "circ-dvt": {
+    "en": "thrombosis DVT",
+    "title": "深静脉血栓(DVT)"
+  },
+  "circ-pe-venous": {
+    "en": "pulmonary embolism",
+    "title": "肺栓塞(静脉来源)"
+  },
+  "circ-svc-syndrome": {
+    "en": "syndrome",
+    "title": "上腔静脉综合征"
+  },
+  "circ-budd-chiari": {
+    "en": "syndrome",
+    "title": "布加综合征"
+  },
+  "circ-portal-thrombosis": {
+    "en": "thrombosis",
+    "title": "门静脉血栓"
+  },
+  "circ-may-thurner": {
+    "en": "syndrome May-Thurner",
+    "title": "May-Thurner综合征"
+  },
+  "circ-venous-malformation": {
+    "en": "malformation",
+    "title": "静脉畸形"
+  },
+  "circ-chf": {
+    "en": "cardiac",
+    "title": "充血性心力衰竭"
+  },
+  "circ-lhf-ped": {
+    "en": "cardiac",
+    "title": "左心衰(肺水肿)"
+  },
+  "circ-rhf": {
+    "en": "cardiac",
+    "title": "右心衰"
+  },
+  "circ-cardiomegaly": {
+    "en": "cardiac",
+    "title": "心脏扩大"
+  },
+  "circ-mural-thrombus": {
+    "en": "thrombosis",
+    "title": "附壁血栓"
+  },
+  "nerv-wadwea": {
+    "en": "acute cerebral infarction",
+    "title": "急性脑梗死"
+  },
+  "nerv-lbiwpe": {
+    "en": "hyperacute cerebral infarction",
+    "title": "超急性期脑梗死"
+  },
+  "nerv-mqcgbk": {
+    "en": "lacunar infarction",
+    "title": "腔隙性脑梗死"
+  },
+  "nerv-ggnln5": {
+    "en": "watershed infarction",
+    "title": "分水岭脑梗死"
+  },
+  "nerv-oegk9h": {
+    "en": "hemorrhagic cerebral infarction",
+    "title": "出血性脑梗死"
+  },
+  "nerv-1jdz7u": {
+    "en": "intracerebral hemorrhage",
+    "title": "脑出血"
+  },
+  "nerv-h3l09o": {
+    "en": "brain hemorrhage",
+    "title": "脑叶出血"
+  },
+  "nerv-6mqtbk": {
+    "en": "brain hemorrhage",
+    "title": "脑干出血"
+  },
+  "nerv-o773kv": {
+    "en": "intracerebral hemorrhage",
+    "title": "小脑出血"
+  },
+  "nerv-u9h5ms": {
+    "en": "hemorrhage",
+    "title": "基底节出血"
+  },
+  "nerv-lcyu2w": {
+    "en": "intracerebral hemorrhage",
+    "title": "丘脑出血"
+  },
+  "nerv-4obit2": {
+    "en": "subarachnoid hemorrhage",
+    "title": "蛛网膜下腔出血"
+  },
+  "nerv-brz46o": {
+    "en": "cranial aneurysm",
+    "title": "颅内动脉瘤"
+  },
+  "nerv-xmasxo": {
+    "en": "brain arteriovenous malformation",
+    "title": "脑动静脉畸形"
+  },
+  "nerv-ravhcu": {
+    "en": "cavernoma",
+    "title": "海绵状血管瘤"
+  },
+  "nerv-vmkb8b": {
+    "en": "developmental",
+    "title": "发育性静脉异常"
+  },
+  "nerv-66ap6g": {
+    "en": "brain",
+    "title": "硬脑膜动静脉瘘"
+  },
+  "nerv-ejs8fj": {
+    "en": "moyamoya",
+    "title": "烟雾病"
+  },
+  "nerv-ty1kqs": {
+    "en": "venous sinus thrombosis",
+    "title": "静脉窦血栓形成"
+  },
+  "nerv-pres": {
+    "en": "PRES",
+    "title": "PRES"
+  },
+  "nerv-tbs5am": {
+    "en": "brain",
+    "title": "脑淀粉样血管病"
+  },
+  "nerv-cadasil": {
+    "en": "CADASIL",
+    "title": "CADASIL"
+  },
+  "nerv-hwhqnd": {
+    "en": "dissection",
+    "title": "颈动脉夹层"
+  },
+  "nerv-3txsz7": {
+    "en": "dissection",
+    "title": "椎动脉夹层"
+  },
+  "nerv-p6lasr": {
+    "en": "stenosis",
+    "title": "颈动脉狭窄"
+  },
+  "nerv-srmk42": {
+    "en": "blastoma",
+    "title": "胶质母细胞瘤"
+  },
+  "nerv-95wym4": {
+    "en": "glioma",
+    "title": "弥漫性中线胶质瘤"
+  },
+  "nerv-693r32": {
+    "en": "glioma",
+    "title": "神经节细胞胶质瘤"
+  },
+  "nerv-dnet": {
+    "en": "DNET",
+    "title": "DNET"
+  },
+  "nerv-gd8zo5": {
+    "en": "blastoma",
+    "title": "髓母细胞瘤"
+  },
+  "nerv-at-rt": {
+    "en": "AT/RT",
+    "title": "AT/RT"
+  },
+  "nerv-t292t": {
+    "en": "blastoma",
+    "title": "松果体母细胞瘤"
+  },
+  "nerv-95z8s1": {
+    "en": "cranial",
+    "title": "颅内畸胎瘤"
+  },
+  "nerv-mj4q9g": {
+    "en": "meningioma",
+    "title": "脑膜瘤"
+  },
+  "nerv-qr4fb9": {
+    "en": "meningioma",
+    "title": "非典型脑膜瘤"
+  },
+  "nerv-io2238": {
+    "en": "vestibular schwannoma",
+    "title": "听神经瘤"
+  },
+  "nerv-gdy3xk": {
+    "en": "schwannoma",
+    "title": "三叉神经鞘瘤"
+  },
+  "nerv-ayhn97": {
+    "en": "tumor",
+    "title": "孤立性纤维性肿瘤"
+  },
+  "nerv-96fj22": {
+    "en": "adenoma",
+    "title": "垂体微腺瘤"
+  },
+  "nerv-5376kf": {
+    "en": "adenoma",
+    "title": "垂体大腺瘤"
+  },
+  "nerv-b3ptoe": {
+    "en": "cranial pharyngeal",
+    "title": "颅咽管瘤"
+  },
+  "nerv-rathke": {
+    "en": "cyst Rathke",
+    "title": "Rathke囊肿"
+  },
+  "nerv-yxqv6h": {
+    "en": "lymphoma",
+    "title": "原发中枢淋巴瘤"
+  },
+  "nerv-m5snb7": {
+    "en": "blastoma",
+    "title": "血管母细胞瘤"
+  },
+  "nerv-5we15x": {
+    "en": "cranial chondrosarcoma",
+    "title": "颅底软骨肉瘤"
+  },
+  "nerv-3klma7": {
+    "en": "cyst",
+    "title": "表皮样囊肿"
+  },
+  "nerv-vr7fxx": {
+    "en": "cyst",
+    "title": "皮样囊肿"
+  },
+  "nerv-2nrzbx": {
+    "en": "cyst",
+    "title": "胶样囊肿"
+  },
+  "nerv-rn3gqw": {
+    "en": "cyst",
+    "title": "蛛网膜囊肿"
+  },
+  "nerv-dpx7pt": {
+    "en": "brain metastasis",
+    "title": "脑转移瘤"
+  },
+  "nerv-ipym2j": {
+    "en": "cranial",
+    "title": "颅骨转移"
+  },
+  "nerv-v5a3f1": {
+    "en": "brain",
+    "title": "脑膜转移"
+  },
+  "nerv-kpxmqu": {
+    "en": "brain abscess",
+    "title": "脑脓肿"
+  },
+  "nerv-ejhc7n": {
+    "en": "abscess",
+    "title": "硬膜外脓肿"
+  },
+  "nerv-ynxuzs": {
+    "en": "meningitis",
+    "title": "化脓性脑膜炎"
+  },
+  "nerv-z067zs": {
+    "en": "tuberculosis meningitis",
+    "title": "结核性脑膜炎"
+  },
+  "nerv-69zo2p": {
+    "en": "brain tuberculosis",
+    "title": "脑结核瘤"
+  },
+  "nerv-fza208": {
+    "en": "encephalitis",
+    "title": "病毒性脑炎"
+  },
+  "nerv-gof638": {
+    "en": "encephalitis",
+    "title": "单纯疱疹脑炎"
+  },
+  "nerv-ktaszw": {
+    "en": "encephalitis",
+    "title": "自身免疫性脑炎"
+  },
+  "nerv-wrryh7": {
+    "en": "brain",
+    "title": "脑弓形虫病"
+  },
+  "nerv-d7uxe9": {
+    "en": "brain",
+    "title": "脑包虫病"
+  },
+  "nerv-pml": {
+    "en": "PML",
+    "title": "PML"
+  },
+  "nerv-hiv": {
+    "en": "brain HIV",
+    "title": "HIV脑病"
+  },
+  "nerv-k2wj4b": {
+    "en": "multiple sclerosis",
+    "title": "多发性硬化"
+  },
+  "nerv-90x0kt": {
+    "en": "tumor demyelinating",
+    "title": "肿瘤样脱髓鞘"
+  },
+  "nerv-lybi9w": {
+    "en": "spinal cord inflammation",
+    "title": "视神经脊髓炎谱系病"
+  },
+  "nerv-adem": {
+    "en": "ADEM",
+    "title": "ADEM"
+  },
+  "nerv-2glbxj": {
+    "en": "adrenal brain white matter",
+    "title": "肾上腺脑白质营养不良"
+  },
+  "nerv-2v2x4z": {
+    "en": "brain white matter",
+    "title": "异染性脑白质营养不良"
+  },
+  "nerv-jc450w": {
+    "en": "brain",
+    "title": "中央脑桥髓鞘溶解"
+  },
+  "nerv-marchiafava-bignami": {
+    "en": "Marchiafava-Bignami",
+    "title": "Marchiafava-Bignami病"
+  },
+  "nerv-8wwazp": {
+    "en": "brain white matter injury",
+    "title": "放射性脑白质损伤"
+  },
+  "nerv-xr3x48": {
+    "en": "brain white matter",
+    "title": "脑小血管病白质高信号"
+  },
+  "nerv-nds0e8": {
+    "en": "Alzheimer",
+    "title": "阿尔茨海默病"
+  },
+  "nerv-42dbju": {
+    "en": "dementia",
+    "title": "额颞叶痴呆"
+  },
+  "nerv-12cpfa": {
+    "en": "dementia",
+    "title": "路易体痴呆"
+  },
+  "nerv-bpudib": {
+    "en": "dementia",
+    "title": "血管性痴呆"
+  },
+  "nerv-kcfne": {
+    "en": "Parkinson",
+    "title": "帕金森病"
+  },
+  "nerv-ihrff0": {
+    "en": "spinal cord brain",
+    "title": "脊髓小脑性共济失调"
+  },
+  "nerv-wernicke": {
+    "en": "brain Wernicke",
+    "title": "Wernicke脑病"
+  },
+  "nerv-frl6i1": {
+    "en": "liver",
+    "title": "肝豆状核变性"
+  },
+  "nerv-leigh": {
+    "en": "Leigh",
+    "title": "Leigh病"
+  },
+  "nerv-melas": {
+    "en": "MELAS",
+    "title": "MELAS"
+  },
+  "nerv-e32ho2": {
+    "en": "brain",
+    "title": "一氧化碳中毒脑病"
+  },
+  "nerv-t18u7t": {
+    "en": "ischemia brain",
+    "title": "缺氧缺血性脑病"
+  },
+  "nerv-j4mkz0": {
+    "en": "epidural hematoma",
+    "title": "硬膜外血肿"
+  },
+  "nerv-7qu60z": {
+    "en": "acute subdural hematoma",
+    "title": "急性硬膜下血肿"
+  },
+  "nerv-wuiesb": {
+    "en": "subacute subdural hematoma",
+    "title": "亚急性硬膜下血肿"
+  },
+  "nerv-f55dwe": {
+    "en": "chronic subdural hematoma",
+    "title": "慢性硬膜下血肿"
+  },
+  "nerv-i2pfyc": {
+    "en": "subarachnoid hemorrhage",
+    "title": "创伤性蛛网膜下腔出血"
+  },
+  "nerv-fc9xpf": {
+    "en": "brain contusion laceration",
+    "title": "脑挫裂伤"
+  },
+  "nerv-21zcfu": {
+    "en": "intracerebral hematoma",
+    "title": "脑内血肿"
+  },
+  "nerv-scp8lx": {
+    "en": "diffuse axonal injury",
+    "title": "弥漫性轴索损伤"
+  },
+  "nerv-v1fd6g": {
+    "en": "skull fracture",
+    "title": "颅骨骨折"
+  },
+  "nerv-n44d53": {
+    "en": "cranial fracture",
+    "title": "颅底骨折"
+  },
+  "nerv-v77mcz": {
+    "en": "brain",
+    "title": "脑疝"
+  },
+  "nerv-ny9dm6": {
+    "en": "cranial",
+    "title": "张力性气颅"
+  },
+  "nerv-ff5ov6": {
+    "en": "hematoma",
+    "title": "头皮血肿"
+  },
+  "nerv-chiari-i-ii-iii": {
+    "en": "Chiari I/II/III",
+    "title": "Chiari I/II/III型"
+  },
+  "nerv-dandy-walker": {
+    "en": "malformation Dandy-Walker",
+    "title": "Dandy-Walker畸形"
+  },
+  "nerv-squ10v": {
+    "en": "developmental",
+    "title": "胼胝体发育不全"
+  },
+  "nerv-g6b4i0": {
+    "en": "developmental",
+    "title": "视隔发育不良"
+  },
+  "nerv-8gpd78": {
+    "en": "brain malformation",
+    "title": "脑裂畸形"
+  },
+  "nerv-w7jlu2": {
+    "en": "brain malformation",
+    "title": "无脑回畸形"
+  },
+  "nerv-731qfl": {
+    "en": "brain",
+    "title": "多小脑回"
+  },
+  "nerv-kgl086": {
+    "en": "brain",
+    "title": "半侧巨脑症"
+  },
+  "nerv-llxk8j": {
+    "en": "brain malformation",
+    "title": "前脑无裂畸形"
+  },
+  "nerv-rn3gqw-2": {
+    "en": "cyst",
+    "title": "蛛网膜囊肿"
+  },
+  "nerv-3odb02": {
+    "en": "brain",
+    "title": "脑膨出"
+  },
+  "nerv-i-ii": {
+    "en": "neurofibroma I/II",
+    "title": "神经纤维瘤病I/II型"
+  },
+  "nerv-sturge-weber": {
+    "en": "syndrome Sturge-Weber",
+    "title": "Sturge-Weber综合征"
+  },
+  "nerv-r42rs7": {
+    "en": "brain hydrocephalus",
+    "title": "脑积水"
+  },
+  "nerv-a4tbzn": {
+    "en": "stenosis",
+    "title": "导水管狭窄"
+  },
+  "nerv-b1wj2i": {
+    "en": "spinal cord",
+    "title": "脊髓脊膜膨出"
+  },
+  "nerv-6r4fa6": {
+    "en": "disc herniation",
+    "title": "椎间盘突出"
+  },
+  "nerv-met5rt": {
+    "en": "spinal canal stenosis",
+    "title": "椎管狭窄"
+  },
+  "nerv-tsiaa0": {
+    "en": "spinal cord cervical spine",
+    "title": "脊髓型颈椎病"
+  },
+  "nerv-cqfoyx": {
+    "en": "spinal cord",
+    "title": "脊髓室管膜瘤"
+  },
+  "nerv-vw1x1j": {
+    "en": "spinal cord",
+    "title": "脊髓星形细胞瘤"
+  },
+  "nerv-uji6g0": {
+    "en": "spinal cord blastoma",
+    "title": "脊髓血管母细胞瘤"
+  },
+  "nerv-bwd0s6": {
+    "en": "schwannoma",
+    "title": "神经鞘瘤"
+  },
+  "nerv-fnu7uq": {
+    "en": "tumor",
+    "title": "硬膜外肿瘤"
+  },
+  "nerv-esrd5t": {
+    "en": "vertebral body",
+    "title": "椎体转移"
+  },
+  "nerv-wjhci1": {
+    "en": "spinal cord",
+    "title": "脊髓空洞症"
+  },
+  "nerv-47tclr": {
+    "en": "spinal cord injury",
+    "title": "脊髓损伤"
+  },
+  "nerv-37i45": {
+    "en": "spinal cord",
+    "title": "脊髓挫伤"
+  },
+  "nerv-36k48k": {
+    "en": "acute spinal cord inflammation",
+    "title": "急性脊髓炎"
+  },
+  "nerv-lzggn": {
+    "en": "spinal cord subacute",
+    "title": "脊髓亚急性联合变性"
+  },
+  "nerv-gzhg6p": {
+    "en": "spinal canal abscess",
+    "title": "椎管内脓肿"
+  },
+  "nerv-gfhclr": {
+    "en": "inflammation",
+    "title": "椎间盘炎"
+  },
+  "nerv-r74t2p": {
+    "en": "vertebral body osteomyelitis",
+    "title": "椎体骨髓炎"
+  },
+  "nerv-a2faao": {
+    "en": "spinal cord",
+    "title": "脊髓栓系"
+  },
+  "uro-n3dp98": {
+    "en": "renal carcinoma",
+    "title": "肾透明细胞癌"
+  },
+  "uro-jk3ngi": {
+    "en": "renal carcinoma",
+    "title": "乳头状肾细胞癌"
+  },
+  "uro-3d1f6z": {
+    "en": "carcinoma",
+    "title": "嫌色细胞癌"
+  },
+  "uro-sh36ce": {
+    "en": "carcinoma",
+    "title": "集合管癌"
+  },
+  "uro-wkqj05": {
+    "en": "renal carcinoma",
+    "title": "肾盂尿路上皮癌"
+  },
+  "uro-r5ydes": {
+    "en": "renal blastoma",
+    "title": "肾母细胞瘤"
+  },
+  "uro-v1v742": {
+    "en": "renal lipoma",
+    "title": "肾血管平滑肌脂肪瘤"
+  },
+  "uro-vun8yj": {
+    "en": "renal",
+    "title": "肾嗜酸细胞瘤"
+  },
+  "uro-w8wp5a": {
+    "en": "renal lymphoma",
+    "title": "肾淋巴瘤"
+  },
+  "uro-xu3f5s": {
+    "en": "renal metastasis",
+    "title": "肾转移瘤"
+  },
+  "uro-o9210z": {
+    "en": "renal cyst",
+    "title": "单纯性肾囊肿"
+  },
+  "uro-5s2uao": {
+    "en": "renal cyst",
+    "title": "复杂性肾囊肿"
+  },
+  "uro-i6chge": {
+    "en": "polycystic kidney",
+    "title": "常染色体显性多囊肾"
+  },
+  "uro-9ipfk8": {
+    "en": "polycystic kidney",
+    "title": "常染色体隐性多囊肾"
+  },
+  "uro-ltrg4": {
+    "en": "renal",
+    "title": "髓质海绵肾"
+  },
+  "uro-gkyu2m": {
+    "en": "renal",
+    "title": "多房性囊性肾瘤"
+  },
+  "uro-7hpwx": {
+    "en": "acute pyelonephritis",
+    "title": "急性肾盂肾炎"
+  },
+  "uro-afdavp": {
+    "en": "renal abscess",
+    "title": "肾脓肿"
+  },
+  "uro-lo4yyd": {
+    "en": "renal abscess",
+    "title": "肾周脓肿"
+  },
+  "uro-h2edwt": {
+    "en": "pyelonephritis",
+    "title": "气肿性肾盂肾炎"
+  },
+  "uro-pqj1w5": {
+    "en": "pyelonephritis",
+    "title": "黄色肉芽肿性肾盂肾炎"
+  },
+  "uro-c2269i": {
+    "en": "renal tuberculosis",
+    "title": "肾结核"
+  },
+  "uro-35o9jz": {
+    "en": "renal calculus",
+    "title": "肾结石"
+  },
+  "uro-h2vtkg": {
+    "en": "calculus",
+    "title": "鹿角形结石"
+  },
+  "uro-eemoti": {
+    "en": "renal hydrocephalus",
+    "title": "肾积水"
+  },
+  "uro-sjzi93": {
+    "en": "renal",
+    "title": "肾盂"
+  },
+  "uro-enubtd": {
+    "en": "renal stenosis",
+    "title": "肾动脉狭窄"
+  },
+  "uro-fkt1ja": {
+    "en": "renal aneurysm",
+    "title": "肾动脉瘤"
+  },
+  "uro-nflbi3": {
+    "en": "renal infarction",
+    "title": "肾梗死"
+  },
+  "uro-7qdw8e": {
+    "en": "renal thrombosis",
+    "title": "肾静脉血栓"
+  },
+  "uro-indi3v": {
+    "en": "syndrome",
+    "title": "胡桃夹综合征"
+  },
+  "uro-sbi6zh": {
+    "en": "renal",
+    "title": "肾外伤"
+  },
+  "uro-33zdev": {
+    "en": "renal",
+    "title": "马蹄肾"
+  },
+  "uro-780laq": {
+    "en": "renal",
+    "title": "异位肾"
+  },
+  "uro-mql61p": {
+    "en": "renal",
+    "title": "重复肾"
+  },
+  "uro-dok9ob": {
+    "en": "renal developmental",
+    "title": "肾发育不全"
+  },
+  "uro-ts0sgn": {
+    "en": "renal calculus",
+    "title": "交叉融合肾\n输尿管\n输尿管结石"
+  },
+  "uro-7w9lok": {
+    "en": "carcinoma",
+    "title": "输尿管尿路上皮癌"
+  },
+  "uro-dbgqp7": {
+    "en": "stenosis",
+    "title": "输尿管狭窄"
+  },
+  "uro-jcyomu": {
+    "en": "congenital",
+    "title": "先天性巨输尿管"
+  },
+  "uro-e1l9f9": {
+    "en": "cyst",
+    "title": "输尿管囊肿"
+  },
+  "uro-cx9mb0": {
+    "en": "bladder bladder carcinoma",
+    "title": "腹膜后纤维化\n膀胱\n膀胱尿路上皮癌"
+  },
+  "uro-ke5tl8": {
+    "en": "bladder carcinoma",
+    "title": "膀胱腺癌"
+  },
+  "uro-mz6fe0": {
+    "en": "bladder calculus",
+    "title": "膀胱结石"
+  },
+  "uro-8p3imr": {
+    "en": "bladder inflammation",
+    "title": "腺性膀胱炎"
+  },
+  "uro-posgip": {
+    "en": "bladder inflammation",
+    "title": "放射性膀胱炎"
+  },
+  "uro-lmua4g": {
+    "en": "bladder",
+    "title": "神经源性膀胱"
+  },
+  "uro-u9xw6f": {
+    "en": "bladder diverticulum",
+    "title": "膀胱憩室"
+  },
+  "uro-8zbcm0": {
+    "en": "bladder rupture",
+    "title": "膀胱破裂"
+  },
+  "uro-92e4dg": {
+    "en": "cyst",
+    "title": "脐尿管囊肿"
+  },
+  "uro-b13qbn": {
+    "en": "carcinoma",
+    "title": "脐尿管癌"
+  },
+  "uro-3in8m": {
+    "en": "prostate hyperplasia",
+    "title": "前列腺增生"
+  },
+  "uro-u73sqd": {
+    "en": "prostate cancer",
+    "title": "前列腺癌"
+  },
+  "uro-z5drt3": {
+    "en": "prostate abscess",
+    "title": "前列腺脓肿"
+  },
+  "uro-4ozdui": {
+    "en": "prostate cyst",
+    "title": "前列腺囊肿"
+  },
+  "uro-214f9q": {
+    "en": "stenosis",
+    "title": "尿道狭窄"
+  },
+  "uro-vk6aei": {
+    "en": "diverticulum",
+    "title": "尿道憩室"
+  },
+  "uro-79zr0m": {
+    "en": "cyst",
+    "title": "精囊囊肿"
+  },
+  "uro-9qtxwb": {
+    "en": "cyst",
+    "title": "射精管囊肿"
+  },
+  "uro-uzvuoy": {
+    "en": "tumor",
+    "title": "睾丸混合性肿瘤"
+  },
+  "uro-fa8mw": {
+    "en": "lymphoma",
+    "title": "睾丸淋巴瘤"
+  },
+  "uro-525s7q": {
+    "en": "torsion",
+    "title": "睾丸扭转"
+  },
+  "uro-ow1vad": {
+    "en": "inflammation",
+    "title": "附睾炎"
+  },
+  "uro-jnuyna": {
+    "en": "effusion",
+    "title": "睾丸鞘膜积液"
+  },
+  "uro-ti6f6a": {
+    "en": "cyst",
+    "title": "精液囊肿"
+  },
+  "uro-ou83yg": {
+    "en": "cyst",
+    "title": "附睾囊肿"
+  },
+  "uro-qjat3j": {
+    "en": "adrenal adenoma",
+    "title": "肾上腺腺瘤"
+  },
+  "uro-lb4qhj": {
+    "en": "adrenal carcinoma",
+    "title": "肾上腺皮质癌"
+  },
+  "uro-fgmt99": {
+    "en": "pheochromocytoma",
+    "title": "嗜铬细胞瘤"
+  },
+  "uro-720q34": {
+    "en": "adrenal metastasis",
+    "title": "肾上腺转移瘤"
+  },
+  "uro-g4da6y": {
+    "en": "adrenal hyperplasia",
+    "title": "肾上腺增生"
+  },
+  "uro-849sbq": {
+    "en": "adrenal cyst",
+    "title": "肾上腺囊肿"
+  },
+  "uro-m6vtdl": {
+    "en": "lipoma",
+    "title": "髓样脂肪瘤"
+  },
+  "uro-fyvrfn": {
+    "en": "adrenal hemorrhage",
+    "title": "肾上腺出血"
+  },
+  "uro-c1cj5m": {
+    "en": "adrenal tuberculosis",
+    "title": "肾上腺结核"
+  },
+  "uro-1j6zhp": {
+    "en": "blastoma",
+    "title": "神经母细胞瘤"
+  },
+  "fem-amccgc": {
+    "en": "uterine fibroid",
+    "title": "子宫肌瘤"
+  },
+  "fem-gkkfzz": {
+    "en": "uterine fibroid",
+    "title": "子宫肌瘤变性"
+  },
+  "fem-5otkif": {
+    "en": "uterine",
+    "title": "子宫腺肌症"
+  },
+  "fem-c152m3": {
+    "en": "uterine carcinoma",
+    "title": "子宫内膜癌"
+  },
+  "fem-6vhk0m": {
+    "en": "uterine hyperplasia",
+    "title": "子宫内膜增生"
+  },
+  "fem-vedjs5": {
+    "en": "uterine polyp",
+    "title": "子宫内膜息肉"
+  },
+  "fem-9iky9r": {
+    "en": "uterine sarcoma",
+    "title": "子宫肉瘤"
+  },
+  "fem-m9dhn2": {
+    "en": "effusion",
+    "title": "宫腔积液/积脓"
+  },
+  "fem-k6ri8f": {
+    "en": "diverticulum",
+    "title": "剖宫产瘢痕憩室"
+  },
+  "fem-mhq8ej": {
+    "en": "developmental",
+    "title": "苗勒管发育异常(纵隔/双角/双子宫/单角)"
+  },
+  "fem-3e05fm": {
+    "en": "cervical cancer",
+    "title": "宫颈癌"
+  },
+  "fem-s3lxsd": {
+    "en": "cyst",
+    "title": "宫颈纳氏囊肿"
+  },
+  "fem-rgi2xo": {
+    "en": "cyst",
+    "title": "卵泡囊肿"
+  },
+  "fem-1u98tp": {
+    "en": "cyst",
+    "title": "黄体囊肿"
+  },
+  "fem-wt0trx": {
+    "en": "hemorrhagic cyst",
+    "title": "出血性囊肿"
+  },
+  "fem-zafayg": {
+    "en": "ovarian uterine cyst",
+    "title": "卵巢子宫内膜异位囊肿"
+  },
+  "fem-had3m2": {
+    "en": "ovarian",
+    "title": "多囊卵巢"
+  },
+  "fem-30i1zf": {
+    "en": "ovarian abscess",
+    "title": "输卵管卵巢脓肿"
+  },
+  "fem-io66e": {
+    "en": "adenoma",
+    "title": "浆液性囊腺瘤"
+  },
+  "fem-nwcuv6": {
+    "en": "carcinoma",
+    "title": "浆液性囊腺癌"
+  },
+  "fem-n5aull": {
+    "en": "adenoma",
+    "title": "黏液性囊腺瘤"
+  },
+  "fem-j0yj8f": {
+    "en": "carcinoma",
+    "title": "黏液性囊腺癌"
+  },
+  "fem-h3uxni": {
+    "en": "uterine carcinoma",
+    "title": "子宫内膜样癌"
+  },
+  "fem-q1xcm0": {
+    "en": "carcinoma",
+    "title": "透明细胞癌"
+  },
+  "fem-xilyqz": {
+    "en": "tumor",
+    "title": "交界性肿瘤"
+  },
+  "fem-brenner": {
+    "en": "Brenner",
+    "title": "Brenner瘤"
+  },
+  "fem-2nl73u": {
+    "en": "ovarian fibroma",
+    "title": "卵巢纤维瘤"
+  },
+  "fem-krukenberg": {
+    "en": "Krukenberg",
+    "title": "Krukenberg瘤"
+  },
+  "fem-808bkn": {
+    "en": "ovarian torsion",
+    "title": "卵巢扭转"
+  },
+  "fem-18aji1": {
+    "en": "ovarian cyst rupture",
+    "title": "卵巢囊肿破裂"
+  },
+  "fem-x86ja1": {
+    "en": "hydrocephalus",
+    "title": "输卵管积水"
+  },
+  "fem-79mrz9": {
+    "en": "inflammation",
+    "title": "盆腔炎"
+  },
+  "fem-nluueq": {
+    "en": "syndrome",
+    "title": "盆腔淤血综合征"
+  },
+  "fem-s5empj": {
+    "en": "abscess",
+    "title": "盆腔脓肿"
+  },
+  "fem-1u935b": {
+    "en": "cyst",
+    "title": "腹膜包涵囊肿"
+  },
+  "fem-iwpmw3": {
+    "en": "uterine",
+    "title": "子宫内膜异位症"
+  },
+  "fem-zg3ce7": {
+    "en": "ectopic pregnancy",
+    "title": "异位妊娠(输卵管/间质部/瘢痕/宫颈/卵巢/腹腔)"
+  },
+  "fem-9z973q": {
+    "en": "carcinoma",
+    "title": "绒毛膜癌"
+  },
+  "fem-ak053j": {
+    "en": "brain",
+    "title": "无脑儿"
+  },
+  "fem-eyd8tu": {
+    "en": "spine",
+    "title": "脊柱裂"
+  },
+  "fem-3odb02": {
+    "en": "brain",
+    "title": "脑膨出"
+  },
+  "fem-vikyna": {
+    "en": "brain hydrocephalus",
+    "title": "胎儿脑积水"
+  },
+  "fem-rzrzyh": {
+    "en": "congenital cardiac",
+    "title": "胎儿先天性心脏病"
+  },
+  "fem-ao3f27": {
+    "en": "diaphragmatic hernia",
+    "title": "胎儿膈疝"
+  },
+  "fem-ujihqw": {
+    "en": "lung adenoma",
+    "title": "胎儿肺囊腺瘤"
+  },
+  "fem-j9156z": {
+    "en": "duodenal",
+    "title": "十二指肠闭锁"
+  },
+  "fem-1pltyf": {
+    "en": "renal hydrocephalus",
+    "title": "胎儿肾积水"
+  },
+  "fem-z41sts": {
+    "en": "polycystic kidney",
+    "title": "胎儿多囊肾"
+  },
+  "fem-5dc8a2": {
+    "en": "developmental",
+    "title": "骨骼发育不良"
+  },
+  "fem-i4vixt": {
+    "en": "edema",
+    "title": "胎儿水肿"
+  },
+  "fem-g0oyj9": {
+    "en": "syndrome",
+    "title": "双胎输血综合征"
+  },
+  "fem-wr3kb0": {
+    "en": "placenta",
+    "title": "前置胎盘"
+  },
+  "fem-2gp4et": {
+    "en": "placenta",
+    "title": "胎盘植入"
+  },
+  "fem-9fpcjr": {
+    "en": "placenta",
+    "title": "胎盘早剥"
+  },
+  "endo-eui15a": {
+    "en": "thyroid",
+    "title": "甲状腺良性结节"
+  },
+  "endo-a1epqf": {
+    "en": "thyroid adenoma",
+    "title": "甲状腺腺瘤"
+  },
+  "endo-m9je90": {
+    "en": "thyroid carcinoma",
+    "title": "甲状腺乳头状癌"
+  },
+  "endo-uf20sk": {
+    "en": "carcinoma",
+    "title": "滤泡状癌"
+  },
+  "endo-fvdfd3": {
+    "en": "carcinoma",
+    "title": "髓样癌"
+  },
+  "endo-amz2n9": {
+    "en": "carcinoma",
+    "title": "未分化癌"
+  },
+  "endo-73sc7a": {
+    "en": "thyroid lymphoma",
+    "title": "甲状腺淋巴瘤"
+  },
+  "endo-dj31v2": {
+    "en": "thyroid",
+    "title": "结节性甲状腺肿"
+  },
+  "endo-aw45zg": {
+    "en": "thyroid inflammation",
+    "title": "桥本甲状腺炎"
+  },
+  "endo-bpnb0j": {
+    "en": "subacute thyroid inflammation",
+    "title": "亚急性甲状腺炎"
+  },
+  "endo-graves": {
+    "en": "Graves",
+    "title": "Graves病"
+  },
+  "endo-k1s5l9": {
+    "en": "cyst",
+    "title": "甲状舌管囊肿"
+  },
+  "endo-7umht2": {
+    "en": "thyroid",
+    "title": "异位甲状腺"
+  },
+  "endo-1o9vqy": {
+    "en": "thyroid",
+    "title": "胸骨后甲状腺肿"
+  },
+  "endo-rqzqf4": {
+    "en": "parathyroid adenoma",
+    "title": "甲状旁腺腺瘤"
+  },
+  "endo-d6fwo5": {
+    "en": "parathyroid hyperplasia",
+    "title": "甲状旁腺增生"
+  },
+  "endo-smlfxu": {
+    "en": "parathyroid carcinoma",
+    "title": "甲状旁腺癌"
+  },
+  "endo-29ikdr": {
+    "en": "parathyroid cyst",
+    "title": "甲状旁腺囊肿"
+  },
+  "endo-id002a": {
+    "en": "adenoma",
+    "title": "功能性皮质腺瘤"
+  },
+  "endo-73bhmh": {
+    "en": "adenoma",
+    "title": "无功能腺瘤"
+  },
+  "endo-lb4qhj": {
+    "en": "adrenal carcinoma",
+    "title": "肾上腺皮质癌"
+  },
+  "endo-fgmt99": {
+    "en": "pheochromocytoma",
+    "title": "嗜铬细胞瘤"
+  },
+  "endo-720q34": {
+    "en": "adrenal metastasis",
+    "title": "肾上腺转移瘤"
+  },
+  "endo-g4da6y": {
+    "en": "adrenal hyperplasia",
+    "title": "肾上腺增生"
+  },
+  "endo-849sbq": {
+    "en": "adrenal cyst",
+    "title": "肾上腺囊肿"
+  },
+  "endo-m6vtdl": {
+    "en": "lipoma",
+    "title": "髓样脂肪瘤"
+  },
+  "endo-fyvrfn": {
+    "en": "adrenal hemorrhage",
+    "title": "肾上腺出血"
+  },
+  "endo-1j6zhp": {
+    "en": "blastoma",
+    "title": "神经母细胞瘤"
+  },
+  "endo-96fj22": {
+    "en": "adenoma",
+    "title": "垂体微腺瘤"
+  },
+  "endo-5376kf": {
+    "en": "adenoma",
+    "title": "垂体大腺瘤"
+  },
+  "endo-b3ptoe": {
+    "en": "cranial pharyngeal",
+    "title": "颅咽管瘤"
+  },
+  "endo-rathke": {
+    "en": "cyst Rathke",
+    "title": "Rathke囊肿"
+  },
+  "endo-7r95hg": {
+    "en": "brain",
+    "title": "下丘脑错构瘤"
+  },
+  "endo-n5uu40": {
+    "en": "pancreatic",
+    "title": "胰岛素瘤"
+  },
+  "endo-rilgfy": {
+    "en": "pancreatic tumor",
+    "title": "胰腺神经内分泌肿瘤"
+  },
+  "endo-jlt3s": {
+    "en": "osteoporosis",
+    "title": "骨质疏松"
+  },
+  "hn-aj9e53": {
+    "en": "ocular inflammation",
+    "title": "眼眶蜂窝织炎"
+  },
+  "hn-9updu4": {
+    "en": "abscess",
+    "title": "眶骨膜下脓肿"
+  },
+  "hn-rddhrw": {
+    "en": "glioma",
+    "title": "视神经胶质瘤"
+  },
+  "hn-f3vx5t": {
+    "en": "meningioma",
+    "title": "视神经鞘脑膜瘤"
+  },
+  "hn-pmq79l": {
+    "en": "cavernoma",
+    "title": "眶内海绵状血管瘤"
+  },
+  "hn-tsc2al": {
+    "en": "thyroid ocular",
+    "title": "甲状腺相关眼病"
+  },
+  "hn-t7ivef": {
+    "en": "ocular inflammation",
+    "title": "眼眶炎性假瘤"
+  },
+  "hn-u0k1as": {
+    "en": "ocular lymphoma",
+    "title": "眼眶淋巴瘤"
+  },
+  "hn-ahhgbh": {
+    "en": "sarcoma",
+    "title": "横纹肌肉瘤"
+  },
+  "hn-tc6oy0": {
+    "en": "adenoma",
+    "title": "泪腺多形性腺瘤"
+  },
+  "hn-gdaoh3": {
+    "en": "carcinoma",
+    "title": "泪腺腺样囊性癌"
+  },
+  "hn-mwh58b": {
+    "en": "blastoma",
+    "title": "视网膜母细胞瘤"
+  },
+  "hn-ftr2gh": {
+    "en": "ocular fracture",
+    "title": "眼眶骨折"
+  },
+  "hn-3nxwb1": {
+    "en": "ocular",
+    "title": "眼内异物"
+  },
+  "hn-f3szof": {
+    "en": "biliary",
+    "title": "胆脂瘤"
+  },
+  "hn-deryaz": {
+    "en": "inflammation",
+    "title": "乳突炎"
+  },
+  "hn-uxdq7s": {
+    "en": "inflammation",
+    "title": "岩尖炎"
+  },
+  "hn-io2238": {
+    "en": "vestibular schwannoma",
+    "title": "听神经瘤"
+  },
+  "hn-lp2z1m": {
+    "en": "schwannoma",
+    "title": "面神经鞘瘤"
+  },
+  "hn-p3vtm5": {
+    "en": "fracture",
+    "title": "颞骨骨折"
+  },
+  "hn-ka2gsp": {
+    "en": "otologic",
+    "title": "耳硬化症"
+  },
+  "hn-m1ht9y": {
+    "en": "syndrome",
+    "title": "大前庭水管综合征"
+  },
+  "hn-hsmq25": {
+    "en": "otologic malformation",
+    "title": "内耳畸形"
+  },
+  "hn-ugbci5": {
+    "en": "otologic",
+    "title": "外耳道闭锁"
+  },
+  "hn-9nxffr": {
+    "en": "chronic sinusitis",
+    "title": "慢性鼻窦炎"
+  },
+  "hn-75f69a": {
+    "en": "nasal polyp",
+    "title": "鼻息肉"
+  },
+  "hn-d42qxe": {
+    "en": "nasal cyst",
+    "title": "鼻窦黏液囊肿"
+  },
+  "hn-f5ift0": {
+    "en": "sinusitis",
+    "title": "真菌性鼻窦炎"
+  },
+  "hn-eh6m8b": {
+    "en": "sinusitis",
+    "title": "侵袭性真菌性鼻窦炎"
+  },
+  "hn-6oeaka": {
+    "en": "nasal pharyngeal hemangioma",
+    "title": "鼻咽纤维血管瘤"
+  },
+  "hn-cy6wr4": {
+    "en": "nasal carcinoma",
+    "title": "鼻腔鳞癌"
+  },
+  "hn-2rvb0s": {
+    "en": "nasal carcinoma",
+    "title": "鼻窦腺样囊性癌"
+  },
+  "hn-n38p16": {
+    "en": "blastoma",
+    "title": "嗅神经母细胞瘤"
+  },
+  "hn-i09t74": {
+    "en": "nasal",
+    "title": "鼻窦骨瘤"
+  },
+  "hn-5k0ads": {
+    "en": "fibroma",
+    "title": "骨化性纤维瘤"
+  },
+  "hn-7vyux5": {
+    "en": "carcinoma",
+    "title": "上颌窦癌"
+  },
+  "hn-gejxhn": {
+    "en": "nasal pharyngeal carcinoma",
+    "title": "鼻咽癌"
+  },
+  "hn-quhvh9": {
+    "en": "pharyngeal carcinoma",
+    "title": "口咽癌"
+  },
+  "hn-86l0ij": {
+    "en": "pharyngeal carcinoma",
+    "title": "下咽癌"
+  },
+  "hn-fc6kzs": {
+    "en": "laryngeal carcinoma",
+    "title": "喉癌"
+  },
+  "hn-dnjyxb": {
+    "en": "laryngeal cyst",
+    "title": "喉囊肿"
+  },
+  "hn-nb5lao": {
+    "en": "abscess",
+    "title": "扁桃体周脓肿"
+  },
+  "hn-5wwoxw": {
+    "en": "pharyngeal abscess",
+    "title": "咽后脓肿"
+  },
+  "hn-gzui9z": {
+    "en": "pharyngeal tumor",
+    "title": "咽旁间隙肿瘤"
+  },
+  "hn-cr94kl": {
+    "en": "carcinoma",
+    "title": "舌癌"
+  },
+  "hn-obca7f": {
+    "en": "carcinoma",
+    "title": "口底癌"
+  },
+  "hn-om6b4d": {
+    "en": "cyst",
+    "title": "舌下囊肿"
+  },
+  "hn-9jkhwv": {
+    "en": "calculus",
+    "title": "涎腺结石"
+  },
+  "hn-jon431": {
+    "en": "inflammation",
+    "title": "涎腺炎"
+  },
+  "hn-6vi64o": {
+    "en": "adenoma",
+    "title": "多形性腺瘤"
+  },
+  "hn-warthin": {
+    "en": "Warthin",
+    "title": "Warthin瘤"
+  },
+  "hn-yar6or": {
+    "en": "carcinoma",
+    "title": "黏液表皮样癌"
+  },
+  "hn-du8fo9": {
+    "en": "carcinoma",
+    "title": "腺样囊性癌"
+  },
+  "hn-fgmwbm": {
+    "en": "lymphoma",
+    "title": "涎腺淋巴瘤"
+  },
+  "hn-a25xvc": {
+    "en": "tuberculosis",
+    "title": "颈部淋巴结结核"
+  },
+  "hn-5acnve": {
+    "en": "lymphoma",
+    "title": "淋巴瘤"
+  },
+  "hn-6bbj2b": {
+    "en": "cyst",
+    "title": "鳃裂囊肿"
+  },
+  "hn-k1s5l9": {
+    "en": "cyst",
+    "title": "甲状舌管囊肿"
+  },
+  "hn-ljos69": {
+    "en": "abscess",
+    "title": "颈部脓肿"
+  },
+  "hn-ufa832": {
+    "en": "schwannoma",
+    "title": "颈部神经鞘瘤"
+  },
+  "hn-r979he": {
+    "en": "cyst",
+    "title": "颌骨囊肿"
+  },
+  "hn-bta1ne": {
+    "en": "osteomyelitis",
+    "title": "颌骨骨髓炎"
+  },
+  "hn-1hw7wh": {
+    "en": "fracture",
+    "title": "颌骨骨折"
+  },
+  "brs-2gsec2": {
+    "en": "breast adenoma",
+    "title": "乳腺纤维腺瘤"
+  },
+  "brs-ewxu0r": {
+    "en": "breast cyst",
+    "title": "乳腺囊肿"
+  },
+  "brs-nybqeh": {
+    "en": "cyst",
+    "title": "复杂囊肿"
+  },
+  "brs-f7x28j": {
+    "en": "breast",
+    "title": "乳腺错构瘤"
+  },
+  "brs-64doy1": {
+    "en": "necrosis",
+    "title": "脂肪坏死"
+  },
+  "brs-8u2qk8": {
+    "en": "cyst",
+    "title": "积乳囊肿"
+  },
+  "brs-932xlx": {
+    "en": "lipoma",
+    "title": "脂肪瘤"
+  },
+  "brs-7vpdv": {
+    "en": "breast developmental",
+    "title": "男性乳腺发育"
+  },
+  "brs-aw8x4e": {
+    "en": "acute breast inflammation",
+    "title": "急性乳腺炎"
+  },
+  "brs-537r9i": {
+    "en": "breast abscess",
+    "title": "乳腺脓肿"
+  },
+  "brs-z186fb": {
+    "en": "breast inflammation",
+    "title": "浆细胞性乳腺炎"
+  },
+  "brs-gsao7i": {
+    "en": "breast inflammation",
+    "title": "肉芽肿性乳腺炎"
+  },
+  "brs-e73jdx": {
+    "en": "breast tuberculosis",
+    "title": "乳腺结核"
+  },
+  "brs-z64alq": {
+    "en": "carcinoma",
+    "title": "导管原位癌"
+  },
+  "brs-gv4ec3": {
+    "en": "carcinoma",
+    "title": "浸润性导管癌"
+  },
+  "brs-ogl8s3": {
+    "en": "carcinoma",
+    "title": "浸润性小叶癌"
+  },
+  "brs-fvdfd3": {
+    "en": "carcinoma",
+    "title": "髓样癌"
+  },
+  "brs-v6rb0o": {
+    "en": "carcinoma",
+    "title": "黏液癌"
+  },
+  "brs-tibp2t": {
+    "en": "inflammation breast cancer",
+    "title": "炎性乳腺癌"
+  },
+  "brs-paget": {
+    "en": "Paget",
+    "title": "Paget病"
+  },
+  "brs-5uirpm": {
+    "en": "tumor",
+    "title": "叶状肿瘤"
+  },
+  "brs-2zcnhy": {
+    "en": "breast sarcoma",
+    "title": "乳腺血管肉瘤"
+  },
+  "brs-ieauyf": {
+    "en": "breast lymphoma",
+    "title": "乳腺淋巴瘤"
+  },
+  "brs-mndza5": {
+    "en": "breast metastasis",
+    "title": "乳腺转移瘤"
+  },
+  "hem-5b0d59": {
+    "en": "lymphoma",
+    "title": "霍奇金淋巴瘤"
+  },
+  "hem-b": {
+    "en": "lymphoma B",
+    "title": "弥漫大B细胞淋巴瘤"
+  },
+  "hem-i8sgjk": {
+    "en": "lymphoma",
+    "title": "滤泡性淋巴瘤"
+  },
+  "hem-i7cgct": {
+    "en": "lymphoma",
+    "title": "套细胞淋巴瘤"
+  },
+  "hem-burkitt": {
+    "en": "lymphoma Burkitt",
+    "title": "Burkitt淋巴瘤"
+  },
+  "hem-malt": {
+    "en": "lymphoma MALT",
+    "title": "MALT淋巴瘤"
+  },
+  "hem-b-2": {
+    "en": "mediastinal lymphoma B",
+    "title": "纵隔大B细胞淋巴瘤"
+  },
+  "hem-yxqv6h": {
+    "en": "lymphoma",
+    "title": "原发中枢淋巴瘤"
+  },
+  "hem-dpm959": {
+    "en": "lymphoma",
+    "title": "结外淋巴瘤(胃/肠/脾/骨/肺)"
+  },
+  "hem-fobzsc": {
+    "en": "hyperplasia",
+    "title": "淋巴结反应性增生"
+  },
+  "hem-w8mfhc": {
+    "en": "sarcoma",
+    "title": "髓系肉瘤(绿色瘤)"
+  },
+  "hem-nmp5wm": {
+    "en": "leukemia",
+    "title": "白血病中枢浸润"
+  },
+  "hem-c740b0": {
+    "en": "multiple myeloma",
+    "title": "多发性骨髓瘤"
+  },
+  "hem-u5xzi9": {
+    "en": "plasmacytoma",
+    "title": "孤立性浆细胞瘤"
+  },
+  "hem-wv00n6": {
+    "en": "plasmacytoma",
+    "title": "髓外浆细胞瘤"
+  },
+  "hem-plde55": {
+    "en": "anemia",
+    "title": "地中海贫血骨改变"
+  },
+  "hem-emx4uw": {
+    "en": "infarction",
+    "title": "镰状细胞病骨梗死"
+  },
+  "hem-ygzz6h": {
+    "en": "spleen",
+    "title": "脾肿大"
+  },
+  "hem-i1jpc5": {
+    "en": "spleen infarction",
+    "title": "脾梗死"
+  },
+  "hem-6qqwnp": {
+    "en": "spleen abscess",
+    "title": "脾脓肿"
+  },
+  "hem-50k6oe": {
+    "en": "spleen lymphoma",
+    "title": "脾淋巴瘤"
+  },
+  "hem-castleman": {
+    "en": "Castleman",
+    "title": "Castleman病"
+  },
+  "hem-h71ddl": {
+    "en": "hyperplasia",
+    "title": "朗格汉斯细胞组织细胞增生症"
+  },
+  "hem-erdheim-chester": {
+    "en": "Erdheim-Chester",
+    "title": "Erdheim-Chester病"
+  },
+  "hem-rosai-dorfman": {
+    "en": "Rosai-Dorfman",
+    "title": "Rosai-Dorfman病"
+  },
+  "hem-7rjj7z": {
+    "en": "edema",
+    "title": "淋巴水肿"
+  },
+  "sys-qddxvk": {
+    "en": "metastasis",
+    "title": "全身多发转移瘤"
+  },
+  "sys-cfkm1c": {
+    "en": "carcinoma inflammation",
+    "title": "癌性淋巴管炎"
+  },
+  "sys-85q6lp": {
+    "en": "brain carcinoma",
+    "title": "脑膜癌病"
+  },
+  "sys-j3anjf": {
+    "en": "carcinoma",
+    "title": "腹膜转移癌"
+  },
+  "sys-mg7lpd": {
+    "en": "carcinoma",
+    "title": "原发灶不明转移癌"
+  },
+  "sys-v028n5": {
+    "en": "sarcoidosis",
+    "title": "结节病"
+  },
+  "sys-88q9dd": {
+    "en": "tuberculosis",
+    "title": "播散性结核"
+  },
+  "sys-igg4": {
+    "en": "IgG4",
+    "title": "IgG4相关性疾病"
+  },
+  "sys-h71ddl": {
+    "en": "hyperplasia",
+    "title": "朗格汉斯细胞组织细胞增生症"
+  },
+  "sys-erdheim-chester": {
+    "en": "Erdheim-Chester",
+    "title": "Erdheim-Chester病"
+  },
+  "sys-wilson": {
+    "en": "Wilson",
+    "title": "Wilson病"
+  },
+  "sys-rtqwqi": {
+    "en": "systemic lupus erythematosus",
+    "title": "系统性红斑狼疮(器官受累)"
+  },
+  "sys-ow2p6a": {
+    "en": "rheumatoid inflammation",
+    "title": "类风湿关节炎"
+  },
+  "sys-9xkrzp": {
+    "en": "inflammation",
+    "title": "大动脉炎"
+  },
+  "sys-d21aiy": {
+    "en": "inflammation",
+    "title": "巨细胞动脉炎"
+  },
+  "sys-schd5w": {
+    "en": "inflammation",
+    "title": "结节性多动脉炎"
+  },
+  "sys-anca": {
+    "en": "vasculitis ANCA",
+    "title": "ANCA相关血管炎"
+  },
+  "sys-bxg4ho": {
+    "en": "embolism",
+    "title": "脓毒性栓塞"
+  },
+  "sys-99ej4l": {
+    "en": "infection",
+    "title": "播散性真菌感染"
+  },
+  "sys-3v5d6m": {
+    "en": "tuberculosis",
+    "title": "粟粒性结核"
+  },
+  "sys-i-ii": {
+    "en": "neurofibroma I/II",
+    "title": "神经纤维瘤病I/II型"
+  },
+  "sys-von-hippel-lindau": {
+    "en": "von Hippel-Lindau",
+    "title": "von Hippel-Lindau"
+  },
+  "sys-peutz-jeghers": {
+    "en": "syndrome Peutz-Jeghers",
+    "title": "Peutz-Jeghers综合征"
+  },
+  "sys-vk9q6r": {
+    "en": "adenoma polyp",
+    "title": "家族性腺瘤性息肉病"
+  }
+}

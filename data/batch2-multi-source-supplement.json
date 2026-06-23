@@ -1,0 +1,250 @@
+{
+  "mode": "apply",
+  "allDiseases": true,
+  "emptyOnly": false,
+  "optimize": true,
+  "maxImages": 20,
+  "minScores": {
+    "openi": 26,
+    "wikimedia": 16,
+    "radiopaediaCommons": 20
+  },
+  "supplemented": [],
+  "appended": [
+    {
+      "type": "knee",
+      "title": "前交叉韧带损伤",
+      "added": 14,
+      "total": 20,
+      "targetMods": [
+        "MRI",
+        "X线"
+      ],
+      "files": [
+        {
+          "file": "openi__PMC4417740_11832_2015_652_Fig4_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC5400138_10.1177_2325967117693604-fig3.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4417740_11832_2015_652_Fig5_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4519644_gr3.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4317588_BMRI2015-845689.001.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4410751_AORTH2015-928301.001.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3522445_TOORTHJ-6-506_F1.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3134017_IJOrtho-45-324-g003.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC5340947_CRIEM2017-9745025.003.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "Radiographs taken four months after knee injury and operative reattachment of the anterior and posterior cruciate ligaments. Arrows indicate early metaphyseal arrest lines.jpg",
+          "source": "Wikimedia Commons"
+        },
+        {
+          "file": "openi__PMC3728752_IJNM-27-211-g003.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "Anteroposterior (A) and lateral (B) radiographs taken four months after knee injury and operative reattachment of the anterior and posterior cruciate ligaments.jpg",
+          "source": "Wikimedia Commons"
+        },
+        {
+          "file": "openi__PMC5293505_oajsm-8-009Fig2.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC5411220_medi-96-e6568-g002.png",
+          "source": "Open-i / PubMed Central"
+        }
+      ]
+    },
+    {
+      "type": "hip",
+      "title": "髋关节骨关节炎",
+      "added": 17,
+      "total": 20,
+      "targetMods": [
+        "X线",
+        "CT",
+        "MRI"
+      ],
+      "files": [
+        {
+          "file": "openi__PMC4192849_TORJ-8-46_F2f.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4631111_12891_2015_791_Fig1_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3795405_TORJ-7-67_F1.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4192849_TORJ-8-46_F2a.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4902845_330_2015_4048_Fig7_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4212104_13075_2014_466_Fig2_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4909725_gr1.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3355868_fendo-02-00097-g007.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4342869_13075_2015_535_Fig1_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4849216_sicotj-1-27-fig5.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3308664_IJOrtho-46-212-g001.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3049745_1752-1947-5-67-1.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3308664_IJOrtho-46-212-g002.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4417321_13256_2014_3151_Fig1_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4799156_gr2.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4897096_TOORTHJ-10-105_F1.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3964672_rcse9501-e2-01.png",
+          "source": "Open-i / PubMed Central"
+        }
+      ]
+    },
+    {
+      "type": "tumor",
+      "title": "骨肉瘤",
+      "added": 11,
+      "total": 20,
+      "targetMods": [
+        "X线",
+        "MRI",
+        "CT"
+      ],
+      "files": [
+        {
+          "file": "openi__PMC4052020_IJOrtho-48-238-g002.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4040386_cios-6-230-g001.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3668228_1752-1947-7-116-3.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4667494_13028_2015_176_Fig1_HTML.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4063639_OL-08-01-0384-g00.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC5087826_dmm-9-025767-g4.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC5107991_srep36995-f4.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4043681_pone.0097381.g004.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4040386_cios-6-230-g004.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC4286825_JCIS-4-6-g002.png",
+          "source": "Open-i / PubMed Central"
+        },
+        {
+          "file": "openi__PMC3668228_1752-1947-7-116-2.png",
+          "source": "Open-i / PubMed Central"
+        }
+      ]
+    }
+  ],
+  "stillEmpty": [],
+  "newRegistry": [
+    "openi__PMC4417740_11832_2015_652_Fig4_HTML.png",
+    "openi__PMC4417740_11832_2015_652_Fig5_HTML.png",
+    "openi__PMC4519644_gr3.png",
+    "openi__PMC4317588_BMRI2015-845689.001.png",
+    "openi__PMC4410751_AORTH2015-928301.001.png",
+    "openi__PMC3522445_TOORTHJ-6-506_F1.png",
+    "openi__PMC3134017_IJOrtho-45-324-g003.png",
+    "openi__PMC5340947_CRIEM2017-9745025.003.png",
+    "Radiographs taken four months after knee injury and operative reattachment of the anterior and posterior cruciate ligaments. Arrows indicate early metaphyseal arrest lines.jpg",
+    "Anteroposterior (A) and lateral (B) radiographs taken four months after knee injury and operative reattachment of the anterior and posterior cruciate ligaments.jpg",
+    "openi__PMC5293505_oajsm-8-009Fig2.png",
+    "openi__PMC5411220_medi-96-e6568-g002.png",
+    "openi__PMC4631111_12891_2015_791_Fig1_HTML.png",
+    "openi__PMC4212104_13075_2014_466_Fig2_HTML.png",
+    "openi__PMC4342869_13075_2015_535_Fig1_HTML.png",
+    "openi__PMC3308664_IJOrtho-46-212-g001.png",
+    "openi__PMC3049745_1752-1947-5-67-1.png",
+    "openi__PMC3308664_IJOrtho-46-212-g002.png",
+    "openi__PMC4417321_13256_2014_3151_Fig1_HTML.png",
+    "openi__PMC4799156_gr2.png",
+    "openi__PMC4897096_TOORTHJ-10-105_F1.png",
+    "openi__PMC3964672_rcse9501-e2-01.png",
+    "openi__PMC4667494_13028_2015_176_Fig1_HTML.png",
+    "openi__PMC5087826_dmm-9-025767-g4.png",
+    "openi__PMC4043681_pone.0097381.g004.png"
+  ],
+  "errors": []
+}

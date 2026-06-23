@@ -1,0 +1,89 @@
+[
+  {
+    "id": "musculoskeletal-imaging",
+    "file": "C:/Users/Administrator/Desktop/9787030802002_000020290283_15600470.pdf",
+    "pages": 308,
+    "info": {
+      "PDFFormatVersion": "1.7",
+      "Language": "zh-CN",
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "Adobe PDF Library 10.0.1",
+      "ModDate": "D:20251218133227Z",
+      "Creator": "Adobe InDesign CS6 (Windows)",
+      "CreationDate": "D:20251218133227Z",
+      "Title": "骨肌系统影像诊断",
+      "Author": "未知作者"
+    },
+    "metadata": null,
+    "sampleText": "\n\n-- 1 of 308 --\n\n\n\n-- 2 of 308 --\n\n内 容 简 介\n本书系“影像诊断快速入门丛书”的一个分册。本书集中阐述了骨肌\n系统影像学检查的相关知识，内容涵盖 X 线、CT 及 MRI 检查的基本原理、\n技术操作要点，以及常见病变的影像学诊断方法，并针对临床应用提出了\n具体的注意事项。第 1 章深入解析了 X 线、CT 及 MRI 等影像学技术的原\n理、技术特性、各自优势与局限性，以及在不同临床场景下的应用准则；\n第 2 至 12 章则通过典型病例，详细剖析了骨肌系统各类常见疾病的临床特\n征、影像表现、鉴别诊断要点、重点提醒及影像检查策略，疾病范畴广泛，\n包括但不限于创伤性损伤、退行性病变、先天性发育异常、代谢性疾病、\n炎症反应及肿瘤性病变等。\n本书内容丰富、条理清晰，既具备高度的专业性，又注重语言的通俗\n易懂，具有极强的实用价值，可供医学影像专业人员，尤其是初级影像医\n师、骨科及风湿免疫科临床医师、参与规范化培训的医师及医学影像学专\n业学生参考阅读。\n图书在版编目 (CIP) 数据\n骨肌系统影像诊断 / 郭锬 , 董越 , 焦晟主编 . -- 北京 : 科学\n出版社 , 2025. 4. -- ( 影像诊断快速入门丛书 ).\nISBN 978-7-03-080200-2\nⅠ. R680.4\n中国国家版本馆 CIP 数据核字第 20242RK130 号\n责任编辑：马晓伟 \t董 \t婕 ／ 责任校对：张小霞\n责任印制：肖 \t兴 ／ 封面设计：有道文化\n出版\n北京东黄城根北街 16 号\n邮政编码：100717\nhttp://www. sciencep. com\n印刷\n科学出版社发行 各地新华书店经销\n*\n2025 年 4 月第 一 版 开本：787×1092 1/32\n2025 年 4 月第一次印刷 印张：9 3/4\n字数：243 000\n定价：75.00 元\n（如有印装质量问题，我社负责调换）\n\n-- 3 of 308 --\n\n“影像诊断快速入门丛书”编委会\n主 \t审 \t陈克敏 \t高剑波 \t沈 \t云\n编 \t委 （按姓氏笔画排序）\n王 \t臣 \t王 \t鹏 \t王之龙 \t王仁贵\n牛 \t晨 \t卢 \t洁 \t丘 \t清 \t仝德快\n冯长静 \t邢 \t艳 \t吕培杰 \t朱亚男\n刘 \t玉 \t刘 \t倩 \t刘文亚 \t刘再毅\n刘佳妮 \t刘梦珂 \t孙记航 \t孙英丽\n李 \t东 \t李 \t铭 \t李 \t震 \t李小虎\n李卫侠 \t李正军 \t李东波 \t李兴鹏\n李耀锋 \t杨 \t帆 \t杨功鑫 \t汪 \t芳\n汪禾青 \t张 \t妍 \t张 \t明 \t张丹庆\n张明霞 \t张怡梦 \t张春燕 \t陈 \t岩\n陈克敏 \t林晓珠 \t郁义星 \t岳云龙\n金 \t倞 \t郑龙嵋 \t诗 \t涔 \t赵 \t伟\n赵 \t韧 \t赵丽琴 \t赵香田 \t郝 \t琪\n胡曙东 \t钟妍其 \t侯 \t平 \t侯 \t阳\n祝因苏 \t贾永军 \t徐文睿 \t高 \t艳\n高剑波 \t郭 \t锬 \t唐 \t磊 \t陶晓峰\n梁煜坤 \t葛宇曦 \t董 \t越 \t程增辉\n焦 \t晟 \t温 \t锋 \t薛蕴菁\n丛书秘书 \t贾永军 \t沈 \t云\n\n-- 4 of 308 --\n\n主 \t编 \t郭 \t锬 \t董 \t越 \t焦 \t晟\n副 主 编 \t孙记航 \t徐文睿 \t刘佳妮 \t温 \t锋\n编 \t者 （按姓氏笔画排序）\n王 \t水 \t代静文 \t毕 \t飞 \t刘佳妮\n孙记航 \t孙瑞芳 \t李晓凡 \t杨 \t程\n何小溪 \t沈 \t枨 \t陈 \t雯 \t庞慧婷\n徐文睿 \t郭 \t锬 \t董 \t越 \t焦 \t晟\n温 \t锋\n编写单位 \t北京医院\n辽宁省肿瘤医院\n首都医科大学附属北京儿童医院\n中国医科大学附属盛京医院\n北京儿童医院新疆医院（新疆维吾\n尔自治区儿童医院）\n《骨肌系统影像诊断》\n编 者 名 单\n\n-- 5 of 308 --\n\n"
+  },
+  {
+    "id": "orthopedics-v2-a",
+    "file": "C:/Users/Administrator/Desktop/15485264(1).pdf",
+    "pages": 252,
+    "info": {
+      "PDFFormatVersion": "1.3",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "CreationDate": "D:20250420053901Z",
+      "ModDate": "D:20250420053901Z"
+    },
+    "metadata": null,
+    "sampleText": "\n\n-- 1 of 252 --\n\n\n\n-- 2 of 252 --\n\n\n\n-- 3 of 252 --\n\n\n\n-- 4 of 252 --\n\n\n\n-- 5 of 252 --\n\n"
+  },
+  {
+    "id": "trauma-imaging",
+    "file": "C:/Users/Administrator/Desktop/骨伤科影像学_14996356(1).pdf",
+    "pages": 300,
+    "info": {
+      "PDFFormatVersion": "1.4",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "DSBaby",
+      "Creator": " ",
+      "CreationDate": "D:20250606050649+08'00'",
+      "ModDate": "D:20250606050654+08'00'",
+      "Keywords": "[General Information]\r\n书名=骨伤科影像学\r\n页数=283\r\nSS号=14996356\r\n",
+      "Author": " "
+    },
+    "metadata": {},
+    "sampleText": "\n\n-- 1 of 300 --\n\n\n\n-- 2 of 300 --\n\n\n\n-- 3 of 300 --\n\n\n\n-- 4 of 300 --\n\n\n\n-- 5 of 300 --\n\n"
+  },
+  {
+    "id": "orthopedics-v2-b",
+    "file": "C:/Users/Administrator/Desktop/15508409.pdf",
+    "pages": 244,
+    "info": {
+      "PDFFormatVersion": "1.4",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "CreationDate": "D:20250630044012+08'00'",
+      "ModDate": "D:20250630044012+08'00'",
+      "Producer": "FreePic2Pdf_Lib - v4.11",
+      "Creator": "Pdg2Pic",
+      "Title": "骨关节损伤影像诊断一点通"
+    },
+    "metadata": null,
+    "sampleText": "\n\n-- 1 of 244 --\n\n\n\n-- 2 of 244 --\n\n\n\n-- 3 of 244 --\n\n\n\n-- 4 of 244 --\n\n\n\n-- 5 of 244 --\n\n"
+  }
+]

@@ -1,5 +1,6 @@
 import express from 'express';
 import { readSiteData, writeSiteData } from './lib/dataStore.js';
+import { toPublicSiteData } from './lib/publicSiteData.js';
 import {
   authenticateUser,
   createStoredUser,
@@ -166,7 +167,8 @@ export function createContentRouter() {
     if (!data) {
       return res.status(404).json({ ok: false, error: '尚未初始化数据，请先运行 npm run extract' });
     }
-    res.json(data);
+    const isAdmin = req.session?.role === 'admin';
+    res.json(isAdmin ? data : toPublicSiteData(data));
   });
 
   router.put('/', requireAdmin, async (req, res) => {

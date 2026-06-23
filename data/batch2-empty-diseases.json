@@ -1,0 +1,357 @@
+[
+  {
+    "title": "骨母细胞瘤",
+    "en": "Osteoblastoma",
+    "type": "ostoblastoma"
+  },
+  {
+    "title": "动脉瘤样骨囊肿",
+    "en": "Aneurysmal Bone Cyst",
+    "type": "abc"
+  },
+  {
+    "title": "单纯性骨囊肿",
+    "en": "Unicameral Bone Cyst",
+    "type": "ubc"
+  },
+  {
+    "title": "内生软骨瘤",
+    "en": "Enchondroma",
+    "type": "enchondroma"
+  },
+  {
+    "title": "软骨母细胞瘤",
+    "en": "Chondroblastoma",
+    "type": "chondroblastoma"
+  },
+  {
+    "title": "非骨化性纤维瘤",
+    "en": "Non-Ossifying Fibroma",
+    "type": "nof"
+  },
+  {
+    "title": "骨嗜酸细胞肉芽肿",
+    "en": "Langerhans Cell Histiocytosis",
+    "type": "lchbone"
+  },
+  {
+    "title": "牙釉质瘤",
+    "en": "Adamantinoma",
+    "type": "adamantinoma"
+  },
+  {
+    "title": "骨纤维肉瘤",
+    "en": "Fibrosarcoma of Bone",
+    "type": "fibrosarcomabone"
+  },
+  {
+    "title": "骨上皮样血管内皮瘤",
+    "en": "Epithelioid Hemangioendothelioma",
+    "type": "hemangioendo"
+  },
+  {
+    "title": "骨瘤",
+    "en": "Osteoma",
+    "type": "osteoma"
+  },
+  {
+    "title": "蜡油样骨病",
+    "en": "Melorheostosis",
+    "type": "melorheostosis"
+  },
+  {
+    "title": "骨斑点症",
+    "en": "Osteopoikilosis",
+    "type": "osteopoikilosis"
+  },
+  {
+    "title": "骨条纹症",
+    "en": "Osteopathia Striata",
+    "type": "striata"
+  },
+  {
+    "title": "皮质旁纤维瘤",
+    "en": "Cortical Desmoid",
+    "type": "cortdesmoid"
+  },
+  {
+    "title": "骨内脂肪瘤",
+    "en": "Intraosseous Lipoma",
+    "type": "iolipoma"
+  },
+  {
+    "title": "棕色瘤",
+    "en": "Brown Tumor",
+    "type": "browntumor"
+  },
+  {
+    "title": "Paget 骨病",
+    "en": "Paget Disease of Bone",
+    "type": "paget"
+  },
+  {
+    "title": "Galeazzi 骨折",
+    "en": "Galeazzi Fracture",
+    "type": "galeazzi"
+  },
+  {
+    "title": "Bennett 骨折",
+    "en": "Bennett Fracture",
+    "type": "bennett"
+  },
+  {
+    "title": "三角骨骨折",
+    "en": "Triquetrum Fracture",
+    "type": "triquetrum"
+  },
+  {
+    "title": "腓骨近端骨折",
+    "en": "Proximal Fibula Fracture",
+    "type": "proxfibula"
+  },
+  {
+    "title": "血友病性关节病",
+    "en": "Hemophilic Arthropathy",
+    "type": "hemarthrosis"
+  },
+  {
+    "title": "弥漫性特发性骨肥厚",
+    "en": "DISH",
+    "type": "dish"
+  },
+  {
+    "title": "色素沉着绒毛结节性滑膜炎",
+    "en": "PVNS",
+    "type": "pvns"
+  },
+  {
+    "title": "肩关节骨关节炎",
+    "en": "Shoulder Osteoarthritis",
+    "type": "shoulder-oa"
+  },
+  {
+    "title": "踝关节骨关节炎",
+    "en": "Ankle Osteoarthritis",
+    "type": "ankle-oa"
+  },
+  {
+    "title": "髂骨致密性骨炎",
+    "en": "Osteitis Condensans Ilii",
+    "type": "oci"
+  },
+  {
+    "title": "血管脂肪瘤",
+    "en": "Angiolipoma",
+    "type": "angiolipoma"
+  },
+  {
+    "title": "非典型脂肪瘤",
+    "en": "Atypical Lipomatous Tumor",
+    "type": "alt"
+  },
+  {
+    "title": "高分化脂肪肉瘤",
+    "en": "Well-diff. Liposarcoma",
+    "type": "wdlps"
+  },
+  {
+    "title": "平滑肌瘤",
+    "en": "Leiomyoma",
+    "type": "leiomyoma"
+  },
+  {
+    "title": "滑膜肉瘤",
+    "en": "Synovial Sarcoma",
+    "type": "synovialsarcoma"
+  },
+  {
+    "title": "结节性筋膜炎",
+    "en": "Nodular Fasciitis",
+    "type": "nodular-fasciitis"
+  },
+  {
+    "title": "软组织黏液瘤",
+    "en": "Soft Tissue Myxoma",
+    "type": "myxoma"
+  },
+  {
+    "title": "神经鞘瘤",
+    "en": "Schwannoma",
+    "type": "schwannoma"
+  },
+  {
+    "title": "软组织血管瘤",
+    "en": "Soft Tissue Hemangioma",
+    "type": "hemangioma-st"
+  },
+  {
+    "title": "淋巴管瘤",
+    "en": "Lymphangioma",
+    "type": "lymphangioma"
+  },
+  {
+    "title": "腺泡状软组织肉瘤",
+    "en": "Alveolar Soft Part Sarcoma",
+    "type": "asps"
+  },
+  {
+    "title": "隆突性皮肤纤维肉瘤",
+    "en": "DFSP",
+    "type": "dfsp"
+  },
+  {
+    "title": "弹力纤维瘤",
+    "en": "Elastofibroma Dorsi",
+    "type": "elastofibroma"
+  },
+  {
+    "title": "足底纤维瘤病",
+    "en": "Plantar Fibromatosis",
+    "type": "plantar-fibroma"
+  },
+  {
+    "title": "腱鞘纤维瘤",
+    "en": "Fibroma of Tendon Sheath",
+    "type": "fibroma-sheath"
+  },
+  {
+    "title": "孤立性纤维瘤",
+    "en": "Solitary Fibrous Tumor",
+    "type": "sft"
+  },
+  {
+    "title": "软组织软骨瘤",
+    "en": "Soft Tissue Chondroma",
+    "type": "soft-chondroma"
+  },
+  {
+    "title": "血管外皮瘤",
+    "en": "Hemangiopericytoma",
+    "type": "hemangiopericytoma"
+  },
+  {
+    "title": "脂肪母细胞瘤",
+    "en": "Lipoblastoma",
+    "type": "lipoblastoma"
+  },
+  {
+    "title": "颗粒细胞瘤",
+    "en": "Granular Cell Tumor",
+    "type": "granular-cell"
+  },
+  {
+    "title": "股四头肌撕裂",
+    "en": "Quadriceps Tear",
+    "type": "quad-tear"
+  },
+  {
+    "title": "内收肌撕裂",
+    "en": "Adductor Tear",
+    "type": "adductor"
+  },
+  {
+    "title": "臀小肌损伤",
+    "en": "Gluteus Minimus Tear",
+    "type": "gluteus-min"
+  },
+  {
+    "title": "跖肌撕裂",
+    "en": "Plantaris Tear",
+    "type": "plantaris"
+  },
+  {
+    "title": "伸肌腱撕裂",
+    "en": "Extensor Tendon Tear",
+    "type": "extensor"
+  },
+  {
+    "title": "肱二头肌长头腱断裂",
+    "en": "Biceps Long Head Rupture",
+    "type": "biceps-long"
+  },
+  {
+    "title": "肱三头肌腱断裂",
+    "en": "Triceps Tendon Rupture",
+    "type": "triceps"
+  },
+  {
+    "title": "胸大肌撕裂",
+    "en": "Pectoralis Major Tear",
+    "type": "pec-major"
+  },
+  {
+    "title": "小圆肌损伤",
+    "en": "Teres Minor Tear",
+    "type": "teres-minor"
+  },
+  {
+    "title": "三角肌撕裂",
+    "en": "Deltoid Tear",
+    "type": "deltoid"
+  },
+  {
+    "title": "掌侧板损伤",
+    "en": "Volar Plate Injury",
+    "type": "volar-plate"
+  },
+  {
+    "title": "中央束损伤",
+    "en": "Central Slip Injury",
+    "type": "central-slip"
+  },
+  {
+    "title": "槌状指",
+    "en": "Mallet Finger",
+    "type": "mallet"
+  },
+  {
+    "title": "Morton 神经瘤",
+    "en": "Morton Neuroma",
+    "type": "mortons"
+  },
+  {
+    "title": "筋膜室综合征",
+    "en": "Compartment Syndrome",
+    "type": "compartment"
+  },
+  {
+    "title": "创伤性横纹肌溶解",
+    "en": "Traumatic Rhabdomyolysis",
+    "type": "rhabdo-trauma"
+  },
+  {
+    "title": "神经源性肌萎缩",
+    "en": "Denervation Atrophy",
+    "type": "denervation"
+  },
+  {
+    "title": "腱黄瘤",
+    "en": "Tendon Xanthoma",
+    "type": "tendon-xanthoma"
+  },
+  {
+    "title": "椎弓峡部裂",
+    "en": "Spondylolysis",
+    "type": "spondylolysis"
+  },
+  {
+    "title": "盂肱关节骨关节炎",
+    "en": "Glenohumeral OA",
+    "type": "glenohumeral-oa"
+  },
+  {
+    "title": "肘关节骨关节炎",
+    "en": "Elbow Osteoarthritis",
+    "type": "elbow-oa"
+  },
+  {
+    "title": "桡尺骨融合",
+    "en": "Radioulnar Synostosis",
+    "type": "radioulnar-synostosis"
+  },
+  {
+    "title": "Madelung 畸形",
+    "en": "Madelung Deformity",
+    "type": "madelung"
+  }
+]

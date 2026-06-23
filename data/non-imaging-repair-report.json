@@ -1,0 +1,414 @@
+{
+  "mode": "apply",
+  "removed": [
+    {
+      "type": "tibplat",
+      "title": "胫骨平台骨折",
+      "file": "openi__PMC4175867_IJOrtho-48-507-g002.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4175867_IJOrtho-48-507-g002.png X线 · 胫骨平台骨折 · Clinical photographs (a and b) showing posterior subluxation 胫骨 · X线 Clinical photog"
+    },
+    {
+      "type": "monteggia",
+      "title": "Monteggia 骨折",
+      "file": "openi__PMC4275958_gr4.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4275958_gr4.png 超声 · Monteggia 骨折 · Final follow-up radiographs and clinical photos. (A, AP) and 前臂 · 超声 Final follow-up radiograp"
+    },
+    {
+      "type": "handoaa",
+      "title": "手部骨关节炎",
+      "file": "openi__PMC3371224_ard-71-6-0891-fig1.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3371224_ard-71-6-0891-fig1.png X线 · 手部骨关节炎 · Clinical appearance of erosive osteoarthritis of the interph 手部 · X线 Clinical appeara"
+    },
+    {
+      "type": "psa",
+      "title": "银屑病关节炎",
+      "file": "openi__PMC2688232_ar2586-1.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC2688232_ar2586-1.png MRI · 银屑病关节炎 · A patient with arthritis mutilans with digital shortening. ( 手足 · MRI A patient with arthritis"
+    },
+    {
+      "type": "lymphomabone",
+      "title": "骨原发性淋巴瘤",
+      "file": "openi__PMC4201907_nihms-566386-f0001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4201907_nihms-566386-f0001.png 超声 · 骨原发性淋巴瘤 · H&E and CD20 stain of for index patient 6 (original magnific 骨盆/股骨 · 超声 H&E and CD20"
+    },
+    {
+      "type": "adamantinoma",
+      "title": "牙釉质瘤",
+      "file": "openi__PMC4918021_13256_2016_974_Fig4_HTML.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4918021_13256_2016_974_Fig4_HTML.png X线 · 牙釉质瘤 · Intraoperative finding. Wide resection of the tumor was perf 胫骨 · X线 Intraoperati"
+    },
+    {
+      "type": "fibrosarcomabone",
+      "title": "骨纤维肉瘤",
+      "file": "openi__PMC4242685_opth-8-2319Fig4.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4242685_opth-8-2319Fig4.png 影像 · 骨纤维肉瘤 · H&E microphotographs at (A and B) 4× and (C) 10× magnificati 股骨 · 影像 H&E microphotographs"
+    },
+    {
+      "type": "mesench-chondro",
+      "title": "间叶性软骨肉瘤",
+      "file": "openi__PMC3533729_1746-1596-7-125-2.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3533729_1746-1596-7-125-2.png 超声 · 间叶性软骨肉瘤 · The renal mass consisting of sheets of undifferentiated mese 肋骨/颌骨 · 超声 The renal mas"
+    },
+    {
+      "type": "osteoma",
+      "title": "骨瘤",
+      "file": "openi__PMC5362884_10.1177_2055116915589835-fig5.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC5362884_10.1177_2055116915589835-fig5.png X线 · 骨瘤 · (a and b) Plain radiographs and (c) photograph of the cat ob 颅面/胫骨 · X线 (a and"
+    },
+    {
+      "type": "skelet-hemang",
+      "title": "骨血管瘤",
+      "file": "openi__PMC4483619_isd-45-123-g003.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4483619_isd-45-123-g003.png MRI · 骨血管瘤 · Non-involuting congenital hemangioma in a 26-year-old female 肋骨/长骨 · MRI Non-involuting c"
+    },
+    {
+      "type": "erosive-oa",
+      "title": "侵蚀性骨关节炎",
+      "file": "openi__PMC2925149_ard-69-05-0862-fig3.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC2925149_ard-69-05-0862-fig3.png 影像 · 侵蚀性骨关节炎 · Evaluation of the extent of the pathological changes in subc DIP/PIP · 影像 Evaluatio"
+    },
+    {
+      "type": "elastofibroma",
+      "title": "弹力纤维瘤",
+      "file": "openi__PMC4770403_rb-49-01-0061-g01.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4770403_rb-49-01-0061-g01.png CT · 弹力纤维瘤 · A: Photo of the patient’s dorsal region showing the appearan 肩胛下 · CT A: Photo of the p"
+    },
+    {
+      "type": "elastofibroma",
+      "title": "弹力纤维瘤",
+      "file": "openi__PMC2276598_SRCM2008-756565.004.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC2276598_SRCM2008-756565.004.png 影像 · 弹力纤维瘤 · H&E stain showing branched andunbranched coarse elastin fibr 肩胛下 · 影像 H&E stain showi"
+    },
+    {
+      "type": "tgct",
+      "title": "腱鞘巨细胞瘤",
+      "file": "openi__PMC4819315_CMJ-129-881-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4819315_CMJ-129-881-g001.png MRI · 腱鞘巨细胞瘤 · Clinical appearance and magnetic resonance images of the lef 腱鞘 · MRI Clinical appeara"
+    },
+    {
+      "type": "dfsp",
+      "title": "隆突性皮肤纤维肉瘤",
+      "file": "openi__PMC3261608_JCIS-1-55-g003.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3261608_JCIS-1-55-g003.png MRI · 隆突性皮肤纤维肉瘤 · 27-year-old with DFSP . (a) Patient photograph and (b) corre 皮肤/皮下 · MRI 27-year-old "
+    },
+    {
+      "type": "ewing-extra",
+      "title": "骨外尤文肉瘤",
+      "file": "openi__PMC3295994_kjim-27-91-g002.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3295994_kjim-27-91-g002.png 影像 · 骨外尤文肉瘤 · Cut section of the gross specimen showing a grey tan mass wi 软组织 · 影像 Cut section of the"
+    },
+    {
+      "type": "triceps",
+      "title": "肱三头肌腱断裂",
+      "file": "openi__PMC4719357_JOCR-5-58-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4719357_JOCR-5-58-g001.png MRI · 肱三头肌腱断裂 · X-rays, MRI and intraoperative findings, a) preoperative lat 肘 · MRI X-rays, MRI and in"
+    },
+    {
+      "type": "pec-major",
+      "title": "胸大肌撕裂",
+      "file": "openi__PMC3199274_1758-2555-3-20-1.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3199274_1758-2555-3-20-1.png MRI · 胸大肌撕裂 · Diagnosis of acute tendon tears of the pectoralis major musc 胸肩 · MRI Diagnosis of acut"
+    },
+    {
+      "type": "pec-major",
+      "title": "胸大肌撕裂",
+      "file": "openi__PMC3199274_1758-2555-3-20-3.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3199274_1758-2555-3-20-3.png MRI · 胸大肌撕裂 · Postoperative external appearance and imaging in patient 1.  胸肩 · MRI Postoperative ext"
+    },
+    {
+      "type": "pec-major",
+      "title": "胸大肌撕裂",
+      "file": "openi__PMC5288615_JOCR-6-17-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC5288615_JOCR-6-17-g001.png 影像 · 胸大肌撕裂 · Clinical photograph. 胸肩 · 影像 Clinical photograph."
+    },
+    {
+      "type": "extensor",
+      "title": "伸肌腱撕裂",
+      "file": "openi__PMC3582875_cios-5-82-g002.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3582875_cios-5-82-g002.png 影像 · 伸肌腱撕裂 · (A) Intraoperative photograph shows that the redundant radia 足背 · 影像 (A) Intraoperative ph"
+    },
+    {
+      "type": "plantaris",
+      "title": "跖肌撕裂",
+      "file": "openi__PMC3981436_cp-2011-4-e134-g002.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3981436_cp-2011-4-e134-g002.png 影像 · 跖肌撕裂 · Second surgical intervention in case 1. Augmentation of the  小腿 · 影像 Second surgical i"
+    },
+    {
+      "type": "mallet",
+      "title": "槌状指",
+      "file": "openi__PMC4573865_gr2.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4573865_gr2.png X线 · 槌状指 · Intraoperative findings and postoperative radiographs . (A)  DIP · X线 Intraoperative findings and posto"
+    },
+    {
+      "type": "mallet",
+      "title": "槌状指",
+      "file": "openi__PMC4807168_aps-43-134-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4807168_aps-43-134-g001.png 超声 · 槌状指 · Main theories explaining the mechanism of injuryIn all analy DIP · 超声 Main theories explain"
+    },
+    {
+      "type": "volar-plate",
+      "title": "掌侧板损伤",
+      "file": "openi__PMC3632846_umj0082-0026-f6.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3632846_umj0082-0026-f6.png 超声 · 掌侧板损伤 · Finger Injuries , (a) A common example is the volar plate av PIP · 超声 Finger Injuries , ("
+    },
+    {
+      "type": "central-slip",
+      "title": "中央束损伤",
+      "file": "openi__PMC4242053_PAMJ-18-230-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4242053_PAMJ-18-230-g001.png 影像 · 中央束损伤 · The photograph shows boutonniere deformity of the index evok 伸指 · 影像 The photograph show"
+    },
+    {
+      "type": "radioulnar-synostosis",
+      "title": "桡尺骨融合",
+      "file": "openi__PMC5217236_13023_2016_559_Fig5_HTML.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC5217236_13023_2016_559_Fig5_HTML.png 超声 · 桡尺骨融合 · Hands and arm deformities of two patients with Moebius. Clin 前臂 · 超声 Hands and a"
+    },
+    {
+      "type": "lgc-osteo",
+      "title": "低度中心性骨肉瘤",
+      "file": "openi__PMC3691094_rado-47-02-192f3b.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3691094_rado-47-02-192f3b.png 影像 · 低度中心性骨肉瘤 · On low power magnification long parallel seams of bone are s 股骨 · 影像 On low power ma"
+    },
+    {
+      "type": "acetabular-dysplasia",
+      "title": "髋臼发育不良(成人)",
+      "file": "openi__PMC3718640_1749-799X-8-17-2.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3718640_1749-799X-8-17-2.png X线 · 髋臼发育不良(成人) · Clinical photograph demonstrating use of the external fixato 髋 · X线 Clinical photog"
+    },
+    {
+      "type": "still",
+      "title": "成人 Still 病",
+      "file": "openi__PMC5101375_CRIM2016-2071815.001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC5101375_CRIM2016-2071815.001.png X线 · 成人 Still 病 · Photograph of the rash and chest X-ray at presentation and d 多关节 · X线 Photograp"
+    },
+    {
+      "type": "leiomyosarcoma",
+      "title": "平滑肌肉瘤",
+      "file": "openi__PMC2627197_kjr-9-S14-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC2627197_kjr-9-S14-g001.png CT · 平滑肌肉瘤 · Radiological and intraoperative findings of ovarian vein lei 大腿 · CT Radiological and intr"
+    },
+    {
+      "type": "mpnst",
+      "title": "恶性周围神经鞘膜瘤",
+      "file": "openi__PMC4357080_IJDENT-6-53-g004.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4357080_IJDENT-6-53-g004.png X线 · 恶性周围神经鞘膜瘤 · Post operative clinical photograph after hemimandibulectomy  坐骨神经 · X线 Post operativ"
+    },
+    {
+      "type": "lgfm",
+      "title": "低度纤维黏液样肉瘤",
+      "file": "openi__PMC3482067_cru-0002-0087-g02.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3482067_cru-0002-0087-g02.png 影像 · 低度纤维黏液样肉瘤 · Low-grade fibromyxoid sarcoma covered by pelvic urothelium.  大腿 · 影像 Low-grade fibr"
+    },
+    {
+      "type": "lgfm",
+      "title": "低度纤维黏液样肉瘤",
+      "file": "openi__PMC3482067_cru-0002-0087-g03.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC3482067_cru-0002-0087-g03.png 影像 · 低度纤维黏液样肉瘤 · Low-grade fibromyxoid sarcoma . Myxoid area showing arcades  大腿 · 影像 Low-grade fibr"
+    },
+    {
+      "type": "lgfm",
+      "title": "低度纤维黏液样肉瘤",
+      "file": "openi__PMC4738115_aps-43-110-g002.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4738115_aps-43-110-g002.png 影像 · 低度纤维黏液样肉瘤 · An intraoperative finding: the intraoral approach and the sh 大腿 · 影像 An intraoperativ"
+    },
+    {
+      "type": "bunion",
+      "title": "拇外翻",
+      "file": "openi__PMC4443422_IJOrtho-49-361-g001.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC4443422_IJOrtho-49-361-g001.png 超声 · 拇外翻 · Clinical photographs of a child with FOP showing (a) tortico 第一跖趾 · 超声 Clinical photogr"
+    },
+    {
+      "type": "pubic-symphysis",
+      "title": "耻骨联合病变",
+      "file": "openi__PMC5135835_12957_2016_1054_Fig1_HTML.png",
+      "reason": "non-radiology",
+      "snippet": "openi__PMC5135835_12957_2016_1054_Fig1_HTML.png 超声 · 耻骨联合病变 · Clinical appearance of the patient at time of presentation ( 耻骨联合 · 超声 Clinica"
+    }
+  ],
+  "replaced": [
+    {
+      "type": "monteggia",
+      "title": "Monteggia 骨折",
+      "added": [
+        "openi__PMC1636036_1749-799X-1-12-3.png"
+      ]
+    },
+    {
+      "type": "osteoma",
+      "title": "骨瘤",
+      "added": [
+        "openi__PMC3875572_pone.0085359.g002.png"
+      ]
+    },
+    {
+      "type": "tgct",
+      "title": "腱鞘巨细胞瘤",
+      "added": [
+        "openi__PMC4374198_JCIS-5-13-g005.png"
+      ]
+    },
+    {
+      "type": "dfsp",
+      "title": "隆突性皮肤纤维肉瘤",
+      "added": [
+        "openi__PMC4616540_medi-94-e1001-g003.png"
+      ]
+    },
+    {
+      "type": "still",
+      "title": "成人 Still 病",
+      "added": [
+        "openi__PMC4416342_13620_2015_34_Fig1_HTML.png"
+      ]
+    },
+    {
+      "type": "leiomyosarcoma",
+      "title": "平滑肌肉瘤",
+      "added": [
+        "openi__PMC2583979_1477-7819-6-113-2.png"
+      ]
+    },
+    {
+      "type": "mpnst",
+      "title": "恶性周围神经鞘膜瘤",
+      "added": [
+        "openi__PMC3483600_ci12004305.png"
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "type": "tibplat",
+      "reason": "no-match"
+    },
+    {
+      "type": "handoaa",
+      "reason": "no-match"
+    },
+    {
+      "type": "psa",
+      "reason": "no-match"
+    },
+    {
+      "type": "lymphomabone",
+      "reason": "no-match"
+    },
+    {
+      "type": "adamantinoma",
+      "reason": "no-match"
+    },
+    {
+      "type": "fibrosarcomabone",
+      "reason": "no-match"
+    },
+    {
+      "type": "mesench-chondro",
+      "reason": "no-match"
+    },
+    {
+      "type": "skelet-hemang",
+      "reason": "no-match"
+    },
+    {
+      "type": "erosive-oa",
+      "reason": "no-match"
+    },
+    {
+      "type": "elastofibroma",
+      "reason": "no-match"
+    },
+    {
+      "type": "ewing-extra",
+      "reason": "no-match"
+    },
+    {
+      "type": "triceps",
+      "reason": "no-match"
+    },
+    {
+      "type": "pec-major",
+      "reason": "no-match"
+    },
+    {
+      "type": "extensor",
+      "reason": "no-match"
+    },
+    {
+      "type": "plantaris",
+      "reason": "no-match"
+    },
+    {
+      "type": "mallet",
+      "reason": "no-match"
+    },
+    {
+      "type": "volar-plate",
+      "reason": "no-match"
+    },
+    {
+      "type": "central-slip",
+      "reason": "no-match"
+    },
+    {
+      "type": "radioulnar-synostosis",
+      "reason": "no-match"
+    },
+    {
+      "type": "lgc-osteo",
+      "reason": "no-match"
+    },
+    {
+      "type": "acetabular-dysplasia",
+      "reason": "no-match"
+    },
+    {
+      "type": "lgfm",
+      "reason": "no-match"
+    },
+    {
+      "type": "bunion",
+      "reason": "no-match"
+    },
+    {
+      "type": "pubic-symphysis",
+      "reason": "no-match"
+    }
+  ],
+  "errors": []
+}

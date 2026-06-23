@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    {
+      "type": "elbow",
+      "from": "Radiographie d’une luxation postérieur du coude gauche sans fracture.jpg",
+      "to": "Radiographie d'une luxation postérieur du coude gauche sans fracture.jpg"
+    }
+  ],
+  "registryAdded": [
+    "Chalk stick fracture bei Morbus Bechterew 55M - CT koronar und sagittal - 001.jpg",
+    "Talus Fraktur.jpg",
+    "Talar Fractures.jpg"
+  ],
+  "dupsRemoved": [
+    {
+      "file": "Vertebral Hemangioma.jpg",
+      "removeFrom": "skelet-hemang"
+    },
+    {
+      "file": "Vertebral hemangioma 01.jpg",
+      "removeFrom": "skelet-hemang"
+    },
+    {
+      "file": "Ewing's sarcoma MRI nci-vol-1832-300.jpg",
+      "removeFrom": "ewing-extra"
+    }
+  ]
+}

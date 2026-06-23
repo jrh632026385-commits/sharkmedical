@@ -1,0 +1,17 @@
+{
+  "mode": "apply",
+  "at": "2026-06-23T23:13:28.089Z",
+  "maxPerDisease": 20,
+  "before": {
+    "diseases": 422,
+    "images": 1122
+  },
+  "restoreCandidates": 957,
+  "restored": 957,
+  "skippedDuplicate": 0,
+  "skippedNoDisease": 0,
+  "after": {
+    "diseases": 423,
+    "images": 2070
+  }
+}

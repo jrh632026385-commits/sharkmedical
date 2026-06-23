@@ -1,0 +1,274 @@
+{
+  "mode": "apply",
+  "removed": [
+    {
+      "file": "Unhappy Triad des Kniegelenks 53M - MR - 001 - Annotation.jpg",
+      "type": "knee",
+      "title": "前交叉韧带损伤",
+      "score": -50,
+      "keep": "segond",
+      "keepScore": 45,
+      "reason": "low-score"
+    },
+    {
+      "file": "Unhappy Triad des Kniegelenks 53M - MR - 001 - Annotation.jpg",
+      "type": "mcl",
+      "title": "内侧副韧带损伤",
+      "score": -50,
+      "keep": "segond",
+      "keepScore": 45,
+      "reason": "low-score"
+    },
+    {
+      "file": "CT SCAN DISC HERNIATION.JPG",
+      "type": "spine",
+      "title": "腰椎间盘突出",
+      "score": -50,
+      "keep": "thoracic-disc",
+      "keepScore": 36,
+      "reason": "low-score"
+    },
+    {
+      "file": "Lumbar Spine 111353-rgbcb.png",
+      "type": "spine",
+      "title": "腰椎间盘突出",
+      "score": -4,
+      "keep": "modic",
+      "keepScore": 34,
+      "reason": "low-score"
+    },
+    {
+      "file": "X-ray of bimalleolar fracture.jpg",
+      "type": "ankle",
+      "title": "踝关节骨折脱位",
+      "score": -50,
+      "keep": "maisonneuve",
+      "keepScore": 70,
+      "reason": "low-score"
+    },
+    {
+      "file": "Trimalleolar Ankle Fracture.jpg",
+      "type": "ankle",
+      "title": "踝关节骨折脱位",
+      "score": -2,
+      "keep": "maisonneuve",
+      "keepScore": 52,
+      "reason": "low-score"
+    },
+    {
+      "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+      "type": "vertfx",
+      "title": "椎体压缩骨折",
+      "score": 26,
+      "keep": "chance",
+      "keepScore": 58,
+      "reason": "dominated"
+    },
+    {
+      "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+      "type": "tb",
+      "title": "脊柱结核",
+      "score": -50,
+      "keep": "chance",
+      "keepScore": 58,
+      "reason": "low-score"
+    },
+    {
+      "file": "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+      "type": "osteoporosis",
+      "title": "骨质疏松症",
+      "score": -50,
+      "keep": "chance",
+      "keepScore": 58,
+      "reason": "low-score"
+    },
+    {
+      "file": "L1 2 vertebral fracture.jpg",
+      "type": "vertfx",
+      "title": "椎体压缩骨折",
+      "score": -50,
+      "keep": "osteoporosis",
+      "keepScore": -50,
+      "reason": "low-score"
+    },
+    {
+      "file": "L1 2 vertebral fracture.jpg",
+      "type": "osteoporosis",
+      "title": "骨质疏松症",
+      "score": -50,
+      "keep": "vertfx",
+      "keepScore": -50,
+      "reason": "low-score"
+    },
+    {
+      "file": "Meniscal Tear MRI.jpg",
+      "type": "meniscus",
+      "title": "半月板撕裂",
+      "score": 26,
+      "keep": "meniscal-cyst",
+      "keepScore": 36,
+      "reason": "dominated"
+    },
+    {
+      "file": "Riesenzelltumor T1 cor.jpg",
+      "type": "gct",
+      "title": "骨巨细胞瘤",
+      "score": 26,
+      "keep": "tgct",
+      "keepScore": 36,
+      "reason": "dominated"
+    },
+    {
+      "file": "Riesenzelltumor PDfs cor.jpg",
+      "type": "gct",
+      "title": "骨巨细胞瘤",
+      "score": 26,
+      "keep": "tgct",
+      "keepScore": 36,
+      "reason": "dominated"
+    },
+    {
+      "file": "Multiple kartilaginaere Exostosen Knie - Roe ap 001.jpg",
+      "type": "osteochondroma",
+      "title": "骨软骨瘤",
+      "score": -2,
+      "keep": "maffucci",
+      "keepScore": 32,
+      "reason": "low-score"
+    },
+    {
+      "file": "Spondylodiscitis LWK 34 82M - MR und CT - 001.jpg",
+      "type": "tb",
+      "title": "脊柱结核",
+      "score": -50,
+      "keep": "discitis",
+      "keepScore": 54,
+      "reason": "low-score"
+    },
+    {
+      "file": "CT scan of calcaneal fracture.jpg",
+      "type": "calcaneus",
+      "title": "跟骨骨折",
+      "score": -50,
+      "keep": "os-trigonum",
+      "keepScore": 54,
+      "reason": "low-score"
+    },
+    {
+      "file": "Avulsionsfraktur unterer Patellapol 12M - CR und CT - 001.jpg",
+      "type": "patella",
+      "title": "髌骨骨折",
+      "score": 26,
+      "keep": "sinding",
+      "keepScore": 64,
+      "reason": "dominated"
+    },
+    {
+      "file": "X-ray of occult metaphyseal stress fracture of the tibia.jpg",
+      "type": "stressfx",
+      "title": "应力性骨折",
+      "score": 26,
+      "keep": "tibialshaft",
+      "keepScore": 36,
+      "reason": "dominated"
+    },
+    {
+      "file": "T1 and DP fat sat MRI of a stress fracture.jpg",
+      "type": "stressfx",
+      "title": "应力性骨折",
+      "score": 26,
+      "keep": "tibialshaft",
+      "keepScore": 36,
+      "reason": "dominated"
+    },
+    {
+      "file": "X-ray of ventral dislocation of the radial head with calcification of annular ligament.jpg",
+      "type": "monteggia",
+      "title": "Monteggia 骨折",
+      "score": -50,
+      "keep": "essex",
+      "keepScore": 70,
+      "reason": "low-score"
+    },
+    {
+      "file": "Snowboarders ankle - CT coronar.jpg",
+      "type": "talus",
+      "title": "距骨骨折",
+      "score": -50,
+      "keep": "os-trigonum",
+      "keepScore": 34,
+      "reason": "low-score"
+    }
+  ],
+  "replaced": [
+    {
+      "type": "knee",
+      "title": "前交叉韧带损伤",
+      "added": [
+        "openi__PMC1751061_cc5083-2.png"
+      ]
+    },
+    {
+      "type": "monteggia",
+      "title": "Monteggia 骨折",
+      "added": [
+        "openi__PMC2427046_1752-1947-2-190-1.png"
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "type": "mcl",
+      "reason": "no-match"
+    },
+    {
+      "type": "spine",
+      "reason": "no-match"
+    },
+    {
+      "type": "ankle",
+      "reason": "no-match"
+    },
+    {
+      "type": "vertfx",
+      "reason": "no-match"
+    },
+    {
+      "type": "tb",
+      "reason": "no-match"
+    },
+    {
+      "type": "osteoporosis",
+      "reason": "no-match"
+    },
+    {
+      "type": "meniscus",
+      "reason": "no-match"
+    },
+    {
+      "type": "gct",
+      "reason": "no-match"
+    },
+    {
+      "type": "osteochondroma",
+      "reason": "no-match"
+    },
+    {
+      "type": "calcaneus",
+      "reason": "no-match"
+    },
+    {
+      "type": "patella",
+      "reason": "no-match"
+    },
+    {
+      "type": "stressfx",
+      "reason": "no-match"
+    },
+    {
+      "type": "talus",
+      "reason": "no-match"
+    }
+  ],
+  "errors": []
+}

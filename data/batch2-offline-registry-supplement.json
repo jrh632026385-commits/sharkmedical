@@ -1,0 +1,668 @@
+{
+  "minScore": 15,
+  "supplemented": [
+    {
+      "type": "abc",
+      "title": "动脉瘤样骨囊肿",
+      "n": 1,
+      "scores": [
+        15
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "ubc",
+      "title": "单纯性骨囊肿",
+      "n": 1,
+      "scores": [
+        15
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "fibrosarcomabone",
+      "title": "骨纤维肉瘤",
+      "n": 1,
+      "scores": [
+        15
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "iolipoma",
+      "title": "骨内脂肪瘤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "T1 MRI of thenar intramuscular lipoma.jpg",
+        "Ultrasonography of a lipoma.jpg"
+      ]
+    },
+    {
+      "type": "paget",
+      "title": "Paget 骨病",
+      "n": 1,
+      "scores": [
+        15
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "galeazzi",
+      "title": "Galeazzi 骨折",
+      "n": 2,
+      "scores": [
+        39,
+        29
+      ],
+      "files": [
+        "Radiographie d'une luxation postérieur du coude gauche sans fracture.jpg",
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "bennett",
+      "title": "Bennett 骨折",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "CT scan of calcaneal fracture.jpg"
+      ]
+    },
+    {
+      "type": "boxer",
+      "title": "拳击手骨折",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "CT scan of calcaneal fracture.jpg"
+      ]
+    },
+    {
+      "type": "triquetrum",
+      "title": "三角骨骨折",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "CT scan of calcaneal fracture.jpg"
+      ]
+    },
+    {
+      "type": "olecranon",
+      "title": "尺骨鹰嘴骨折",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "CT scan of calcaneal fracture.jpg"
+      ]
+    },
+    {
+      "type": "maisonneuve",
+      "title": "Maisonneuve 骨折",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png",
+        "CT scan of calcaneal fracture.jpg"
+      ]
+    },
+    {
+      "type": "proxfibula",
+      "title": "腓骨近端骨折",
+      "n": 2,
+      "scores": [
+        27,
+        19
+      ],
+      "files": [
+        "Proximal fractures of 5th metatarsal.jpg",
+        "Bone fracture L1, L2 and L4, X-ray, L, case 01.png"
+      ]
+    },
+    {
+      "type": "dish",
+      "title": "弥漫性特发性骨肥厚",
+      "n": 1,
+      "scores": [
+        17
+      ],
+      "files": [
+        "Radiographie d'une luxation postérieur du coude gauche sans fracture.jpg"
+      ]
+    },
+    {
+      "type": "shoulder-oa",
+      "title": "肩关节骨关节炎",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Metacarpophalangeal subluxation and osteoarthritis (distal radio-ulnar and trapeziometacarpal), X-ray.png",
+        "Osteoarthritis on X-ray.jpg"
+      ]
+    },
+    {
+      "type": "ankle-oa",
+      "title": "踝关节骨关节炎",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Metacarpophalangeal subluxation and osteoarthritis (distal radio-ulnar and trapeziometacarpal), X-ray.png",
+        "Osteoarthritis on X-ray.jpg"
+      ]
+    },
+    {
+      "type": "wdlps",
+      "title": "高分化脂肪肉瘤",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "HG mixoid liposarcoma, MRI, 2019, 8, 08.png",
+        "HG mixoid liposarcoma, MRI, 2019, 10, 11.png"
+      ]
+    },
+    {
+      "type": "synovialsarcoma",
+      "title": "滑膜肉瘤",
+      "n": 2,
+      "scores": [
+        19,
+        15
+      ],
+      "files": [
+        "PD MRI of synovial chondromatosis of the knee.jpg",
+        "Ewing's sarcoma MRI nci-vol-1832-300.jpg"
+      ]
+    },
+    {
+      "type": "hemangioma-st",
+      "title": "软组织血管瘤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "Vertebral hemangioma 01.jpg",
+        "Vertebral Hemangioma.jpg"
+      ]
+    },
+    {
+      "type": "asps",
+      "title": "腺泡状软组织肉瘤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "Ewing's sarcoma MRI nci-vol-1832-300.jpg",
+        "HG mixoid liposarcoma, MRI, 2019, 8, 08.png"
+      ]
+    },
+    {
+      "type": "tgct",
+      "title": "腱鞘巨细胞瘤",
+      "n": 2,
+      "scores": [
+        21,
+        21
+      ],
+      "files": [
+        "Riesenzelltumor PDfs cor.jpg",
+        "Riesenzelltumor RÖ ap.jpg"
+      ]
+    },
+    {
+      "type": "fibroma-sheath",
+      "title": "腱鞘纤维瘤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "soft-chondroma",
+      "title": "软组织软骨瘤",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Osteochondroma X-ray.jpg",
+        "PD MRI of synovial chondromatosis of the knee.jpg"
+      ]
+    },
+    {
+      "type": "quad-tear",
+      "title": "股四头肌撕裂",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "adductor",
+      "title": "内收肌撕裂",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "gluteus-min",
+      "title": "臀小肌损伤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "plantaris",
+      "title": "跖肌撕裂",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "extensor",
+      "title": "伸肌腱撕裂",
+      "n": 2,
+      "scores": [
+        23,
+        23
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "biceps-long",
+      "title": "肱二头肌长头腱断裂",
+      "n": 2,
+      "scores": [
+        23,
+        15
+      ],
+      "files": [
+        "MRI. rupture of the distal biceps tendon..jpg",
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "triceps",
+      "title": "肱三头肌腱断裂",
+      "n": 2,
+      "scores": [
+        23,
+        23
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "pec-major",
+      "title": "胸大肌撕裂",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "teres-minor",
+      "title": "小圆肌损伤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "supraspinatus-calc",
+      "title": "钙化性肌腱炎",
+      "n": 1,
+      "scores": [
+        19
+      ],
+      "files": [
+        "X-ray of ventral dislocation of the radial head with calcification of annular ligament.jpg"
+      ]
+    },
+    {
+      "type": "deltoid",
+      "title": "三角肌撕裂",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "volar-plate",
+      "title": "掌侧板损伤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "Lateral Tibial Plateau fracture XRay with Depression 2.jpg",
+        "Lateral Tibial Plateau fracture XRay with Depression.jpg"
+      ]
+    },
+    {
+      "type": "tendon-xanthoma",
+      "title": "腱黄瘤",
+      "n": 2,
+      "scores": [
+        15,
+        15
+      ],
+      "files": [
+        "1 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg",
+        "2 MRI. Complete tear and rupture of the supraspinatus tendon. Wide transmural damage (2.4 x 2.4 cm)..jpg"
+      ]
+    },
+    {
+      "type": "meniscoid",
+      "title": "颈椎间盘疝",
+      "n": 2,
+      "scores": [
+        19,
+        16
+      ],
+      "files": [
+        "X-ray of cervical spondylosis.jpg",
+        "Cervical Xray Lateral View.jpg"
+      ]
+    },
+    {
+      "type": "elbow-oa",
+      "title": "肘关节骨关节炎",
+      "n": 2,
+      "scores": [
+        19,
+        19
+      ],
+      "files": [
+        "Metacarpophalangeal subluxation and osteoarthritis (distal radio-ulnar and trapeziometacarpal), X-ray.png",
+        "Osteoarthritis on X-ray.jpg"
+      ]
+    }
+  ],
+  "stillEmpty": [
+    {
+      "type": "ostoblastoma",
+      "title": "骨母细胞瘤"
+    },
+    {
+      "type": "enchondroma",
+      "title": "内生软骨瘤"
+    },
+    {
+      "type": "chondroblastoma",
+      "title": "软骨母细胞瘤"
+    },
+    {
+      "type": "nof",
+      "title": "非骨化性纤维瘤"
+    },
+    {
+      "type": "lchbone",
+      "title": "骨嗜酸细胞肉芽肿"
+    },
+    {
+      "type": "adamantinoma",
+      "title": "牙釉质瘤"
+    },
+    {
+      "type": "hemangioendo",
+      "title": "骨上皮样血管内皮瘤"
+    },
+    {
+      "type": "osteoma",
+      "title": "骨瘤"
+    },
+    {
+      "type": "melorheostosis",
+      "title": "蜡油样骨病"
+    },
+    {
+      "type": "osteopoikilosis",
+      "title": "骨斑点症"
+    },
+    {
+      "type": "striata",
+      "title": "骨条纹症"
+    },
+    {
+      "type": "cortdesmoid",
+      "title": "皮质旁纤维瘤"
+    },
+    {
+      "type": "browntumor",
+      "title": "棕色瘤"
+    },
+    {
+      "type": "fd-mazabraud",
+      "title": "Mazabraud 综合征"
+    },
+    {
+      "type": "ossifying-fibroma",
+      "title": "骨化性纤维瘤"
+    },
+    {
+      "type": "polyostotic-fd",
+      "title": "多骨性纤维结构不良"
+    },
+    {
+      "type": "supracondylar",
+      "title": "肱骨髁上骨折"
+    },
+    {
+      "type": "hemarthrosis",
+      "title": "血友病性关节病"
+    },
+    {
+      "type": "pvns",
+      "title": "色素沉着绒毛结节性滑膜炎"
+    },
+    {
+      "type": "oci",
+      "title": "髂骨致密性骨炎"
+    },
+    {
+      "type": "angiolipoma",
+      "title": "血管脂肪瘤"
+    },
+    {
+      "type": "alt",
+      "title": "非典型脂肪瘤"
+    },
+    {
+      "type": "leiomyoma",
+      "title": "平滑肌瘤"
+    },
+    {
+      "type": "desmoid",
+      "title": "侵袭性纤维瘤病"
+    },
+    {
+      "type": "nodular-fasciitis",
+      "title": "结节性筋膜炎"
+    },
+    {
+      "type": "myxoma",
+      "title": "软组织黏液瘤"
+    },
+    {
+      "type": "schwannoma",
+      "title": "神经鞘瘤"
+    },
+    {
+      "type": "lymphangioma",
+      "title": "淋巴管瘤"
+    },
+    {
+      "type": "dfsp",
+      "title": "隆突性皮肤纤维肉瘤"
+    },
+    {
+      "type": "elastofibroma",
+      "title": "弹力纤维瘤"
+    },
+    {
+      "type": "plantar-fibroma",
+      "title": "足底纤维瘤病"
+    },
+    {
+      "type": "sft",
+      "title": "孤立性纤维瘤"
+    },
+    {
+      "type": "hemangiopericytoma",
+      "title": "血管外皮瘤"
+    },
+    {
+      "type": "lipoblastoma",
+      "title": "脂肪母细胞瘤"
+    },
+    {
+      "type": "granular-cell",
+      "title": "颗粒细胞瘤"
+    },
+    {
+      "type": "central-slip",
+      "title": "中央束损伤"
+    },
+    {
+      "type": "mallet",
+      "title": "槌状指"
+    },
+    {
+      "type": "mortons",
+      "title": "Morton 神经瘤"
+    },
+    {
+      "type": "compartment",
+      "title": "筋膜室综合征"
+    },
+    {
+      "type": "rhabdo-trauma",
+      "title": "创伤性横纹肌溶解"
+    },
+    {
+      "type": "denervation",
+      "title": "神经源性肌萎缩"
+    },
+    {
+      "type": "spondylolysis",
+      "title": "椎弓峡部裂"
+    },
+    {
+      "type": "opll",
+      "title": "后纵韧带骨化"
+    },
+    {
+      "type": "sinding",
+      "title": "Sinding-Larsen 病"
+    },
+    {
+      "type": "ac-joint",
+      "title": "肩锁关节病"
+    },
+    {
+      "type": "glenohumeral-oa",
+      "title": "盂肱关节骨关节炎"
+    },
+    {
+      "type": "radioulnar-synostosis",
+      "title": "桡尺骨融合"
+    },
+    {
+      "type": "madelung",
+      "title": "Madelung 畸形"
+    }
+  ]
+}

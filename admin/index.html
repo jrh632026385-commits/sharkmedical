@@ -69,6 +69,7 @@ tr:last-child td{border-bottom:none}
 .batch-pill{display:inline-block;padding:3px 8px;border-radius:999px;font-size:.68rem;font-weight:600;border:1px solid var(--line);white-space:nowrap}
 .batch-pill.b1{color:#93c5fd;border-color:rgba(147,197,253,.35);background:rgba(59,130,246,.08)}
 .batch-pill.b2{color:#6ee7b7;border-color:rgba(110,231,183,.35);background:rgba(16,185,129,.08)}
+.batch-pill.b3{color:#fcd34d;border-color:rgba(252,211,77,.35);background:rgba(245,158,11,.08)}
 .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .toolbar input,.toolbar select{
   padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#070d18;color:var(--bone);
@@ -180,7 +181,7 @@ tr:last-child td{border-bottom:none}
       <p class="hint" style="margin-bottom:14px">每条疾病包含：标题、分类、简介等文字信息，以及对应 type 键下的影像图片（file / caption / site）。点击「编辑」可在同一页面增减疾病与图片。</p>
       <div class="toolbar">
         <input id="diseaseSearch" placeholder="搜索标题 / 英文名 / type…" style="min-width:240px">
-        <select id="diseaseBatchFilter"><option value="">全部批次</option><option value="1">第一批录入疾病</option><option value="2">第二批录入疾病</option></select>
+        <select id="diseaseBatchFilter"><option value="">全部批次</option><option value="1">第一批录入疾病</option><option value="2">第二批录入疾病</option><option value="3">第三批录入疾病</option></select>
         <select id="diseaseCatFilter"><option value="">全部分类</option></select>
       </div>
       <div class="table-wrap">
@@ -215,7 +216,7 @@ tr:last-child td{border-bottom:none}
         <select id="filmModSelect">
           <option value="xray">X 线 / DR</option>
           <option value="ct">CT 断层</option>
-          <option value="mri">MRI 磁共振</option>
+          <option value="mri">MRI</option>
           <option value="us">超声 US</option>
         </select>
         <button class="btn secondary sm" id="addFilmBtn" type="button">添加胶片</button>
@@ -279,7 +280,7 @@ tr:last-child td{border-bottom:none}
     <form id="diseaseForm" class="grid-2"></form>
     <div class="modal-section" id="diseaseLearnSection">
       <h4>学习内容（前台详情页）</h4>
-      <p class="hint">保存后将在用户打开该疾病详情时展示。列表项每行一条；带「标签|说明」的字段每行格式为 <code>标签|说明</code>（如 <code>MRI|首选检查…</code>）。</p>
+      <p class="hint">保存后将在用户打开该疾病详情时展示。列表项每行一条，<strong>条数不限</strong>（处理原则/鉴别诊断/诊断陷阱/临床要点等有多少写多少）。带「标签|说明」的字段每行格式为 <code>标签|说明</code>（如 <code>MRI|首选检查…</code>）。</p>
       <div id="diseaseLearnFields" class="grid-2"></div>
     </div>
     <div class="modal-section">
@@ -441,10 +442,12 @@ function renderStats(){
   const d=state.data;
   const b1=(d.diseases||[]).filter(x=>(Number(x.entryBatch)||1)===1).length;
   const b2=(d.diseases||[]).filter(x=>Number(x.entryBatch)===2).length;
+  const b3=(d.diseases||[]).filter(x=>Number(x.entryBatch)===3).length;
   const items=[
     ['疾病条目',d.diseases?.length||0],
     ['第一批',b1],
     ['第二批',b2],
+    ['第三批',b3],
     ['疾病详情',Object.keys(d.diseaseDetails||{}).length],
     ['图库类型',Object.keys(d.diseaseGalleries||{}).length],
     ['影像授权',Object.keys(d.imageAttribRegistry||{}).length],
@@ -578,7 +581,10 @@ function openUserModal(role='user'){
 
 function batchLabel(d){
   const n=Number(d.entryBatch)||1;
-  return d.entryBatchLabel||(n===2?'第二批录入疾病':'第一批录入疾病');
+  if(d.entryBatchLabel)return d.entryBatchLabel;
+  if(n===3)return '第三批录入疾病';
+  if(n===2)return '第二批录入疾病';
+  return '第一批录入疾病';
 }
 function batchPillHtml(d){
   const n=Number(d.entryBatch)||1;
@@ -590,6 +596,7 @@ function entryBatchFieldHtml(d){
     <select name="entryBatch">
       <option value="1"${n===1?' selected':''}>第一批录入疾病</option>
       <option value="2"${n===2?' selected':''}>第二批录入疾病</option>
+      <option value="3"${n===3?' selected':''}>第三批录入疾病</option>
     </select></div>`;
 }
 
@@ -651,13 +658,13 @@ function renderDiseaseLearnFields(type){
     ta('detail_epi','流行病学 epi',det.epi,true),
     ta('detail_pathophys','病理机制 pathophys',det.pathophys,true),
     ta('detail_staging','分型与分期 staging',det.staging),
-    ta('detail_clinical','临床表现 clinical（每行一条）',arrToLines(det.clinical),true),
+    ta('detail_clinical','临床表现 clinical（每行一条，条数不限）',arrToLines(det.clinical),true),
     ta('detail_imagingKeys','关键影像征象（每行：标签|说明）',pairsToPipeRows(det.imagingKeys),true),
     ta('detail_modalities','多模态影像表现（每行：模态|说明）',pairsToPipeRows(det.modalities),true),
-    ta('detail_mgmt','处理原则 mgmt（每行一条）',arrToLines(det.mgmt),true),
-    ta('detail_ddx','鉴别诊断 ddx（每行一条）',arrToLines(det.ddx)),
-    ta('detail_pitfalls','诊断陷阱 pitfalls（每行一条）',arrToLines(det.pitfalls)),
-    ta('detail_pearls','临床要点 pearls（每行一条）',arrToLines(det.pearls),true)
+    ta('detail_mgmt','处理原则 mgmt（每行一条，条数不限）',arrToLines(det.mgmt),true),
+    ta('detail_ddx','鉴别诊断 ddx（每行一条，条数不限）',arrToLines(det.ddx)),
+    ta('detail_pitfalls','诊断陷阱 pitfalls（每行一条，条数不限）',arrToLines(det.pitfalls)),
+    ta('detail_pearls','临床要点 pearls（每行一条，条数不限）',arrToLines(det.pearls),true)
   ].join('');
 }
 function collectDiseaseDetailForm(type){
@@ -962,7 +969,8 @@ function readDiseaseForm(){
   const item={};
   DISEASE_FIELDS.forEach(([k])=>{item[k]=String(fd.get(k)||'').trim();});
   item.entryBatch=Number(fd.get('entryBatch'))||1;
-  item.entryBatchLabel=item.entryBatch===2?'第二批录入疾病':'第一批录入疾病';
+  const eb=item.entryBatch;
+  item.entryBatchLabel=eb===3?'第三批录入疾病':eb===2?'第二批录入疾病':'第一批录入疾病';
   item.signs=String(fd.get('signs')||'').split(/[,，]/).map(s=>s.trim()).filter(Boolean);
   return item;
 }

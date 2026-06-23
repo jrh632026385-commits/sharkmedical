@@ -1,0 +1,227 @@
+{
+  "removed": [
+    {
+      "type": "chordoma",
+      "file": "Chordoma.JPG",
+      "reason": "旧图无描述"
+    },
+    {
+      "type": "maffucci",
+      "file": "Vertebral hemangioma 01.jpg",
+      "reason": "单纯血管瘤≠Maffucci"
+    },
+    {
+      "type": "segond",
+      "file": "VKB-Riss MRT T1 PDW sag.jpg",
+      "reason": "ACL≠Segond"
+    },
+    {
+      "type": "sapho",
+      "file": "Psoriasisarthritis distales Interphalangealgelenk 79M - CR seitlich - 001.jpg",
+      "reason": "银屑病≠SAPHO"
+    },
+    {
+      "type": "erosive-oa",
+      "file": "Rheumatoide Arthritis der Hand 65W - CR ap - 001.jpg",
+      "reason": "类风湿≠侵蚀性OA"
+    },
+    {
+      "type": "erosive-oa",
+      "file": "RheumatoideArthritisAP.jpg",
+      "reason": "类风湿≠侵蚀性OA"
+    },
+    {
+      "type": "subscap",
+      "file": "openi__PMC4232835_IJOrtho-48-625-g001.png",
+      "reason": "喙突≠肩胛下肌"
+    },
+    {
+      "type": "infraspinatus",
+      "file": "openi__PMC3922330_1749-799X-9-6-2.png",
+      "reason": "冈上≠冈下"
+    },
+    {
+      "type": "infraspinatus",
+      "file": "openi__PMC4220601_poljradiol-79-391-g004.png",
+      "reason": "冈上≠冈下"
+    },
+    {
+      "type": "spondylolisthesis",
+      "file": "LumbarSpinalStenosis case1 2 7.png",
+      "reason": "椎管狭窄≠滑脱"
+    },
+    {
+      "type": "facet-arthropathy",
+      "file": "Lumbar spinal stenosis 3 9.png",
+      "reason": "椎管狭窄≠小关节"
+    },
+    {
+      "type": "ac-joint",
+      "file": "Clavicle Fracture Left.jpg",
+      "reason": "锁骨骨折≠AC"
+    },
+    {
+      "type": "ac-joint",
+      "file": "Typische mittlere Klavikulafraktur mit verkippten Kleinfragmenten 39W - CR - 001.jpg",
+      "reason": "锁骨骨折≠AC"
+    }
+  ],
+  "added": [
+    {
+      "type": "facet-arthropathy",
+      "files": [
+        "openi__PMC3382271_234_2011_963_Fig1_HTML.png",
+        "openi__PMC4143520_cios-6-318-g002.png",
+        "openi__PMC2747413_IJRI-19-29-g002.png",
+        "openi__PMC2747413_IJRI-19-29-g001.png",
+        "openi__PMC5315003_amjcaserep-18-143-g003.png",
+        "openi__PMC4479906_IJNM-30-191-g007.png"
+      ]
+    },
+    {
+      "type": "spondylolisthesis",
+      "files": [
+        "openi__PMC4733370_10-1055-s-0035-1555655-i1500050-1.png"
+      ]
+    },
+    {
+      "type": "subscap",
+      "files": [
+        "openi__PMC3475128_1758-2555-4-24-3.png"
+      ]
+    },
+    {
+      "type": "infraspinatus",
+      "files": [
+        "openi__PMC3445076_10.1177_1941738108326701-fig5.png",
+        "openi__PMC3438862_10.1177_1941738109350404-fig4.png"
+      ]
+    },
+    {
+      "type": "maffucci",
+      "files": [
+        "openi__PMC4301862_12957_2014_1856_Fig1_HTML.png",
+        "openi__PMC2895167_crg0003-0001-f02.png",
+        "openi__PMC4301862_12957_2014_1856_Fig2_HTML.png",
+        "openi__PMC4301862_12957_2014_1856_Fig3_HTML.png",
+        "openi__PMC2895167_crg0003-0001-f01.png"
+      ]
+    },
+    {
+      "type": "erosive-oa",
+      "files": [
+        "openi__PMC3371224_ard-71-6-0891-fig1.png",
+        "openi__PMC2925149_ard-69-05-0862-fig1.png",
+        "openi__PMC4834372_JoU-2016-0007-g002.png",
+        "openi__PMC2925149_ard-69-05-0862-fig2.png",
+        "openi__PMC2040159_1471-2458-7-260-3.png",
+        "openi__PMC2925149_ard-69-05-0862-fig3.png"
+      ]
+    },
+    {
+      "type": "sapho",
+      "files": [
+        "openi__PMC5058867_medi-95-e4168-g002.png",
+        "openi__PMC5228671_medi-96-e5724-g003.png",
+        "openi__PMC5039563_diagnostics-06-00029-g001.png",
+        "openi__PMC2790148_TOORTHJ-3-100_F2.png",
+        "openi__PMC2790148_TOORTHJ-3-100_F1.png",
+        "openi__PMC2684709_TORJ-3-18_F2.png"
+      ]
+    },
+    {
+      "type": "segond",
+      "files": [
+        "openi__PMC4512960_12245_2015_76_Fig2_HTML.png",
+        "openi__PMC4508556_or-2015-2-5773-g002.png",
+        "openi__PMC3675256_13244_2013_250_Fig1_HTML.png",
+        "openi__PMC3445053_10.1177_1941738110379215-fig1.png",
+        "openi__PMC4899847_gr2.png"
+      ]
+    },
+    {
+      "type": "ac-joint",
+      "files": [
+        "openi__PMC2684214_12178_2008_9024_Fig1_HTML.png",
+        "openi__PMC2684214_12178_2008_9024_Fig6_HTML.png",
+        "openi__PMC4964770_IJOrtho-50-379-g001.png"
+      ]
+    },
+    {
+      "type": "chordoma",
+      "files": [
+        "openi__PMC2257990_256_2007_435_Fig1_HTML.png",
+        "openi__PMC4212531_1470-7330-14-4-1.png",
+        "openi__PMC3349129_TSWJ2012-240281.009.png",
+        "openi__PMC5081330_asj-10-930-g002.png",
+        "openi__PMC3170342_1752-1947-5-339-1.png"
+      ]
+    },
+    {
+      "type": "quad-tear",
+      "files": [
+        "openi__PMC5093266_CRIOR2016-4713137.001.png",
+        "openi__PMC3409063_1741-7015-10-78-7.png",
+        "openi__PMC3341810_ksrr-23-244-g003.png",
+        "openi__PMC4473788_PAMJ-18-55-g004.png",
+        "openi__PMC4359866_CRIOR2015-937581.003.png",
+        "openi__PMC4359866_CRIOR2015-937581.010.png"
+      ]
+    },
+    {
+      "type": "biceps-long",
+      "files": [
+        "openi__PMC3438862_10.1177_1941738109350404-fig1.png",
+        "openi__PMC4711054_13256_2015_794_Fig2_HTML.png",
+        "openi__PMC4410472_IJSS-9-52-g002.png",
+        "openi__PMC4011903_oajsm-5-081Fig1.png",
+        "openi__PMC2998979_cmamd-2010-077f3.png",
+        "openi__PMC2998979_cmamd-2010-077f4.png"
+      ]
+    },
+    {
+      "type": "rhabdo-trauma",
+      "files": [
+        "openi__PMC5240485_kjr-18-94-g002.png"
+      ]
+    },
+    {
+      "type": "preiser",
+      "files": [
+        "openi__PMC3051129_IJOrtho-45-185-g001.png",
+        "openi__PMC4141341_13244_2014_337_Fig12_HTML.png",
+        "openi__PMC4977392_CRIOR2016-7898090.001.png"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "type": "ac-joint",
+      "fileId": "openi__PMC2971484_UPS-0300-9734-115-260-g003.png",
+      "error": "curated-miss"
+    },
+    {
+      "type": "quad-tear",
+      "fileId": "openi__PMC4473788_1471-2474-12-4-1.png",
+      "error": "curated-miss"
+    },
+    {
+      "type": "biceps-long",
+      "fileId": "openi__PMC4011903_1749-799X-9-1-1-2.png",
+      "error": "curated-miss"
+    },
+    {
+      "type": "preiser",
+      "fileId": "openi__PMC4141341_13244_2014_337_Fig12_HTML.png",
+      "error": "curated-miss"
+    }
+  ],
+  "fixed": {
+    "biceps-long": [
+      "openi__PMC4711054_13256_2015_794_Fig2_HTML.png",
+      "openi__PMC4011903_oajsm-5-081Fig1.png",
+      "openi__PMC2998979_cmamd-2010-077f3.png"
+    ],
+    "rhabdo-trauma": "cleared-wrong-match"
+  }
+}

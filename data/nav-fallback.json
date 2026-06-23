@@ -1,0 +1,639 @@
+{
+  "updatedAt": "2026-06-21T23:20:43.118Z",
+  "SYS_GROUPS": {
+    "nervous": {
+      "label": "神经系统",
+      "icon": "nervous",
+      "desc": "164 种神经系统疾病 · CT · MRI · DSA"
+    },
+    "respiratory": {
+      "label": "呼吸系统",
+      "icon": "respiratory",
+      "desc": "144 种呼吸与胸肺疾病 · 多模态与内镜"
+    },
+    "circulatory": {
+      "label": "循环系统",
+      "icon": "circulatory",
+      "desc": "99 种循环与心血管疾病 · 多模态与心电图"
+    },
+    "digestive": {
+      "label": "消化系统",
+      "icon": "digestive",
+      "desc": "188 种消化与腹部疾病 · 多模态与内镜"
+    },
+    "urogenital": {
+      "label": "泌尿生殖系统",
+      "icon": "urogenital",
+      "desc": "87 种泌尿生殖系统疾病 · 多模态影像"
+    },
+    "female-repro": {
+      "label": "女性生殖系统与产科",
+      "icon": "female-repro",
+      "desc": "72 种女性生殖系统与产科疾病 · 多模态影像"
+    },
+    "endocrine": {
+      "label": "内分泌系统",
+      "icon": "endocrine",
+      "desc": "44 种内分泌系统疾病 · 多模态影像"
+    },
+    "head-neck": {
+      "label": "头颈部与五官",
+      "icon": "head-neck",
+      "desc": "74 种头颈部与五官疾病 · 多模态影像"
+    },
+    "breast": {
+      "label": "乳腺",
+      "icon": "breast",
+      "desc": "29 种乳腺疾病 · 钼靶 · 超声 · MRI"
+    },
+    "hematolymph": {
+      "label": "血液与淋巴系统",
+      "icon": "hematolymph",
+      "desc": "35 种血液与淋巴系统疾病 · 多模态影像"
+    },
+    "systemic": {
+      "label": "全身性与多系统",
+      "icon": "systemic",
+      "desc": "38 种全身性与多系统疾病 · 多模态影像"
+    },
+    "bone": {
+      "label": "骨疾病",
+      "icon": "bone",
+      "desc": "创伤、关节、脊柱、肿瘤与感染等骨科图谱"
+    }
+  },
+  "SYS_ORDER": [
+    "nervous",
+    "respiratory",
+    "circulatory",
+    "digestive",
+    "urogenital",
+    "female-repro",
+    "endocrine",
+    "head-neck",
+    "breast",
+    "hematolymph",
+    "systemic",
+    "bone"
+  ],
+  "NERVOUS_NAV_GROUPS": {
+    "cerebrovascular": {
+      "label": "脑血管疾病",
+      "icon": "",
+      "desc": "脑梗死、脑出血、动脉瘤与脑血管畸形"
+    },
+    "intracranial-tumor": {
+      "label": "颅内肿瘤",
+      "icon": "",
+      "desc": "胶质瘤、脑膜瘤、垂体瘤与转移瘤"
+    },
+    "infection-inflammation": {
+      "label": "感染与炎症",
+      "icon": "",
+      "desc": "脑脓肿、脑膜炎、脑炎与寄生虫"
+    },
+    "demyelination": {
+      "label": "脱髓鞘与白质病变",
+      "icon": "",
+      "desc": "多发性硬化、ADEM 与白质营养不良"
+    },
+    "neurodegeneration": {
+      "label": "神经变性与代谢",
+      "icon": "",
+      "desc": "痴呆、帕金森病与代谢性脑病"
+    },
+    "head-trauma": {
+      "label": "颅脑外伤",
+      "icon": "",
+      "desc": "血肿、挫裂伤、DAI 与颅骨骨折"
+    },
+    "congenital": {
+      "label": "先天与发育畸形",
+      "icon": "",
+      "desc": "Chiari、Dandy-Walker 与神经管畸形"
+    },
+    "spine-cord": {
+      "label": "脊柱脊髓",
+      "icon": "",
+      "desc": "椎间盘突出、脊髓肿瘤与脊髓炎"
+    }
+  },
+  "NERVOUS_NAV_ORDER": [
+    "cerebrovascular",
+    "intracranial-tumor",
+    "infection-inflammation",
+    "demyelination",
+    "neurodegeneration",
+    "head-trauma",
+    "congenital",
+    "spine-cord"
+  ],
+  "UROGENITAL_NAV_GROUPS": {
+    "kidney": {
+      "label": "肾脏",
+      "icon": "",
+      "desc": "肾肿瘤、囊肿、感染与先天畸形"
+    },
+    "ureter": {
+      "label": "输尿管",
+      "icon": "",
+      "desc": "结石、肿瘤与先天性异常"
+    },
+    "bladder": {
+      "label": "膀胱",
+      "icon": "",
+      "desc": "膀胱肿瘤、结石与炎症"
+    },
+    "urethra-prostate": {
+      "label": "尿道前列腺",
+      "icon": "",
+      "desc": "前列腺增生/癌、尿道与精囊病变"
+    },
+    "male-genital": {
+      "label": "男性生殖器",
+      "icon": "",
+      "desc": "睾丸肿瘤、扭转与附睾病变"
+    },
+    "adrenal": {
+      "label": "肾上腺",
+      "icon": "",
+      "desc": "肾上腺腺瘤、嗜铬细胞瘤与转移"
+    }
+  },
+  "UROGENITAL_NAV_ORDER": [
+    "kidney",
+    "ureter",
+    "bladder",
+    "urethra-prostate",
+    "male-genital",
+    "adrenal"
+  ],
+  "FEMALE_REPRO_NAV_GROUPS": {
+    "uterus": {
+      "label": "子宫",
+      "icon": "",
+      "desc": "子宫肌瘤、内膜癌与宫颈病变"
+    },
+    "ovary": {
+      "label": "卵巢",
+      "icon": "",
+      "desc": "卵巢囊肿/肿瘤与扭转"
+    },
+    "fallopian-pelvis": {
+      "label": "输卵管盆腔",
+      "icon": "",
+      "desc": "输卵管积水、盆腔炎与内膜异位"
+    },
+    "obstetrics": {
+      "label": "产科",
+      "icon": "",
+      "desc": "异位妊娠、胎儿畸形与胎盘异常"
+    }
+  },
+  "FEMALE_REPRO_NAV_ORDER": [
+    "uterus",
+    "ovary",
+    "fallopian-pelvis",
+    "obstetrics"
+  ],
+  "ENDOCRINE_NAV_GROUPS": {
+    "thyroid": {
+      "label": "甲状腺",
+      "icon": "",
+      "desc": "甲状腺结节、肿瘤与炎症"
+    },
+    "parathyroid": {
+      "label": "甲状旁腺",
+      "icon": "",
+      "desc": "甲状旁腺腺瘤与增生"
+    },
+    "adrenal": {
+      "label": "肾上腺",
+      "icon": "",
+      "desc": "肾上腺腺瘤、嗜铬细胞瘤与转移"
+    },
+    "pituitary-hypothalamus": {
+      "label": "垂体下丘脑",
+      "icon": "",
+      "desc": "垂体腺瘤、颅咽管瘤与下丘脑病变"
+    },
+    "pancreatic-endocrine": {
+      "label": "胰腺内分泌与骨改变",
+      "icon": "",
+      "desc": "胰岛细胞瘤与内分泌性骨改变"
+    }
+  },
+  "ENDOCRINE_NAV_ORDER": [
+    "thyroid",
+    "parathyroid",
+    "adrenal",
+    "pituitary-hypothalamus",
+    "pancreatic-endocrine"
+  ],
+  "HEAD_NECK_NAV_GROUPS": {
+    "eye-orbit": {
+      "label": "眼与眼眶",
+      "icon": "",
+      "desc": "眼眶肿瘤、炎症与眼内病变"
+    },
+    "ear-temporal": {
+      "label": "耳与颞骨",
+      "icon": "",
+      "desc": "胆脂瘤、听神经瘤与颞骨骨折"
+    },
+    "nose-sinus": {
+      "label": "鼻与鼻窦",
+      "icon": "",
+      "desc": "鼻窦炎、鼻息肉与鼻窦肿瘤"
+    },
+    "pharynx-oral": {
+      "label": "咽喉口腔",
+      "icon": "",
+      "desc": "鼻咽癌、喉癌与口腔癌"
+    },
+    "salivary": {
+      "label": "涎腺",
+      "icon": "",
+      "desc": "涎腺结石、肿瘤与炎症"
+    },
+    "neck-jaw": {
+      "label": "颈部与颌骨",
+      "icon": "",
+      "desc": "颈部淋巴结、鳃裂囊肿与颌骨病变"
+    }
+  },
+  "HEAD_NECK_NAV_ORDER": [
+    "eye-orbit",
+    "ear-temporal",
+    "nose-sinus",
+    "pharynx-oral",
+    "salivary",
+    "neck-jaw"
+  ],
+  "BREAST_NAV_GROUPS": {
+    "benign": {
+      "label": "良性",
+      "icon": "",
+      "desc": "纤维腺瘤、囊肿与良性增生"
+    },
+    "inflammation": {
+      "label": "炎症",
+      "icon": "",
+      "desc": "乳腺炎、脓肿与肉芽肿性乳腺炎"
+    },
+    "malignant": {
+      "label": "恶性",
+      "icon": "",
+      "desc": "浸润性癌、原位癌与特殊类型乳腺癌"
+    }
+  },
+  "BREAST_NAV_ORDER": [
+    "benign",
+    "inflammation",
+    "malignant"
+  ],
+  "HEMATOLYMPH_NAV_GROUPS": {
+    "lymphoma": {
+      "label": "淋巴瘤",
+      "icon": "",
+      "desc": "霍奇金与非霍奇金淋巴瘤"
+    },
+    "myeloid-plasma": {
+      "label": "髓系与浆细胞",
+      "icon": "",
+      "desc": "白血病、骨髓瘤与髓外造血"
+    },
+    "anemia-bone": {
+      "label": "贫血相关骨改变",
+      "icon": "",
+      "desc": "地中海贫血、镰状细胞与贮积病骨改变"
+    },
+    "spleen-reticulo": {
+      "label": "脾与网状内皮",
+      "icon": "",
+      "desc": "脾肿大、脾梗死与组织细胞增生"
+    },
+    "lymphatic": {
+      "label": "淋巴管",
+      "icon": "",
+      "desc": "淋巴管瘤、乳糜胸与淋巴水肿"
+    }
+  },
+  "HEMATOLYMPH_NAV_ORDER": [
+    "lymphoma",
+    "myeloid-plasma",
+    "anemia-bone",
+    "spleen-reticulo",
+    "lymphatic"
+  ],
+  "SYSTEMIC_NAV_GROUPS": {
+    "metastasis": {
+      "label": "肿瘤播散",
+      "icon": "",
+      "desc": "多发转移、脑膜癌病与腹膜转移"
+    },
+    "granulomatous": {
+      "label": "肉芽肿与免疫",
+      "icon": "",
+      "desc": "结节病、IgG4 与组织细胞病"
+    },
+    "metabolic-deposit": {
+      "label": "代谢与沉积",
+      "icon": "",
+      "desc": "淀粉样变、血色病与贮积症"
+    },
+    "connective": {
+      "label": "结缔组织与血管炎",
+      "icon": "",
+      "desc": "SLE、血管炎与硬皮病器官受累"
+    },
+    "disseminated-infection": {
+      "label": "感染播散",
+      "icon": "",
+      "desc": "脓毒性栓塞、粟粒性结核与播散性真菌"
+    },
+    "hereditary-tumor": {
+      "label": "遗传性肿瘤综合征",
+      "icon": "",
+      "desc": "NF、VHL 与 TSC 等综合征"
+    }
+  },
+  "SYSTEMIC_NAV_ORDER": [
+    "metastasis",
+    "granulomatous",
+    "metabolic-deposit",
+    "connective",
+    "disseminated-infection",
+    "hereditary-tumor"
+  ],
+  "RESPIRATORY_NAV_GROUPS": {
+    "upper-airway": {
+      "label": "上呼吸道疾病",
+      "icon": "",
+      "desc": "鼻、鼻窦、咽喉与上气道病变"
+    },
+    "central-airway": {
+      "label": "气管与中央气道",
+      "icon": "",
+      "desc": "气管狭窄、肿瘤、软化、异物与瘘"
+    },
+    "infection": {
+      "label": "感染性疾病",
+      "icon": "",
+      "desc": "细菌、病毒、真菌、分枝杆菌与寄生虫"
+    },
+    "chronic-airway": {
+      "label": "慢性气道疾病",
+      "icon": "",
+      "desc": "COPD、哮喘、支气管扩张与细支气管炎"
+    },
+    "ild": {
+      "label": "间质性肺疾病",
+      "icon": "",
+      "desc": "UIP、NSIP、COP 等 ATS-ERS 谱系"
+    },
+    "granuloma-immune": {
+      "label": "肉芽肿与免疫相关",
+      "icon": "",
+      "desc": "结节病、血管炎与 CTD 相关肺病"
+    },
+    "eosinophilic": {
+      "label": "嗜酸性粒细胞性肺病",
+      "icon": "",
+      "desc": "Löffler、AEP、CEP"
+    },
+    "occupational": {
+      "label": "职业与环境性肺病",
+      "icon": "",
+      "desc": "尘肺、石棉肺、EVALI 等"
+    },
+    "vascular": {
+      "label": "肺血管疾病",
+      "icon": "",
+      "desc": "肺栓塞、肺动脉高压与 PAVM"
+    },
+    "tumor": {
+      "label": "肿瘤性疾病",
+      "icon": "",
+      "desc": "原发肺癌、转移瘤与良性肿瘤"
+    },
+    "pleural": {
+      "label": "胸膜疾病",
+      "icon": "",
+      "desc": "气胸、胸腔积液与胸膜肿瘤"
+    },
+    "mediastinum": {
+      "label": "纵隔疾病",
+      "icon": "",
+      "desc": "胸腺瘤、淋巴瘤、囊肿与纵隔气肿"
+    },
+    "diaphragm": {
+      "label": "膈肌疾病",
+      "icon": "",
+      "desc": "膈疝、膈膨升与膈肌麻痹"
+    },
+    "congenital": {
+      "label": "先天与发育异常",
+      "icon": "",
+      "desc": "CPAM、肺隔离症与支气管闭锁"
+    },
+    "trauma-iatrogenic": {
+      "label": "创伤与医源性",
+      "icon": "",
+      "desc": "肺挫伤、放射性肺炎与药物性肺损伤"
+    },
+    "diffuse-critical": {
+      "label": "弥漫性与重症",
+      "icon": "",
+      "desc": "ARDS、肺水肿、LAM 与呼吸衰竭"
+    }
+  },
+  "RESPIRATORY_NAV_ORDER": [
+    "upper-airway",
+    "central-airway",
+    "infection",
+    "chronic-airway",
+    "ild",
+    "granuloma-immune",
+    "eosinophilic",
+    "occupational",
+    "vascular",
+    "tumor",
+    "pleural",
+    "mediastinum",
+    "diaphragm",
+    "congenital",
+    "trauma-iatrogenic",
+    "diffuse-critical"
+  ],
+  "DIGESTIVE_NAV_GROUPS": {
+    "oral-salivary": {
+      "label": "口腔、涎腺与咽部",
+      "icon": "",
+      "desc": "涎腺、舌、口底及口咽相关病变"
+    },
+    "esophagus": {
+      "label": "食管疾病",
+      "icon": "",
+      "desc": "食管炎症、动力障碍、肿瘤与急症"
+    },
+    "stomach-duodenum": {
+      "label": "胃与十二指肠",
+      "icon": "",
+      "desc": "胃炎、消化性溃疡、胃癌及上消化道梗阻"
+    },
+    "small-bowel": {
+      "label": "小肠疾病",
+      "icon": "",
+      "desc": "克罗恩病、肠梗阻、缺血及小肠肿瘤"
+    },
+    "colorectal-appendix": {
+      "label": "结直肠与阑尾",
+      "icon": "",
+      "desc": "炎症性肠病、结直肠癌、憩室及阑尾病变"
+    },
+    "liver": {
+      "label": "肝脏疾病",
+      "icon": "",
+      "desc": "脂肪肝、肝硬化、肝肿瘤及代谢性肝病"
+    },
+    "biliary": {
+      "label": "胆道系统",
+      "icon": "",
+      "desc": "胆石、胆囊炎、胆管炎及胆道肿瘤"
+    },
+    "pancreas": {
+      "label": "胰腺疾病",
+      "icon": "",
+      "desc": "胰腺炎、胰腺囊肿及胰腺肿瘤"
+    },
+    "spleen": {
+      "label": "脾脏疾病",
+      "icon": "",
+      "desc": "脾肿大、脾梗死、脾肿瘤及脾破裂"
+    },
+    "peritoneum": {
+      "label": "腹膜、网膜与肠系膜",
+      "icon": "",
+      "desc": "腹膜炎、腹水、腹膜肿瘤及肠系膜病变"
+    },
+    "vascular-acute": {
+      "label": "消化道血管与急腹症",
+      "icon": "",
+      "desc": "肠缺血、疝、穿孔及血管急症"
+    },
+    "anorectal": {
+      "label": "肛门直肠",
+      "icon": "",
+      "desc": "肛瘘、脓肿、直肠脱垂及肛管直肠肿瘤"
+    },
+    "abdominal-wall": {
+      "label": "腹壁与膈肌",
+      "icon": "",
+      "desc": "腹壁疝、膈疝及腹壁血肿"
+    },
+    "congenital-ped": {
+      "label": "先天性与小儿",
+      "icon": "",
+      "desc": "消化道闭锁、旋转不良及新生儿急腹症"
+    },
+    "infection-parasite": {
+      "label": "感染性与寄生虫",
+      "icon": "",
+      "desc": "腹腔结核、阿米巴、包虫及血吸虫"
+    },
+    "trauma-iatrogenic": {
+      "label": "医源性与创伤",
+      "icon": "",
+      "desc": "实质脏器挫裂伤及术后并发症"
+    }
+  },
+  "DIGESTIVE_NAV_ORDER": [
+    "oral-salivary",
+    "esophagus",
+    "stomach-duodenum",
+    "small-bowel",
+    "colorectal-appendix",
+    "liver",
+    "biliary",
+    "pancreas",
+    "spleen",
+    "peritoneum",
+    "vascular-acute",
+    "anorectal",
+    "abdominal-wall",
+    "congenital-ped",
+    "infection-parasite",
+    "trauma-iatrogenic"
+  ],
+  "CIRCULATORY_NAV_GROUPS": {
+    "coronary-ischemic": {
+      "label": "冠状动脉与缺血性心脏病",
+      "icon": "",
+      "desc": "粥样硬化、心绞痛、心肌梗死与心肌缺血"
+    },
+    "cardiomyopathy": {
+      "label": "心肌疾病(心肌病)",
+      "icon": "",
+      "desc": "扩张型、肥厚型、限制型心肌病及心肌炎"
+    },
+    "valve": {
+      "label": "心脏瓣膜病",
+      "icon": "",
+      "desc": "二尖瓣、主动脉瓣等狭窄/关闭不全与心内膜炎"
+    },
+    "pericardium": {
+      "label": "心包疾病",
+      "icon": "",
+      "desc": "心包炎、积液、压塞与心包肿瘤"
+    },
+    "cardiac-tumor": {
+      "label": "心脏肿瘤",
+      "icon": "",
+      "desc": "黏液瘤、纤维瘤、肉瘤与心腔血栓"
+    },
+    "congenital": {
+      "label": "先天性心脏病",
+      "icon": "",
+      "desc": "分流、发绀型与复杂梗阻畸形"
+    },
+    "aortic": {
+      "label": "主动脉疾病",
+      "icon": "",
+      "desc": "动脉瘤、夹层、壁内血肿与主动脉炎"
+    },
+    "pulmonary-vascular": {
+      "label": "肺循环血管疾病",
+      "icon": "",
+      "desc": "肺栓塞、CTEPH 与肺动脉高压"
+    },
+    "peripheral-arterial": {
+      "label": "外周动脉疾病",
+      "icon": "",
+      "desc": "下肢闭塞、颈动脉狭窄与动脉栓塞"
+    },
+    "venous": {
+      "label": "静脉系统疾病",
+      "icon": "",
+      "desc": "深静脉血栓、腔静脉综合征与门静脉血栓"
+    },
+    "heart-failure": {
+      "label": "心力衰竭与功能性改变",
+      "icon": "",
+      "desc": "充血性心衰、肺水肿与室壁瘤"
+    }
+  },
+  "CIRCULATORY_NAV_ORDER": [
+    "coronary-ischemic",
+    "cardiomyopathy",
+    "valve",
+    "pericardium",
+    "cardiac-tumor",
+    "congenital",
+    "aortic",
+    "pulmonary-vascular",
+    "peripheral-arterial",
+    "venous",
+    "heart-failure"
+  ]
+}
