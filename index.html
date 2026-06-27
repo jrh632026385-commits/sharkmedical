@@ -648,6 +648,10 @@ section{position:relative}
 .dc-visual svg,.dc-visual .img-gallery,.m-hero-visual .img-gallery{position:absolute;inset:0;width:100%;height:100%}
 .dc-visual img,.m-hero-visual img,.img-gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.08) brightness(.95) saturate(.9)}
 .img-gallery img.gal-img-contain{object-fit:contain;object-position:center;padding:8px 10px;background:radial-gradient(circle at 50% 45%,rgba(16,39,63,0.85),rgba(5,10,20,0.95))}
+.gal-crop-wrap{position:absolute;inset:0;overflow:hidden}
+.gal-crop-wrap img.gal-crop-img{position:absolute;inset:auto;max-width:none;max-height:none;object-fit:fill;filter:contrast(1.08) brightness(.95) saturate(.9)}
+.img-lightbox-media.has-crop{position:relative;overflow:hidden;width:min(96vw,1400px);aspect-ratio:var(--lb-crop-ar,16/10);max-height:calc(92vh - 52px)}
+.img-lightbox-media.has-crop img{position:absolute;inset:auto;max-width:none;max-height:none;width:auto;height:auto;object-fit:fill}
 .gal-slide{opacity:0;transition:opacity .35s;pointer-events:none}
 .gal-slide.active{opacity:1;pointer-events:auto}
 .dc-visual svg{position:absolute;inset:0;width:100%;height:100%}
@@ -883,7 +887,7 @@ img.img-zoomable:hover,img.film-radiograph.img-zoomable:hover{filter:contrast(1.
   font-family:var(--mono);font-size:.72rem;color:var(--teal);padding:4px 12px;border-radius:20px;
   background:rgba(4,8,15,.72);border:1px solid var(--line);
 }
-.img-gallery[data-zoomable="1"] img.gal-slide{cursor:zoom-in}
+.img-gallery[data-zoomable="1"] img.gal-slide,.img-gallery[data-zoomable="1"] img.gal-crop-img{cursor:zoom-in}
 .dc-region{z-index:6;pointer-events:none}
 .dc-modtag{z-index:6;pointer-events:none}
 .m-hero-visual .gal-nav{width:38px;height:38px;font-size:1.5rem}
@@ -3091,19 +3095,46 @@ setTimeout(function(){
 </div>
 
 <script src="data/system-icons.js"></script>
+<script src="/image-loader.js" defer></script>
 <script src="image-attrib-registry.js"></script>
 <script>
 /* ---------- radiology images (Wikimedia Commons, CC/open license) ---------- */
 function wikiImg(filename,width){
   width=width||800;
   const f=String(filename||'').replace(/ /g,'_');
-  return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width='+width;
+  return '/api/wikimedia/img?file='+encodeURIComponent(f)+'&width='+width;
 }
 function isOpeniUrl(u){
   return/^https?:\/\/openi\.nlm\.nih\.gov\//i.test(String(u||''));
 }
 function isOpeniProxyUrl(u){
   return/^\/api\/openi\/img(?:\?|$)/i.test(String(u||''));
+}
+function isExternalImgProxyUrl(u){
+  return/^\/api\/img(?:\?|$)/i.test(String(u||''));
+}
+function isWikimediaProxyUrl(u){
+  return/^\/api\/wikimedia\/img(?:\?|$)/i.test(String(u||''));
+}
+const NON_WIKI_FILE=/^(openi__|baiduimg__|europmcfig__|cnkiepmc__|uscase__|baike__|dxy__|cmacsr__|eduweb__)/i;
+function registryDirectImageUrl(filename){
+  const hit=getAttribRegistry()[filename];
+  if(!hit)return'';
+  if(hit.imageUrl)return hit.imageUrl;
+  if(hit.pageUrl&&isOpeniUrl(hit.pageUrl)&&/\/imgs\//.test(hit.pageUrl))return hit.pageUrl;
+  return'';
+}
+function needsExternalImageProxy(url){
+  try{
+    const h=new URL(url).hostname;
+    if(/^(localhost|127\.)/.test(h))return false;
+    if(/commons\.wikimedia\.org/i.test(h))return false;
+    if(/openi\.nlm\.nih\.gov/i.test(h))return false;
+    return true;
+  }catch(e){return false;}
+}
+function externalImageProxyUrl(url){
+  return'/api/img?url='+encodeURIComponent(url);
 }
 function openiProxyUrl(url){
   const u=String(url||'');
@@ -3119,35 +3150,53 @@ function galleryItemText(item){
 function isRadGalleryItem(item){
   if(!item)return false;
   const t=galleryItemText(item);
-  const f=String(item.file||'');
-  if(/clinical photograph|clinical photo|photograph shows|intraoperative finding|microphotograph|h&e|main theories|illustration of|boutonniere|hands and arm deformities|diagram|schematic|histolog|photo of the patient/i.test(t))return false;
-  if(/Diagram|Wellcome|schematic|diagram|synpic/i.test(f)&&!/(CR|MR|MRT|X-ray|xray|radiograph|fracture|legend)/i.test(t))return false;
-  if((/annotated|annotation|legend/i.test(f)||/【标注】/.test(t))&&!/photograph|intraoperative|diagram|schematic/i.test(t))return true;
-  if(/x线|ct|mri|超声|dexa|radiograph|x-ray|xray|magnetic resonance|ultrasound|sonograph|_CR_|_MR_|MRT|Rö|Roe|DXA|T1|T2|STIR/i.test(t))return true;
-  if(f.startsWith('openi__'))return false;
-  if(/fraktur|fracture|chondro|calcin|osteo|arthritis|meniscus|spondyl|myeloma|sarcoma|hemangioma/i.test(f))return true;
+  if(/clinical photograph|clinical photo|clinical appearance|clinical image|photograph shows|intraoperative|microphotograph|microscopic|histopatholog|histologic|pathology slide|pathology specimen|gross specimen|gross appearance|biopsy specimen|dermoscop|fundus photograph|skin photograph|he stain|h&e|immunohist|ihc stain|autopsy|post.?mortem|operative photo|surgical specimen|specimen photo|cytology|pap smear|cell block|main theories|illustration of|boutonniere|hands and arm deformities|diagram|schematic|histolog|photo of the patient|pathological examination/i.test(t))return false;
+  if(!/x线|ct|mri|超声|dexa|dsa|钼靶|核素|pet|骨扫描|radiograph|x-ray|xray|magnetic resonance|ultrasound|sonograph|computed tomography|tomograph|fluoroscop|mammograph|scintigraph|endoscop|_CR_|_MR_|MRT|Rö|Roe|DXA|T1|T2|STIR|openi__|baiduimg__|europmcfig__/i.test(t))return false;
   return true;
 }
 function getGalleryItems(type){
   const arr=diseaseGalleries[type];
   if(!arr||!arr.length)return null;
   const kept=arr.filter(isRadGalleryItem);
-  return kept.length?kept:null;
+  if(!kept.length)return null;
+  return kept.slice().sort((a,b)=>{
+    const has=u=>!!(u.url||registryDirectImageUrl(u.file));
+    return Number(has(b))-Number(has(a));
+  });
 }
 function galleryImgSrc(item,width){
   width=width||800;
   if(!item)return'';
   const obj=typeof item==='object'?item:null;
   const file=obj?obj.file:String(item||'');
-  const direct=obj&&(obj.url||obj.src);
+  let direct=obj&&(obj.url||obj.src)||registryDirectImageUrl(file);
+  if(direct&&/commons\.wikimedia\.org\/wiki\/(?:File:|File%3A|Special:FilePath\/)/i.test(direct)){
+    const wf=wikiFileFromPageUrl(direct)||fileFromWikiUrl(direct)||file;
+    return wikiImg(wf,width);
+  }
   if(direct&&/^https?:\/\//i.test(direct)){
-    return isOpeniUrl(direct)?openiProxyUrl(direct):direct;
+    if(isOpeniUrl(direct))return openiProxyUrl(direct);
+    if(needsExternalImageProxy(direct))return externalImageProxyUrl(direct);
+    return direct;
   }
   if(String(file).startsWith('openi__')){
-    const reg=getRegistryMeta(file);
-    if(reg&&reg.imageUrl)return openiProxyUrl(reg.imageUrl);
+    const regUrl=registryDirectImageUrl(file);
+    if(regUrl)return openiProxyUrl(regUrl);
+    if(obj&&obj.url&&isOpeniUrl(obj.url))return openiProxyUrl(obj.url);
+    return'/api/openi/img?file='+encodeURIComponent(file);
   }
+  if(NON_WIKI_FILE.test(file))return'';
   return wikiImg(file,width);
+}
+function wikiFileFromPageUrl(url){
+  try{
+    const u=new URL(String(url||''));
+    const pathDecoded=decodeURIComponent(u.pathname);
+    const m=pathDecoded.match(/\/wiki\/File:(.+)$/i);
+    if(m)return m[1].replace(/\+/g,' ');
+  }catch(e){}
+  const m=String(url||'').match(/commons\.wikimedia\.org\/wiki\/(?:File:|File%3A)([^?#]+)/i);
+  return m?decodeURIComponent(m[1].replace(/\+/g,' ')):'';
 }
 function galleryImgLarge(itemOrSrc){
   if(itemOrSrc&&typeof itemOrSrc==='object'){
@@ -3157,11 +3206,57 @@ function galleryImgLarge(itemOrSrc){
   }
   return wikiImgLarge(typeof itemOrSrc==='string'?itemOrSrc:'');
 }
+function toProxyImgSrc(src,defaultWidth){
+  if(!src)return'';
+  let u=String(src);
+  if(isWikimediaProxyUrl(u)||isOpeniProxyUrl(u)||isExternalImgProxyUrl(u))return u;
+  if(/commons\.wikimedia\.org\/wiki\/(?:Special:FilePath\/|File:|File%3A)/i.test(u)||/upload\.wikimedia\.org/i.test(u)){
+    const file=wikiFileFromPageUrl(u)||fileFromWikiUrl(u);
+    if(file){
+      const wm=/[?&]width=(\d+)/.exec(u);
+      return wikiImg(file,wm?wm[1]:(defaultWidth||640));
+    }
+  }
+  if(isOpeniUrl(u))return openiProxyUrl(u);
+  if(/^https?:\/\//i.test(u)&&needsExternalImageProxy(u))return externalImageProxyUrl(u);
+  return u;
+}
+function rewriteImgUrlsToProxy(root,defaultWidth){
+  (root||document).querySelectorAll('img[src]').forEach(img=>{
+    const raw=img.getAttribute('src')||'';
+    const next=toProxyImgSrc(raw,defaultWidth||640);
+    if(next&&next!==raw){
+      img.src=next;
+      delete img.dataset.bound;
+    }
+  });
+}
+function bindImgProxyFallback(img){
+  if(!img||img.dataset.fallbackBound)return;
+  img.dataset.fallbackBound='1';
+  img.addEventListener('error',function(){
+    const raw=img.dataset.originalSrc||img.getAttribute('src')||'';
+    if(!img.dataset.originalSrc&&raw)img.dataset.originalSrc=raw;
+    if(img.dataset.fallbackTry==='done')return;
+    const next=toProxyImgSrc(raw,640);
+    if(next&&next!==img.getAttribute('src')){
+      img.dataset.fallbackTry='proxy';
+      img.src=next;
+      return;
+    }
+    img.dataset.fallbackTry='done';
+  });
+}
+function bindImgFallbacks(root){
+  (root||document).querySelectorAll('img[src],img[data-src]').forEach(bindImgProxyFallback);
+}
 function sanitizeSavedImgUrls(root){
+  rewriteImgUrlsToProxy(root||document,640);
   (root||document).querySelectorAll('img[src*="(1)."],img[src*="%281%29"]').forEach(img=>{
-    img.src=img.src.replace(/%281%29|\(1\)(?=\.[a-z]{3,4}(?:\?|$))/gi,'');
+    img.src=toProxyImgSrc(img.src.replace(/%281%29|\(1\)(?=\.[a-z]{3,4}(?:\?|$))/gi,''),640);
     delete img.dataset.bound;
   });
+  bindImgFallbacks(root||document);
 }
 function wikiFilePageUrl(filename){
   return 'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(String(filename||'').replace(/ /g,'_'));
@@ -3225,7 +3320,8 @@ function getRegistryMeta(filename){
     license:hit.license||'见原文页面',
     licenseUrl:hit.licenseUrl||'',
     pageUrl:hit.pageUrl||wikiFilePageUrl(filename),
-    title:hit.title||filename
+    title:hit.title||filename,
+    imageUrl:hit.imageUrl||''
   };
 }
 function buildCitation(meta,modified){
@@ -3450,7 +3546,7 @@ function initImageAttributions(root){
 function prefetchAllAttributions(){
   const files=new Set();
   Object.values(diseaseGalleries).forEach(arr=>arr.forEach(it=>{if(it.file)files.add(it.file);}));
-  [...files].forEach(f=>fetchImageAttrib(f));
+  [...files].slice(0,24).forEach(f=>fetchImageAttrib(f));
 }
 function renderAttribRegistryList(filter){
   const listEl=document.getElementById('attribRegistryList');
@@ -3616,6 +3712,41 @@ function galleryCaption(item){
   const s=item.site?`<span class="gal-site-tag">${item.site}</span> · `:'';
   return s+item.caption;
 }
+function galleryCropImgStyle(crop){
+  if(!crop||!(crop.w>0)||!(crop.h>0))return'';
+  const w=(100/crop.w).toFixed(3);
+  const h=(100/crop.h).toFixed(3);
+  const l=((-crop.x/crop.w)*100).toFixed(3);
+  const t=((-crop.y/crop.h)*100).toFixed(3);
+  return `width:${w}%;height:${h}%;left:${l}%;top:${t}%;`;
+}
+function gallerySlideHtml(item,i,opts){
+  opts=opts||{};
+  const w=opts.width||800;
+  const zoomable=opts.zoomable||false;
+  const alt=(opts.title||'')+' 影像学';
+  const contain=/^DEXA\b/i.test(item.caption||'')||/DXA/i.test(item.file||'');
+  const cls=`dc-radiograph${zoomable?' img-zoomable':''}${contain?' gal-img-contain':''}${i===0?' active':''}`;
+  const src=galleryImgSrc(item,w);
+  const lazy=opts.lazy&&i>0;
+  const srcAttr=lazy?'data-src="'+src+'" src=""':'src="'+src+'"';
+  if(item.crop){
+    return `<div class="gal-crop-wrap gal-slide${i===0?' active':''}" data-index="${i}" aria-hidden="${i?'true':'false'}"><img class="${cls} gal-crop-img" style="${galleryCropImgStyle(item.crop)}" ${srcAttr} alt="${alt}" loading="lazy" decoding="async" data-fallback-type="${opts.type||''}" data-index="${i}"></div>`;
+  }
+  return `<img class="gal-slide ${cls}" ${srcAttr} alt="${alt}" loading="lazy" decoding="async" data-fallback-type="${opts.type||''}" data-index="${i}" aria-hidden="${i?'true':'false'}">`;
+}
+function applyGalleryCropToLightbox(mediaEl,imgEl,crop){
+  if(!mediaEl||!imgEl)return;
+  if(!crop||!(crop.w>0)||!(crop.h>0)){
+    mediaEl.classList.remove('has-crop');
+    mediaEl.style.removeProperty('--lb-crop-ar');
+    imgEl.style.cssText='';
+    return;
+  }
+  mediaEl.classList.add('has-crop');
+  mediaEl.style.setProperty('--lb-crop-ar',`${crop.w}/${crop.h}`);
+  imgEl.style.cssText=`position:absolute;object-fit:fill;${galleryCropImgStyle(crop)}`;
+}
 function renderGallery(type,title,opts){
   opts=opts||{};
   const items=getGalleryItems(type);
@@ -3628,10 +3759,7 @@ function renderGallery(type,title,opts){
   const zoomable=opts.zoomable||opts.large||false;
   const alt=(title||'')+' 影像学';
   const uid='g'+(++galUid);
-  const imgs=items.map((item,i)=>{
-    const contain=/^DEXA\b/i.test(item.caption||'')||/DXA/i.test(item.file||'');
-    return `<img class="dc-radiograph gal-slide${zoomable?' img-zoomable':''}${contain?' gal-img-contain':''}${i===0?' active':''}" src="${galleryImgSrc(item,w)}" alt="${alt}" loading="lazy" data-fallback-type="${type}" data-index="${i}" aria-hidden="${i?'true':'false'}">`;
-  }).join('');
+  const imgs=items.map((item,i)=>gallerySlideHtml(item,i,{width:w,large:opts.large,zoomable,title,type})).join('');
   const anns=items.map((item,i)=>renderAnnSvg(item,i,i===0,uid)).join('');
   const nav=items.length>1?'<button type="button" class="gal-nav gal-prev" aria-label="上一张">‹</button><button type="button" class="gal-nav gal-next" aria-label="下一张">›</button>':'';
   const dots=items.length>1?`<div class="gal-dots">${items.map((_,i)=>`<button type="button" class="gal-dot${i===0?' active':''}" aria-label="第 ${i+1} 张" data-index="${i}"></button>`).join('')}</div>`:'';
@@ -3645,14 +3773,16 @@ function renderGallery(type,title,opts){
 function renderVisual(type,title,opts){return renderGallery(type,title,opts);}
 function openGalleryZoom(gal,imgEl){
   if(!gal||gal.dataset.zoomable!=='1')return;
-  const imgs=[...gal.querySelectorAll('img.gal-slide')];
+  if(imgEl&&imgEl.classList.contains('gal-crop-wrap'))imgEl=imgEl.querySelector('img')||imgEl;
+  const imgs=[...gal.querySelectorAll('img.gal-slide,img.gal-crop-img')];
   if(!imgs.length)return;
   let idx=0;
   if(imgEl){
     idx=imgs.indexOf(imgEl);
     if(idx<0)idx=+imgEl.dataset.index||0;
   }else{
-    const active=gal.querySelector('img.gal-slide.active');
+    const activeSlide=gal.querySelector('.gal-slide.active');
+    const active=activeSlide&&(activeSlide.matches('img')?activeSlide:activeSlide.querySelector('img'));
     if(active)idx=imgs.indexOf(active);
     if(idx<0)idx=0;
   }
@@ -3693,6 +3823,19 @@ function bindAtlasZoomDelegation(){
     }
   },true);
 }
+function promoteGallerySlide(slide,item,width){
+  if(!slide||!item)return;
+  const img=slide.matches('img')?slide:slide.querySelector('img');
+  if(!img)return;
+  const pending=img.getAttribute('data-src');
+  if(pending){
+    img.dataset.lazyLoaded='1';
+    img.src=pending;
+    return;
+  }
+  const src=galleryImgSrc(item,width);
+  if(src&&!img.getAttribute('src'))img.src=src;
+}
 function initGalleries(root){
   (root||document).querySelectorAll('.img-gallery[data-gtype]').forEach(gal=>{
     if(galleryRegistry.has(gal))return;
@@ -3701,7 +3844,9 @@ function initGalleries(root){
     const items=getGalleryItems(type);
     if(!items||!items.length)return;
     let idx=0;
-    const imgSlides=[...gal.querySelectorAll('img.gal-slide')];
+    const thumbWidth=gal.classList.contains('img-gallery-lg')?960:360;
+    const imgSlides=[...gal.querySelectorAll('.gal-slide')];
+    promoteGallerySlide(imgSlides[0],items[0],thumbWidth);
     const annLayers=[...gal.querySelectorAll('.gal-ann')];
     const dots=[...gal.querySelectorAll('.gal-dot')];
     const capText=gal.querySelector('.gal-cap-text');
@@ -3728,6 +3873,7 @@ function initGalleries(root){
       dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
       if(capText)capText.innerHTML=galleryCaption(items[idx]);
       if(capCount)capCount.textContent=(idx+1)+' / '+items.length;
+      promoteGallerySlide(imgSlides[idx],items[idx],thumbWidth);
       updateGalleryAttrib(gal,items[idx]);
     }
     if(prev)prev.addEventListener('click',e=>go(idx-1,e));
@@ -3742,7 +3888,7 @@ function initGalleries(root){
     if(gal.dataset.zoomable==='1'){
       gal.addEventListener('click',e=>{
         if(e.target.closest('.gal-nav,.gal-dot,.img-attrib,.film-attrib,.gal-zoom-btn,.mobile-attrib-bar'))return;
-        const imgEl=e.target.closest('img.dc-radiograph,img.gal-slide');
+        const imgEl=e.target.closest('img.dc-radiograph,img.gal-slide,img.gal-crop-img')||e.target.closest('.gal-crop-wrap');
         if(!imgEl||!gal.contains(imgEl))return;
         e.preventDefault();
         e.stopPropagation();
@@ -3917,8 +4063,8 @@ function initSiteAuth(){
     showGuest();
   });
 }
-function bindImgFallback(root){
-  (root||document).querySelectorAll('img.dc-radiograph').forEach(img=>{
+function bindGallerySlideFallback(root){
+  (root||document).querySelectorAll('img.dc-radiograph,img.gal-crop-img').forEach(img=>{
     if(img.dataset.bound)return;
     img.dataset.bound='1';
     img.onerror=function(){
@@ -4955,7 +5101,7 @@ function buildCard(d,i){
   });
   card.innerHTML=`
     <div class="dc-visual">
-      ${renderVisual(d.type,d.title)}
+      ${renderVisual(d.type,d.title,{width:360,lazy:true})}
       <div class="dc-scanline"></div>
       <span class="dc-region">${d.region}</span>
       <span class="dc-modtag">${d.mod}</span>
@@ -5034,10 +5180,13 @@ function renderAtlas(){
   atlasContainer.innerHTML='';
   atlasContainer.appendChild(renderFlat(list));
   updateFilterSummary(list);
-  bindImgFallback(atlasContainer);
+  rewriteImgUrlsToProxy(atlasContainer,360);
+  bindGallerySlideFallback(atlasContainer);
+  bindImgFallbacks(atlasContainer);
   initGalleries(atlasContainer);
   initImageAttributions(atlasContainer);
   bindMobileAttribBars(atlasContainer);
+  if(window.sharkLazyLoadImages)window.sharkLazyLoadImages(atlasContainer);
   observeReveals();
 }
 function renderSubChips(){
@@ -5582,9 +5731,12 @@ function openDetail(d){
 
       <p class="m-disclaimer">本词条内容为医学教育与学习参考。影像来自 Wikimedia Commons 等开放授权图库；每张图可展开查看<strong style="color:var(--ice-bright);font-weight:500">来源、作者/机构、许可协议、是否修改、原文链接与引用格式</strong>。CC BY 可商用但须署名；CC BY-NC 禁止商用。不代表特定患者，不能替代临床判断。</p>
     </div>`;
-  bindImgFallback(modalScroll);
+  rewriteImgUrlsToProxy(modalScroll,960);
+  bindGallerySlideFallback(modalScroll);
+  bindImgFallbacks(modalScroll);
   initGalleries(modalScroll);
   initImageAttributions(modalScroll);
+  if(window.sharkLazyLoadImages)window.sharkLazyLoadImages(modalScroll);
   bindZoomableImages(modalScroll);
   modalScroll.scrollTop=0;
   lastFocus=document.activeElement;
@@ -5613,11 +5765,19 @@ document.addEventListener('keydown',e=>{
 function wikiImgLarge(src){
   if(!src)return '';
   let u=String(src);
-  if(isOpeniProxyUrl(u))return u;
+  if(isOpeniProxyUrl(u)||isExternalImgProxyUrl(u)||isWikimediaProxyUrl(u)){
+    if(isWikimediaProxyUrl(u)&&/[?&]width=\d+/.test(u))return u.replace(/([?&])width=\d+/,'$1width=1600');
+    if(isWikimediaProxyUrl(u)&&!/[?&]width=/.test(u))return u+(u.includes('?')?'&':'?')+'width=1600';
+    return u;
+  }
   if(isOpeniUrl(u))return openiProxyUrl(u);
+  if(/^https?:\/\//i.test(u)&&needsExternalImageProxy(u))return externalImageProxyUrl(u);
   if(u.includes('Special:FilePath/')){
-    if(/[?&]width=\d+/.test(u))u=u.replace(/([?&])width=\d+/,'$1width=2400');
-    else u+=(u.includes('?')?'&':'?')+'width=2400';
+    const m=u.match(/Special:FilePath\/([^?]+)/);
+    if(m){
+      const file=decodeURIComponent(m[1]).replace(/ /g,'_');
+      return '/api/wikimedia/img?file='+encodeURIComponent(file)+'&width=1600';
+    }
   }
   return u;
 }
@@ -5658,11 +5818,13 @@ function showImgLightboxSlide(index){
   const img=document.getElementById('imgLightboxImg');
   const ann=document.getElementById('imgLightboxAnn');
   const cap=document.getElementById('imgLightboxCap');
+  const media=document.getElementById('imgLightboxMedia');
   if(!img||!ann||!cap)return;
   img.src=wikiImgLarge(opts.src);
   img.alt=opts.alt||'医学影像';
   cap.innerHTML=opts.caption||'';
   ann.innerHTML=opts.annHtml||'';
+  applyGalleryCropToLightbox(media,img,opts.crop);
   updateImgLightboxNavUi();
 }
 function openImgLightbox(opts,navCtx){
@@ -5699,10 +5861,13 @@ function closeImgLightbox(){
   if(!modalOpen)document.body.style.overflow='';
   if(img)img.removeAttribute('src');
   if(ann)ann.innerHTML='';
+  const media=document.getElementById('imgLightboxMedia');
+  if(media&&img)applyGalleryCropToLightbox(media,img,null);
   if(imgLightboxFocus&&imgLightboxFocus.focus)imgLightboxFocus.focus();
 }
 function zoomPayloadFromGallerySlide(imgEl,gal){
   if(!imgEl||!gal)return null;
+  if(imgEl.classList.contains('gal-crop-wrap'))imgEl=imgEl.querySelector('img')||imgEl;
   const idx=+imgEl.dataset.index||0;
   const type=gal.dataset.gtype;
   const items=getGalleryItems(type);
@@ -5716,7 +5881,8 @@ function zoomPayloadFromGallerySlide(imgEl,gal){
   if(ann)annHtml=ann.outerHTML;
   const src=imgEl.currentSrc||imgEl.src;
   if(!src)return null;
-  return{src,alt:imgEl.alt||'医学影像',caption,annHtml};
+  const item=items&&items[idx];
+  return{src,alt:imgEl.alt||'医学影像',caption,annHtml,crop:item&&item.crop};
 }
 function zoomPayloadFromImg(imgEl){
   if(!imgEl)return null;
@@ -6209,7 +6375,7 @@ function getDiseaseDetail(type){
 }
 async function loadNavFallback(){
   try{
-    const res=await fetch('/data/nav-fallback.json',{cache:'no-store'});
+    const res=await fetch('/data/nav-fallback.json');
     if(!res.ok)return false;
     applyNavDataPatch(await res.json());
     return true;
@@ -6218,24 +6384,50 @@ async function loadNavFallback(){
 async function loadDiseaseDetailsBackground(){
   if(window.SITE_DISEASE_DETAILS&&Object.keys(window.SITE_DISEASE_DETAILS).length>500)return;
   try{
-    const res=await fetch('/data/site-disease-details.json',{cache:'no-store'});
+    const res=await fetch('/data/site-disease-details.json');
     if(!res.ok)return;
     const details=await res.json();
     window.SITE_DISEASE_DETAILS={...(window.SITE_DISEASE_DETAILS||{}),...details};
   }catch(e){}
 }
+async function loadGalleriesBackground(){
+  if(window.__sharkGalleriesLoaded)return;
+  try{
+    const res=await fetch('/data/site-galleries.json');
+    if(!res.ok)return;
+    const data=await res.json();
+    if(data.diseaseGalleries){
+      Object.assign(diseaseGalleries,data.diseaseGalleries);
+      mergeGalleryAnnotations();
+      Object.keys(data.diseaseGalleries).forEach(t=>{
+        const first=data.diseaseGalleries[t]&&data.diseaseGalleries[t][0];
+        if(first&&first.file)diseaseImages[t]=wikiImg(first.file);
+      });
+    }
+    if(data.imageAttribRegistry){
+      window.IMAGE_ATTRIB_REGISTRY={...(window.IMAGE_ATTRIB_REGISTRY||{}),...data.imageAttribRegistry};
+    }
+    window.__sharkGalleriesLoaded=true;
+    rewriteImgUrlsToProxy(document,640);
+    bindImgFallbacks(document);
+    refreshAfterSiteData();
+    if(typeof requestIdleCallback==='function')requestIdleCallback(()=>safeRun('prefetchAttributions',prefetchAllAttributions),{timeout:6000});
+    else setTimeout(()=>safeRun('prefetchAttributions',prefetchAllAttributions),2500);
+  }catch(e){}
+}
 async function loadRemoteSiteData(){
   await loadNavFallback();
-  const urls=['/data/site-data-lite.json','/data/site-data.json','/api/content'];
+  const urls=['/data/site-catalog.json','/api/content/catalog','/data/site-data-lite.json','/data/site-data.json','/api/content'];
   let loaded=false;
+  let galleriesAlreadyInPayload=false;
   for(const url of urls){
     try{
-      const res=await fetch(url,{cache:'no-store'});
+      const res=await fetch(url);
       if(!res.ok)continue;
       const data=await res.json();
       if(applySiteDataPatch(data)){
         loaded=true;
-        if(url.includes('lite'))loadDiseaseDetailsBackground();
+        galleriesAlreadyInPayload=!!(data.diseaseGalleries&&Object.keys(data.diseaseGalleries).length>80);
         break;
       }
     }catch(e){}
@@ -6244,12 +6436,20 @@ async function loadRemoteSiteData(){
     console.warn('[shark] site-data load incomplete, diseases=',diseases.length);
   }
   refreshAfterSiteData();
+  if(!galleriesAlreadyInPayload)loadGalleriesBackground();
+  else{
+    window.__sharkGalleriesLoaded=true;
+    if(typeof requestIdleCallback==='function')requestIdleCallback(()=>safeRun('prefetchAttributions',prefetchAllAttributions),{timeout:6000});
+  }
+  loadDiseaseDetailsBackground();
   return loaded;
 }
 function bootApp(){
   sanitizeSavedImgUrls();
   if(atlasContainer)atlasContainer.innerHTML='';
   document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+  rewriteImgUrlsToProxy(document,640);
+  bindImgFallbacks(document);
   safeRun('initImgLightbox',initImgLightbox);
   safeRun('initPageLayers',initPageLayers);
   safeRun('initIndexLanding',initIndexLanding);
@@ -6259,7 +6459,6 @@ function bootApp(){
   refreshAfterSiteData();
   if(isEmbedAtlas())safeRun('renderAtlas',renderAtlas);
   else safeRun('renderAtlas',()=>{if(atlasContainer)atlasContainer.innerHTML='';});
-  safeRun('prefetchAttributions',prefetchAllAttributions);
   safeRun('initAttribRegistry',initAttribRegistryPanel);
   safeRun('initAttribSheet',initAttribSheet);
   safeRun('initAttribCloseButtons',initAttribCloseButtons);

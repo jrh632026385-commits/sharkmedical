@@ -1,6 +1,7 @@
 import express from 'express';
 import { readSiteData, writeSiteData } from './lib/dataStore.js';
 import { toPublicSiteData } from './lib/publicSiteData.js';
+import { readPublicCatalog, readPublicGalleries } from './lib/contentSlices.js';
 import {
   authenticateUser,
   createStoredUser,
@@ -161,6 +162,32 @@ export function createAuthRouter({ bootstrapUsername, bootstrapPassword }) {
 
 export function createContentRouter() {
   const router = express.Router();
+
+  router.get('/catalog', async (req, res) => {
+    try {
+      const data = await readPublicCatalog();
+      if (!data) {
+        return res.status(404).json({ ok: false, error: '尚未初始化数据，请先运行 npm run extract' });
+      }
+      res.setHeader('Cache-Control', 'public, max-age=120');
+      res.json(data);
+    } catch (err) {
+      res.status(500).json({ ok: false, error: err.message });
+    }
+  });
+
+  router.get('/galleries', async (req, res) => {
+    try {
+      const data = await readPublicGalleries();
+      if (!data) {
+        return res.status(404).json({ ok: false, error: '尚未初始化数据，请先运行 npm run extract' });
+      }
+      res.setHeader('Cache-Control', 'public, max-age=120');
+      res.json(data);
+    } catch (err) {
+      res.status(500).json({ ok: false, error: err.message });
+    }
+  });
 
   router.get('/', async (req, res) => {
     const data = await readSiteData();

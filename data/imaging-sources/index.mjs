@@ -7,6 +7,9 @@ import * as wikimedia from './plugins/wikimedia.mjs';
 import * as wikimediaRadiopaedia from './plugins/wikimedia-radiopaedia.mjs';
 import * as openi from './plugins/openi.mjs';
 import * as europmc from './plugins/europmc.mjs';
+import * as europmcFigures from './plugins/europmc-figures.mjs';
+import * as chineseWeb from './plugins/chinese-web.mjs';
+import * as educationWeb from './plugins/education-web.mjs';
 import * as tcia from './plugins/tcia.mjs';
 
 const PLUGINS = {
@@ -14,6 +17,9 @@ const PLUGINS = {
   'wikimedia-radiopaedia': wikimediaRadiopaedia,
   openi,
   europmc,
+  'europmc-figures': europmcFigures,
+  'chinese-web': chineseWeb,
+  'education-web': educationWeb,
   tcia
 };
 
@@ -23,11 +29,35 @@ const SOURCE_PLUGIN_MAP = {
   openi: 'openi',
   pmc: 'openi',
   'nlm-open-access': 'openi',
-  'biomed-central': 'europmc',
+  'biomed-central': 'europmc-figures',
   tcia: 'tcia',
   'tcia-collections': 'tcia',
   'lidc-idri': 'tcia',
-  'radiopaedia-commons': 'wikimedia-radiopaedia'
+  'radiopaedia-commons': 'wikimedia-radiopaedia',
+  radiopaedia: 'education-web',
+  'radiology-assistant': 'education-web',
+  ultrasoundcases: 'education-web',
+  ctisus: 'education-web',
+  'mount-sinai-radiology-charts': 'education-web',
+  'liver-imaging-atlas': 'education-web',
+  foamrad: 'education-web',
+  'radiologyeducation-com': 'education-web',
+  'aunt-minnie': 'education-web',
+  'imaios-cn': 'education-web',
+  'jp-radiology-matome': 'education-web',
+  'bayer-radiology-quiz': 'education-web',
+  'jrs-japan': 'education-web',
+  'jcr-japan': 'education-web',
+  'radiology-exam': 'education-web',
+  radiologyinfo: 'education-web',
+  'dxy-imaging': 'chinese-web',
+  cnki: 'chinese-web',
+  'baidu-baike': 'chinese-web',
+  'baidu-image': 'chinese-web',
+  'cma-csr': 'chinese-web',
+  'cjr-open': 'chinese-web',
+  wanfang: 'chinese-web',
+  'medlive-imaging': 'chinese-web'
 };
 
 export function getSource(id) {

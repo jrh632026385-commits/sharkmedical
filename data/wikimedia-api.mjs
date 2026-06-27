@@ -5,7 +5,7 @@
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { fetch as undiciFetch, ProxyAgent, EnvHttpProxyAgent } from 'undici';
+import { fetch as undiciFetch, ProxyAgent, Agent } from 'undici';
 import net from 'net';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -41,7 +41,10 @@ function hasExplicitProxy() {
 }
 
 function makeDispatcher(proxyUrl) {
-  return proxyUrl ? new ProxyAgent(proxyUrl) : new EnvHttpProxyAgent();
+  const opts = { allowH2: false };
+  if (proxyUrl) return new ProxyAgent({ uri: proxyUrl, ...opts });
+  // 直连：不用 EnvHttpProxyAgent，避免 Windows 系统代理指向失效 127.0.0.1:7890 导致 ECONNREFUSED
+  return new Agent(opts);
 }
 
 function probeLocalProxy(proxyUrl, ms = 400) {
@@ -76,8 +79,11 @@ async function resolveDispatcher() {
       process.env.HTTPS_PROXY ||
       process.env.HTTP_PROXY;
     if (explicit) {
-      _dispatcher = makeDispatcher(explicit);
-      return _dispatcher;
+      if (await probeLocalProxy(explicit)) {
+        _dispatcher = makeDispatcher(explicit);
+        return _dispatcher;
+      }
+      // 配置的代理不可用则直连，避免全部 fetch failed
     }
     for (const url of LOCAL_PROXY_CANDIDATES) {
       if (await probeLocalProxy(url)) {

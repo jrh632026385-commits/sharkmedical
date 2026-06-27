@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "shark-medical",
   "version": "1.0.0",
   "private": true,
@@ -35,6 +35,10 @@
     "build-remaining-systems": "node scripts/build-all-remaining-systems.mjs",
     "generate-nav-fallback": "node scripts/generate-nav-fallback.mjs",
     "generate-site-lite": "node scripts/generate-site-lite.mjs",
+    "prewarm-images": "node scripts/prewarm-image-cache.mjs",
+    "backfill-openi-buckets": "node scripts/backfill-openi-buckets.mjs",
+    "apply-gallery-crops": "node scripts/apply-gallery-crops.mjs",
+    "backfill-gallery-urls": "node scripts/backfill-gallery-urls.mjs",
     "generate-site-assets": "node scripts/generate-nav-fallback.mjs && node scripts/generate-site-lite.mjs",
     "build-nervous": "node scripts/build-system-content.mjs nervous",
     "build-urogenital": "node scripts/build-system-content.mjs urogenital",
@@ -59,7 +63,7 @@
     "dev": "node server/index.js",
     "start": "node server/index.js",
     "start-dev": "cmd /c scripts\\start-dev.cmd",
-    "build": "node scripts/extract-data.mjs"
+    "build": "node scripts/generate-site-lite.mjs",
   },
   "dependencies": {
     "@upstash/redis": "^1.34.3",
@@ -74,3 +78,4 @@
     "tesseract.js": "^7.0.0"
   }
 }
+

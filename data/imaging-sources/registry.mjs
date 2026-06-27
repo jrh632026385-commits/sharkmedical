@@ -64,7 +64,7 @@ export const IMAGING_SOURCES = [
     nameZh: 'BioMed Central 开放图像',
     category: 'international',
     integration: 'api',
-    plugin: 'europmc',
+    plugin: 'europmc-figures',
     homepage: 'https://www.biomedcentral.com',
     license: { summary: 'CC BY 等 OA 期刊（Europe PMC 检索）', commercial: 'depends', attribution: true },
     api: { endpoint: '/api/imaging-sources/search?source=biomed-central' }
@@ -98,9 +98,11 @@ export const IMAGING_SOURCES = [
     name: 'Radiopaedia',
     nameZh: 'Radiopaedia',
     category: 'education',
-    integration: 'search-link',
+    integration: 'api',
+    plugin: 'education-web',
     homepage: 'https://radiopaedia.org',
     license: { summary: 'CC BY-NC-SA 3.0（非商业）', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=radiopaedia' },
     searchUrl: q => `https://radiopaedia.org/search?q=${encodeURIComponent(q)}&scope=articles`
   },
   {
@@ -118,9 +120,11 @@ export const IMAGING_SOURCES = [
     name: 'Radiology Assistant',
     nameZh: 'Radiology Assistant',
     category: 'education',
-    integration: 'search-link',
+    integration: 'api',
+    plugin: 'education-web',
     homepage: 'https://radiologyassistant.nl',
     license: { summary: '教育用途（见站点版权）', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=radiology-assistant' },
     searchUrl: q => `https://radiologyassistant.nl/search?q=${encodeURIComponent(q)}`
   },
   {
@@ -266,6 +270,177 @@ export const IMAGING_SOURCES = [
     searchUrl: q => `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(q)}+radiology+review`
   },
 
+  // ── 教学站 · 页面解析全自动 ──
+  {
+    id: 'ultrasoundcases',
+    name: 'Ultrasoundcases.info',
+    nameZh: 'Ultrasoundcases.info',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.ultrasoundcases.info',
+    license: { summary: '见站点条款', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=ultrasoundcases' },
+    searchUrl: q => `https://www.ultrasoundcases.info/search?q=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'ctisus',
+    name: 'CTisus',
+    nameZh: 'CTisus',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.ctisus.com',
+    license: { summary: '见站点条款', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=ctisus' },
+    searchUrl: q => `https://www.ctisus.com/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'mount-sinai-radiology-charts',
+    name: 'Mount Sinai Radiology Charts',
+    nameZh: 'Mount Sinai Radiology Charts',
+    category: 'institutional',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.mountsinai.org',
+    license: { summary: '见 Mount Sinai 原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=mount-sinai-radiology-charts' },
+    searchUrl: q => `https://www.mountsinai.org/search-results?query=${encodeURIComponent('radiology charts ' + q)}`
+  },
+  {
+    id: 'liver-imaging-atlas',
+    name: 'Liver Imaging Atlas',
+    nameZh: 'Liver Imaging Atlas',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.liveratlas.org',
+    license: { summary: '见 liveratlas.org 原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=liver-imaging-atlas' },
+    searchUrl: q => `https://www.liveratlas.org/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'foamrad',
+    name: 'FOAMrad Resources',
+    nameZh: 'FOAMrad（聚合导航）',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://radiogyan.com/foamrad-resources',
+    license: { summary: '见 radiogyan.com 原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=foamrad' },
+    searchUrl: q => `https://radiogyan.com/?s=${encodeURIComponent(q + ' radiology')}`
+  },
+  {
+    id: 'radiologyeducation-com',
+    name: 'RadiologyEducation.com',
+    nameZh: 'RadiologyEducation.com',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.radiologyeducation.com',
+    license: { summary: '见站点条款', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=radiologyeducation-com' },
+    searchUrl: q => `https://www.radiologyeducation.com/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'aunt-minnie',
+    name: 'Aunt Minnie',
+    nameZh: 'Aunt Minnie',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.auntminnie.com',
+    license: { summary: '见站点条款', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=aunt-minnie' },
+    searchUrl: q => `https://www.auntminnie.com/search?q=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'imaios-cn',
+    name: 'IMAIOS (Chinese)',
+    nameZh: 'IMAIOS（中文版）',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.imaios.com/cn',
+    license: { summary: 'IMAIOS 订阅/免费层', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=imaios-cn' },
+    searchUrl: q => `https://www.imaios.com/cn/search?q=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'jp-radiology-matome',
+    name: '画像診断まとめ',
+    nameZh: '画像診断まとめ',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://xn--o1qq22cjlllou16giuj.jp',
+    license: { summary: '见站点原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=jp-radiology-matome' },
+    searchUrl: q => `https://xn--o1qq22cjlllou16giuj.jp/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'bayer-radiology-quiz',
+    name: 'Bayer in Radiology Quiz',
+    nameZh: '画像診断クイズ（Bayer in Radiology）',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://radiology.bayer.jp/training/quiz',
+    license: { summary: '见 Bayer 站点条款', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=bayer-radiology-quiz' },
+    searchUrl: q => `https://radiology.bayer.jp/training/quiz?search=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'jrs-japan',
+    name: 'Japan Radiological Society (JRS)',
+    nameZh: '日本医学放射線学会 (JRS)',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.radiology.jp',
+    license: { summary: '见 JRS 原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=jrs-japan' },
+    searchUrl: q => `https://www.radiology.jp/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'jcr-japan',
+    name: 'Japan College of Radiology (JCR)',
+    nameZh: '日本放射線科専門医会 (JCR)',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.jcr.or.jp',
+    license: { summary: '见 JCR 原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=jcr-japan' },
+    searchUrl: q => `https://www.jcr.or.jp/english-page/?s=${encodeURIComponent(q)}`,
+    notes: '英文页 jcr.or.jp/english-page'
+  },
+  {
+    id: 'radiology-exam',
+    name: 'Radiology Board Exam Answers',
+    nameZh: '放射線科専門医試験 解答例',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://radiology-exam.com',
+    license: { summary: '见站点原文', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=radiology-exam' },
+    searchUrl: q => `https://radiology-exam.com/?s=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'radiologyinfo',
+    name: 'RadiologyInfo',
+    nameZh: 'RadiologyInfo',
+    category: 'education',
+    integration: 'api',
+    plugin: 'education-web',
+    homepage: 'https://www.radiologyinfo.org',
+    license: { summary: 'RSNA / ACR 患者教育（见原文）', commercial: false, attribution: true },
+    api: { endpoint: '/api/imaging-sources/search?source=radiologyinfo' },
+    searchUrl: q => `https://www.radiologyinfo.org/en/search?q=${encodeURIComponent(q)}`
+  },
+
   // ── 数据集（门户链接 / 部分 API）──
   {
     id: 'tcia-collections',
@@ -360,13 +535,48 @@ export const IMAGING_SOURCES = [
     searchUrl: q => `https://www.kaggle.com/search?q=${encodeURIComponent(q + ' medical imaging')}&type=dataset`
   },
 
+  {
+    id: 'cma-csr',
+    name: 'Chinese Medical Association · Radiology Branch',
+    nameZh: '中华医学会放射学分会',
+    category: 'chinese',
+    integration: 'hybrid',
+    plugin: 'chinese-web',
+    homepage: 'https://csr.cma.org.cn/cn/',
+    license: { summary: '学会官网内容（引用须注明出处）', commercial: false, attribution: true },
+    searchUrl: q =>
+      `https://www.google.com/search?q=site:csr.cma.org.cn+${encodeURIComponent(q + ' 影像')}`
+  },
+  {
+    id: 'baidu-image',
+    name: 'Baidu Image Search',
+    nameZh: '百度图片',
+    category: 'chinese',
+    integration: 'hybrid',
+    plugin: 'chinese-web',
+    homepage: 'https://image.baidu.com',
+    license: { summary: '检索结果图（版权见原文页面）', commercial: false, attribution: true },
+    searchUrl: q => `https://image.baidu.com/search/index?tn=baiduimage&word=${encodeURIComponent(q)}`
+  },
+  {
+    id: 'baidu-baike',
+    name: 'Baidu Baike',
+    nameZh: '百度百科',
+    category: 'chinese',
+    integration: 'hybrid',
+    plugin: 'chinese-web',
+    homepage: 'https://baike.baidu.com',
+    license: { summary: '百科词条（图文版权见原文，影像图需逐条核对）', commercial: false, attribution: true },
+    searchUrl: q => `https://baike.baidu.com/search?word=${encodeURIComponent(q)}`
+  },
   // ── 中文资源（检索链接）──
   {
     id: 'dxy-imaging',
     name: '丁香园影像',
     nameZh: '丁香园影像',
     category: 'chinese',
-    integration: 'search-link',
+    integration: 'api',
+    plugin: 'chinese-web',
     homepage: 'https://www.dxy.cn',
     license: { summary: '平台内容版权（引用须注明出处）', commercial: false, attribution: true },
     searchUrl: q => `https://www.dxy.cn/search?words=${encodeURIComponent(q + ' 影像')}`
@@ -426,7 +636,8 @@ export const IMAGING_SOURCES = [
     name: '中国知网（部分开放）',
     nameZh: '中国知网',
     category: 'chinese',
-    integration: 'search-link',
+    integration: 'hybrid',
+    plugin: 'chinese-web',
     homepage: 'https://www.cnki.net',
     license: { summary: 'CNKI 版权（部分 OA）', commercial: false, attribution: true },
     searchUrl: q => `https://kns.cnki.net/kns8/defaultresult/index?kw=${encodeURIComponent(q + ' 医学影像')}`

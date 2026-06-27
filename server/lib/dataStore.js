@@ -2,6 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { canPersistWrites, isVercel, kvGet, kvSet } from './kv.js';
+import { readJsonFileCached, invalidateJsonFileCache } from './jsonFileCache.js';
+import {
+  getCachedMergedSiteData,
+  invalidateMergedSiteDataCache,
+  setCachedMergedSiteData
+} from './siteDataCache.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..', '..');
@@ -13,9 +19,8 @@ export function getDataPath() {
 }
 
 function readSiteDataFile() {
-  if (!fs.existsSync(dataPath)) return null;
   try {
-    return JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    return readJsonFileCached(dataPath);
   } catch {
     return null;
   }
@@ -111,11 +116,20 @@ function mergeSiteData(fromKv, fromFile) {
 }
 
 export async function readSiteData() {
-  const fromFile = readSiteDataFile();
   const fromKv = await kvGet(KV_KEY);
-  if (fromKv && fromFile) return mergeSiteData(fromKv, fromFile);
-  if (fromKv) return fromKv;
-  return fromFile;
+  if (!fromKv) {
+    const cached = getCachedMergedSiteData();
+    if (cached) return cached;
+  }
+
+  const fromFile = readSiteDataFile();
+  let merged;
+  if (fromKv && fromFile) merged = mergeSiteData(fromKv, fromFile);
+  else if (fromKv) merged = fromKv;
+  else merged = fromFile;
+
+  if (!fromKv && merged) setCachedMergedSiteData(merged);
+  return merged;
 }
 
 export async function writeSiteData(data) {
@@ -131,6 +145,8 @@ export async function writeSiteData(data) {
   fs.mkdirSync(path.dirname(dataPath), { recursive: true });
   fs.writeFileSync(tmp, JSON.stringify(data, null, 2), 'utf8');
   fs.renameSync(tmp, dataPath);
+  invalidateJsonFileCache(dataPath);
+  invalidateMergedSiteDataCache();
   return data;
 }
 
