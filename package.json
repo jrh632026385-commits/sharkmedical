@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "shark-medical",
   "version": "1.0.0",
   "private": true,
@@ -63,7 +63,7 @@
     "dev": "node server/index.js",
     "start": "node server/index.js",
     "start-dev": "cmd /c scripts\\start-dev.cmd",
-    "build": "node scripts/generate-site-lite.mjs",
+    "build": "node scripts/generate-site-lite.mjs"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.3",
